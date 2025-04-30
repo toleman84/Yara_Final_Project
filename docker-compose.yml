@@ -1,0 +1,77 @@
+version: '3.9' #Última estable para docker-compose
+
+services:
+
+  postfix:
+    build : ./postfix
+    container_name: securemail_postfix
+    restart: always
+    ports:
+      - "25:25" # SMTP
+    environment:
+      - RELAYHOST=[scanner]:10025
+    networks:
+      - securemail
+    depends_on:
+      - scanner
+
+
+  scanner:
+    build : ./scanner
+    container_name: securemail_scanner
+    restart: always
+    expose:
+      - "10025" # SMTP Internal port for Postfix to connect
+    environment:
+      - SCAN_PORT=10025
+      - QUARANTINE_DIR=/quarantine
+    volumes:
+      - ./scanner/yara_rules:/rules
+      - ./scanner/quarantine:/quarantine
+    networks:
+      - securemail
+
+  grafana:
+    image: grafana/grafana-oss:latest
+    container_name: securemail_grafana
+    restart: unless-stopped
+    ports:
+      - "3000:3000" # Grafana web UI
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=changeme
+    volumes:
+      - grafana_data:/var/lib/grafana
+    networks:
+      - securemail
+    depends_on:
+      - loki
+
+  loki:
+    image: grafana/loki:latest
+    container_name: securemail_loki
+    restart: unless-stopped
+    ports:
+      - "3100:3100" # Loki API
+    command: -config.file=/etc/loki/local-config.yaml
+    networks:
+      - securemail
+
+  promtail:
+    image: grafana/promtail:latest
+    container_name: securemail_promtail
+    restart: unless-stopped
+    volumes:
+      - ./promtail/config.yaml:/etc/promtail/config.yaml
+      - /var/log:/var/log
+    networks:
+      - securemail
+    depends_on:
+      - loki
+
+volumes:
+  grafana_data:
+    #driver: local
+networks:
+  securemail:
+    driver: bridge

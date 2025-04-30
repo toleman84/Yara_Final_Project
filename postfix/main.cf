@@ -1,0 +1,21 @@
+myhostname = mail.securemail.local
+mydestination = $myhostname, localhost.localdomain, localhost
+relayhost = 
+content_filter = scan:[scanner]:10025
+smtpd_banner = $myhostname ESMTP SecureMail
+biff = no
+append_dot_mydomain = no
+readme_directory = no
+
+# Seguridad básica
+smtpd_tls_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem
+smtpd_tls_key_file=/etc/ssl/private/ssl-cert-snakeoil.key
+smtpd_use_tls=yes
+smtpd_tls_session_cache_database = btree:${data_directory}/smtpd_scache
+smtp_tls_session_cache_database = btree:${data_directory}/smtp_scache
+
+# Autenticación desactivada por ahora (opcional)
+smtpd_sasl_auth_enable = no
+
+# Evitar SPAM básico
+smtpd_recipient_restrictions = permit_mynetworks, reject_unauth_destination
