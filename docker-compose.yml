@@ -1,4 +1,4 @@
-version: '3.9' #Última estable para docker-compose
+# version: '3.9' Última estable para docker-compose (en el Docker Compose v2, Ya no es necesario especificarlo)
 
 services:
 
