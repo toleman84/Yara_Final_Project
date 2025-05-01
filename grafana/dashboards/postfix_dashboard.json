@@ -1,0 +1,49 @@
+{
+    "dashboard": {
+      "id": null,
+      "title": "Postfix Mail Traffic",
+      "timezone": "browser",
+      "schemaVersion": 30,
+      "version": 1,
+      "refresh": "10s",
+      "panels": [
+        {
+          "title": "Total Emails Processed",
+          "type": "stat",
+          "gridPos": { "x": 0, "y": 0, "w": 6, "h": 4 },
+          "datasource": "Loki",
+          "targets": [
+            {
+              "expr": "count_over_time({job=\"promtail\"} |= \"status=sent\" [1m])",
+              "refId": "A"
+            }
+          ]
+        },
+        {
+          "title": "Quarantined Emails",
+          "type": "stat",
+          "gridPos": { "x": 6, "y": 0, "w": 6, "h": 4 },
+          "datasource": "Loki",
+          "targets": [
+            {
+              "expr": "count_over_time({job=\"promtail\"} |= \"quarantine\" [1m])",
+              "refId": "B"
+            }
+          ]
+        },
+        {
+          "title": "Deferred / Errors",
+          "type": "stat",
+          "gridPos": { "x": 0, "y": 4, "w": 6, "h": 4 },
+          "datasource": "Loki",
+          "targets": [
+            {
+              "expr": "count_over_time({job=\"promtail\"} |= \"status=deferred\" [1m])",
+              "refId": "C"
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

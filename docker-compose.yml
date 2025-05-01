@@ -53,6 +53,9 @@ services:
     restart: unless-stopped
     ports:
       - "3100:3100" # Loki API
+    volumes:
+      - ./promtail/config.yml:/etc/promtail/config.yml
+      - /var/run/docker.sock:/var/run/docker.sock  # 🚨 acceso al daemon de Docker
     command: -config.file=/etc/loki/local-config.yaml
     networks:
       - securemail
@@ -62,8 +65,8 @@ services:
     container_name: securemail_promtail
     restart: unless-stopped
     volumes:
-      - ./promtail/config.yaml:/etc/promtail/config.yaml
-      - /var/log:/var/log
+      - ./promtail/config.yml:/etc/promtail/config.yml
+      - /var/log:/var/log:ro
     networks:
       - securemail
     depends_on:

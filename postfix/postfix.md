@@ -23,20 +23,15 @@ Estás en la raíz del proyecto.
 Corres:
 
 bash
-Copiar
-Editar
 docker-compose build
 docker-compose up
+
 Y boom 💥: tienes
 
-Postfix
-
-Scanner Python
-
-Grafana
-
-Loki
-
-Promtail
+- Postfix
+- Scanner Python
+- Grafana
+- Loki
+- Promtail
 
 TODO montado automáticamente y hablando entre ellos en la red privada de Docker securemail.

@@ -46,4 +46,3 @@ CMD ["python", "scanner.py"]
 
 # Para ejecutar el contenedor en modo interactivo y acceder a la consola de Python, usar el siguiente comando:
 # docker run -it --rm -p 10025:10025 --name email_scanner -v /path/to/quarantine:/quarantine email_scanner /bin/bash
-
