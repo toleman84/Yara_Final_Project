@@ -2,7 +2,7 @@
 FROM python:3.12-slim
 
 # Información del mantenedor
-LABEL mainterpreter="gdponcemarsiglia@gmail.com"
+LABEL mainterpreter="email@gmail.com"
 LABEL description="Secure Email Sanner with YARA and Sigma Rules"
 
 # Actualizamos paquetes y preparamos el entorno

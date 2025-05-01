@@ -2,7 +2,7 @@
 FROM debian:bullseye-slim
 
 # Mantendor profesional
-LABEL maintainer="gdponcemarsiglia@gmail.com"
+LABEL maintainer="email@gmail.com"
 LABEL description="Secure Postfix server configured for external scanning"
 
 # Instalar Postfix y utilidades necesarias

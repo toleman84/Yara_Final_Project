@@ -21,20 +21,20 @@ Corre scanner.py apenas el contenedor arranca.
 En scanner/requirements.txt (mínimo esto):
 
 txt
-Copiar
-Editar
+
 yara-python
 sigma-cli
+
 (Si luego quieres agregar, por ejemplo, alertas vía SMTP, solo agregas smtplib o similares.)
+
 
 🚀 Flujo final para construirlo
 Desde la raíz del proyecto:
 
 bash
-Copiar
-Editar
 docker-compose build scanner
 docker-compose up scanner
+
 ¡Y ya tendrías tu servicio de escaneo de emails corriendo en su propio contenedor! 🛡️📧
 
 📢 Extra
