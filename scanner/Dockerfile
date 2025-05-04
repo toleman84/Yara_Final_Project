@@ -38,11 +38,11 @@ EXPOSE 10025
 # Comando por defecto para ejecutar el scanner
 CMD ["python", "scanner.py"]
 
+# Para construir la imagen>
+# docker build -t email_scanner .
+
+# Para arrancar el contenedor en modo bash para explorarlo:
+# docker run -it --rm --name email_scanner_debug -v /quarantine:/quarantine email_scanner /bin/bash
+
 # Para ejecutar el contenedor, usar el siguiente comando:
-# docker run -d -p 10025:10025 --name email_scanner -v /path/to/quarantine:/quarantine email_scanner
-
-# Para ejecutar el contenedor en modo interactivo, usar el siguiente comando:
-# docker run -it --rm -p 10025:10025 --name email_scanner -v /path/to/quarantine:/quarantine email_scanner
-
-# Para ejecutar el contenedor en modo interactivo y acceder a la consola de Python, usar el siguiente comando:
-# docker run -it --rm -p 10025:10025 --name email_scanner -v /path/to/quarantine:/quarantine email_scanner /bin/bash
+# docker run -d -p 10025:10025 --name email_scanner -v /scanner/quarantine:/quarantine email_scanner

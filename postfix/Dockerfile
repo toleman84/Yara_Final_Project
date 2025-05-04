@@ -11,6 +11,7 @@ RUN apt-get update && \
     postfix \
     ca-certificates \
     libsasl2-modules \
+    telnet \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -30,11 +31,8 @@ EXPOSE 25
 # Comando por defecto para ejecutar Postfix en foreground
 CMD ["sh", "-c", "postfix start-fg"]
 
-# Para ejecutar el contenedor, usar el siguiente comando:
-# docker run -d -p 25:25 --name postfix_server -v /path/to/postfix:/etc/postfix postfix_server
+# Para ejecutar el contenedor en modo interactivo y acceder a la consola de Postfix, puedes usar este comando:
+# docker run -it --rm -p 25:25 --name postfix_server postfix_server /bin/bash
 
 # Para ejecutar el contenedor en modo interactivo, usar el siguiente comando:
-# docker run -it --rm -p 25:25 --name postfix_server -v /path/to/postfix:/etc/postfix postfix_server
-
-# Para ejecutar el contenedor en modo interactivo y acceder a la consola de Postfix, usar el siguiente comando:
-# docker run -it --rm -p 25:25 --name postfix_server -v /path/to/postfix:/etc/postfix postfix_server /bin/bash
+# docker exec -it postfix_server /bin/bash
