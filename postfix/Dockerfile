@@ -12,6 +12,7 @@ RUN apt-get update && \
     ca-certificates \
     libsasl2-modules \
     telnet \
+    rsyslog \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -29,7 +30,7 @@ ENV MAIL_DOMAIN=securemail.local
 EXPOSE 25
 
 # Comando por defecto para ejecutar Postfix en foreground
-CMD ["sh", "-c", "postfix start-fg"]
+CMD ["sh", "-c", "service rsyslog start && postfix start-fg"]
 
 # Para ejecutar el contenedor en modo interactivo y acceder a la consola de Postfix, puedes usar este comando:
 # docker run -it --rm -p 25:25 --name postfix_server postfix_server /bin/bash
