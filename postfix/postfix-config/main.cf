@@ -1,0 +1,41 @@
+# Basic configuration
+smtpd_banner = $myhostname ESMTP
+biff = no
+append_dot_mydomain = no
+compatibility_level = 3.6
+
+# Domain settings
+myhostname = email-threat-docker.local
+mydomain = email-threat-docker.local
+myorigin = $mydomain
+
+# Delivery configuration
+mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain
+local_transport = local:
+disable_dns_lookups = yes
+ignore_mx_lookup_error = yes
+local_recipient_maps =
+
+# Custom transport map for relaying mail
+transport_maps = hash:/etc/postfix/transport
+
+# Network configuration
+inet_interfaces = all
+inet_protocols = all
+mynetworks = 127.0.0.0/8 [::1]/128 172.20.0.0/16
+
+# TLS settings (uses default snakeoil certs for local encryption)
+smtpd_tls_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem
+smtpd_tls_key_file=/etc/ssl/private/ssl-cert-snakeoil.key
+smtpd_use_tls=yes
+smtpd_tls_session_cache_database = btree:${data_directory}/smtpd_scache
+smtp_tls_session_cache_database = btree:${data_directory}/smtp_scache
+
+# Pass all messages to content filter first
+content_filter = smtp-amavis:scanner:10025
+
+# Limits
+mailbox_size_limit = 0
+
+# Logging (optional — log to a file inside container, or stdout)
+maillog_file = /var/log/mail.log

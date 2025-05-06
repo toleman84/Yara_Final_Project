@@ -14,9 +14,22 @@ RUN apt-get update && \
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
-# Expose SMTP port
+# Copy and process transport map
+COPY ./postfix-config/transport /etc/postfix/transport
+RUN postmap /etc/postfix/transport && \
+    chown root:postfix /etc/postfix/transport.db && \
+    chmod 640 /etc/postfix/transport.db
+
+# Optional: Copy custom configs if available
+COPY ./postfix-config/main.cf /etc/postfix/main.cf
+COPY ./postfix-config/master.cf /etc/postfix/master.cf
+
+# Create system users (if needed for mail routing)
+RUN adduser --system --no-create-home recipient && \
+    adduser --system --no-create-home sender
+
+# Expose SMTP ports
 EXPOSE 25 10026
 
-# Set the entrypoint
+# Use custom entrypoint
 ENTRYPOINT ["/entrypoint.sh"]
-

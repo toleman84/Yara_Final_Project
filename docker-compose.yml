@@ -10,8 +10,6 @@ services:
       - "25:25"
       - "10026:10026"
     volumes:
-      - ./postfix-config/main.cf:/etc/postfix/main.cf:ro
-      - ./postfix-config/master.cf:/etc/postfix/master.cf:ro
       - postfix_logs:/var/log
     devices:
       - "/dev/urandom:/dev/random"

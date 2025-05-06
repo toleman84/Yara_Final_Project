@@ -1,0 +1,23 @@
+title: Postfix Mass Mailing Detection
+status: experimental
+description: Detects a high volume of outgoing emails from a single source IP or sender address within a short time frame, potentially indicating spam or a compromised account.
+logsource:
+  product: postfix
+  service: smtp # Or qmgr, depending on where the relevant logs appear
+detection:
+  keywords:
+    - ": message-id=" # Common log entry indicating a sent email
+    # Add more specific keywords if available, e.g., related to relaying
+  # Detect based on high frequency of messages from one source IP
+  condition_ip: keywords | count() > 50 by source_ip within 5m # Adjust threshold and timeframe
+  # Detect based on high frequency of messages from one sender address (if available in logs)
+  # condition_sender: keywords | count() > 50 by sender_address within 5m # Requires sender_address field extraction
+  condition: condition_ip # Or combine conditions if sender_address is reliably logged
+falsepositives:
+  - Legitimate bulk email sending (e.g., newsletters)
+  - Mail server relays
+level: medium
+tags:
+  - attack.impact
+  - attack.t1531 # Account Access Removal (if account is compromised for spam)
+
