@@ -3,34 +3,38 @@
 services:
 
   postfix:
-    build : ./postfix
-    container_name: securemail_postfix
-    restart: always
+    build: ./postfix
+    container_name: postfix
+    hostname: email-threat-docker.local
     ports:
-      - "25:25" # SMTP
-    environment:
-      - RELAYHOST=[scanner]:10025
+      - "25:25"
+      - "10026:10026"
+    volumes:
+      - ./postfix-config/main.cf:/etc/postfix/main.cf:ro
+      - ./postfix-config/master.cf:/etc/postfix/master.cf:ro
+      - postfix_logs:/var/log
+    devices:
+      - "/dev/urandom:/dev/random"
     networks:
-      - securemail
-    depends_on:
-      - scanner
-
+      threat-net:
+        ipv4_address: 172.20.0.100
+    restart: unless-stopped
 
   scanner:
-    build : ./scanner
-    container_name: securemail_scanner
-    restart: always
-    expose:
-      - "10025" # SMTP Internal port for Postfix to connect
+    build: ./scanner
+    container_name: scanner
     environment:
-      - SCAN_PORT=10025
-      - QUARANTINE_DIR=/quarantine
+      - REINJECTION_HOST=postfix  
+      - REINJECTION_PORT=10026
     volumes:
-      - ./scanner/yara_rules:/rules
-      - ./scanner/quarantine:/quarantine
+      - scanner_logs:/var/log # Mount log volume
+      - ./rules:/app/rules:ro # Mount rules read-only
+      - quarantine_data:/app/quarantine # Mount quarantine volume
+    depends_on:
+      - postfix # Scanner needs postfix to be aware for re-injection, though not strictly required to start
+    restart: unless-stopped
     networks:
-      - securemail
-
+      threat-net:
   grafana:
     image: grafana/grafana-oss:latest
     container_name: securemail_grafana
@@ -43,7 +47,7 @@ services:
     volumes:
       - grafana_data:/var/lib/grafana
     networks:
-      - securemail
+      threat-net:
     depends_on:
       - loki
 
@@ -58,7 +62,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock  # 🚨 acceso al daemon de Docker
     command: -config.file=/etc/loki/local-config.yml
     networks:
-      - securemail
+      threat-net:
 
   promtail:
     image: grafana/promtail:latest
@@ -68,13 +72,20 @@ services:
       - ./promtail/config.yml:/etc/promtail/config.yml
       - /var/log:/var/log:ro
     networks:
-      - securemail
+      threat-net:
     depends_on:
       - loki
 
 volumes:
   grafana_data:
     #driver: local
+  scanner_logs:
+  postfix_logs:
+  quarantine_data:
+
 networks:
-  securemail:
+  threat-net:
     driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

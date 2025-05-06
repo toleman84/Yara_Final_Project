@@ -1,39 +1,22 @@
-# Imagen base ligera con Postfix
-FROM debian:bullseye-slim
+# Use Ubuntu 22.04 as the base image
+FROM ubuntu:22.04
 
-# Mantendor profesional
-LABEL maintainer="email@gmail.com"
-LABEL description="Secure Postfix server configured for external scanning"
+# Avoid prompts during package installation
+ENV DEBIAN_FRONTEND=noninteractive
 
-# Instalar Postfix y utilidades necesarias
+# Install Postfix and necessary utilities
 RUN apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    postfix \
-    ca-certificates \
-    libsasl2-modules \
-    telnet \
-    rsyslog \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+    apt-get install -y --no-install-recommends postfix rsyslog && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
-# Crear estrucutura de trabajo
-RUN mkdir -p /etc/postfix
+# Copy the entrypoint script
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
-# Copiar configuraciones de Postfix personalizadas
-COPY main.cf /etc/postfix/main.cf
-COPY master.cf /etc/postfix/master.cf
+# Expose SMTP port
+EXPOSE 25 10026
 
-# Variables de entorno (opcional para parametrizar el dominio, et. pueden sobreescribirse en docker-compose)
-ENV MAIL_DOMAIN=securemail.local
+# Set the entrypoint
+ENTRYPOINT ["/entrypoint.sh"]
 
-# Exponer el puerto SMTP
-EXPOSE 25
-
-# Comando por defecto para ejecutar Postfix en foreground
-CMD ["sh", "-c", "service rsyslog start && postfix start-fg"]
-
-# Para ejecutar el contenedor en modo interactivo y acceder a la consola de Postfix, puedes usar este comando:
-# docker run -it --rm -p 25:25 --name postfix_server postfix_server /bin/bash
-
-# Para ejecutar el contenedor en modo interactivo, usar el siguiente comando:
-# docker exec -it postfix_server /bin/bash
