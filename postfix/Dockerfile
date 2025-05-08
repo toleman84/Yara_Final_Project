@@ -24,7 +24,7 @@ RUN postmap /etc/postfix/transport && \
 COPY ./postfix-config/main.cf /etc/postfix/main.cf
 COPY ./postfix-config/master.cf /etc/postfix/master.cf
 
-# Create system users (if needed for mail routing)
+# Create system users ( needed for mail routing test)
 RUN adduser --system --no-create-home recipient && \
     adduser --system --no-create-home sender
 
