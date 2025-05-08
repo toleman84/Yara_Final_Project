@@ -19,8 +19,10 @@ services:
     restart: unless-stopped
 
   scanner:
-    build: ./scanner
     container_name: scanner
+    build: 
+      context: .
+      dockerfile: scanner/Dockerfile 
     environment:
       - REINJECTION_HOST=postfix  
       - REINJECTION_PORT=10026

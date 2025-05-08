@@ -1,19 +1,26 @@
+# Use Python slim
 FROM python:3.10-slim
 
+# System deps
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libmagic1 \
+    gcc \
+    python3-dev \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install --no-cache-dir \
-    aiosmtpd \
-    aiosmtplib \
-    python-magic \
-    yara-python
-
-
+# Create app directories first (better layer caching)
 RUN mkdir -p /app/rules/yara /app/rules/sigma /app/quarantine
 
-COPY scanner.py /app/
-
+# Work directory
 WORKDIR /app
+
+# Install Python dependencies
+COPY scanner/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy application files
+COPY scanner/scanner.py /app/scanner.py 
+COPY rules/yara/ /app/rules/yara/
+COPY rules/sigma/ /app/rules/sigma/
+
+# Run the scanner
 CMD ["python", "scanner.py"]
