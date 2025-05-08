@@ -27,7 +27,7 @@ services:
       - REINJECTION_HOST=postfix  
       - REINJECTION_PORT=10026
     volumes:
-      - scanner_logs:/var/log # Mount log volume
+      - scanner_logs:/var/log/scanner # Mount log volume
       - ./rules:/app/rules:ro # Mount rules read-only
       - quarantine_data:/app/quarantine # Mount quarantine volume
     depends_on:
@@ -69,12 +69,12 @@ services:
     container_name: securemail_promtail
     restart: unless-stopped
     volumes:
-      - ./promtail/config.yml:/etc/promtail/config.yml
-      - /var/log:/var/log:ro
+      - ./promtail/config.yml:/etc/promtail/config.yml:ro
+      - scanner_logs:/var/log/scanner:ro   # read-only mount of your scanner logs
     networks:
-      threat-net:
+     - threat-net
     depends_on:
-      - loki
+     - loki
 
 volumes:
   grafana_data:
