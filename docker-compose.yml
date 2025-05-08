@@ -58,9 +58,9 @@ services:
     ports:
       - "3100:3100" # Loki API
     volumes:
-      - ./promtail/config.yml:/etc/promtail/config.yml
-      - /var/run/docker.sock:/var/run/docker.sock  # 🚨 acceso al daemon de Docker
-    command: -config.file=/etc/loki/local-config.yml
+      - ./loki/config.yml:/etc/loki/config.yml
+      - ./loki:/loki
+    command: -config.file=/etc/loki/config.yml
     networks:
       threat-net:
 
