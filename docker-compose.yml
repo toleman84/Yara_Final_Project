@@ -1,87 +1,93 @@
-# version: '3.9' Última estable para docker-compose (en el Docker Compose v2, Ya no es necesario especificarlo)
-
 services:
-
   postfix:
     build: ./postfix
     container_name: postfix
     hostname: email-threat-docker.local
     ports:
       - "25:25"
-      - "10026:10026"
     volumes:
       - postfix_logs:/var/log
+      - ./postfix/postfix-config/main.cf:/etc/postfix/main.cf:ro
+      - ./postfix/postfix-config/master.cf:/etc/postfix/master.cf:ro
+      - ./postfix/postfix-config/transport:/etc/postfix/transport:ro
     devices:
       - "/dev/urandom:/dev/random"
+    healthcheck:
+      test: ["CMD-SHELL", "pgrep master || exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 3
     networks:
       threat-net:
         ipv4_address: 172.20.0.100
     restart: unless-stopped
 
   scanner:
-    container_name: scanner
-    build: 
+    build:
       context: .
-      dockerfile: scanner/Dockerfile 
-    environment:
-      - REINJECTION_HOST=postfix  
-      - REINJECTION_PORT=10026
-    volumes:
-      - scanner_logs:/var/log/scanner # Mount log volume
-      - ./rules:/app/rules:ro # Mount rules read-only
-      - quarantine_data:/app/quarantine # Mount quarantine volume
-    depends_on:
-      - postfix # Scanner needs postfix to be aware for re-injection, though not strictly required to start
-    restart: unless-stopped
-    networks:
-      threat-net:
-  grafana:
-    image: grafana/grafana-oss:latest
-    container_name: securemail_grafana
-    restart: unless-stopped
+      dockerfile: scanner/Dockerfile
+    container_name: scanner
     ports:
-      - "3000:3000" # Grafana web UI
+      - "10026:10025"
     environment:
-      - GF_SECURITY_ADMIN_USER=admin
-      - GF_SECURITY_ADMIN_PASSWORD=changeme
+      - REINJECTION_HOST=postfix
+      - REINJECTION_PORT=10026
+      - SCANNER_LISTEN_PORT=10025
     volumes:
-      - grafana_data:/var/lib/grafana
+      - scanner_logs:/var/log/scanner
+      - ./rules:/app/rules:ro
+      - quarantine_data:/app/quarantine
+    restart: unless-stopped
     networks:
-      threat-net:
-    depends_on:
-      - loki
+      - threat-net
 
   loki:
-    image: grafana/loki:latest
-    container_name: securemail_loki
-    restart: unless-stopped
+    image: grafana/loki:2.9.1
+    container_name: loki
     ports:
-      - "3100:3100" # Loki API
+      - "3100:3100"
     volumes:
-      - ./loki/config.yml:/etc/loki/config.yml
-      - ./loki:/loki
-    command: -config.file=/etc/loki/config.yml
+      - loki_data:/loki
+    command: -config.file=/etc/loki/local-config.yaml
+    restart: unless-stopped
     networks:
-      threat-net:
+      - threat-net
+
+  grafana:
+    image: grafana/grafana:10.1.1
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin  # override via secrets in production
+      - GF_USERS_ALLOW_SIGN_UP=false
+    restart: unless-stopped
+    networks:
+      - threat-net
 
   promtail:
-    image: grafana/promtail:latest
-    container_name: securemail_promtail
-    restart: unless-stopped
+    image: grafana/promtail:2.9.1
+    container_name: promtail
     volumes:
-      - ./promtail/config.yml:/etc/promtail/config.yml:ro
-      - scanner_logs:/var/log/scanner:ro   # read-only mount of your scanner logs
+      - postfix_logs:/logs/postfix:ro
+      - scanner_logs:/logs/scanner:ro
+      - ./promtail:/etc/promtail
+      - positions:/tmp
+    command: -config.file=/etc/promtail/config.yml
+    restart: unless-stopped
     networks:
-     - threat-net
-    depends_on:
-     - loki
+      - threat-net
 
 volumes:
-  grafana_data:
-    #driver: local
-  scanner_logs:
   postfix_logs:
+  scanner_logs:
   quarantine_data:
+  loki_data:
+  grafana_data:
+  positions:
 
 networks:
   threat-net:

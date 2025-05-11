@@ -1,5 +1,6 @@
 server:
   http_listen_port: 9080
+  grpc_listen_port: 0
 
 positions:
   filename: /tmp/positions.yaml
@@ -8,9 +9,21 @@ clients:
   - url: http://loki:3100/loki/api/v1/push
 
 scrape_configs:
-  - job_name: scanner
-    static_configs:
-      - targets: ["localhost"]
-        labels:
-          job: scanner
-          __path__: /var/log/scanner/*.log
+# Scrape config for Postfix logs
+- job_name: postfix
+  static_configs:
+  - targets:
+      - localhost
+    labels:
+      job: postfix
+      __path__: /logs/postfix/mail.log # Updated path inside Promtail container
+
+# Scrape config for Scanner logs
+- job_name: scanner
+  static_configs:
+  - targets:
+      - localhost
+    labels:
+      job: scanner
+      __path__: /logs/scanner/mail_scanner.log # Updated path inside Promtail container
+

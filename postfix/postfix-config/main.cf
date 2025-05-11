@@ -32,7 +32,7 @@ smtpd_tls_session_cache_database = btree:${data_directory}/smtpd_scache
 smtp_tls_session_cache_database = btree:${data_directory}/smtp_scache
 
 # Pass all messages to content filter first
-content_filter = smtp-amavis:scanner:10025
+content_filter = smtp:[scanner]:10025
 
 # Limits
 mailbox_size_limit = 0
