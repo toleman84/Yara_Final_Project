@@ -1,0 +1,21 @@
+2025-05-11 17:04:30,116 [INFO] Starting scanner on 0.0.0.0:10025
+2025-05-11 17:04:30,136 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-11 17:04:30,144 [INFO] Peer: ('127.0.0.1', 56964)
+2025-05-11 17:04:30,150 [INFO] ('127.0.0.1', 56964) handling connection
+2025-05-11 17:04:30,163 [INFO] ('127.0.0.1', 56964) EOF received
+2025-05-11 17:04:30,167 [INFO] ('127.0.0.1', 56964) Connection lost during _handle_client()
+2025-05-11 17:04:30,169 [INFO] ('127.0.0.1', 56964) connection lost
+2025-05-11 17:09:52,489 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-11 17:09:52,491 [INFO] Peer: ('172.20.0.100', 49110)
+2025-05-11 17:09:52,492 [INFO] ('172.20.0.100', 49110) handling connection
+2025-05-11 17:09:52,493 [INFO] ('172.20.0.100', 49110) >> b'EHLO email-threat-docker.local'
+2025-05-11 17:09:52,494 [INFO] ('172.20.0.100', 49110) >> b'MAIL FROM:<sender@email-threat-docker.local> SIZE=353'
+2025-05-11 17:09:52,496 [INFO] ('172.20.0.100', 49110) sender: sender@email-threat-docker.local
+2025-05-11 17:09:52,497 [INFO] ('172.20.0.100', 49110) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-11 17:09:52,498 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-11 17:09:52,499 [INFO] ('172.20.0.100', 49110) recip: recipient@email-threat-docker.local
+2025-05-11 17:09:52,500 [INFO] ('172.20.0.100', 49110) >> b'DATA'
+2025-05-11 17:09:52,506 [WARNING] Quarantined: /app/quarantine/quarantine_1746983392_1.eml | Threats: YARA:phishing_keywords
+2025-05-11 17:09:52,508 [INFO] ('172.20.0.100', 49110) >> b'QUIT'
+2025-05-11 17:09:52,509 [INFO] ('172.20.0.100', 49110) connection lost
+2025-05-11 17:09:52,511 [INFO] ('172.20.0.100', 49110) Connection lost during _handle_client()

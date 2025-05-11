@@ -1,0 +1,4 @@
+apiVersion: 1
+apps:
+  - type: plugin_id
+    enabled: true

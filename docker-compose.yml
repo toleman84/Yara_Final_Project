@@ -6,10 +6,10 @@ services:
     ports:
       - "25:25"
     volumes:
-      - postfix_logs:/var/log
-      - ./postfix/postfix-config/main.cf:/etc/postfix/main.cf:ro
-      - ./postfix/postfix-config/master.cf:/etc/postfix/master.cf:ro
-      - ./postfix/postfix-config/transport:/etc/postfix/transport:ro
+      - ./logs/postfix:/var/log
+      - ./postfix/main.cf:/etc/postfix/main.cf:ro
+      - ./postfix/master.cf:/etc/postfix/master.cf:ro
+      - ./postfix/transport:/etc/postfix/transport:ro
     devices:
       - "/dev/urandom:/dev/random"
     healthcheck:
@@ -34,7 +34,7 @@ services:
       - REINJECTION_PORT=10026
       - SCANNER_LISTEN_PORT=10025
     volumes:
-      - scanner_logs:/var/log/scanner
+      - ./logs/scanner:/var/log
       - ./rules:/app/rules:ro
       - quarantine_data:/app/quarantine
     restart: unless-stopped
@@ -51,7 +51,7 @@ services:
     command: -config.file=/etc/loki/local-config.yaml
     restart: unless-stopped
     networks:
-      - threat-net
+      threat-net:
 
   grafana:
     image: grafana/grafana:10.1.1
@@ -60,26 +60,36 @@ services:
       - "3000:3000"
     volumes:
       - grafana_data:/var/lib/grafana
-      - ./grafana/provisioning:/etc/grafana/provisioning
+      - ./grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
+      - ./grafana/provisioning/plugins:/etc/grafana/provisioning/plugins
+      - ./grafana/provisioning/notifiers:/etc/grafana/provisioning/notifiers
+      - ./grafana/provisioning/alerting:/etc/grafana/provisioning/alerting
     environment:
-      - GF_SECURITY_ADMIN_PASSWORD=admin  # override via secrets in production
+      - GF_SECURITY_ADMIN_PASSWORD=admin # Default password, change in production
       - GF_USERS_ALLOW_SIGN_UP=false
+    depends_on:
+      - loki
     restart: unless-stopped
     networks:
-      - threat-net
+      threat-net:
 
   promtail:
     image: grafana/promtail:2.9.1
     container_name: promtail
     volumes:
-      - postfix_logs:/logs/postfix:ro
-      - scanner_logs:/logs/scanner:ro
+      # Mount log volumes from other containers
+      - ./logs/postfix:/logs/postfix:ro
+      - ./logs/scanner:/logs/scanner:ro
       - ./promtail:/etc/promtail
-      - positions:/tmp
+      - positions:/tmp # Volume for positions file
     command: -config.file=/etc/promtail/config.yml
+    depends_on:
+      - loki
+      - postfix # Ensure log volume exists
+      - scanner # Ensure log volume exists
     restart: unless-stopped
     networks:
-      - threat-net
+      threat-net:
 
 volumes:
   postfix_logs:
