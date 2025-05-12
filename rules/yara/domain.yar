@@ -1,13 +1,16 @@
-/*
-    This Yara ruleset is under the GNU-GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html) and open to any user or organization, as
-    long as you use it under this license.
-*/
-
-rule domain {
+rule domain
+{
     meta:
-        author = "Antonio S. <asanchez@plutec.net>"
+        author      = "holberton"
+        description = "Match HTTP/HTTPS URLs with at least one dot in the host"
+
     strings:
-        $domain_regex = /([\w\.-]+)/ wide ascii
+        // Match “http://” or “https://”
+        // then one or more letters, digits, dots or hyphens
+        // then a literal dot + TLD of 2+ letters
+        // optional slash + non-space chars
+        $url = /https?:\/\/[A-Za-z0-9\.-]+\.[A-Za-z]{2,}(\/\S*)?/
+
     condition:
-        $domain_regex
+        $url
 }

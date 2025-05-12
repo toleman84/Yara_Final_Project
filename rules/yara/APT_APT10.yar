@@ -1,5 +1,6 @@
 /* US CERT Rule */
 
+
 rule Dropper_DeploysMalwareViaSideLoading {
 meta:
         description = "Detect a dropper used to deploy an implant via side loading. This dropper has specifically been observed deploying REDLEAVES & PlugX"

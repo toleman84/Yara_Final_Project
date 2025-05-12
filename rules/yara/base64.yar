@@ -1,17 +1,18 @@
-
-/*
-    This Yara ruleset is under the GNU-GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html) and open to any user or organization, as    long as you use it under this license.
-
-*/
-rule contains_base64 : Base64
+rule contains_base64
 {
     meta:
-        author = "Jaume Martin"
-        description = "This rule finds for base64 strings"
-        version = "0.2"
-        notes = "https://github.com/Yara-Rules/rules/issues/153"
+        author      = "Jaume Martin (tweaked)"
+        description = "Detect long Base64 strings in email body, ignoring headers"
+
     strings:
-        $a = /([A-Za-z0-9+\/]{4}){3,}([A-Za-z0-9+\/]{2}==|[A-Za-z0-9+\/]{3}=)?/
+        // Match 80+ Base64 chars (20 groups of 4) plus up to two '=' padding
+        $b64 = /[A-Za-z0-9+\/]{80,}={0,2}/
+
+        // Ignore the standard MIME header that declares Base64 encoding
+        $hdr = /Content-Transfer-Encoding:\s*base64/
+
     condition:
-        $a
+        // Only trigger when we see a long Base64 blob AND it's not just
+        // the header line itself.
+        $b64 and not $hdr
 }
