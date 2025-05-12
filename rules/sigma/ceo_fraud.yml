@@ -1,0 +1,26 @@
+title: CEO Fraud/Impersonation Attempt
+id: 0d1e2f4a-3b9c-4d5e-6f7a-8b9c0d1e2f4a
+description: Detects emails impersonating executives requesting urgent transfers
+logsource:
+    category: email
+detection:
+    selection_sender:
+        from|contains:
+            - "ceo@company.com"
+            - "executive@company.com"
+    selection_keywords:
+        subject|contains:
+            - "urgent"
+            - "confidential"
+        body|contains:
+            - "wire transfer"
+            - "immediately"
+    condition: selection_sender and selection_keywords
+
+# Mock email for testing rule
+# Subject: CEO Request: Urgent Wire Transfer
+# From: ceo@yourcompany.com (spoofed)
+# To: accounting@yourcompany.com
+#
+# Hi Team,
+# Please process a confidential wire transfer ASAP.
