@@ -58,10 +58,6 @@ services:
     restart: unless-stopped
     ports:
       - "3100:3100"
-    volumes:
-      - ./loki/config.yml:/etc/loki/config.yml:ro
-      - ./loki:/loki
-    command: -config.file=/etc/loki/config.yml
     networks:
       threat-net:
 
