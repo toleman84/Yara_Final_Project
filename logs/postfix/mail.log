@@ -889,3 +889,13 @@ May 13 13:12:02 email-threat-docker postfix/smtp[498]: 3EA8B7D82: to=<recipient@
 May 13 13:12:02 email-threat-docker postfix/qmgr[92]: 3EA8B7D82: removed
 May 13 13:14:00 email-threat-docker postfix/smtpd[661]: connect from unknown[172.20.0.1]
 May 13 13:14:00 email-threat-docker postfix/smtpd[661]: disconnect from unknown[172.20.0.1] ehlo=1 quit=1 commands=2
+May 13 13:18:55 email-threat-docker postfix/pickup[91]: CC6AD16CFF: uid=0 from=<sender@email-threat-docker.local>
+May 13 13:18:55 email-threat-docker postfix/cleanup[1083]: CC6AD16CFF: message-id=<20250513131855.CC6AD16CFF@email-threat-docker.local>
+May 13 13:18:55 email-threat-docker postfix/qmgr[92]: CC6AD16CFF: from=<sender@email-threat-docker.local>, size=353, nrcpt=1 (queue active)
+May 13 13:18:55 email-threat-docker postfix/smtp[1086]: CC6AD16CFF: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.12, delays=0.08/0.02/0.01/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 13:18:55 email-threat-docker postfix/qmgr[92]: CC6AD16CFF: removed
+May 13 13:36:19 email-threat-docker postfix/postfix-script[73]: warning: group or other writable: /etc/postfix/./main.cf
+May 13 13:36:19 email-threat-docker postfix/postfix-script[74]: warning: group or other writable: /etc/postfix/./master.cf
+May 13 13:36:19 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./transport
+May 13 13:36:19 email-threat-docker postfix/postfix-script[98]: starting the Postfix mail system
+May 13 13:36:19 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
