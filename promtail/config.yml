@@ -22,6 +22,7 @@ scrape_configs:
         labels:
           job: scanner
           __path__: /logs/scanner/mail_scanner.log  # Path inside Promtail container
+          
   - job_name: sigma_alerts
     static_configs:
       - targets: [localhost]

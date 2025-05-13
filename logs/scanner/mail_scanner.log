@@ -19,6 +19,22 @@
 2025-05-11 17:09:52,508 [INFO] ('172.20.0.100', 49110) >> b'QUIT'
 2025-05-11 17:09:52,509 [INFO] ('172.20.0.100', 49110) connection lost
 2025-05-11 17:09:52,511 [INFO] ('172.20.0.100', 49110) Connection lost during _handle_client()
+<<<<<<< HEAD
+2025-05-12 02:21:06,297 [INFO] Starting scanner on 0.0.0.0:10025
+2025-05-12 02:21:06,307 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-12 02:21:06,313 [INFO] Peer: ('127.0.0.1', 33826)
+2025-05-12 02:21:06,313 [INFO] ('127.0.0.1', 33826) handling connection
+2025-05-12 02:21:06,319 [INFO] ('127.0.0.1', 33826) EOF received
+2025-05-12 02:21:06,323 [INFO] ('127.0.0.1', 33826) Connection lost during _handle_client()
+2025-05-12 02:21:06,323 [INFO] ('127.0.0.1', 33826) connection lost
+2025-05-13 13:34:14,767 [INFO] Starting scanner on 0.0.0.0:10025
+2025-05-13 13:34:14,779 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-13 13:34:14,781 [INFO] Peer: ('127.0.0.1', 55164)
+2025-05-13 13:34:14,790 [INFO] ('127.0.0.1', 55164) handling connection
+2025-05-13 13:34:14,792 [INFO] ('127.0.0.1', 55164) EOF received
+2025-05-13 13:34:14,792 [INFO] ('127.0.0.1', 55164) Connection lost during _handle_client()
+2025-05-13 13:34:14,792 [INFO] ('127.0.0.1', 55164) connection lost
+=======
 2025-05-11 22:55:13,877 [INFO] Starting scanner on 0.0.0.0:10025
 2025-05-11 22:55:13,927 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
 2025-05-11 22:55:13,942 [INFO] Peer: ('127.0.0.1', 54930)
@@ -260,3 +276,4 @@
 2025-05-12 23:37:54,404 [INFO] ('172.20.0.100', 49172) >> b'QUIT'
 2025-05-12 23:37:54,405 [INFO] ('172.20.0.100', 49172) connection lost
 2025-05-12 23:37:54,406 [INFO] ('172.20.0.100', 49172) Connection lost during _handle_client()
+>>>>>>> d3a7ed74bf3fe3b3fb0468ec1eb0d66a7fe1be1a

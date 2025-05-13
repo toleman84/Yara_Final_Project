@@ -28,6 +28,12 @@ May 11 17:09:52 email-threat-docker postfix/cleanup[541]: 6D78816F07: message-id
 May 11 17:09:52 email-threat-docker postfix/qmgr[100]: 6D78816F07: from=<sender@email-threat-docker.local>, size=353, nrcpt=1 (queue active)
 May 11 17:09:52 email-threat-docker postfix/smtp[544]: 6D78816F07: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.08, delays=0.05/0.02/0.01/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
 May 11 17:09:52 email-threat-docker postfix/qmgr[100]: 6D78816F07: removed
+<<<<<<< HEAD
+May 12 02:21:06 email-threat-docker postfix/postfix-script[96]: starting the Postfix mail system
+May 12 02:21:06 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 12 05:40:56 email-threat-docker postfix/smtpd[16296]: connMay 13 13:34:15 email-threat-docker postfix/postfix-script[96]: starting the Postfix mail system
+May 13 13:34:15 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+=======
 May 11 22:55:14 email-threat-docker postfix/postfix-script[66]: warning: group or other writable: /etc/postfix/./main.cf
 May 11 22:55:14 email-threat-docker postfix/postfix-script[67]: warning: group or other writable: /etc/postfix/./master.cf
 May 11 22:55:14 email-threat-docker postfix/postfix-script[68]: warning: group or other writable: /etc/postfix/./transport
@@ -782,6 +788,7 @@ May 12 23:37:54 email-threat-docker postfix/cleanup[119]: 560D62CA92: message-id
 May 12 23:37:54 email-threat-docker postfix/qmgr[100]: 560D62CA92: from=<sender@email-threat-docker.local>, size=353, nrcpt=1 (queue active)
 May 12 23:37:54 email-threat-docker postfix/smtp[121]: 560D62CA92: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.07, delays=0.04/0.01/0.01/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
 May 12 23:37:54 email-threat-docker postfix/qmgr[100]: 560D62CA92: removed
+<<<<<<< HEAD
 May 13 00:23:28 email-threat-docker postfix/postfix-script[74]: warning: group or other writable: /etc/postfix/./main.cf
 May 13 00:23:28 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./master.cf
 May 13 00:23:28 email-threat-docker postfix/postfix-script[76]: warning: group or other writable: /etc/postfix/./transport
@@ -899,3 +906,27 @@ May 13 13:36:19 email-threat-docker postfix/postfix-script[74]: warning: group o
 May 13 13:36:19 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./transport
 May 13 13:36:19 email-threat-docker postfix/postfix-script[98]: starting the Postfix mail system
 May 13 13:36:19 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+=======
+>>>>>>> d3a7ed74bf3fe3b3fb0468ec1eb0d66a7fe1be1a
+May 13 13:39:26 email-threat-docker postfix/smtpd[517]: warning: hostname 198.55.98.10.static.quadranet.com does not resolve to address 198.55.98.10
+May 13 13:39:26 email-threat-docker postfix/smtpd[517]: connect from unknown[198.55.98.10]
+May 13 13:39:27 email-threat-docker postfix/smtpd[517]: disconnect from unknown[198.55.98.10] ehlo=1 auth=0/1 quit=1 commands=2/3
+>>>>>>> 3e347c1d84f829697deeaa001c7565a113e0c8cd
+May 13 13:53:11 email-threat-docker postfix/pickup[99]: A3E26316BC: uid=0 from=<sender@email-threat-docker.local>
+May 13 13:53:11 email-threat-docker postfix/cleanup[1523]: A3E26316BC: message-id=<20250513135311.A3E26316BC@email-threat-docker.local>
+May 13 13:53:11 email-threat-docker postfix/qmgr[100]: A3E26316BC: from=<sender@email-threat-docker.local>, size=377, nrcpt=1 (queue active)
+May 13 13:53:11 email-threat-docker postfix/smtpd[1527]: connect from scanner.yara_final_project_threat-net[172.20.0.4]
+May 13 13:53:11 email-threat-docker postfix/smtpd[1527]: BCF8D316C4: client=scanner.yara_final_project_threat-net[172.20.0.4]
+May 13 13:53:11 email-threat-docker postfix/cleanup[1523]: BCF8D316C4: message-id=<20250513135311.A3E26316BC@email-threat-docker.local>
+May 13 13:53:11 email-threat-docker postfix/qmgr[100]: BCF8D316C4: from=<sender@email-threat-docker.local>, size=608, nrcpt=1 (queue active)
+May 13 13:53:11 email-threat-docker postfix/smtpd[1527]: disconnect from scanner.yara_final_project_threat-net[172.20.0.4] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 13 13:53:11 email-threat-docker postfix/smtp[1526]: A3E26316BC: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.13, delays=0.05/0.02/0.01/0.05, dsn=2.0.0, status=sent (250 Message delivered)
+May 13 13:53:11 email-threat-docker postfix/qmgr[100]: A3E26316BC: removed
+May 13 13:53:11 email-threat-docker postfix/local[1528]: warning: dict_nis_init: NIS domain name not set - NIS lookups disabled
+May 13 13:53:11 email-threat-docker postfix/local[1528]: BCF8D316C4: to=<recipient@email-threat-docker.local>, relay=local, delay=0.03, delays=0.01/0.01/0/0.01, dsn=2.0.0, status=sent (delivered to mailbox)
+May 13 13:53:11 email-threat-docker postfix/qmgr[100]: BCF8D316C4: removed
+May 13 13:53:35 email-threat-docker postfix/pickup[99]: C9B8C316C6: uid=0 from=<sender@email-threat-docker.local>
+May 13 13:53:35 email-threat-docker postfix/cleanup[1523]: C9B8C316C6: message-id=<20250513135335.C9B8C316C6@email-threat-docker.local>
+May 13 13:53:35 email-threat-docker postfix/qmgr[100]: C9B8C316C6: from=<sender@email-threat-docker.local>, size=353, nrcpt=1 (queue active)
+May 13 13:53:35 email-threat-docker postfix/smtp[1526]: C9B8C316C6: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.04, delays=0.01/0/0.01/0.02, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 13:53:35 email-threat-docker postfix/qmgr[100]: C9B8C316C6: removed
