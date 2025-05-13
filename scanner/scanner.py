@@ -11,6 +11,7 @@ import os
 import email
 import time
 import yara
+import json 
 from email.policy import default
 from aiosmtpd.controller import Controller
 from aiosmtpd.smtp import Envelope
@@ -25,7 +26,8 @@ CONFIG = {
     "reinject_port": 10026,
     "yara_rules_dir": "/app/rules/yara",
     "quarantine_dir": "/app/quarantine",
-    "log_file": "/var/log/mail_scanner.log"
+    "log_file": "/var/log/mail_scanner.log",
+    "json_log": "/var/log/mail_scanner.json",
 }
 
 # ===================== YARA Implementation ===================== 
@@ -77,13 +79,26 @@ class EmailScanner:
 
     async def _quarantine_email(self, envelope, threats: List[str]):
         os.makedirs(CONFIG["quarantine_dir"], exist_ok=True)
-        timestamp = int(time.time())
-        filename = f"quarantine_{timestamp}_{len(threats)}.eml"
+        msg = email.message_from_bytes(envelope.content, policy=default)
+        ts = int(time.time())
+        filename = f"quarantine_{ts}_{len(threats)}.eml"
         filepath = os.path.join(CONFIG["quarantine_dir"], filename)
         with open(filepath, 'wb') as f:
             f.write(envelope.content)
-        logging.warning(f"Quarantined: {filepath} | Threats: {', '.join(threats)}")
 
+        logging.warning(f"Quarantined: {filepath} | Threats: {', '.join(threats)}")
+        event = {
+            "timestamp": ts,
+            "sender": envelope.mail_from,
+            "recipient": ",".join(envelope.rcpt_tos),
+            "subject":   msg.get("subject",""),        # capture subject
+            "yara_hits": threats,
+            "quarantined": True
+        }
+
+        # Append to JSON log
+        with open(CONFIG["json_log"], "a") as jf:
+          jf.write(json.dumps(event) + "\n")
 # ===================== Main Service =====================
 def main():
     logging.basicConfig(

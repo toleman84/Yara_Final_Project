@@ -34,12 +34,23 @@ services:
       - REINJECTION_PORT=10026
       - SCANNER_LISTEN_PORT=10025
     volumes:
-      - ./logs/scanner:/var/log
+      - mail_logs:/var/log
       - ./rules:/app/rules:ro
       - quarantine_data:/app/quarantine
     restart: unless-stopped
     networks:
       - threat-net
+    
+  sigma_scanner:
+    build:
+      context: .
+      dockerfile: sigma_scanner/Dockerfile
+    volumes:
+      - mail_logs:/var/log
+      - ./logs/sigma:/logs/sigma  
+    networks:
+      - threat-net
+
 
   loki:
     image: grafana/loki:2.9.1
@@ -80,6 +91,7 @@ services:
       # Mount log volumes from other containers
       - ./logs/postfix:/logs/postfix:ro
       - ./logs/scanner:/logs/scanner:ro
+      - ./logs/sigma:/logs/sigma:ro
       - ./promtail:/etc/promtail
       - positions:/tmp # Volume for positions file
     command: -config.file=/etc/promtail/config.yml
@@ -98,6 +110,7 @@ volumes:
   loki_data:
   grafana_data:
   positions:
+  mail_logs:
 
 networks:
   threat-net:

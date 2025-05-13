@@ -1,0 +1,2 @@
+2025-05-13 13:08:54,155 [INFO] Loaded 98 Sigma rules
+2025-05-13 13:12:02,367 [WARNING] Sigma Alert: Subject Contains "Urgent" | sender@email-threat-docker.local → recipient@email-threat-docker.local
