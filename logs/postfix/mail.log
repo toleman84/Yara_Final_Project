@@ -945,3 +945,13 @@ May 13 14:30:28 email-threat-docker postfix/cleanup[189]: 900763185F: message-id
 May 13 14:30:28 email-threat-docker postfix/qmgr[100]: 900763185F: from=<sender@email-threat-docker.local>, size=353, nrcpt=1 (queue active)
 May 13 14:30:28 email-threat-docker postfix/smtp[191]: 900763185F: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.08, delays=0.05/0.01/0.01/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
 May 13 14:30:28 email-threat-docker postfix/qmgr[100]: 900763185F: removed
+May 13 15:01:53 email-threat-docker postfix/postfix-script[73]: warning: group or other writable: /etc/postfix/./main.cf
+May 13 15:01:53 email-threat-docker postfix/postfix-script[74]: warning: group or other writable: /etc/postfix/./master.cf
+May 13 15:01:53 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./transport
+May 13 15:01:53 email-threat-docker postfix/postfix-script[98]: starting the Postfix mail system
+May 13 15:01:53 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 13 15:01:58 email-threat-docker postfix/pickup[99]: 9BC5D3185E: uid=0 from=<sender@email-threat-docker.local>
+May 13 15:01:58 email-threat-docker postfix/cleanup[119]: 9BC5D3185E: message-id=<20250513150158.9BC5D3185E@email-threat-docker.local>
+May 13 15:01:58 email-threat-docker postfix/qmgr[100]: 9BC5D3185E: from=<sender@email-threat-docker.local>, size=353, nrcpt=1 (queue active)
+May 13 15:01:58 email-threat-docker postfix/smtp[121]: 9BC5D3185E: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.07, delays=0.04/0.01/0.01/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:01:58 email-threat-docker postfix/qmgr[100]: 9BC5D3185E: removed
