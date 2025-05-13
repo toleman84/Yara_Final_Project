@@ -28,3 +28,7 @@ May 11 17:09:52 email-threat-docker postfix/cleanup[541]: 6D78816F07: message-id
 May 11 17:09:52 email-threat-docker postfix/qmgr[100]: 6D78816F07: from=<sender@email-threat-docker.local>, size=353, nrcpt=1 (queue active)
 May 11 17:09:52 email-threat-docker postfix/smtp[544]: 6D78816F07: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.08, delays=0.05/0.02/0.01/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
 May 11 17:09:52 email-threat-docker postfix/qmgr[100]: 6D78816F07: removed
+May 12 02:21:06 email-threat-docker postfix/postfix-script[96]: starting the Postfix mail system
+May 12 02:21:06 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 12 05:40:56 email-threat-docker postfix/smtpd[16296]: connMay 13 13:34:15 email-threat-docker postfix/postfix-script[96]: starting the Postfix mail system
+May 13 13:34:15 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
