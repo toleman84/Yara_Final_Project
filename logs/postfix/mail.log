@@ -955,6 +955,7 @@ May 13 15:01:58 email-threat-docker postfix/cleanup[119]: 9BC5D3185E: message-id
 May 13 15:01:58 email-threat-docker postfix/qmgr[100]: 9BC5D3185E: from=<sender@email-threat-docker.local>, size=353, nrcpt=1 (queue active)
 May 13 15:01:58 email-threat-docker postfix/smtp[121]: 9BC5D3185E: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.07, delays=0.04/0.01/0.01/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
 May 13 15:01:58 email-threat-docker postfix/qmgr[100]: 9BC5D3185E: removed
+<<<<<<< HEAD
 May 13 15:20:33 email-threat-docker postfix/postfix-script[73]: warning: group or other writable: /etc/postfix/./main.cf
 May 13 15:20:34 email-threat-docker postfix/postfix-script[74]: warning: group or other writable: /etc/postfix/./master.cf
 May 13 15:20:34 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./transport
@@ -1117,3 +1118,7 @@ May 13 17:19:57 email-threat-docker postfix/postfix-script[99]: starting the Pos
 May 13 17:19:57 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
 May 13 19:09:49 email-threat-docker postfix/smtpd[727]: connect from unknown[172.20.0.1]
 May 13 19:09:49 email-threat-docker postfix/smtpd[727]: disconnect from unknown[172.20.0.1] ehlo=1 quit=1 commands=2
+=======
+May 13 16:11:40 email-threat-docker postfix/postfix-script[96]: starting the Postfix mail system
+May 13 16:11:40 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+>>>>>>> b94286070051cd39e3254e1451863485ab9ce745

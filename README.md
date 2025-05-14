@@ -1,37 +1,39 @@
+
 # SecureMail Scanner 📧🛡️
-Sistema de filtrado y análisis de correos electrónicos en tiempo real, diseñado para interceptar, analizar y bloquear amenazas basadas en reglas YARA y Sigma.
+
+Real-time email filtering and analysis system, designed to intercept, analyze, and block threats based on YARA and Sigma rules.
 
 ---
 
-## 🚀 ¿Qué es SecureMail Scanner?
-SecureMail Scanner es una plataforma contenerizada de seguridad de correo electrónico, construida sobre:
+## 🚀 What is SecureMail Scanner?
 
-- **Postfix** como servidor SMTP.
-- **Python Scanner** usando **YARA** para análisis de malware.
-- **Grafana + Loki + Promtail** para visualización y alertas.
-- **Docker Compose** para despliegue modular y escalable.
+SecureMail Scanner is a containerized email security platform built on:
 
-Inspirado en arquitecturas de seguridad de cloud corporativo (Google, Microsoft, AWS).
-
----
-
-## 🛠️ Stack Tecnológico
-| Componente | Tecnología |
-| :--- | :--- |
-| SMTP Server | Postfix |
-| Malware Scanner | Python + YARA |
-| Event Correlation | Sigma |
-| Visualización de Logs | Grafana |
-| Agregado de Logs | Loki + Promtail |
-| Contenerización | Docker Compose |
+* **Postfix** as the SMTP server
+* **Python Scanner** using **YARA** for malware analysis
+* **Grafana + Loki + Promtail** for visualization and alerts
+* **Docker Compose** for modular and scalable deployment
 
 ---
 
-# 🏛️ Arquitectura del Sistema de Escaneo de Correos
+## 🛠️ Technology Stack
 
-Este proyecto implementa una arquitectura modular para la recepción, análisis y visualización de correos electrónicos en busca de amenazas.
+| Component         | Technology      |
+| :---------------- | :-------------- |
+| SMTP Server       | Postfix         |
+| Malware Scanner   | Python + YARA   |
+| Event Correlation | Sigma           |
+| Log Visualization | Grafana         |
+| Log Aggregation   | Loki + Promtail |
+| Containerization  | Docker Compose  |
 
-## Diagrama General
+---
+
+# 🏛️ Email Scanning System Architecture
+
+This project implements a modular architecture for receiving, analyzing, and visualizing emails for threat detection.
+
+## General Diagram
 
 ```mermaid
 flowchart TD
@@ -44,34 +46,45 @@ flowchart TD
 
 ---
 
-## 📦 Despliegue Rápido
-1. Clona el repositorio:
+## 📦 Quick Deployment
+
+1. Clone the repository:
+
 ```bash
-git clone https://github.com/tuusuario/securemail-scanner.git
-cd securemail-scanner
+git clone https://github.com/toleman84/Yara_Final_Project.git
+cd Yara_Final_Project
 ```
 
-2. Construye y levanta los contenedores:
-```
+2. Build and launch the containers:
+
+```bash
 docker-compose up --build
 ```
 
-3. Accede al Dashboard:
+3. Access the Dashboard:
+
 ```
-- Grafana: http://localhost:3000
-- Usuario: admin
-- Contraseña: changeme
+- Grafana: http://localhost:3000  
+- Username: admin  
+- Password: admin  
 ```
 
-## 🔥 Características Principales
-- Escaneo de correos en tiempo real.
-- Motor de detección basado en YARA (customizable).
-- Cuarentena automática de correos sospechosos.
-- Alertas de incidentes por Grafana y Promtail.
-- Resiliencia: Auto-restart de servicios críticos.
-- Listo para producción con red privada Docker.
+---
 
-# 📚 Estructura del Proyecto
+## 🔥 Key Features
+
+* Real-time email scanning
+* Customizable YARA-based detection engine
+* Automatic quarantine of suspicious emails
+* Incident alerts via Grafana and Promtail
+* Resilience: Auto-restart of critical services
+* Production-ready with private Docker network
+
+---
+
+# 📚 Project Structure
+
+```
 secure-email-scanner/
 ├── docker-compose.yml
 ├── postfix/
@@ -94,22 +107,33 @@ secure-email-scanner/
 └── docs/
     ├── architecture.png
     └── installation_guide.md
+```
+
+---
 
 # 🛡️ Roadmap
-- Implementar limpieza automática de cuarentena.
-- Integración de detección Sigma completa.
-- Integración SMTP/TLS real para tráfico cifrado.
-- Portal Web de revisión de cuarentena.
 
-# 👨‍💻 Contribuciones
-¡Pull Requests bienvenidos!
-Por favor sigue la estructura de ramas:
+* Implement automatic quarantine cleanup
+* Full Sigma detection integration
+* Real SMTP/TLS encryption support
+* Web portal for quarantine review
+
+---
+
+# 👨‍💻 Contributions
+
+Pull Requests are welcome!
+Please follow the branch structure:
+
 ```
-- feature/* para nuevas funcionalidades
-- bugfix/* para correcciones
-- docs/* para documentación
+- feature/* for new features  
+- bugfix/* for fixes  
+- docs/* for documentation  
 ```
 
-# 🌟 Créditos
-Proyecto inspirado por las mejores prácticas de seguridad de correo electrónico en entornos cloud modernos.
-Desarrollado con ❤️ por toleman.
+---
+
+# 🌟 Credits
+
+Project inspired by best practices in modern cloud-based email security.
+Developed by Carlos, Felipe, Gastón y Gustavo
