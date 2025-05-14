@@ -10,6 +10,7 @@ services:
       - ./postfix/main.cf:/etc/postfix/main.cf:ro
       - ./postfix/master.cf:/etc/postfix/master.cf:ro
       - ./postfix/transport:/etc/postfix/transport:ro
+      - /etc/localtime:/etc/localtime:ro
     devices:
       - "/dev/urandom:/dev/random"
     healthcheck:
@@ -17,6 +18,8 @@ services:
       interval: 5s
       timeout: 3s
       retries: 3
+    environment:
+      - TZ=America/Argentina/Buenos_Aires
     networks:
       threat-net:
         ipv4_address: 172.20.0.100
@@ -33,10 +36,12 @@ services:
       - REINJECTION_HOST=postfix
       - REINJECTION_PORT=10026
       - SCANNER_LISTEN_PORT=10025
+      - TZ=America/Argentina/Buenos_Aires
     volumes:
-      - mail_logs:/var/log
+      - ./logs/scanner:/var/log
       - ./rules:/app/rules:ro
       - quarantine_data:/app/quarantine
+      - /etc/localtime:/etc/localtime:ro
     restart: unless-stopped
     networks:
       - threat-net
@@ -48,6 +53,9 @@ services:
     volumes:
       - mail_logs:/var/log
       - ./logs/sigma:/logs/sigma  
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      - TZ=America/Argentina/Buenos_Aires
     networks:
       - threat-net
 
@@ -58,6 +66,10 @@ services:
     restart: unless-stopped
     ports:
       - "3100:3100"
+    environment:
+      - TZ=America/Argentina/Buenos_Aires
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
     networks:
       threat-net:
 
@@ -72,9 +84,11 @@ services:
       - ./grafana/provisioning/plugins:/etc/grafana/provisioning/plugins
       - ./grafana/provisioning/notifiers:/etc/grafana/provisioning/notifiers
       - ./grafana/provisioning/alerting:/etc/grafana/provisioning/alerting
+      - /etc/localtime:/etc/localtime:ro
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin # Default password, change in production
       - GF_USERS_ALLOW_SIGN_UP=false
+      - TZ=America/Argentina/Buenos_Aires
     depends_on:
       - loki
     restart: unless-stopped
@@ -91,12 +105,15 @@ services:
       - ./logs/sigma:/logs/sigma:ro
       - ./promtail:/etc/promtail
       - positions:/tmp # Volume for positions file
+      - /etc/localtime:/etc/localtime:ro
     command: -config.file=/etc/promtail/config.yml
     depends_on:
       - loki
       - postfix # Ensure log volume exists
       - scanner # Ensure log volume exists
     restart: unless-stopped
+    environment:
+      - TZ=America/Argentina/Buenos_Aires 
     networks:
       threat-net:
 

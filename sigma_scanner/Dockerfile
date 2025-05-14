@@ -1,8 +1,11 @@
 FROM python:3.11-slim
 
-# Install system dependencies and the OS YAML binding
+# Install system dependencies (optional), then PyYAML
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends python3-yaml && \
+    apt-get install -y --no-install-recommends gcc && \
+    pip install --no-cache-dir pyyaml && \
+    apt-get remove -y gcc && \
+    apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
