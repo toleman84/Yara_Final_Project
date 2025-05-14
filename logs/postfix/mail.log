@@ -955,3 +955,165 @@ May 13 15:01:58 email-threat-docker postfix/cleanup[119]: 9BC5D3185E: message-id
 May 13 15:01:58 email-threat-docker postfix/qmgr[100]: 9BC5D3185E: from=<sender@email-threat-docker.local>, size=353, nrcpt=1 (queue active)
 May 13 15:01:58 email-threat-docker postfix/smtp[121]: 9BC5D3185E: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.07, delays=0.04/0.01/0.01/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
 May 13 15:01:58 email-threat-docker postfix/qmgr[100]: 9BC5D3185E: removed
+May 13 15:20:33 email-threat-docker postfix/postfix-script[73]: warning: group or other writable: /etc/postfix/./main.cf
+May 13 15:20:34 email-threat-docker postfix/postfix-script[74]: warning: group or other writable: /etc/postfix/./master.cf
+May 13 15:20:34 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./transport
+May 13 15:20:34 email-threat-docker postfix/postfix-script[98]: starting the Postfix mail system
+May 13 15:20:34 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 13 15:22:42 email-threat-docker postfix/pickup[99]: CB7153185F: uid=0 from=<sender@email-threat-docker.local>
+May 13 15:22:42 email-threat-docker postfix/cleanup[294]: CB7153185F: message-id=<20250513152242.CB7153185F@email-threat-docker.local>
+May 13 15:22:42 email-threat-docker postfix/qmgr[100]: CB7153185F: from=<sender@email-threat-docker.local>, size=353, nrcpt=1 (queue active)
+May 13 15:22:42 email-threat-docker postfix/smtp[297]: CB7153185F: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.08, delays=0.05/0.01/0/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:22:42 email-threat-docker postfix/qmgr[100]: CB7153185F: removed
+May 13 15:58:56 email-threat-docker postfix/smtpd[3413]: connect from unknown[172.20.0.1]
+May 13 15:58:56 email-threat-docker postfix/smtpd[3413]: C8FFB31870: client=unknown[172.20.0.1]
+May 13 15:58:56 email-threat-docker postfix/cleanup[3417]: C8FFB31870: message-id=<>
+May 13 15:58:56 email-threat-docker postfix/smtpd[3413]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 13 15:58:56 email-threat-docker postfix/qmgr[100]: C8FFB31870: from=<sender@email-threat-docker.local>, size=806, nrcpt=1 (queue active)
+May 13 15:58:56 email-threat-docker postfix/smtp[3418]: C8FFB31870: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.1, delays=0.02/0.01/0.04/0.04, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:58:56 email-threat-docker postfix/qmgr[100]: C8FFB31870: removed
+May 13 15:58:57 email-threat-docker postfix/smtpd[3413]: connect from unknown[172.20.0.1]
+May 13 15:58:57 email-threat-docker postfix/smtpd[3413]: 0D73031870: client=unknown[172.20.0.1]
+May 13 15:58:57 email-threat-docker postfix/cleanup[3417]: 0D73031870: message-id=<>
+May 13 15:58:57 email-threat-docker postfix/qmgr[100]: 0D73031870: from=<sender@email-threat-docker.local>, size=457, nrcpt=1 (queue active)
+May 13 15:58:57 email-threat-docker postfix/smtpd[3413]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 13 15:58:57 email-threat-docker postfix/smtp[3418]: 0D73031870: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:58:57 email-threat-docker postfix/qmgr[100]: 0D73031870: removed
+May 13 15:58:57 email-threat-docker postfix/smtpd[3413]: connect from unknown[172.20.0.1]
+May 13 15:58:57 email-threat-docker postfix/smtpd[3413]: 4684831870: client=unknown[172.20.0.1]
+May 13 15:58:57 email-threat-docker postfix/cleanup[3417]: 4684831870: message-id=<>
+May 13 15:58:57 email-threat-docker postfix/qmgr[100]: 4684831870: from=<sender@email-threat-docker.local>, size=451, nrcpt=1 (queue active)
+May 13 15:58:57 email-threat-docker postfix/smtpd[3413]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 13 15:58:57 email-threat-docker postfix/smtp[3418]: 4684831870: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:58:57 email-threat-docker postfix/qmgr[100]: 4684831870: removed
+May 13 15:58:57 email-threat-docker postfix/smtpd[3413]: connect from unknown[172.20.0.1]
+May 13 15:58:57 email-threat-docker postfix/smtpd[3413]: 7F3E631870: client=unknown[172.20.0.1]
+May 13 15:58:57 email-threat-docker postfix/cleanup[3417]: 7F3E631870: message-id=<>
+May 13 15:58:57 email-threat-docker postfix/qmgr[100]: 7F3E631870: from=<sender@email-threat-docker.local>, size=438, nrcpt=1 (queue active)
+May 13 15:58:57 email-threat-docker postfix/smtpd[3413]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 13 15:58:57 email-threat-docker postfix/smtp[3418]: 7F3E631870: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:58:57 email-threat-docker postfix/qmgr[100]: 7F3E631870: removed
+May 13 15:58:57 email-threat-docker postfix/smtpd[3413]: connect from unknown[172.20.0.1]
+May 13 15:58:57 email-threat-docker postfix/smtpd[3413]: B823031870: client=unknown[172.20.0.1]
+May 13 15:58:57 email-threat-docker postfix/cleanup[3417]: B823031870: message-id=<>
+May 13 15:58:57 email-threat-docker postfix/qmgr[100]: B823031870: from=<sender@email-threat-docker.local>, size=452, nrcpt=1 (queue active)
+May 13 15:58:57 email-threat-docker postfix/smtpd[3413]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 13 15:58:57 email-threat-docker postfix/smtp[3418]: B823031870: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:58:57 email-threat-docker postfix/qmgr[100]: B823031870: removed
+May 13 15:58:57 email-threat-docker postfix/smtpd[3413]: connect from unknown[172.20.0.1]
+May 13 15:58:57 email-threat-docker postfix/smtpd[3413]: F116A31870: client=unknown[172.20.0.1]
+May 13 15:58:57 email-threat-docker postfix/cleanup[3417]: F116A31870: message-id=<>
+May 13 15:58:57 email-threat-docker postfix/qmgr[100]: F116A31870: from=<sender@email-threat-docker.local>, size=433, nrcpt=1 (queue active)
+May 13 15:58:57 email-threat-docker postfix/smtpd[3413]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 13 15:58:57 email-threat-docker postfix/smtp[3418]: F116A31870: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:58:57 email-threat-docker postfix/qmgr[100]: F116A31870: removed
+May 13 15:58:58 email-threat-docker postfix/smtpd[3413]: connect from unknown[172.20.0.1]
+May 13 15:58:58 email-threat-docker postfix/smtpd[3413]: 35AFA31870: client=unknown[172.20.0.1]
+May 13 15:58:58 email-threat-docker postfix/cleanup[3417]: 35AFA31870: message-id=<>
+May 13 15:58:58 email-threat-docker postfix/qmgr[100]: 35AFA31870: from=<sender@email-threat-docker.local>, size=442, nrcpt=1 (queue active)
+May 13 15:58:58 email-threat-docker postfix/smtpd[3413]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 13 15:58:58 email-threat-docker postfix/smtp[3418]: 35AFA31870: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:58:58 email-threat-docker postfix/qmgr[100]: 35AFA31870: removed
+May 13 15:58:58 email-threat-docker postfix/smtpd[3413]: connect from unknown[172.20.0.1]
+May 13 15:58:58 email-threat-docker postfix/smtpd[3413]: 6E8D531870: client=unknown[172.20.0.1]
+May 13 15:58:58 email-threat-docker postfix/cleanup[3417]: 6E8D531870: message-id=<>
+May 13 15:58:58 email-threat-docker postfix/qmgr[100]: 6E8D531870: from=<sender@email-threat-docker.local>, size=436, nrcpt=1 (queue active)
+May 13 15:58:58 email-threat-docker postfix/smtpd[3413]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 13 15:58:58 email-threat-docker postfix/smtp[3418]: 6E8D531870: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:58:58 email-threat-docker postfix/qmgr[100]: 6E8D531870: removed
+May 13 15:58:58 email-threat-docker postfix/smtpd[3413]: connect from unknown[172.20.0.1]
+May 13 15:58:58 email-threat-docker postfix/smtpd[3413]: A810831870: client=unknown[172.20.0.1]
+May 13 15:58:58 email-threat-docker postfix/cleanup[3417]: A810831870: message-id=<>
+May 13 15:58:58 email-threat-docker postfix/qmgr[100]: A810831870: from=<sender@email-threat-docker.local>, size=437, nrcpt=1 (queue active)
+May 13 15:58:58 email-threat-docker postfix/smtpd[3413]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 13 15:58:58 email-threat-docker postfix/smtp[3418]: A810831870: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.03, delays=0.01/0/0.01/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:58:58 email-threat-docker postfix/qmgr[100]: A810831870: removed
+May 13 15:58:58 email-threat-docker postfix/smtpd[3413]: connect from unknown[172.20.0.1]
+May 13 15:58:58 email-threat-docker postfix/smtpd[3413]: E199231870: client=unknown[172.20.0.1]
+May 13 15:58:58 email-threat-docker postfix/cleanup[3417]: E199231870: message-id=<>
+May 13 15:58:58 email-threat-docker postfix/qmgr[100]: E199231870: from=<sender@email-threat-docker.local>, size=449, nrcpt=1 (queue active)
+May 13 15:58:58 email-threat-docker postfix/smtpd[3413]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 13 15:58:58 email-threat-docker postfix/smtp[3418]: E199231870: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:58:58 email-threat-docker postfix/qmgr[100]: E199231870: removed
+May 13 15:58:59 email-threat-docker postfix/smtpd[3413]: connect from unknown[172.20.0.1]
+May 13 15:58:59 email-threat-docker postfix/smtpd[3413]: 2663431870: client=unknown[172.20.0.1]
+May 13 15:58:59 email-threat-docker postfix/cleanup[3417]: 2663431870: message-id=<>
+May 13 15:58:59 email-threat-docker postfix/qmgr[100]: 2663431870: from=<sender@email-threat-docker.local>, size=457, nrcpt=1 (queue active)
+May 13 15:58:59 email-threat-docker postfix/smtpd[3413]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 13 15:58:59 email-threat-docker postfix/smtp[3418]: 2663431870: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:58:59 email-threat-docker postfix/qmgr[100]: 2663431870: removed
+May 13 15:58:59 email-threat-docker postfix/smtpd[3413]: connect from unknown[172.20.0.1]
+May 13 15:58:59 email-threat-docker postfix/smtpd[3413]: 5F2BC31870: client=unknown[172.20.0.1]
+May 13 15:58:59 email-threat-docker postfix/cleanup[3417]: 5F2BC31870: message-id=<>
+May 13 15:58:59 email-threat-docker postfix/qmgr[100]: 5F2BC31870: from=<sender@email-threat-docker.local>, size=449, nrcpt=1 (queue active)
+May 13 15:58:59 email-threat-docker postfix/smtpd[3413]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 13 15:58:59 email-threat-docker postfix/smtp[3418]: 5F2BC31870: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:58:59 email-threat-docker postfix/qmgr[100]: 5F2BC31870: removed
+May 13 15:58:59 email-threat-docker postfix/smtpd[3413]: connect from unknown[172.20.0.1]
+May 13 15:58:59 email-threat-docker postfix/smtpd[3413]: 97C3431870: client=unknown[172.20.0.1]
+May 13 15:58:59 email-threat-docker postfix/cleanup[3417]: 97C3431870: message-id=<>
+May 13 15:58:59 email-threat-docker postfix/qmgr[100]: 97C3431870: from=<sender@email-threat-docker.local>, size=454, nrcpt=1 (queue active)
+May 13 15:58:59 email-threat-docker postfix/smtpd[3413]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 13 15:58:59 email-threat-docker postfix/smtp[3418]: 97C3431870: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:58:59 email-threat-docker postfix/qmgr[100]: 97C3431870: removed
+May 13 15:58:59 email-threat-docker postfix/smtpd[3413]: connect from unknown[172.20.0.1]
+May 13 15:58:59 email-threat-docker postfix/smtpd[3413]: D0D1A31870: client=unknown[172.20.0.1]
+May 13 15:58:59 email-threat-docker postfix/cleanup[3417]: D0D1A31870: message-id=<>
+May 13 15:58:59 email-threat-docker postfix/qmgr[100]: D0D1A31870: from=<sender@email-threat-docker.local>, size=431, nrcpt=1 (queue active)
+May 13 15:58:59 email-threat-docker postfix/smtpd[3413]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 13 15:58:59 email-threat-docker postfix/smtp[3418]: D0D1A31870: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:58:59 email-threat-docker postfix/qmgr[100]: D0D1A31870: removed
+May 13 15:59:00 email-threat-docker postfix/smtpd[3413]: connect from unknown[172.20.0.1]
+May 13 15:59:00 email-threat-docker postfix/smtpd[3413]: 15AA531870: client=unknown[172.20.0.1]
+May 13 15:59:00 email-threat-docker postfix/cleanup[3417]: 15AA531870: message-id=<>
+May 13 15:59:00 email-threat-docker postfix/qmgr[100]: 15AA531870: from=<sender@email-threat-docker.local>, size=462, nrcpt=1 (queue active)
+May 13 15:59:00 email-threat-docker postfix/smtpd[3413]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 13 15:59:00 email-threat-docker postfix/smtp[3418]: 15AA531870: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:59:00 email-threat-docker postfix/qmgr[100]: 15AA531870: removed
+May 13 15:59:00 email-threat-docker postfix/smtpd[3413]: connect from unknown[172.20.0.1]
+May 13 15:59:00 email-threat-docker postfix/smtpd[3413]: 4E84331870: client=unknown[172.20.0.1]
+May 13 15:59:00 email-threat-docker postfix/cleanup[3417]: 4E84331870: message-id=<>
+May 13 15:59:00 email-threat-docker postfix/qmgr[100]: 4E84331870: from=<sender@email-threat-docker.local>, size=444, nrcpt=1 (queue active)
+May 13 15:59:00 email-threat-docker postfix/smtpd[3413]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 13 15:59:00 email-threat-docker postfix/smtp[3418]: 4E84331870: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.02, delays=0.01/0/0.01/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:59:00 email-threat-docker postfix/qmgr[100]: 4E84331870: removed
+May 13 15:59:00 email-threat-docker postfix/smtpd[3413]: connect from unknown[172.20.0.1]
+May 13 15:59:00 email-threat-docker postfix/smtpd[3413]: 87AF231870: client=unknown[172.20.0.1]
+May 13 15:59:00 email-threat-docker postfix/cleanup[3417]: 87AF231870: message-id=<>
+May 13 15:59:00 email-threat-docker postfix/qmgr[100]: 87AF231870: from=<sender@email-threat-docker.local>, size=447, nrcpt=1 (queue active)
+May 13 15:59:00 email-threat-docker postfix/smtpd[3413]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 13 15:59:00 email-threat-docker postfix/smtp[3418]: 87AF231870: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:59:00 email-threat-docker postfix/qmgr[100]: 87AF231870: removed
+May 13 15:59:00 email-threat-docker postfix/smtpd[3413]: connect from unknown[172.20.0.1]
+May 13 15:59:00 email-threat-docker postfix/smtpd[3413]: C07D031870: client=unknown[172.20.0.1]
+May 13 15:59:00 email-threat-docker postfix/cleanup[3417]: C07D031870: message-id=<>
+May 13 15:59:00 email-threat-docker postfix/qmgr[100]: C07D031870: from=<sender@email-threat-docker.local>, size=437, nrcpt=1 (queue active)
+May 13 15:59:00 email-threat-docker postfix/smtpd[3413]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 13 15:59:00 email-threat-docker postfix/smtp[3418]: C07D031870: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:59:00 email-threat-docker postfix/qmgr[100]: C07D031870: removed
+May 13 15:59:01 email-threat-docker postfix/smtpd[3413]: connect from unknown[172.20.0.1]
+May 13 15:59:01 email-threat-docker postfix/smtpd[3413]: 0CC8031870: client=unknown[172.20.0.1]
+May 13 15:59:01 email-threat-docker postfix/cleanup[3417]: 0CC8031870: message-id=<>
+May 13 15:59:01 email-threat-docker postfix/qmgr[100]: 0CC8031870: from=<sender@email-threat-docker.local>, size=425, nrcpt=1 (queue active)
+May 13 15:59:01 email-threat-docker postfix/smtpd[3413]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 13 15:59:01 email-threat-docker postfix/smtp[3418]: 0CC8031870: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:59:01 email-threat-docker postfix/qmgr[100]: 0CC8031870: removed
+May 13 15:59:01 email-threat-docker postfix/smtpd[3413]: connect from unknown[172.20.0.1]
+May 13 15:59:01 email-threat-docker postfix/smtpd[3413]: 47BDF31870: client=unknown[172.20.0.1]
+May 13 15:59:01 email-threat-docker postfix/cleanup[3417]: 47BDF31870: message-id=<>
+May 13 15:59:01 email-threat-docker postfix/qmgr[100]: 47BDF31870: from=<sender@email-threat-docker.local>, size=434, nrcpt=1 (queue active)
+May 13 15:59:01 email-threat-docker postfix/smtpd[3413]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 13 15:59:01 email-threat-docker postfix/smtp[3418]: 47BDF31870: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.4]:10025, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 13 15:59:01 email-threat-docker postfix/qmgr[100]: 47BDF31870: removed
+May 13 16:44:19 email-threat-docker postfix/postfix-script[73]: warning: group or other writable: /etc/postfix/./main.cf
+May 13 16:44:19 email-threat-docker postfix/postfix-script[74]: warning: group or other writable: /etc/postfix/./master.cf
+May 13 16:44:19 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./transport
+May 13 16:44:19 email-threat-docker postfix/postfix-script[98]: starting the Postfix mail system
+May 13 16:44:19 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 13 17:19:57 email-threat-docker postfix/postfix-script[73]: warning: group or other writable: /etc/postfix/./main.cf
+May 13 17:19:57 email-threat-docker postfix/postfix-script[74]: warning: group or other writable: /etc/postfix/./master.cf
+May 13 17:19:57 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./transport
+May 13 17:19:57 email-threat-docker postfix/postfix-script[99]: starting the Postfix mail system
+May 13 17:19:57 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 13 19:09:49 email-threat-docker postfix/smtpd[727]: connect from unknown[172.20.0.1]
+May 13 19:09:49 email-threat-docker postfix/smtpd[727]: disconnect from unknown[172.20.0.1] ehlo=1 quit=1 commands=2
