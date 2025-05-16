@@ -3,6 +3,7 @@
 Email Threat Scanner with YARA Only
 - Sigma scanning removed for simplicity
 - Docker-optimized paths
+- Logs both quarantined and successfully delivered emails to JSON file
 """
 
 import asyncio
@@ -11,12 +12,12 @@ import os
 import email
 import time
 import yara
-import json 
+import json
 from email.policy import default
 from aiosmtpd.controller import Controller
 from aiosmtpd.smtp import Envelope
 from aiosmtplib import SMTP
-from typing import Dict, Any, List
+from typing import List
 
 # ===================== Configuration =====================
 CONFIG = {
@@ -30,7 +31,7 @@ CONFIG = {
     "json_log": "/var/log/mail_scanner.json",
 }
 
-# ===================== YARA Implementation ===================== 
+# ===================== YARA Implementation =====================
 def load_yara_rules():
     try:
         rule_files = {}
@@ -62,12 +63,17 @@ class EmailScanner:
                 matches = self.yara_rules.match(data=envelope.content)
                 threats.extend(f"YARA:{m.rule}" for m in matches)
 
-            if threats:
-                await self._quarantine_email(envelope, threats)
-                return "250 Message quarantined"
+            msg = email.message_from_bytes(envelope.content, policy=default)
+            ts = int(time.time())
 
-            await self._reinject_email(envelope)
-            return "250 Message delivered"
+            if threats:
+                await self._quarantine_email(envelope, threats, ts, msg)
+                return "250 Message quarantined"
+            else:
+                await self._reinject_email(envelope)
+                await self._log_success(envelope, ts, msg)
+                return "250 Message delivered"
+
         except Exception as e:
             logging.error(f"Processing failed: {str(e)}")
             return "451 Temporary error"
@@ -77,28 +83,41 @@ class EmailScanner:
             await client.sendmail(envelope.mail_from, envelope.rcpt_tos, envelope.original_content)
         logging.info("Email reinjected successfully")
 
-    async def _quarantine_email(self, envelope, threats: List[str]):
+    async def _quarantine_email(self, envelope, threats: List[str], timestamp: int, msg):
         os.makedirs(CONFIG["quarantine_dir"], exist_ok=True)
-        msg = email.message_from_bytes(envelope.content, policy=default)
-        ts = int(time.time())
-        filename = f"quarantine_{ts}_{len(threats)}.eml"
+        filename = f"quarantine_{timestamp}_{len(threats)}.eml"
         filepath = os.path.join(CONFIG["quarantine_dir"], filename)
         with open(filepath, 'wb') as f:
             f.write(envelope.content)
 
         logging.warning(f"Quarantined: {filepath} | Threats: {', '.join(threats)}")
+
         event = {
-            "timestamp": ts,
+            "timestamp": timestamp,
             "sender": envelope.mail_from,
             "recipient": ",".join(envelope.rcpt_tos),
-            "subject":   msg.get("subject",""),        # capture subject
+            "subject": msg.get("subject", ""),
             "yara_hits": threats,
             "quarantined": True
         }
 
         # Append to JSON log
         with open(CONFIG["json_log"], "a") as jf:
-          jf.write(json.dumps(event) + "\n")
+            jf.write(json.dumps(event) + "\n")
+
+    async def _log_success(self, envelope, timestamp: int, msg):
+        event = {
+            "timestamp": timestamp,
+            "sender": envelope.mail_from,
+            "recipient": ",".join(envelope.rcpt_tos),
+            "subject": msg.get("subject", ""),
+            "yara_hits": "no matches",
+            "quarantined": False
+        }
+        # Append to JSON log
+        with open(CONFIG["json_log"], "a") as jf:
+            jf.write(json.dumps(event) + "\n")
+
 # ===================== Main Service =====================
 def main():
     logging.basicConfig(
@@ -123,3 +142,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
