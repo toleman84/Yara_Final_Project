@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Install Postfix and necessary utilities
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends postfix rsyslog && \
+    apt-get install -y --no-install-recommends postfix rsyslog mailutils && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
