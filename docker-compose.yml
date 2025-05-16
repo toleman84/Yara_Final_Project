@@ -1,4 +1,5 @@
 services:
+  # Existing mail components
   postfix:
     build: ./postfix
     container_name: postfix
@@ -42,24 +43,28 @@ services:
       - ./rules:/app/rules:ro
       - quarantine_data:/app/quarantine
       - /etc/localtime:/etc/localtime:ro
+    networks:
+      - threat-net
     restart: unless-stopped
-    networks:
-      - threat-net
-    
-  sigma_scanner:
-    build:
-      context: .
-      dockerfile: sigma_scanner/Dockerfile
-    volumes:
-      - mail_logs:/var/log
-      - ./logs/sigma:/logs/sigma  
-      - /etc/localtime:/etc/localtime:ro
-    environment:
-      - TZ=America/Argentina/Buenos_Aires
-    networks:
-      - threat-net
+
+  sigma_analyzer:
+   build:
+    context: .         
+    dockerfile: sigma_analyzer/Dockerfile
+   container_name: sigma_analyzer
+   volumes:
+     - ./sigma_analyzer:/app:ro 
+     - /etc/localtime:/etc/localtime:ro
+   environment:
+     - TZ=America/Argentina/Buenos_Aires
+   depends_on:
+     - loki
+   restart: unless-stopped
+   networks:
+     - threat-net
 
 
+  # Loki for log aggregation
   loki:
     image: grafana/loki:latest
     container_name: securemail_loki
@@ -71,8 +76,9 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
     networks:
-      threat-net:
+      - threat-net
 
+  # Grafana for dashboards
   grafana:
     image: grafana/grafana:10.1.1
     container_name: grafana
@@ -85,37 +91,36 @@ services:
       - ./grafana/provisioning/notifiers:/etc/grafana/provisioning/notifiers
       - ./grafana/provisioning/alerting:/etc/grafana/provisioning/alerting
       - /etc/localtime:/etc/localtime:ro
-    environment:
-      - GF_SECURITY_ADMIN_PASSWORD=admin # Default password, change in production
-      - GF_USERS_ALLOW_SIGN_UP=false
-      - TZ=America/Argentina/Buenos_Aires
     depends_on:
       - loki
-    restart: unless-stopped
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - TZ=America/Argentina/Buenos_Aires
     networks:
-      threat-net:
+      - threat-net
+    restart: unless-stopped
 
+  # Promtail for shipping logs to Loki
   promtail:
     image: grafana/promtail:2.9.1
     container_name: promtail
+    command: -config.file=/etc/promtail/config.yml
     volumes:
-      # Mount log volumes from other containers
       - ./logs/postfix:/logs/postfix:ro
       - ./logs/scanner:/logs/scanner:ro
       - ./logs/sigma:/logs/sigma:ro
       - ./promtail:/etc/promtail
-      - positions:/tmp # Volume for positions file
+      - positions:/tmp
       - /etc/localtime:/etc/localtime:ro
-    command: -config.file=/etc/promtail/config.yml
     depends_on:
       - loki
-      - postfix # Ensure log volume exists
-      - scanner # Ensure log volume exists
-    restart: unless-stopped
+      - postfix
+      - scanner
     environment:
-      - TZ=America/Argentina/Buenos_Aires 
+      - TZ=America/Argentina/Buenos_Aires
     networks:
-      threat-net:
+      - threat-net
 
 volumes:
   postfix_logs:
@@ -125,6 +130,7 @@ volumes:
   grafana_data:
   positions:
   mail_logs:
+  
 
 networks:
   threat-net:

@@ -1,0 +1,1 @@
+{job=~"eventlog|winlog|windows|fluentbit.*"} | json | (TargetFilename=~`(?i).*\\AppData\\Local\\Temp\\.*` or TargetFilename=~`(?i).*\\Users\\Public\\.*` or TargetFilename=~`(?i).*\\Windows\\Temp\\.*` or TargetFilename=~`(?i).*C:\\Temp\\.*`) and TargetFilename=~`(?i).*\.pub$`

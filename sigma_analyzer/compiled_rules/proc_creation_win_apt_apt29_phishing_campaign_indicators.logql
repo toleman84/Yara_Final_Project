@@ -1,0 +1,1 @@
+{job=~"eventlog|winlog|windows|fluentbit.*"} | json | CommandLine=~`(?i).*\-noni\ \-ep\ bypass\ \$.*` or CommandLine=~`(?i).*cyzfc\.dat,.*` and CommandLine=~`(?i).*PointFunctionCall.*`

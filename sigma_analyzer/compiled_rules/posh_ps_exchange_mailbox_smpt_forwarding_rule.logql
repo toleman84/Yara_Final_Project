@@ -1,0 +1,1 @@
+{job=~"eventlog|winlog|windows|fluentbit.*"} | json | ScriptBlockText=~`(?i).*Set\-Mailbox\ .*` and ScriptBlockText=~`(?i).*\ \-DeliverToMailboxAndForward\ .*` and ScriptBlockText=~`(?i).*\ \-ForwardingSmtpAddress\ .*`

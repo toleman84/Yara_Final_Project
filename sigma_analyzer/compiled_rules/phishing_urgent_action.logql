@@ -1,0 +1,1 @@
+{job=~".+"} |~ `(?i)urgent|verify\ your\ account|click\ here` | line_format "{{.sender}} {{.recipient}} {{.subject}} {{.body}}"

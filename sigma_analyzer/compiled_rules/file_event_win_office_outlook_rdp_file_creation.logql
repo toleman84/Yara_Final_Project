@@ -1,0 +1,1 @@
+{job=~"eventlog|winlog|windows|fluentbit.*"} | json | TargetFilename=~`(?i).*\.rdp$` and (TargetFilename=~`(?i).*\\AppData\\Local\\Packages\\Microsoft\.Outlook_.*` or TargetFilename=~`(?i).*\\AppData\\Local\\Microsoft\\Olk\\Attachments\\.*` or TargetFilename=~`(?i).*\\AppData\\Local\\Microsoft\\Windows\\.*` and TargetFilename=~`(?i).*\\Content\.Outlook\\.*`)

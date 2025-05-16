@@ -1,0 +1,1 @@
+{job=~"eventlog|winlog|windows|fluentbit.*"} | json | ScriptBlockText=~`(?i).*Get\-Inbox\.ps1.*` or ScriptBlockText=~`(?i).*Microsoft\.Office\.Interop\.Outlook.*` or ScriptBlockText=~`(?i).*Microsoft\.Office\.Interop\.Outlook\.olDefaultFolders.*` or ScriptBlockText=~`(?i).*\-comobject\ outlook\.application.*`

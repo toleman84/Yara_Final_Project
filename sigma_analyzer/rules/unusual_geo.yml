@@ -1,0 +1,28 @@
+title: Email from High-Risk Geographic Location
+id: 1e2f4a3b-9c4d-5e6f-7a8b-9c0d1e2f4a3b
+status: experimental
+description: Detects emails originating from high-risk countries.
+author: Your Name
+logsource:
+  product: email
+  service: scanner
+detection:
+  sender_geoip|contains:
+    - "RU"  # Russia
+    - "CN"  # China
+    - "NG"  # Nigeria
+  condition: sender_geoip
+fields:
+  - sender
+  - recipient
+  - sender_geoip
+falsepositives:
+  - Legitimate emails from international branches
+level: medium
+
+# Mock email for testing rule
+# Subject: Partnership Opportunity
+# From: business@ru-domain.com
+# To: sales@yourcompany.com
+#
+# Let’s collaborate on a new venture!

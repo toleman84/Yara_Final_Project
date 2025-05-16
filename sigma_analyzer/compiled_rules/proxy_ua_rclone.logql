@@ -1,0 +1,1 @@
+{job=~".+"} | logfmt | c_useragent=~`(?i)^rclone/v.*` | line_format "{{.c_ip}}"

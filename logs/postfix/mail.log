@@ -23,3 +23,112 @@ May 14 05:01:45 email-threat-docker postfix/postfix-script[74]: warning: group o
 May 14 05:01:45 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./transport
 May 14 05:01:45 email-threat-docker postfix/postfix-script[98]: starting the Postfix mail system
 May 14 05:01:46 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 15 15:13:03 email-threat-docker postfix/postfix-script[73]: warning: group or other writable: /etc/postfix/./main.cf
+May 15 15:13:03 email-threat-docker postfix/postfix-script[74]: warning: group or other writable: /etc/postfix/./master.cf
+May 15 15:13:03 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./transport
+May 15 15:13:03 email-threat-docker postfix/postfix-script[98]: starting the Postfix mail system
+May 15 15:13:03 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 15 15:20:38 email-threat-docker postfix/postfix-script[66]: warning: group or other writable: /etc/postfix/./main.cf
+May 15 15:20:38 email-threat-docker postfix/postfix-script[67]: warning: group or other writable: /etc/postfix/./master.cf
+May 15 15:20:38 email-threat-docker postfix/postfix-script[68]: warning: group or other writable: /etc/postfix/./transport
+May 15 15:20:38 email-threat-docker postfix/postfix-script[91]: starting the Postfix mail system
+May 15 15:20:38 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 15 15:26:54 email-threat-docker postfix/postfix-script[72]: warning: group or other writable: /etc/postfix/./main.cf
+May 15 15:26:54 email-threat-docker postfix/postfix-script[73]: warning: group or other writable: /etc/postfix/./master.cf
+May 15 15:26:54 email-threat-docker postfix/postfix-script[74]: warning: group or other writable: /etc/postfix/./transport
+May 15 15:26:54 email-threat-docker postfix/postfix-script[97]: starting the Postfix mail system
+May 15 15:26:54 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 16 01:18:52 email-threat-docker postfix/postfix-script[66]: warning: group or other writable: /etc/postfix/./main.cf
+May 16 01:18:52 email-threat-docker postfix/postfix-script[67]: warning: group or other writable: /etc/postfix/./master.cf
+May 16 01:18:52 email-threat-docker postfix/postfix-script[68]: warning: group or other writable: /etc/postfix/./transport
+May 16 01:18:52 email-threat-docker postfix/postfix-script[91]: starting the Postfix mail system
+May 16 01:18:52 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 16 02:31:11 email-threat-docker postfix/postfix-script[73]: warning: group or other writable: /etc/postfix/./main.cf
+May 16 02:31:11 email-threat-docker postfix/postfix-script[74]: warning: group or other writable: /etc/postfix/./master.cf
+May 16 02:31:11 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./transport
+May 16 02:31:11 email-threat-docker postfix/postfix-script[98]: starting the Postfix mail system
+May 16 02:31:11 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 16 02:33:15 email-threat-docker postfix/postfix-script[73]: warning: group or other writable: /etc/postfix/./main.cf
+May 16 02:33:15 email-threat-docker postfix/postfix-script[74]: warning: group or other writable: /etc/postfix/./master.cf
+May 16 02:33:15 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./transport
+May 16 02:33:15 email-threat-docker postfix/postfix-script[98]: starting the Postfix mail system
+May 16 02:33:15 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 16 02:36:35 email-threat-docker postfix/postfix-script[73]: warning: group or other writable: /etc/postfix/./main.cf
+May 16 02:36:35 email-threat-docker postfix/postfix-script[74]: warning: group or other writable: /etc/postfix/./master.cf
+May 16 02:36:35 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./transport
+May 16 02:36:35 email-threat-docker postfix/postfix-script[98]: starting the Postfix mail system
+May 16 02:36:35 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 16 02:38:37 email-threat-docker postfix/postfix-script[74]: warning: group or other writable: /etc/postfix/./main.cf
+May 16 02:38:37 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./master.cf
+May 16 02:38:37 email-threat-docker postfix/postfix-script[76]: warning: group or other writable: /etc/postfix/./transport
+May 16 02:38:37 email-threat-docker postfix/postfix-script[99]: starting the Postfix mail system
+May 16 02:38:37 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 16 02:40:00 email-threat-docker postfix/postfix-script[73]: warning: group or other writable: /etc/postfix/./main.cf
+May 16 02:40:00 email-threat-docker postfix/postfix-script[74]: warning: group or other writable: /etc/postfix/./master.cf
+May 16 02:40:00 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./transport
+May 16 02:40:00 email-threat-docker postfix/postfix-script[98]: starting the Postfix mail system
+May 16 02:40:00 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 16 12:53:03 email-threat-docker postfix/postfix-script[66]: warning: group or other writable: /etc/postfix/./main.cf
+May 16 12:53:04 email-threat-docker postfix/postfix-script[67]: warning: group or other writable: /etc/postfix/./master.cf
+May 16 12:53:04 email-threat-docker postfix/postfix-script[68]: warning: group or other writable: /etc/postfix/./transport
+May 16 12:53:04 email-threat-docker postfix/postfix-script[91]: starting the Postfix mail system
+May 16 12:53:04 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 16 13:44:11 email-threat-docker postfix/postfix-script[74]: warning: group or other writable: /etc/postfix/./main.cf
+May 16 13:44:11 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./master.cf
+May 16 13:44:11 email-threat-docker postfix/postfix-script[76]: warning: group or other writable: /etc/postfix/./transport
+May 16 13:44:11 email-threat-docker postfix/postfix-script[99]: starting the Postfix mail system
+May 16 13:44:11 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 16 14:00:34 email-threat-docker postfix/postfix-script[73]: warning: group or other writable: /etc/postfix/./main.cf
+May 16 14:00:34 email-threat-docker postfix/postfix-script[74]: warning: group or other writable: /etc/postfix/./master.cf
+May 16 14:00:34 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./transport
+May 16 14:00:34 email-threat-docker postfix/postfix-script[98]: starting the Postfix mail system
+May 16 14:00:34 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 16 14:07:02 email-threat-docker postfix/pickup[99]: 65CFE5BF67: uid=0 from=<sender@email-threat-docker.local>
+May 16 14:07:02 email-threat-docker postfix/cleanup[655]: 65CFE5BF67: message-id=<20250516140702.65CFE5BF67@email-threat-docker.local>
+May 16 14:07:02 email-threat-docker postfix/qmgr[100]: 65CFE5BF67: from=<sender@email-threat-docker.local>, size=306, nrcpt=1 (queue active)
+May 16 14:07:02 email-threat-docker postfix/smtpd[659]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 16 14:07:02 email-threat-docker postfix/smtpd[659]: 798955BF6E: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 16 14:07:02 email-threat-docker postfix/cleanup[655]: 798955BF6E: message-id=<20250516140702.65CFE5BF67@email-threat-docker.local>
+May 16 14:07:02 email-threat-docker postfix/qmgr[100]: 798955BF6E: from=<sender@email-threat-docker.local>, size=541, nrcpt=1 (queue active)
+May 16 14:07:02 email-threat-docker postfix/smtpd[659]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 16 14:07:02 email-threat-docker postfix/smtp[658]: 65CFE5BF67: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.1, delays=0.04/0.01/0.01/0.05, dsn=2.0.0, status=sent (250 Message delivered)
+May 16 14:07:02 email-threat-docker postfix/qmgr[100]: 65CFE5BF67: removed
+May 16 14:07:02 email-threat-docker postfix/local[660]: warning: dict_nis_init: NIS domain name not set - NIS lookups disabled
+May 16 14:07:02 email-threat-docker postfix/local[660]: 798955BF6E: to=<recipient@email-threat-docker.local>, relay=local, delay=0.02, delays=0.01/0.01/0/0.01, dsn=2.0.0, status=sent (delivered to mailbox)
+May 16 14:07:02 email-threat-docker postfix/qmgr[100]: 798955BF6E: removed
+May 16 14:07:17 email-threat-docker postfix/postfix-script[65]: warning: group or other writable: /etc/postfix/./main.cf
+May 16 14:07:17 email-threat-docker postfix/postfix-script[66]: warning: group or other writable: /etc/postfix/./master.cf
+May 16 14:07:17 email-threat-docker postfix/postfix-script[67]: warning: group or other writable: /etc/postfix/./transport
+May 16 14:07:17 email-threat-docker postfix/postfix-script[90]: starting the Postfix mail system
+May 16 14:07:17 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 16 14:07:35 email-threat-docker postfix/pickup[91]: 2A17D5BF25: uid=0 from=<sender@email-threat-docker.local>
+May 16 14:07:35 email-threat-docker postfix/cleanup[125]: 2A17D5BF25: message-id=<20250516140735.2A17D5BF25@email-threat-docker.local>
+May 16 14:07:35 email-threat-docker postfix/qmgr[92]: 2A17D5BF25: from=<sender@email-threat-docker.local>, size=306, nrcpt=1 (queue active)
+May 16 14:07:35 email-threat-docker postfix/smtpd[128]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 16 14:07:35 email-threat-docker postfix/smtpd[128]: 3A6635BEB7: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 16 14:07:35 email-threat-docker postfix/cleanup[125]: 3A6635BEB7: message-id=<20250516140735.2A17D5BF25@email-threat-docker.local>
+May 16 14:07:35 email-threat-docker postfix/qmgr[92]: 3A6635BEB7: from=<sender@email-threat-docker.local>, size=541, nrcpt=1 (queue active)
+May 16 14:07:35 email-threat-docker postfix/smtpd[128]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 16 14:07:35 email-threat-docker postfix/smtp[127]: 2A17D5BF25: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.09, delays=0.03/0.01/0.01/0.04, dsn=2.0.0, status=sent (250 Message delivered)
+May 16 14:07:35 email-threat-docker postfix/qmgr[92]: 2A17D5BF25: removed
+May 16 14:07:35 email-threat-docker postfix/local[129]: warning: dict_nis_init: NIS domain name not set - NIS lookups disabled
+May 16 14:07:35 email-threat-docker postfix/local[129]: 3A6635BEB7: to=<recipient@email-threat-docker.local>, relay=local, delay=0.02, delays=0.01/0.01/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+May 16 14:07:35 email-threat-docker postfix/qmgr[92]: 3A6635BEB7: removed
+May 16 14:09:06 email-threat-docker postfix/postfix-script[73]: warning: group or other writable: /etc/postfix/./main.cf
+May 16 14:09:06 email-threat-docker postfix/postfix-script[74]: warning: group or other writable: /etc/postfix/./master.cf
+May 16 14:09:06 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./transport
+May 16 14:09:06 email-threat-docker postfix/postfix-script[98]: starting the Postfix mail system
+May 16 14:09:06 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 16 14:09:20 email-threat-docker postfix/pickup[99]: EBBAE5BF4D: uid=0 from=<sender@email-threat-docker.local>
+May 16 14:09:20 email-threat-docker postfix/cleanup[134]: EBBAE5BF4D: message-id=<20250516140920.EBBAE5BF4D@email-threat-docker.local>
+May 16 14:09:20 email-threat-docker postfix/qmgr[100]: EBBAE5BF4D: from=<sender@email-threat-docker.local>, size=306, nrcpt=1 (queue active)
+May 16 14:09:21 email-threat-docker postfix/smtpd[137]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 16 14:09:21 email-threat-docker postfix/smtpd[137]: 122FF5BF54: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 16 14:09:21 email-threat-docker postfix/cleanup[134]: 122FF5BF54: message-id=<20250516140920.EBBAE5BF4D@email-threat-docker.local>
+May 16 14:09:21 email-threat-docker postfix/qmgr[100]: 122FF5BF54: from=<sender@email-threat-docker.local>, size=541, nrcpt=1 (queue active)
+May 16 14:09:21 email-threat-docker postfix/smtpd[137]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 16 14:09:21 email-threat-docker postfix/smtp[136]: EBBAE5BF4D: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.15, delays=0.05/0.02/0.02/0.06, dsn=2.0.0, status=sent (250 Message delivered)
+May 16 14:09:21 email-threat-docker postfix/qmgr[100]: EBBAE5BF4D: removed
+May 16 14:09:21 email-threat-docker postfix/local[138]: warning: dict_nis_init: NIS domain name not set - NIS lookups disabled
+May 16 14:09:21 email-threat-docker postfix/local[138]: 122FF5BF54: to=<recipient@email-threat-docker.local>, relay=local, delay=0.03, delays=0.01/0.02/0/0.01, dsn=2.0.0, status=sent (delivered to mailbox)
+May 16 14:09:21 email-threat-docker postfix/qmgr[100]: 122FF5BF54: removed

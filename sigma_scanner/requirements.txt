@@ -1,5 +1,0 @@
-yara-python==4.3.1
-python-magic==0.4.27
-ruamel.yaml==0.17.21
-python-json-logger==2.0.7
-pysigma[python-backend]==0.11.23

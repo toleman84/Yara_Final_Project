@@ -285,3 +285,1823 @@
 2025-05-14 02:04:06,698 [INFO] ('172.20.0.1', 44016) >> b'QUIT'
 2025-05-14 02:04:06,699 [INFO] ('172.20.0.1', 44016) connection lost
 2025-05-14 02:04:06,700 [INFO] ('172.20.0.1', 44016) Connection lost during _handle_client()
+2025-05-15 12:13:06,235 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-15 12:13:06,250 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:13:06,251 [INFO] Peer: ('127.0.0.1', 48908)
+2025-05-15 12:13:06,252 [INFO] ('127.0.0.1', 48908) handling connection
+2025-05-15 12:13:06,253 [INFO] ('127.0.0.1', 48908) EOF received
+2025-05-15 12:13:06,254 [INFO] ('127.0.0.1', 48908) Connection lost during _handle_client()
+2025-05-15 12:13:06,255 [INFO] ('127.0.0.1', 48908) connection lost
+2025-05-15 12:20:43,178 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-15 12:20:43,200 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:20:43,201 [INFO] Peer: ('127.0.0.1', 60812)
+2025-05-15 12:20:43,202 [INFO] ('127.0.0.1', 60812) handling connection
+2025-05-15 12:20:43,203 [INFO] ('127.0.0.1', 60812) EOF received
+2025-05-15 12:20:43,204 [INFO] ('127.0.0.1', 60812) Connection lost during _handle_client()
+2025-05-15 12:20:43,205 [INFO] ('127.0.0.1', 60812) connection lost
+2025-05-15 12:26:58,338 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-15 12:26:58,353 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:26:58,354 [INFO] Peer: ('127.0.0.1', 47278)
+2025-05-15 12:26:58,355 [INFO] ('127.0.0.1', 47278) handling connection
+2025-05-15 12:26:58,356 [INFO] ('127.0.0.1', 47278) EOF received
+2025-05-15 12:26:58,357 [INFO] ('127.0.0.1', 47278) Connection lost during _handle_client()
+2025-05-15 12:26:58,358 [INFO] ('127.0.0.1', 47278) connection lost
+2025-05-15 12:30:25,978 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:30:25,980 [INFO] Peer: ('172.20.0.1', 37998)
+2025-05-15 12:30:25,981 [INFO] ('172.20.0.1', 37998) handling connection
+2025-05-15 12:30:27,331 [INFO] ('172.20.0.1', 37998) >> b'ehlo [192.168.48.1]'
+2025-05-15 12:30:27,336 [INFO] ('172.20.0.1', 37998) >> b'mail from:<sender@email-threat-docker.local> size=230'
+2025-05-15 12:30:27,339 [INFO] ('172.20.0.1', 37998) sender: sender@email-threat-docker.local
+2025-05-15 12:30:27,342 [INFO] ('172.20.0.1', 37998) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:30:27,344 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:30:27,344 [INFO] ('172.20.0.1', 37998) recip: recipient@email-threat-docker.local
+2025-05-15 12:30:27,348 [INFO] ('172.20.0.1', 37998) >> b'data'
+2025-05-15 12:30:27,365 [WARNING] Quarantined: /app/quarantine/quarantine_1747323027_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:30:27,373 [INFO] ('172.20.0.1', 37998) >> b'QUIT'
+2025-05-15 12:30:27,374 [INFO] ('172.20.0.1', 37998) connection lost
+2025-05-15 12:30:27,376 [INFO] ('172.20.0.1', 37998) Connection lost during _handle_client()
+2025-05-15 12:30:27,485 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:30:27,487 [INFO] Peer: ('172.20.0.1', 38004)
+2025-05-15 12:30:27,488 [INFO] ('172.20.0.1', 38004) handling connection
+2025-05-15 12:30:28,425 [INFO] ('172.20.0.1', 38004) >> b'ehlo [192.168.48.1]'
+2025-05-15 12:30:28,429 [INFO] ('172.20.0.1', 38004) >> b'mail from:<sender@email-threat-docker.local> size=218'
+2025-05-15 12:30:28,430 [INFO] ('172.20.0.1', 38004) sender: sender@email-threat-docker.local
+2025-05-15 12:30:28,433 [INFO] ('172.20.0.1', 38004) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:30:28,434 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:30:28,435 [INFO] ('172.20.0.1', 38004) recip: recipient@email-threat-docker.local
+2025-05-15 12:30:28,438 [INFO] ('172.20.0.1', 38004) >> b'data'
+2025-05-15 12:30:28,446 [WARNING] Quarantined: /app/quarantine/quarantine_1747323028_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:30:28,452 [INFO] ('172.20.0.1', 38004) >> b'QUIT'
+2025-05-15 12:30:28,454 [INFO] ('172.20.0.1', 38004) connection lost
+2025-05-15 12:30:28,455 [INFO] ('172.20.0.1', 38004) Connection lost during _handle_client()
+2025-05-15 12:30:28,561 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:30:28,562 [INFO] Peer: ('172.20.0.1', 38016)
+2025-05-15 12:30:28,563 [INFO] ('172.20.0.1', 38016) handling connection
+2025-05-15 12:30:29,478 [INFO] ('172.20.0.1', 38016) >> b'ehlo [192.168.48.1]'
+2025-05-15 12:30:29,484 [INFO] ('172.20.0.1', 38016) >> b'mail from:<sender@email-threat-docker.local> size=228'
+2025-05-15 12:30:29,485 [INFO] ('172.20.0.1', 38016) sender: sender@email-threat-docker.local
+2025-05-15 12:30:29,488 [INFO] ('172.20.0.1', 38016) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:30:29,489 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:30:29,490 [INFO] ('172.20.0.1', 38016) recip: recipient@email-threat-docker.local
+2025-05-15 12:30:29,493 [INFO] ('172.20.0.1', 38016) >> b'data'
+2025-05-15 12:30:29,500 [WARNING] Quarantined: /app/quarantine/quarantine_1747323029_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:30:29,509 [INFO] ('172.20.0.1', 38016) >> b'QUIT'
+2025-05-15 12:30:29,511 [INFO] ('172.20.0.1', 38016) connection lost
+2025-05-15 12:30:29,512 [INFO] ('172.20.0.1', 38016) Connection lost during _handle_client()
+2025-05-15 12:30:29,621 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:30:29,622 [INFO] Peer: ('172.20.0.1', 38026)
+2025-05-15 12:30:29,624 [INFO] ('172.20.0.1', 38026) handling connection
+2025-05-15 12:30:30,490 [INFO] ('172.20.0.1', 38026) >> b'ehlo [192.168.48.1]'
+2025-05-15 12:30:30,494 [INFO] ('172.20.0.1', 38026) >> b'mail from:<sender@email-threat-docker.local> size=222'
+2025-05-15 12:30:30,495 [INFO] ('172.20.0.1', 38026) sender: sender@email-threat-docker.local
+2025-05-15 12:30:30,498 [INFO] ('172.20.0.1', 38026) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:30:30,499 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:30:30,499 [INFO] ('172.20.0.1', 38026) recip: recipient@email-threat-docker.local
+2025-05-15 12:30:30,502 [INFO] ('172.20.0.1', 38026) >> b'data'
+2025-05-15 12:30:30,508 [WARNING] Quarantined: /app/quarantine/quarantine_1747323030_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:30:30,514 [INFO] ('172.20.0.1', 38026) >> b'QUIT'
+2025-05-15 12:30:30,515 [INFO] ('172.20.0.1', 38026) connection lost
+2025-05-15 12:30:30,516 [INFO] ('172.20.0.1', 38026) Connection lost during _handle_client()
+2025-05-15 12:30:30,622 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:30:30,624 [INFO] Peer: ('172.20.0.1', 38032)
+2025-05-15 12:30:30,625 [INFO] ('172.20.0.1', 38032) handling connection
+2025-05-15 12:30:31,496 [INFO] ('172.20.0.1', 38032) >> b'ehlo [192.168.48.1]'
+2025-05-15 12:30:31,500 [INFO] ('172.20.0.1', 38032) >> b'mail from:<sender@email-threat-docker.local> size=231'
+2025-05-15 12:30:31,501 [INFO] ('172.20.0.1', 38032) sender: sender@email-threat-docker.local
+2025-05-15 12:30:31,504 [INFO] ('172.20.0.1', 38032) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:30:31,505 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:30:31,506 [INFO] ('172.20.0.1', 38032) recip: recipient@email-threat-docker.local
+2025-05-15 12:30:31,509 [INFO] ('172.20.0.1', 38032) >> b'data'
+2025-05-15 12:30:31,516 [WARNING] Quarantined: /app/quarantine/quarantine_1747323031_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:30:31,523 [INFO] ('172.20.0.1', 38032) >> b'QUIT'
+2025-05-15 12:30:31,524 [INFO] ('172.20.0.1', 38032) connection lost
+2025-05-15 12:30:31,525 [INFO] ('172.20.0.1', 38032) Connection lost during _handle_client()
+2025-05-15 12:30:31,632 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:30:31,633 [INFO] Peer: ('172.20.0.1', 38046)
+2025-05-15 12:30:31,635 [INFO] ('172.20.0.1', 38046) handling connection
+2025-05-15 12:30:32,581 [INFO] ('172.20.0.1', 38046) >> b'ehlo [192.168.48.1]'
+2025-05-15 12:30:32,586 [INFO] ('172.20.0.1', 38046) >> b'mail from:<sender@email-threat-docker.local> size=228'
+2025-05-15 12:30:32,588 [INFO] ('172.20.0.1', 38046) sender: sender@email-threat-docker.local
+2025-05-15 12:30:32,591 [INFO] ('172.20.0.1', 38046) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:30:32,592 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:30:32,593 [INFO] ('172.20.0.1', 38046) recip: recipient@email-threat-docker.local
+2025-05-15 12:30:32,596 [INFO] ('172.20.0.1', 38046) >> b'data'
+2025-05-15 12:30:32,603 [WARNING] Quarantined: /app/quarantine/quarantine_1747323032_5.eml | Threats: YARA:without_attachments, YARA:domain, YARA:without_images, YARA:url, YARA:with_urls
+2025-05-15 12:30:32,611 [INFO] ('172.20.0.1', 38046) >> b'QUIT'
+2025-05-15 12:30:32,612 [INFO] ('172.20.0.1', 38046) connection lost
+2025-05-15 12:30:32,614 [INFO] ('172.20.0.1', 38046) Connection lost during _handle_client()
+2025-05-15 12:30:32,721 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:30:32,722 [INFO] Peer: ('172.20.0.1', 38050)
+2025-05-15 12:30:32,723 [INFO] ('172.20.0.1', 38050) handling connection
+2025-05-15 12:30:33,587 [INFO] ('172.20.0.1', 38050) >> b'ehlo [192.168.48.1]'
+2025-05-15 12:30:33,592 [INFO] ('172.20.0.1', 38050) >> b'mail from:<sender@email-threat-docker.local> size=233'
+2025-05-15 12:30:33,593 [INFO] ('172.20.0.1', 38050) sender: sender@email-threat-docker.local
+2025-05-15 12:30:33,595 [INFO] ('172.20.0.1', 38050) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:30:33,597 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:30:33,598 [INFO] ('172.20.0.1', 38050) recip: recipient@email-threat-docker.local
+2025-05-15 12:30:33,600 [INFO] ('172.20.0.1', 38050) >> b'data'
+2025-05-15 12:30:33,607 [WARNING] Quarantined: /app/quarantine/quarantine_1747323033_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:30:33,614 [INFO] ('172.20.0.1', 38050) >> b'QUIT'
+2025-05-15 12:30:33,615 [INFO] ('172.20.0.1', 38050) connection lost
+2025-05-15 12:30:33,616 [INFO] ('172.20.0.1', 38050) Connection lost during _handle_client()
+2025-05-15 12:30:33,723 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:30:33,724 [INFO] Peer: ('172.20.0.1', 38066)
+2025-05-15 12:30:33,725 [INFO] ('172.20.0.1', 38066) handling connection
+2025-05-15 12:30:34,676 [INFO] ('172.20.0.1', 38066) >> b'ehlo [192.168.48.1]'
+2025-05-15 12:30:34,681 [INFO] ('172.20.0.1', 38066) >> b'mail from:<sender@email-threat-docker.local> size=599'
+2025-05-15 12:30:34,683 [INFO] ('172.20.0.1', 38066) sender: sender@email-threat-docker.local
+2025-05-15 12:30:34,685 [INFO] ('172.20.0.1', 38066) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:30:34,686 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:30:34,688 [INFO] ('172.20.0.1', 38066) recip: recipient@email-threat-docker.local
+2025-05-15 12:30:34,690 [INFO] ('172.20.0.1', 38066) >> b'data'
+2025-05-15 12:30:34,699 [WARNING] Quarantined: /app/quarantine/quarantine_1747323034_3.eml | Threats: YARA:executable_attachment, YARA:without_images, YARA:without_urls
+2025-05-15 12:30:34,706 [INFO] ('172.20.0.1', 38066) >> b'QUIT'
+2025-05-15 12:30:34,709 [INFO] ('172.20.0.1', 38066) connection lost
+2025-05-15 12:30:34,710 [INFO] ('172.20.0.1', 38066) Connection lost during _handle_client()
+2025-05-15 12:30:34,817 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:30:34,818 [INFO] Peer: ('172.20.0.1', 56696)
+2025-05-15 12:30:34,819 [INFO] ('172.20.0.1', 56696) handling connection
+2025-05-15 12:30:35,787 [INFO] ('172.20.0.1', 56696) >> b'ehlo [192.168.48.1]'
+2025-05-15 12:30:35,791 [INFO] ('172.20.0.1', 56696) >> b'mail from:<sender@email-threat-docker.local> size=221'
+2025-05-15 12:30:35,792 [INFO] ('172.20.0.1', 56696) sender: sender@email-threat-docker.local
+2025-05-15 12:30:35,795 [INFO] ('172.20.0.1', 56696) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:30:35,796 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:30:35,797 [INFO] ('172.20.0.1', 56696) recip: recipient@email-threat-docker.local
+2025-05-15 12:30:35,801 [INFO] ('172.20.0.1', 56696) >> b'data'
+2025-05-15 12:30:35,808 [WARNING] Quarantined: /app/quarantine/quarantine_1747323035_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:30:35,815 [INFO] ('172.20.0.1', 56696) >> b'QUIT'
+2025-05-15 12:30:35,816 [INFO] ('172.20.0.1', 56696) connection lost
+2025-05-15 12:30:35,817 [INFO] ('172.20.0.1', 56696) Connection lost during _handle_client()
+2025-05-15 12:30:35,924 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:30:35,925 [INFO] Peer: ('172.20.0.1', 56700)
+2025-05-15 12:30:35,927 [INFO] ('172.20.0.1', 56700) handling connection
+2025-05-15 12:30:36,901 [INFO] ('172.20.0.1', 56700) >> b'ehlo [192.168.48.1]'
+2025-05-15 12:30:36,906 [INFO] ('172.20.0.1', 56700) >> b'mail from:<sender@email-threat-docker.local> size=220'
+2025-05-15 12:30:36,908 [INFO] ('172.20.0.1', 56700) sender: sender@email-threat-docker.local
+2025-05-15 12:30:36,912 [INFO] ('172.20.0.1', 56700) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:30:36,914 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:30:36,915 [INFO] ('172.20.0.1', 56700) recip: recipient@email-threat-docker.local
+2025-05-15 12:30:36,918 [INFO] ('172.20.0.1', 56700) >> b'data'
+2025-05-15 12:30:36,930 [WARNING] Quarantined: /app/quarantine/quarantine_1747323036_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:30:36,943 [INFO] ('172.20.0.1', 56700) >> b'QUIT'
+2025-05-15 12:30:36,945 [INFO] ('172.20.0.1', 56700) connection lost
+2025-05-15 12:30:36,947 [INFO] ('172.20.0.1', 56700) Connection lost during _handle_client()
+2025-05-15 12:30:37,055 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:30:37,056 [INFO] Peer: ('172.20.0.1', 56704)
+2025-05-15 12:30:37,057 [INFO] ('172.20.0.1', 56704) handling connection
+2025-05-15 12:30:37,998 [INFO] ('172.20.0.1', 56704) >> b'ehlo [192.168.48.1]'
+2025-05-15 12:30:38,004 [INFO] ('172.20.0.1', 56704) >> b'mail from:<sender@email-threat-docker.local> size=231'
+2025-05-15 12:30:38,005 [INFO] ('172.20.0.1', 56704) sender: sender@email-threat-docker.local
+2025-05-15 12:30:38,008 [INFO] ('172.20.0.1', 56704) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:30:38,009 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:30:38,010 [INFO] ('172.20.0.1', 56704) recip: recipient@email-threat-docker.local
+2025-05-15 12:30:38,012 [INFO] ('172.20.0.1', 56704) >> b'data'
+2025-05-15 12:30:38,020 [WARNING] Quarantined: /app/quarantine/quarantine_1747323038_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:30:38,026 [INFO] ('172.20.0.1', 56704) >> b'QUIT'
+2025-05-15 12:30:38,027 [INFO] ('172.20.0.1', 56704) connection lost
+2025-05-15 12:30:38,029 [INFO] ('172.20.0.1', 56704) Connection lost during _handle_client()
+2025-05-15 12:30:38,136 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:30:38,137 [INFO] Peer: ('172.20.0.1', 56708)
+2025-05-15 12:30:38,138 [INFO] ('172.20.0.1', 56708) handling connection
+2025-05-15 12:30:39,078 [INFO] ('172.20.0.1', 56708) >> b'ehlo [192.168.48.1]'
+2025-05-15 12:30:39,082 [INFO] ('172.20.0.1', 56708) >> b'mail from:<sender@email-threat-docker.local> size=235'
+2025-05-15 12:30:39,083 [INFO] ('172.20.0.1', 56708) sender: sender@email-threat-docker.local
+2025-05-15 12:30:39,086 [INFO] ('172.20.0.1', 56708) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:30:39,087 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:30:39,088 [INFO] ('172.20.0.1', 56708) recip: recipient@email-threat-docker.local
+2025-05-15 12:30:39,090 [INFO] ('172.20.0.1', 56708) >> b'data'
+2025-05-15 12:30:39,096 [WARNING] Quarantined: /app/quarantine/quarantine_1747323039_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:30:39,102 [INFO] ('172.20.0.1', 56708) >> b'QUIT'
+2025-05-15 12:30:39,103 [INFO] ('172.20.0.1', 56708) connection lost
+2025-05-15 12:30:39,105 [INFO] ('172.20.0.1', 56708) Connection lost during _handle_client()
+2025-05-15 12:30:39,211 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:30:39,213 [INFO] Peer: ('172.20.0.1', 56720)
+2025-05-15 12:30:39,214 [INFO] ('172.20.0.1', 56720) handling connection
+2025-05-15 12:30:40,080 [INFO] ('172.20.0.1', 56720) >> b'ehlo [192.168.48.1]'
+2025-05-15 12:30:40,083 [INFO] ('172.20.0.1', 56720) >> b'mail from:<sender@email-threat-docker.local> size=232'
+2025-05-15 12:30:40,084 [INFO] ('172.20.0.1', 56720) sender: sender@email-threat-docker.local
+2025-05-15 12:30:40,087 [INFO] ('172.20.0.1', 56720) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:30:40,088 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:30:40,088 [INFO] ('172.20.0.1', 56720) recip: recipient@email-threat-docker.local
+2025-05-15 12:30:40,090 [INFO] ('172.20.0.1', 56720) >> b'data'
+2025-05-15 12:30:40,097 [WARNING] Quarantined: /app/quarantine/quarantine_1747323040_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:30:40,103 [INFO] ('172.20.0.1', 56720) >> b'QUIT'
+2025-05-15 12:30:40,104 [INFO] ('172.20.0.1', 56720) connection lost
+2025-05-15 12:30:40,105 [INFO] ('172.20.0.1', 56720) Connection lost during _handle_client()
+2025-05-15 12:30:40,212 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:30:40,213 [INFO] Peer: ('172.20.0.1', 56734)
+2025-05-15 12:30:40,214 [INFO] ('172.20.0.1', 56734) handling connection
+2025-05-15 12:30:41,081 [INFO] ('172.20.0.1', 56734) >> b'ehlo [192.168.48.1]'
+2025-05-15 12:30:41,084 [INFO] ('172.20.0.1', 56734) >> b'mail from:<sender@email-threat-docker.local> size=219'
+2025-05-15 12:30:41,085 [INFO] ('172.20.0.1', 56734) sender: sender@email-threat-docker.local
+2025-05-15 12:30:41,088 [INFO] ('172.20.0.1', 56734) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:30:41,089 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:30:41,089 [INFO] ('172.20.0.1', 56734) recip: recipient@email-threat-docker.local
+2025-05-15 12:30:41,092 [INFO] ('172.20.0.1', 56734) >> b'data'
+2025-05-15 12:30:41,098 [WARNING] Quarantined: /app/quarantine/quarantine_1747323041_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:30:41,103 [INFO] ('172.20.0.1', 56734) >> b'QUIT'
+2025-05-15 12:30:41,104 [INFO] ('172.20.0.1', 56734) connection lost
+2025-05-15 12:30:41,105 [INFO] ('172.20.0.1', 56734) Connection lost during _handle_client()
+2025-05-15 12:30:41,212 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:30:41,213 [INFO] Peer: ('172.20.0.1', 56738)
+2025-05-15 12:30:41,214 [INFO] ('172.20.0.1', 56738) handling connection
+2025-05-15 12:30:42,084 [INFO] ('172.20.0.1', 56738) >> b'ehlo [192.168.48.1]'
+2025-05-15 12:30:42,088 [INFO] ('172.20.0.1', 56738) >> b'mail from:<sender@email-threat-docker.local> size=233'
+2025-05-15 12:30:42,089 [INFO] ('172.20.0.1', 56738) sender: sender@email-threat-docker.local
+2025-05-15 12:30:42,092 [INFO] ('172.20.0.1', 56738) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:30:42,093 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:30:42,094 [INFO] ('172.20.0.1', 56738) recip: recipient@email-threat-docker.local
+2025-05-15 12:30:42,097 [INFO] ('172.20.0.1', 56738) >> b'data'
+2025-05-15 12:30:42,104 [WARNING] Quarantined: /app/quarantine/quarantine_1747323042_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:30:42,111 [INFO] ('172.20.0.1', 56738) >> b'QUIT'
+2025-05-15 12:30:42,112 [INFO] ('172.20.0.1', 56738) connection lost
+2025-05-15 12:30:42,114 [INFO] ('172.20.0.1', 56738) Connection lost during _handle_client()
+2025-05-15 12:30:42,221 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:30:42,222 [INFO] Peer: ('172.20.0.1', 56746)
+2025-05-15 12:30:42,224 [INFO] ('172.20.0.1', 56746) handling connection
+2025-05-15 12:30:43,088 [INFO] ('172.20.0.1', 56746) >> b'ehlo [192.168.48.1]'
+2025-05-15 12:30:43,092 [INFO] ('172.20.0.1', 56746) >> b'mail from:<sender@email-threat-docker.local> size=235'
+2025-05-15 12:30:43,093 [INFO] ('172.20.0.1', 56746) sender: sender@email-threat-docker.local
+2025-05-15 12:30:43,096 [INFO] ('172.20.0.1', 56746) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:30:43,096 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:30:43,097 [INFO] ('172.20.0.1', 56746) recip: recipient@email-threat-docker.local
+2025-05-15 12:30:43,100 [INFO] ('172.20.0.1', 56746) >> b'data'
+2025-05-15 12:30:43,107 [WARNING] Quarantined: /app/quarantine/quarantine_1747323043_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:30:43,112 [INFO] ('172.20.0.1', 56746) >> b'QUIT'
+2025-05-15 12:30:43,114 [INFO] ('172.20.0.1', 56746) connection lost
+2025-05-15 12:30:43,115 [INFO] ('172.20.0.1', 56746) Connection lost during _handle_client()
+2025-05-15 12:30:43,222 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:30:43,223 [INFO] Peer: ('172.20.0.1', 56756)
+2025-05-15 12:30:43,224 [INFO] ('172.20.0.1', 56756) handling connection
+2025-05-15 12:30:44,088 [INFO] ('172.20.0.1', 56756) >> b'ehlo [192.168.48.1]'
+2025-05-15 12:30:44,092 [INFO] ('172.20.0.1', 56756) >> b'mail from:<sender@email-threat-docker.local> size=223'
+2025-05-15 12:30:44,093 [INFO] ('172.20.0.1', 56756) sender: sender@email-threat-docker.local
+2025-05-15 12:30:44,097 [INFO] ('172.20.0.1', 56756) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:30:44,098 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:30:44,099 [INFO] ('172.20.0.1', 56756) recip: recipient@email-threat-docker.local
+2025-05-15 12:30:44,102 [INFO] ('172.20.0.1', 56756) >> b'data'
+2025-05-15 12:30:44,110 [WARNING] Quarantined: /app/quarantine/quarantine_1747323044_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:30:44,117 [INFO] ('172.20.0.1', 56756) >> b'QUIT'
+2025-05-15 12:30:44,118 [INFO] ('172.20.0.1', 56756) connection lost
+2025-05-15 12:30:44,119 [INFO] ('172.20.0.1', 56756) Connection lost during _handle_client()
+2025-05-15 12:30:44,228 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:30:44,229 [INFO] Peer: ('172.20.0.1', 56770)
+2025-05-15 12:30:44,231 [INFO] ('172.20.0.1', 56770) handling connection
+2025-05-15 12:30:45,178 [INFO] ('172.20.0.1', 56770) >> b'ehlo [192.168.48.1]'
+2025-05-15 12:30:45,182 [INFO] ('172.20.0.1', 56770) >> b'mail from:<sender@email-threat-docker.local> size=232'
+2025-05-15 12:30:45,185 [INFO] ('172.20.0.1', 56770) sender: sender@email-threat-docker.local
+2025-05-15 12:30:45,188 [INFO] ('172.20.0.1', 56770) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:30:45,190 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:30:45,191 [INFO] ('172.20.0.1', 56770) recip: recipient@email-threat-docker.local
+2025-05-15 12:30:45,194 [INFO] ('172.20.0.1', 56770) >> b'data'
+2025-05-15 12:30:45,205 [WARNING] Quarantined: /app/quarantine/quarantine_1747323045_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:30:45,215 [INFO] ('172.20.0.1', 56770) >> b'QUIT'
+2025-05-15 12:30:45,216 [INFO] ('172.20.0.1', 56770) connection lost
+2025-05-15 12:30:45,218 [INFO] ('172.20.0.1', 56770) Connection lost during _handle_client()
+2025-05-15 12:30:45,325 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:30:45,327 [INFO] Peer: ('172.20.0.1', 57846)
+2025-05-15 12:30:45,328 [INFO] ('172.20.0.1', 57846) handling connection
+2025-05-15 12:30:46,188 [INFO] ('172.20.0.1', 57846) >> b'ehlo [192.168.48.1]'
+2025-05-15 12:30:46,192 [INFO] ('172.20.0.1', 57846) >> b'mail from:<sender@email-threat-docker.local> size=233'
+2025-05-15 12:30:46,193 [INFO] ('172.20.0.1', 57846) sender: sender@email-threat-docker.local
+2025-05-15 12:30:46,196 [INFO] ('172.20.0.1', 57846) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:30:46,197 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:30:46,198 [INFO] ('172.20.0.1', 57846) recip: recipient@email-threat-docker.local
+2025-05-15 12:30:46,201 [INFO] ('172.20.0.1', 57846) >> b'data'
+2025-05-15 12:30:46,208 [WARNING] Quarantined: /app/quarantine/quarantine_1747323046_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:30:46,214 [INFO] ('172.20.0.1', 57846) >> b'QUIT'
+2025-05-15 12:30:46,216 [INFO] ('172.20.0.1', 57846) connection lost
+2025-05-15 12:30:46,217 [INFO] ('172.20.0.1', 57846) Connection lost during _handle_client()
+2025-05-15 12:30:46,323 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:30:46,324 [INFO] Peer: ('172.20.0.1', 57854)
+2025-05-15 12:30:46,326 [INFO] ('172.20.0.1', 57854) handling connection
+2025-05-15 12:30:47,197 [INFO] ('172.20.0.1', 57854) >> b'ehlo [192.168.48.1]'
+2025-05-15 12:30:47,201 [INFO] ('172.20.0.1', 57854) >> b'mail from:<sender@email-threat-docker.local> size=224'
+2025-05-15 12:30:47,202 [INFO] ('172.20.0.1', 57854) sender: sender@email-threat-docker.local
+2025-05-15 12:30:47,204 [INFO] ('172.20.0.1', 57854) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:30:47,206 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:30:47,206 [INFO] ('172.20.0.1', 57854) recip: recipient@email-threat-docker.local
+2025-05-15 12:30:47,209 [INFO] ('172.20.0.1', 57854) >> b'data'
+2025-05-15 12:30:47,215 [WARNING] Quarantined: /app/quarantine/quarantine_1747323047_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:30:47,220 [INFO] ('172.20.0.1', 57854) >> b'QUIT'
+2025-05-15 12:30:47,222 [INFO] ('172.20.0.1', 57854) connection lost
+2025-05-15 12:30:47,223 [INFO] ('172.20.0.1', 57854) Connection lost during _handle_client()
+2025-05-15 12:59:00,386 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:00,389 [INFO] Peer: ('172.20.0.1', 46008)
+2025-05-15 12:59:00,390 [INFO] ('172.20.0.1', 46008) handling connection
+2025-05-15 12:59:01,716 [INFO] ('172.20.0.1', 46008) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:01,720 [INFO] ('172.20.0.1', 46008) >> b'mail from:<sender@email-threat-docker.local> size=230'
+2025-05-15 12:59:01,721 [INFO] ('172.20.0.1', 46008) sender: sender@email-threat-docker.local
+2025-05-15 12:59:01,723 [INFO] ('172.20.0.1', 46008) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:01,724 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:01,725 [INFO] ('172.20.0.1', 46008) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:01,727 [INFO] ('172.20.0.1', 46008) >> b'data'
+2025-05-15 12:59:01,738 [WARNING] Quarantined: /app/quarantine/quarantine_1747324741_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:59:01,743 [INFO] ('172.20.0.1', 46008) >> b'QUIT'
+2025-05-15 12:59:01,744 [INFO] ('172.20.0.1', 46008) connection lost
+2025-05-15 12:59:01,746 [INFO] ('172.20.0.1', 46008) Connection lost during _handle_client()
+2025-05-15 12:59:01,854 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:01,855 [INFO] Peer: ('172.20.0.1', 46022)
+2025-05-15 12:59:01,856 [INFO] ('172.20.0.1', 46022) handling connection
+2025-05-15 12:59:02,717 [INFO] ('172.20.0.1', 46022) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:02,722 [INFO] ('172.20.0.1', 46022) >> b'mail from:<sender@email-threat-docker.local> size=635'
+2025-05-15 12:59:02,723 [INFO] ('172.20.0.1', 46022) sender: sender@email-threat-docker.local
+2025-05-15 12:59:02,726 [INFO] ('172.20.0.1', 46022) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:02,727 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:02,728 [INFO] ('172.20.0.1', 46022) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:02,731 [INFO] ('172.20.0.1', 46022) >> b'data'
+2025-05-15 12:59:02,742 [WARNING] Quarantined: /app/quarantine/quarantine_1747324742_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-15 12:59:02,749 [INFO] ('172.20.0.1', 46022) >> b'QUIT'
+2025-05-15 12:59:02,750 [INFO] ('172.20.0.1', 46022) connection lost
+2025-05-15 12:59:02,752 [INFO] ('172.20.0.1', 46022) Connection lost during _handle_client()
+2025-05-15 12:59:02,860 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:02,861 [INFO] Peer: ('172.20.0.1', 46036)
+2025-05-15 12:59:02,862 [INFO] ('172.20.0.1', 46036) handling connection
+2025-05-15 12:59:03,737 [INFO] ('172.20.0.1', 46036) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:03,740 [INFO] ('172.20.0.1', 46036) >> b'mail from:<sender@email-threat-docker.local> size=236'
+2025-05-15 12:59:03,741 [INFO] ('172.20.0.1', 46036) sender: sender@email-threat-docker.local
+2025-05-15 12:59:03,744 [INFO] ('172.20.0.1', 46036) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:03,745 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:03,746 [INFO] ('172.20.0.1', 46036) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:03,748 [INFO] ('172.20.0.1', 46036) >> b'data'
+2025-05-15 12:59:03,753 [WARNING] Quarantined: /app/quarantine/quarantine_1747324743_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:59:03,759 [INFO] ('172.20.0.1', 46036) >> b'QUIT'
+2025-05-15 12:59:03,760 [INFO] ('172.20.0.1', 46036) connection lost
+2025-05-15 12:59:03,761 [INFO] ('172.20.0.1', 46036) Connection lost during _handle_client()
+2025-05-15 12:59:03,869 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:03,870 [INFO] Peer: ('172.20.0.1', 41890)
+2025-05-15 12:59:03,871 [INFO] ('172.20.0.1', 41890) handling connection
+2025-05-15 12:59:04,735 [INFO] ('172.20.0.1', 41890) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:04,739 [INFO] ('172.20.0.1', 41890) >> b'mail from:<sender@email-threat-docker.local> size=245'
+2025-05-15 12:59:04,740 [INFO] ('172.20.0.1', 41890) sender: sender@email-threat-docker.local
+2025-05-15 12:59:04,742 [INFO] ('172.20.0.1', 41890) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:04,743 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:04,744 [INFO] ('172.20.0.1', 41890) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:04,746 [INFO] ('172.20.0.1', 41890) >> b'data'
+2025-05-15 12:59:04,752 [WARNING] Quarantined: /app/quarantine/quarantine_1747324744_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:59:04,757 [INFO] ('172.20.0.1', 41890) >> b'QUIT'
+2025-05-15 12:59:04,758 [INFO] ('172.20.0.1', 41890) connection lost
+2025-05-15 12:59:04,759 [INFO] ('172.20.0.1', 41890) Connection lost during _handle_client()
+2025-05-15 12:59:04,868 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:04,869 [INFO] Peer: ('172.20.0.1', 41904)
+2025-05-15 12:59:04,870 [INFO] ('172.20.0.1', 41904) handling connection
+2025-05-15 12:59:05,743 [INFO] ('172.20.0.1', 41904) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:05,748 [INFO] ('172.20.0.1', 41904) >> b'mail from:<sender@email-threat-docker.local> size=642'
+2025-05-15 12:59:05,749 [INFO] ('172.20.0.1', 41904) sender: sender@email-threat-docker.local
+2025-05-15 12:59:05,751 [INFO] ('172.20.0.1', 41904) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:05,752 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:05,753 [INFO] ('172.20.0.1', 41904) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:05,755 [INFO] ('172.20.0.1', 41904) >> b'data'
+2025-05-15 12:59:05,764 [WARNING] Quarantined: /app/quarantine/quarantine_1747324745_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-15 12:59:05,770 [INFO] ('172.20.0.1', 41904) >> b'QUIT'
+2025-05-15 12:59:05,771 [INFO] ('172.20.0.1', 41904) connection lost
+2025-05-15 12:59:05,772 [INFO] ('172.20.0.1', 41904) Connection lost during _handle_client()
+2025-05-15 12:59:05,880 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:05,881 [INFO] Peer: ('172.20.0.1', 41908)
+2025-05-15 12:59:05,881 [INFO] ('172.20.0.1', 41908) handling connection
+2025-05-15 12:59:06,760 [INFO] ('172.20.0.1', 41908) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:06,763 [INFO] ('172.20.0.1', 41908) >> b'mail from:<sender@email-threat-docker.local> size=240'
+2025-05-15 12:59:06,765 [INFO] ('172.20.0.1', 41908) sender: sender@email-threat-docker.local
+2025-05-15 12:59:06,767 [INFO] ('172.20.0.1', 41908) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:06,768 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:06,769 [INFO] ('172.20.0.1', 41908) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:06,771 [INFO] ('172.20.0.1', 41908) >> b'data'
+2025-05-15 12:59:06,777 [WARNING] Quarantined: /app/quarantine/quarantine_1747324746_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:59:06,783 [INFO] ('172.20.0.1', 41908) >> b'QUIT'
+2025-05-15 12:59:06,784 [INFO] ('172.20.0.1', 41908) connection lost
+2025-05-15 12:59:06,785 [INFO] ('172.20.0.1', 41908) Connection lost during _handle_client()
+2025-05-15 12:59:06,618 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:06,619 [INFO] Peer: ('172.20.0.1', 41914)
+2025-05-15 12:59:06,620 [INFO] ('172.20.0.1', 41914) handling connection
+2025-05-15 12:59:06,970 [INFO] ('172.20.0.1', 41914) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:06,974 [INFO] ('172.20.0.1', 41914) >> b'mail from:<sender@email-threat-docker.local> size=239'
+2025-05-15 12:59:06,975 [INFO] ('172.20.0.1', 41914) sender: sender@email-threat-docker.local
+2025-05-15 12:59:06,977 [INFO] ('172.20.0.1', 41914) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:06,978 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:06,979 [INFO] ('172.20.0.1', 41914) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:06,981 [INFO] ('172.20.0.1', 41914) >> b'data'
+2025-05-15 12:59:06,987 [WARNING] Quarantined: /app/quarantine/quarantine_1747324746_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:59:06,992 [INFO] ('172.20.0.1', 41914) >> b'QUIT'
+2025-05-15 12:59:06,993 [INFO] ('172.20.0.1', 41914) connection lost
+2025-05-15 12:59:06,994 [INFO] ('172.20.0.1', 41914) Connection lost during _handle_client()
+2025-05-15 12:59:07,103 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:07,104 [INFO] Peer: ('172.20.0.1', 41928)
+2025-05-15 12:59:07,105 [INFO] ('172.20.0.1', 41928) handling connection
+2025-05-15 12:59:07,987 [INFO] ('172.20.0.1', 41928) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:07,991 [INFO] ('172.20.0.1', 41928) >> b'mail from:<sender@email-threat-docker.local> size=238'
+2025-05-15 12:59:07,992 [INFO] ('172.20.0.1', 41928) sender: sender@email-threat-docker.local
+2025-05-15 12:59:07,994 [INFO] ('172.20.0.1', 41928) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:07,995 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:07,996 [INFO] ('172.20.0.1', 41928) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:07,998 [INFO] ('172.20.0.1', 41928) >> b'data'
+2025-05-15 12:59:08,003 [WARNING] Quarantined: /app/quarantine/quarantine_1747324748_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:59:08,008 [INFO] ('172.20.0.1', 41928) >> b'QUIT'
+2025-05-15 12:59:08,009 [INFO] ('172.20.0.1', 41928) connection lost
+2025-05-15 12:59:08,010 [INFO] ('172.20.0.1', 41928) Connection lost during _handle_client()
+2025-05-15 12:59:08,119 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:08,120 [INFO] Peer: ('172.20.0.1', 41938)
+2025-05-15 12:59:08,121 [INFO] ('172.20.0.1', 41938) handling connection
+2025-05-15 12:59:09,001 [INFO] ('172.20.0.1', 41938) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:09,004 [INFO] ('172.20.0.1', 41938) >> b'mail from:<sender@email-threat-docker.local> size=253'
+2025-05-15 12:59:09,006 [INFO] ('172.20.0.1', 41938) sender: sender@email-threat-docker.local
+2025-05-15 12:59:09,008 [INFO] ('172.20.0.1', 41938) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:09,009 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:09,009 [INFO] ('172.20.0.1', 41938) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:09,012 [INFO] ('172.20.0.1', 41938) >> b'data'
+2025-05-15 12:59:09,020 [WARNING] Quarantined: /app/quarantine/quarantine_1747324749_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:59:09,026 [INFO] ('172.20.0.1', 41938) >> b'QUIT'
+2025-05-15 12:59:09,027 [INFO] ('172.20.0.1', 41938) connection lost
+2025-05-15 12:59:09,029 [INFO] ('172.20.0.1', 41938) Connection lost during _handle_client()
+2025-05-15 12:59:09,137 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:09,138 [INFO] Peer: ('172.20.0.1', 41946)
+2025-05-15 12:59:09,139 [INFO] ('172.20.0.1', 41946) handling connection
+2025-05-15 12:59:10,023 [INFO] ('172.20.0.1', 41946) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:10,027 [INFO] ('172.20.0.1', 41946) >> b'mail from:<sender@email-threat-docker.local> size=247'
+2025-05-15 12:59:10,028 [INFO] ('172.20.0.1', 41946) sender: sender@email-threat-docker.local
+2025-05-15 12:59:10,030 [INFO] ('172.20.0.1', 41946) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:10,031 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:10,032 [INFO] ('172.20.0.1', 41946) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:10,034 [INFO] ('172.20.0.1', 41946) >> b'data'
+2025-05-15 12:59:10,040 [WARNING] Quarantined: /app/quarantine/quarantine_1747324750_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:59:10,045 [INFO] ('172.20.0.1', 41946) >> b'QUIT'
+2025-05-15 12:59:10,046 [INFO] ('172.20.0.1', 41946) connection lost
+2025-05-15 12:59:10,047 [INFO] ('172.20.0.1', 41946) Connection lost during _handle_client()
+2025-05-15 12:59:10,156 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:10,158 [INFO] Peer: ('172.20.0.1', 41960)
+2025-05-15 12:59:10,159 [INFO] ('172.20.0.1', 41960) handling connection
+2025-05-15 12:59:11,057 [INFO] ('172.20.0.1', 41960) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:11,062 [INFO] ('172.20.0.1', 41960) >> b'mail from:<sender@email-threat-docker.local> size=699'
+2025-05-15 12:59:11,063 [INFO] ('172.20.0.1', 41960) sender: sender@email-threat-docker.local
+2025-05-15 12:59:11,065 [INFO] ('172.20.0.1', 41960) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:11,066 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:11,067 [INFO] ('172.20.0.1', 41960) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:11,069 [INFO] ('172.20.0.1', 41960) >> b'data'
+2025-05-15 12:59:11,077 [WARNING] Quarantined: /app/quarantine/quarantine_1747324751_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-15 12:59:11,082 [INFO] ('172.20.0.1', 41960) >> b'QUIT'
+2025-05-15 12:59:11,083 [INFO] ('172.20.0.1', 41960) connection lost
+2025-05-15 12:59:11,084 [INFO] ('172.20.0.1', 41960) Connection lost during _handle_client()
+2025-05-15 12:59:11,193 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:11,194 [INFO] Peer: ('172.20.0.1', 41962)
+2025-05-15 12:59:11,195 [INFO] ('172.20.0.1', 41962) handling connection
+2025-05-15 12:59:12,068 [INFO] ('172.20.0.1', 41962) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:12,072 [INFO] ('172.20.0.1', 41962) >> b'mail from:<sender@email-threat-docker.local> size=1994'
+2025-05-15 12:59:12,073 [INFO] ('172.20.0.1', 41962) sender: sender@email-threat-docker.local
+2025-05-15 12:59:12,076 [INFO] ('172.20.0.1', 41962) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:12,077 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:12,078 [INFO] ('172.20.0.1', 41962) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:12,080 [INFO] ('172.20.0.1', 41962) >> b'data'
+2025-05-15 12:59:12,092 [WARNING] Quarantined: /app/quarantine/quarantine_1747324752_3.eml | Threats: YARA:executable_attachment, YARA:without_images, YARA:without_urls
+2025-05-15 12:59:12,098 [INFO] ('172.20.0.1', 41962) >> b'QUIT'
+2025-05-15 12:59:12,099 [INFO] ('172.20.0.1', 41962) connection lost
+2025-05-15 12:59:12,100 [INFO] ('172.20.0.1', 41962) Connection lost during _handle_client()
+2025-05-15 12:59:12,209 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:12,210 [INFO] Peer: ('172.20.0.1', 33326)
+2025-05-15 12:59:12,211 [INFO] ('172.20.0.1', 33326) handling connection
+2025-05-15 12:59:13,080 [INFO] ('172.20.0.1', 33326) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:13,083 [INFO] ('172.20.0.1', 33326) >> b'mail from:<sender@email-threat-docker.local> size=293'
+2025-05-15 12:59:13,084 [INFO] ('172.20.0.1', 33326) sender: sender@email-threat-docker.local
+2025-05-15 12:59:13,087 [INFO] ('172.20.0.1', 33326) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:13,088 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:13,088 [INFO] ('172.20.0.1', 33326) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:13,091 [INFO] ('172.20.0.1', 33326) >> b'data'
+2025-05-15 12:59:13,097 [WARNING] Quarantined: /app/quarantine/quarantine_1747324753_5.eml | Threats: YARA:without_attachments, YARA:domain, YARA:without_images, YARA:url, YARA:with_urls
+2025-05-15 12:59:13,102 [INFO] ('172.20.0.1', 33326) >> b'QUIT'
+2025-05-15 12:59:13,103 [INFO] ('172.20.0.1', 33326) connection lost
+2025-05-15 12:59:13,104 [INFO] ('172.20.0.1', 33326) Connection lost during _handle_client()
+2025-05-15 12:59:13,211 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:13,212 [INFO] Peer: ('172.20.0.1', 33342)
+2025-05-15 12:59:13,213 [INFO] ('172.20.0.1', 33342) handling connection
+2025-05-15 12:59:14,086 [INFO] ('172.20.0.1', 33342) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:14,089 [INFO] ('172.20.0.1', 33342) >> b'mail from:<sender@email-threat-docker.local> size=279'
+2025-05-15 12:59:14,090 [INFO] ('172.20.0.1', 33342) sender: sender@email-threat-docker.local
+2025-05-15 12:59:14,093 [INFO] ('172.20.0.1', 33342) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:14,094 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:14,095 [INFO] ('172.20.0.1', 33342) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:14,097 [INFO] ('172.20.0.1', 33342) >> b'data'
+2025-05-15 12:59:14,103 [WARNING] Quarantined: /app/quarantine/quarantine_1747324754_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:59:14,108 [INFO] ('172.20.0.1', 33342) >> b'QUIT'
+2025-05-15 12:59:14,109 [INFO] ('172.20.0.1', 33342) connection lost
+2025-05-15 12:59:14,110 [INFO] ('172.20.0.1', 33342) Connection lost during _handle_client()
+2025-05-15 12:59:14,217 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:14,218 [INFO] Peer: ('172.20.0.1', 33348)
+2025-05-15 12:59:14,219 [INFO] ('172.20.0.1', 33348) handling connection
+2025-05-15 12:59:15,105 [INFO] ('172.20.0.1', 33348) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:15,110 [INFO] ('172.20.0.1', 33348) >> b'mail from:<sender@email-threat-docker.local> size=1987'
+2025-05-15 12:59:15,111 [INFO] ('172.20.0.1', 33348) sender: sender@email-threat-docker.local
+2025-05-15 12:59:15,114 [INFO] ('172.20.0.1', 33348) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:15,116 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:15,117 [INFO] ('172.20.0.1', 33348) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:15,119 [INFO] ('172.20.0.1', 33348) >> b'data'
+2025-05-15 12:59:15,135 [WARNING] Quarantined: /app/quarantine/quarantine_1747324755_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-15 12:59:15,142 [INFO] ('172.20.0.1', 33348) >> b'QUIT'
+2025-05-15 12:59:15,144 [INFO] ('172.20.0.1', 33348) connection lost
+2025-05-15 12:59:15,145 [INFO] ('172.20.0.1', 33348) Connection lost during _handle_client()
+2025-05-15 12:59:15,252 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:15,253 [INFO] Peer: ('172.20.0.1', 33362)
+2025-05-15 12:59:15,254 [INFO] ('172.20.0.1', 33362) handling connection
+2025-05-15 12:59:16,128 [INFO] ('172.20.0.1', 33362) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:16,131 [INFO] ('172.20.0.1', 33362) >> b'mail from:<sender@email-threat-docker.local> size=271'
+2025-05-15 12:59:16,132 [INFO] ('172.20.0.1', 33362) sender: sender@email-threat-docker.local
+2025-05-15 12:59:16,135 [INFO] ('172.20.0.1', 33362) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:16,136 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:16,137 [INFO] ('172.20.0.1', 33362) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:16,139 [INFO] ('172.20.0.1', 33362) >> b'data'
+2025-05-15 12:59:16,145 [WARNING] Quarantined: /app/quarantine/quarantine_1747324756_5.eml | Threats: YARA:without_attachments, YARA:domain, YARA:without_images, YARA:url, YARA:with_urls
+2025-05-15 12:59:16,152 [INFO] ('172.20.0.1', 33362) >> b'QUIT'
+2025-05-15 12:59:16,153 [INFO] ('172.20.0.1', 33362) connection lost
+2025-05-15 12:59:16,154 [INFO] ('172.20.0.1', 33362) Connection lost during _handle_client()
+2025-05-15 12:59:16,261 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:16,262 [INFO] Peer: ('172.20.0.1', 33378)
+2025-05-15 12:59:16,263 [INFO] ('172.20.0.1', 33378) handling connection
+2025-05-15 12:59:17,137 [INFO] ('172.20.0.1', 33378) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:17,141 [INFO] ('172.20.0.1', 33378) >> b'mail from:<sender@email-threat-docker.local> size=267'
+2025-05-15 12:59:17,142 [INFO] ('172.20.0.1', 33378) sender: sender@email-threat-docker.local
+2025-05-15 12:59:17,145 [INFO] ('172.20.0.1', 33378) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:17,146 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:17,147 [INFO] ('172.20.0.1', 33378) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:17,150 [INFO] ('172.20.0.1', 33378) >> b'data'
+2025-05-15 12:59:17,156 [WARNING] Quarantined: /app/quarantine/quarantine_1747324757_5.eml | Threats: YARA:without_attachments, YARA:domain, YARA:without_images, YARA:url, YARA:with_urls
+2025-05-15 12:59:17,161 [INFO] ('172.20.0.1', 33378) >> b'QUIT'
+2025-05-15 12:59:17,162 [INFO] ('172.20.0.1', 33378) connection lost
+2025-05-15 12:59:17,163 [INFO] ('172.20.0.1', 33378) Connection lost during _handle_client()
+2025-05-15 12:59:17,271 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:17,272 [INFO] Peer: ('172.20.0.1', 33382)
+2025-05-15 12:59:17,273 [INFO] ('172.20.0.1', 33382) handling connection
+2025-05-15 12:59:18,135 [INFO] ('172.20.0.1', 33382) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:18,139 [INFO] ('172.20.0.1', 33382) >> b'mail from:<sender@email-threat-docker.local> size=1278'
+2025-05-15 12:59:18,141 [INFO] ('172.20.0.1', 33382) sender: sender@email-threat-docker.local
+2025-05-15 12:59:18,144 [INFO] ('172.20.0.1', 33382) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:18,146 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:18,147 [INFO] ('172.20.0.1', 33382) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:18,151 [INFO] ('172.20.0.1', 33382) >> b'data'
+2025-05-15 12:59:18,164 [WARNING] Quarantined: /app/quarantine/quarantine_1747324758_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-15 12:59:18,173 [INFO] ('172.20.0.1', 33382) >> b'QUIT'
+2025-05-15 12:59:18,174 [INFO] ('172.20.0.1', 33382) connection lost
+2025-05-15 12:59:18,175 [INFO] ('172.20.0.1', 33382) Connection lost during _handle_client()
+2025-05-15 12:59:18,284 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:18,285 [INFO] Peer: ('172.20.0.1', 33386)
+2025-05-15 12:59:18,286 [INFO] ('172.20.0.1', 33386) handling connection
+2025-05-15 12:59:19,164 [INFO] ('172.20.0.1', 33386) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:19,168 [INFO] ('172.20.0.1', 33386) >> b'mail from:<sender@email-threat-docker.local> size=1982'
+2025-05-15 12:59:19,169 [INFO] ('172.20.0.1', 33386) sender: sender@email-threat-docker.local
+2025-05-15 12:59:19,172 [INFO] ('172.20.0.1', 33386) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:19,173 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:19,174 [INFO] ('172.20.0.1', 33386) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:19,176 [INFO] ('172.20.0.1', 33386) >> b'data'
+2025-05-15 12:59:19,189 [WARNING] Quarantined: /app/quarantine/quarantine_1747324759_3.eml | Threats: YARA:executable_attachment, YARA:without_images, YARA:without_urls
+2025-05-15 12:59:19,195 [INFO] ('172.20.0.1', 33386) >> b'QUIT'
+2025-05-15 12:59:19,196 [INFO] ('172.20.0.1', 33386) connection lost
+2025-05-15 12:59:19,197 [INFO] ('172.20.0.1', 33386) Connection lost during _handle_client()
+2025-05-15 12:59:19,304 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:19,306 [INFO] Peer: ('172.20.0.1', 33400)
+2025-05-15 12:59:19,307 [INFO] ('172.20.0.1', 33400) handling connection
+2025-05-15 12:59:20,186 [INFO] ('172.20.0.1', 33400) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:20,191 [INFO] ('172.20.0.1', 33400) >> b'mail from:<sender@email-threat-docker.local> size=687'
+2025-05-15 12:59:20,192 [INFO] ('172.20.0.1', 33400) sender: sender@email-threat-docker.local
+2025-05-15 12:59:20,195 [INFO] ('172.20.0.1', 33400) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:20,196 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:20,196 [INFO] ('172.20.0.1', 33400) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:20,198 [INFO] ('172.20.0.1', 33400) >> b'data'
+2025-05-15 12:59:20,207 [WARNING] Quarantined: /app/quarantine/quarantine_1747324760_4.eml | Threats: YARA:domain, YARA:without_images, YARA:url, YARA:with_urls
+2025-05-15 12:59:20,212 [INFO] ('172.20.0.1', 33400) >> b'QUIT'
+2025-05-15 12:59:20,213 [INFO] ('172.20.0.1', 33400) connection lost
+2025-05-15 12:59:20,214 [INFO] ('172.20.0.1', 33400) Connection lost during _handle_client()
+2025-05-15 12:59:55,591 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:55,592 [INFO] Peer: ('172.20.0.1', 55834)
+2025-05-15 12:59:55,593 [INFO] ('172.20.0.1', 55834) handling connection
+2025-05-15 12:59:56,925 [INFO] ('172.20.0.1', 55834) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:56,930 [INFO] ('172.20.0.1', 55834) >> b'mail from:<sender@email-threat-docker.local> size=230'
+2025-05-15 12:59:56,931 [INFO] ('172.20.0.1', 55834) sender: sender@email-threat-docker.local
+2025-05-15 12:59:56,934 [INFO] ('172.20.0.1', 55834) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:56,936 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:56,937 [INFO] ('172.20.0.1', 55834) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:56,940 [INFO] ('172.20.0.1', 55834) >> b'data'
+2025-05-15 12:59:56,947 [WARNING] Quarantined: /app/quarantine/quarantine_1747324796_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:59:56,954 [INFO] ('172.20.0.1', 55834) >> b'QUIT'
+2025-05-15 12:59:56,955 [INFO] ('172.20.0.1', 55834) connection lost
+2025-05-15 12:59:56,956 [INFO] ('172.20.0.1', 55834) Connection lost during _handle_client()
+2025-05-15 12:59:57,066 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:57,067 [INFO] Peer: ('172.20.0.1', 55836)
+2025-05-15 12:59:57,068 [INFO] ('172.20.0.1', 55836) handling connection
+2025-05-15 12:59:57,947 [INFO] ('172.20.0.1', 55836) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:57,951 [INFO] ('172.20.0.1', 55836) >> b'mail from:<sender@email-threat-docker.local> size=635'
+2025-05-15 12:59:57,952 [INFO] ('172.20.0.1', 55836) sender: sender@email-threat-docker.local
+2025-05-15 12:59:57,955 [INFO] ('172.20.0.1', 55836) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:57,955 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:57,956 [INFO] ('172.20.0.1', 55836) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:57,958 [INFO] ('172.20.0.1', 55836) >> b'data'
+2025-05-15 12:59:57,966 [WARNING] Quarantined: /app/quarantine/quarantine_1747324797_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-15 12:59:57,972 [INFO] ('172.20.0.1', 55836) >> b'QUIT'
+2025-05-15 12:59:57,973 [INFO] ('172.20.0.1', 55836) connection lost
+2025-05-15 12:59:57,974 [INFO] ('172.20.0.1', 55836) Connection lost during _handle_client()
+2025-05-15 12:59:58,081 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:58,082 [INFO] Peer: ('172.20.0.1', 55838)
+2025-05-15 12:59:58,083 [INFO] ('172.20.0.1', 55838) handling connection
+2025-05-15 12:59:58,952 [INFO] ('172.20.0.1', 55838) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:58,956 [INFO] ('172.20.0.1', 55838) >> b'mail from:<sender@email-threat-docker.local> size=236'
+2025-05-15 12:59:58,957 [INFO] ('172.20.0.1', 55838) sender: sender@email-threat-docker.local
+2025-05-15 12:59:58,960 [INFO] ('172.20.0.1', 55838) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:58,961 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:58,961 [INFO] ('172.20.0.1', 55838) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:58,963 [INFO] ('172.20.0.1', 55838) >> b'data'
+2025-05-15 12:59:58,969 [WARNING] Quarantined: /app/quarantine/quarantine_1747324798_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:59:58,974 [INFO] ('172.20.0.1', 55838) >> b'QUIT'
+2025-05-15 12:59:58,975 [INFO] ('172.20.0.1', 55838) connection lost
+2025-05-15 12:59:58,976 [INFO] ('172.20.0.1', 55838) Connection lost during _handle_client()
+2025-05-15 12:59:59,085 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 12:59:59,086 [INFO] Peer: ('172.20.0.1', 55844)
+2025-05-15 12:59:59,088 [INFO] ('172.20.0.1', 55844) handling connection
+2025-05-15 12:59:59,960 [INFO] ('172.20.0.1', 55844) >> b'ehlo [172.27.224.1]'
+2025-05-15 12:59:59,963 [INFO] ('172.20.0.1', 55844) >> b'mail from:<sender@email-threat-docker.local> size=245'
+2025-05-15 12:59:59,964 [INFO] ('172.20.0.1', 55844) sender: sender@email-threat-docker.local
+2025-05-15 12:59:59,967 [INFO] ('172.20.0.1', 55844) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 12:59:59,968 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 12:59:59,968 [INFO] ('172.20.0.1', 55844) recip: recipient@email-threat-docker.local
+2025-05-15 12:59:59,971 [INFO] ('172.20.0.1', 55844) >> b'data'
+2025-05-15 12:59:59,976 [WARNING] Quarantined: /app/quarantine/quarantine_1747324799_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 12:59:59,982 [INFO] ('172.20.0.1', 55844) >> b'QUIT'
+2025-05-15 12:59:59,983 [INFO] ('172.20.0.1', 55844) connection lost
+2025-05-15 12:59:59,984 [INFO] ('172.20.0.1', 55844) Connection lost during _handle_client()
+2025-05-15 13:00:00,091 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 13:00:00,092 [INFO] Peer: ('172.20.0.1', 55850)
+2025-05-15 13:00:00,093 [INFO] ('172.20.0.1', 55850) handling connection
+2025-05-15 13:00:00,965 [INFO] ('172.20.0.1', 55850) >> b'ehlo [172.27.224.1]'
+2025-05-15 13:00:00,970 [INFO] ('172.20.0.1', 55850) >> b'mail from:<sender@email-threat-docker.local> size=642'
+2025-05-15 13:00:00,972 [INFO] ('172.20.0.1', 55850) sender: sender@email-threat-docker.local
+2025-05-15 13:00:00,975 [INFO] ('172.20.0.1', 55850) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 13:00:00,976 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 13:00:00,977 [INFO] ('172.20.0.1', 55850) recip: recipient@email-threat-docker.local
+2025-05-15 13:00:00,979 [INFO] ('172.20.0.1', 55850) >> b'data'
+2025-05-15 13:00:00,990 [WARNING] Quarantined: /app/quarantine/quarantine_1747324800_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-15 13:00:00,997 [INFO] ('172.20.0.1', 55850) >> b'QUIT'
+2025-05-15 13:00:00,998 [INFO] ('172.20.0.1', 55850) connection lost
+2025-05-15 13:00:00,999 [INFO] ('172.20.0.1', 55850) Connection lost during _handle_client()
+2025-05-15 13:00:01,109 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 13:00:01,110 [INFO] Peer: ('172.20.0.1', 55862)
+2025-05-15 13:00:01,112 [INFO] ('172.20.0.1', 55862) handling connection
+2025-05-15 13:00:01,985 [INFO] ('172.20.0.1', 55862) >> b'ehlo [172.27.224.1]'
+2025-05-15 13:00:01,989 [INFO] ('172.20.0.1', 55862) >> b'mail from:<sender@email-threat-docker.local> size=240'
+2025-05-15 13:00:01,990 [INFO] ('172.20.0.1', 55862) sender: sender@email-threat-docker.local
+2025-05-15 13:00:01,993 [INFO] ('172.20.0.1', 55862) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 13:00:01,994 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 13:00:01,995 [INFO] ('172.20.0.1', 55862) recip: recipient@email-threat-docker.local
+2025-05-15 13:00:01,998 [INFO] ('172.20.0.1', 55862) >> b'data'
+2025-05-15 13:00:02,004 [WARNING] Quarantined: /app/quarantine/quarantine_1747324802_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 13:00:02,011 [INFO] ('172.20.0.1', 55862) >> b'QUIT'
+2025-05-15 13:00:02,012 [INFO] ('172.20.0.1', 55862) connection lost
+2025-05-15 13:00:02,013 [INFO] ('172.20.0.1', 55862) Connection lost during _handle_client()
+2025-05-15 13:00:02,120 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 13:00:02,122 [INFO] Peer: ('172.20.0.1', 55542)
+2025-05-15 13:00:02,123 [INFO] ('172.20.0.1', 55542) handling connection
+2025-05-15 13:00:02,995 [INFO] ('172.20.0.1', 55542) >> b'ehlo [172.27.224.1]'
+2025-05-15 13:00:02,999 [INFO] ('172.20.0.1', 55542) >> b'mail from:<sender@email-threat-docker.local> size=239'
+2025-05-15 13:00:03,001 [INFO] ('172.20.0.1', 55542) sender: sender@email-threat-docker.local
+2025-05-15 13:00:03,004 [INFO] ('172.20.0.1', 55542) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 13:00:03,005 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 13:00:03,006 [INFO] ('172.20.0.1', 55542) recip: recipient@email-threat-docker.local
+2025-05-15 13:00:03,009 [INFO] ('172.20.0.1', 55542) >> b'data'
+2025-05-15 13:00:03,017 [WARNING] Quarantined: /app/quarantine/quarantine_1747324803_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 13:00:03,024 [INFO] ('172.20.0.1', 55542) >> b'QUIT'
+2025-05-15 13:00:03,025 [INFO] ('172.20.0.1', 55542) connection lost
+2025-05-15 13:00:03,026 [INFO] ('172.20.0.1', 55542) Connection lost during _handle_client()
+2025-05-15 13:00:03,134 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 13:00:03,136 [INFO] Peer: ('172.20.0.1', 55544)
+2025-05-15 13:00:03,137 [INFO] ('172.20.0.1', 55544) handling connection
+2025-05-15 13:00:04,021 [INFO] ('172.20.0.1', 55544) >> b'ehlo [172.27.224.1]'
+2025-05-15 13:00:04,025 [INFO] ('172.20.0.1', 55544) >> b'mail from:<sender@email-threat-docker.local> size=238'
+2025-05-15 13:00:04,027 [INFO] ('172.20.0.1', 55544) sender: sender@email-threat-docker.local
+2025-05-15 13:00:04,030 [INFO] ('172.20.0.1', 55544) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 13:00:04,031 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 13:00:04,032 [INFO] ('172.20.0.1', 55544) recip: recipient@email-threat-docker.local
+2025-05-15 13:00:04,034 [INFO] ('172.20.0.1', 55544) >> b'data'
+2025-05-15 13:00:04,043 [WARNING] Quarantined: /app/quarantine/quarantine_1747324804_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 13:00:04,049 [INFO] ('172.20.0.1', 55544) >> b'QUIT'
+2025-05-15 13:00:04,050 [INFO] ('172.20.0.1', 55544) connection lost
+2025-05-15 13:00:04,051 [INFO] ('172.20.0.1', 55544) Connection lost during _handle_client()
+2025-05-15 13:00:04,160 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 13:00:04,161 [INFO] Peer: ('172.20.0.1', 55548)
+2025-05-15 13:00:04,162 [INFO] ('172.20.0.1', 55548) handling connection
+2025-05-15 13:00:05,030 [INFO] ('172.20.0.1', 55548) >> b'ehlo [172.27.224.1]'
+2025-05-15 13:00:05,033 [INFO] ('172.20.0.1', 55548) >> b'mail from:<sender@email-threat-docker.local> size=253'
+2025-05-15 13:00:05,035 [INFO] ('172.20.0.1', 55548) sender: sender@email-threat-docker.local
+2025-05-15 13:00:05,037 [INFO] ('172.20.0.1', 55548) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 13:00:05,038 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 13:00:05,038 [INFO] ('172.20.0.1', 55548) recip: recipient@email-threat-docker.local
+2025-05-15 13:00:05,041 [INFO] ('172.20.0.1', 55548) >> b'data'
+2025-05-15 13:00:05,047 [WARNING] Quarantined: /app/quarantine/quarantine_1747324805_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 13:00:05,053 [INFO] ('172.20.0.1', 55548) >> b'QUIT'
+2025-05-15 13:00:05,054 [INFO] ('172.20.0.1', 55548) connection lost
+2025-05-15 13:00:05,055 [INFO] ('172.20.0.1', 55548) Connection lost during _handle_client()
+2025-05-15 13:00:05,163 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 13:00:05,165 [INFO] Peer: ('172.20.0.1', 55562)
+2025-05-15 13:00:05,166 [INFO] ('172.20.0.1', 55562) handling connection
+2025-05-15 13:00:05,212 [INFO] ('172.20.0.1', 55562) >> b'ehlo [172.27.224.1]'
+2025-05-15 13:00:05,216 [INFO] ('172.20.0.1', 55562) >> b'mail from:<sender@email-threat-docker.local> size=247'
+2025-05-15 13:00:05,217 [INFO] ('172.20.0.1', 55562) sender: sender@email-threat-docker.local
+2025-05-15 13:00:05,221 [INFO] ('172.20.0.1', 55562) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 13:00:05,222 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 13:00:05,223 [INFO] ('172.20.0.1', 55562) recip: recipient@email-threat-docker.local
+2025-05-15 13:00:05,226 [INFO] ('172.20.0.1', 55562) >> b'data'
+2025-05-15 13:00:05,234 [WARNING] Quarantined: /app/quarantine/quarantine_1747324805_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 13:00:05,242 [INFO] ('172.20.0.1', 55562) >> b'QUIT'
+2025-05-15 13:00:05,243 [INFO] ('172.20.0.1', 55562) connection lost
+2025-05-15 13:00:05,245 [INFO] ('172.20.0.1', 55562) Connection lost during _handle_client()
+2025-05-15 13:00:05,354 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 13:00:05,355 [INFO] Peer: ('172.20.0.1', 55572)
+2025-05-15 13:00:05,356 [INFO] ('172.20.0.1', 55572) handling connection
+2025-05-15 13:00:06,227 [INFO] ('172.20.0.1', 55572) >> b'ehlo [172.27.224.1]'
+2025-05-15 13:00:06,232 [INFO] ('172.20.0.1', 55572) >> b'mail from:<sender@email-threat-docker.local> size=699'
+2025-05-15 13:00:06,233 [INFO] ('172.20.0.1', 55572) sender: sender@email-threat-docker.local
+2025-05-15 13:00:06,236 [INFO] ('172.20.0.1', 55572) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 13:00:06,237 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 13:00:06,238 [INFO] ('172.20.0.1', 55572) recip: recipient@email-threat-docker.local
+2025-05-15 13:00:06,241 [INFO] ('172.20.0.1', 55572) >> b'data'
+2025-05-15 13:00:06,255 [WARNING] Quarantined: /app/quarantine/quarantine_1747324806_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-15 13:00:06,263 [INFO] ('172.20.0.1', 55572) >> b'QUIT'
+2025-05-15 13:00:06,264 [INFO] ('172.20.0.1', 55572) connection lost
+2025-05-15 13:00:06,265 [INFO] ('172.20.0.1', 55572) Connection lost during _handle_client()
+2025-05-15 13:00:06,373 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 13:00:06,375 [INFO] Peer: ('172.20.0.1', 55580)
+2025-05-15 13:00:06,376 [INFO] ('172.20.0.1', 55580) handling connection
+2025-05-15 13:00:07,242 [INFO] ('172.20.0.1', 55580) >> b'ehlo [172.27.224.1]'
+2025-05-15 13:00:07,248 [INFO] ('172.20.0.1', 55580) >> b'mail from:<sender@email-threat-docker.local> size=1994'
+2025-05-15 13:00:07,249 [INFO] ('172.20.0.1', 55580) sender: sender@email-threat-docker.local
+2025-05-15 13:00:07,253 [INFO] ('172.20.0.1', 55580) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 13:00:07,254 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 13:00:07,255 [INFO] ('172.20.0.1', 55580) recip: recipient@email-threat-docker.local
+2025-05-15 13:00:07,258 [INFO] ('172.20.0.1', 55580) >> b'data'
+2025-05-15 13:00:07,277 [WARNING] Quarantined: /app/quarantine/quarantine_1747324807_3.eml | Threats: YARA:executable_attachment, YARA:without_images, YARA:without_urls
+2025-05-15 13:00:07,285 [INFO] ('172.20.0.1', 55580) >> b'QUIT'
+2025-05-15 13:00:07,286 [INFO] ('172.20.0.1', 55580) connection lost
+2025-05-15 13:00:07,288 [INFO] ('172.20.0.1', 55580) Connection lost during _handle_client()
+2025-05-15 13:00:07,397 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 13:00:07,399 [INFO] Peer: ('172.20.0.1', 55588)
+2025-05-15 13:00:07,400 [INFO] ('172.20.0.1', 55588) handling connection
+2025-05-15 13:00:08,276 [INFO] ('172.20.0.1', 55588) >> b'ehlo [172.27.224.1]'
+2025-05-15 13:00:08,281 [INFO] ('172.20.0.1', 55588) >> b'mail from:<sender@email-threat-docker.local> size=293'
+2025-05-15 13:00:08,283 [INFO] ('172.20.0.1', 55588) sender: sender@email-threat-docker.local
+2025-05-15 13:00:08,286 [INFO] ('172.20.0.1', 55588) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 13:00:08,288 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 13:00:08,288 [INFO] ('172.20.0.1', 55588) recip: recipient@email-threat-docker.local
+2025-05-15 13:00:08,291 [INFO] ('172.20.0.1', 55588) >> b'data'
+2025-05-15 13:00:08,298 [WARNING] Quarantined: /app/quarantine/quarantine_1747324808_5.eml | Threats: YARA:without_attachments, YARA:domain, YARA:without_images, YARA:url, YARA:with_urls
+2025-05-15 13:00:08,306 [INFO] ('172.20.0.1', 55588) >> b'QUIT'
+2025-05-15 13:00:08,308 [INFO] ('172.20.0.1', 55588) connection lost
+2025-05-15 13:00:08,309 [INFO] ('172.20.0.1', 55588) Connection lost during _handle_client()
+2025-05-15 13:00:08,417 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 13:00:08,418 [INFO] Peer: ('172.20.0.1', 55590)
+2025-05-15 13:00:08,419 [INFO] ('172.20.0.1', 55590) handling connection
+2025-05-15 13:00:09,283 [INFO] ('172.20.0.1', 55590) >> b'ehlo [172.27.224.1]'
+2025-05-15 13:00:09,287 [INFO] ('172.20.0.1', 55590) >> b'mail from:<sender@email-threat-docker.local> size=279'
+2025-05-15 13:00:09,288 [INFO] ('172.20.0.1', 55590) sender: sender@email-threat-docker.local
+2025-05-15 13:00:09,291 [INFO] ('172.20.0.1', 55590) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 13:00:09,292 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 13:00:09,293 [INFO] ('172.20.0.1', 55590) recip: recipient@email-threat-docker.local
+2025-05-15 13:00:09,295 [INFO] ('172.20.0.1', 55590) >> b'data'
+2025-05-15 13:00:09,302 [WARNING] Quarantined: /app/quarantine/quarantine_1747324809_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-15 13:00:09,309 [INFO] ('172.20.0.1', 55590) >> b'QUIT'
+2025-05-15 13:00:09,310 [INFO] ('172.20.0.1', 55590) connection lost
+2025-05-15 13:00:09,311 [INFO] ('172.20.0.1', 55590) Connection lost during _handle_client()
+2025-05-15 13:00:09,420 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 13:00:09,421 [INFO] Peer: ('172.20.0.1', 55600)
+2025-05-15 13:00:09,422 [INFO] ('172.20.0.1', 55600) handling connection
+2025-05-15 13:00:10,310 [INFO] ('172.20.0.1', 55600) >> b'ehlo [172.27.224.1]'
+2025-05-15 13:00:10,315 [INFO] ('172.20.0.1', 55600) >> b'mail from:<sender@email-threat-docker.local> size=1987'
+2025-05-15 13:00:10,316 [INFO] ('172.20.0.1', 55600) sender: sender@email-threat-docker.local
+2025-05-15 13:00:10,319 [INFO] ('172.20.0.1', 55600) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 13:00:10,320 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 13:00:10,321 [INFO] ('172.20.0.1', 55600) recip: recipient@email-threat-docker.local
+2025-05-15 13:00:10,324 [INFO] ('172.20.0.1', 55600) >> b'data'
+2025-05-15 13:00:10,341 [WARNING] Quarantined: /app/quarantine/quarantine_1747324810_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-15 13:00:10,349 [INFO] ('172.20.0.1', 55600) >> b'QUIT'
+2025-05-15 13:00:10,350 [INFO] ('172.20.0.1', 55600) connection lost
+2025-05-15 13:00:10,352 [INFO] ('172.20.0.1', 55600) Connection lost during _handle_client()
+2025-05-15 13:00:10,459 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 13:00:10,461 [INFO] Peer: ('172.20.0.1', 59610)
+2025-05-15 13:00:10,462 [INFO] ('172.20.0.1', 59610) handling connection
+2025-05-15 13:00:11,330 [INFO] ('172.20.0.1', 59610) >> b'ehlo [172.27.224.1]'
+2025-05-15 13:00:11,334 [INFO] ('172.20.0.1', 59610) >> b'mail from:<sender@email-threat-docker.local> size=271'
+2025-05-15 13:00:11,335 [INFO] ('172.20.0.1', 59610) sender: sender@email-threat-docker.local
+2025-05-15 13:00:11,337 [INFO] ('172.20.0.1', 59610) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 13:00:11,339 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 13:00:11,339 [INFO] ('172.20.0.1', 59610) recip: recipient@email-threat-docker.local
+2025-05-15 13:00:11,342 [INFO] ('172.20.0.1', 59610) >> b'data'
+2025-05-15 13:00:11,348 [WARNING] Quarantined: /app/quarantine/quarantine_1747324811_5.eml | Threats: YARA:without_attachments, YARA:domain, YARA:without_images, YARA:url, YARA:with_urls
+2025-05-15 13:00:11,355 [INFO] ('172.20.0.1', 59610) >> b'QUIT'
+2025-05-15 13:00:11,356 [INFO] ('172.20.0.1', 59610) connection lost
+2025-05-15 13:00:11,357 [INFO] ('172.20.0.1', 59610) Connection lost during _handle_client()
+2025-05-15 13:00:11,463 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 13:00:11,464 [INFO] Peer: ('172.20.0.1', 59618)
+2025-05-15 13:00:11,465 [INFO] ('172.20.0.1', 59618) handling connection
+2025-05-15 13:00:12,341 [INFO] ('172.20.0.1', 59618) >> b'ehlo [172.27.224.1]'
+2025-05-15 13:00:12,345 [INFO] ('172.20.0.1', 59618) >> b'mail from:<sender@email-threat-docker.local> size=267'
+2025-05-15 13:00:12,346 [INFO] ('172.20.0.1', 59618) sender: sender@email-threat-docker.local
+2025-05-15 13:00:12,348 [INFO] ('172.20.0.1', 59618) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 13:00:12,349 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 13:00:12,351 [INFO] ('172.20.0.1', 59618) recip: recipient@email-threat-docker.local
+2025-05-15 13:00:12,353 [INFO] ('172.20.0.1', 59618) >> b'data'
+2025-05-15 13:00:12,360 [WARNING] Quarantined: /app/quarantine/quarantine_1747324812_5.eml | Threats: YARA:without_attachments, YARA:domain, YARA:without_images, YARA:url, YARA:with_urls
+2025-05-15 13:00:12,367 [INFO] ('172.20.0.1', 59618) >> b'QUIT'
+2025-05-15 13:00:12,368 [INFO] ('172.20.0.1', 59618) connection lost
+2025-05-15 13:00:12,369 [INFO] ('172.20.0.1', 59618) Connection lost during _handle_client()
+2025-05-15 13:00:12,476 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 13:00:12,477 [INFO] Peer: ('172.20.0.1', 59634)
+2025-05-15 13:00:12,478 [INFO] ('172.20.0.1', 59634) handling connection
+2025-05-15 13:00:13,350 [INFO] ('172.20.0.1', 59634) >> b'ehlo [172.27.224.1]'
+2025-05-15 13:00:13,354 [INFO] ('172.20.0.1', 59634) >> b'mail from:<sender@email-threat-docker.local> size=1278'
+2025-05-15 13:00:13,355 [INFO] ('172.20.0.1', 59634) sender: sender@email-threat-docker.local
+2025-05-15 13:00:13,358 [INFO] ('172.20.0.1', 59634) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 13:00:13,359 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 13:00:13,360 [INFO] ('172.20.0.1', 59634) recip: recipient@email-threat-docker.local
+2025-05-15 13:00:13,362 [INFO] ('172.20.0.1', 59634) >> b'data'
+2025-05-15 13:00:13,374 [WARNING] Quarantined: /app/quarantine/quarantine_1747324813_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-15 13:00:13,381 [INFO] ('172.20.0.1', 59634) >> b'QUIT'
+2025-05-15 13:00:13,382 [INFO] ('172.20.0.1', 59634) connection lost
+2025-05-15 13:00:13,383 [INFO] ('172.20.0.1', 59634) Connection lost during _handle_client()
+2025-05-15 13:00:13,491 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 13:00:13,492 [INFO] Peer: ('172.20.0.1', 59648)
+2025-05-15 13:00:13,493 [INFO] ('172.20.0.1', 59648) handling connection
+2025-05-15 13:00:14,372 [INFO] ('172.20.0.1', 59648) >> b'ehlo [172.27.224.1]'
+2025-05-15 13:00:14,378 [INFO] ('172.20.0.1', 59648) >> b'mail from:<sender@email-threat-docker.local> size=1982'
+2025-05-15 13:00:14,379 [INFO] ('172.20.0.1', 59648) sender: sender@email-threat-docker.local
+2025-05-15 13:00:14,384 [INFO] ('172.20.0.1', 59648) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 13:00:14,386 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 13:00:14,387 [INFO] ('172.20.0.1', 59648) recip: recipient@email-threat-docker.local
+2025-05-15 13:00:14,392 [INFO] ('172.20.0.1', 59648) >> b'data'
+2025-05-15 13:00:14,410 [WARNING] Quarantined: /app/quarantine/quarantine_1747324814_3.eml | Threats: YARA:executable_attachment, YARA:without_images, YARA:without_urls
+2025-05-15 13:00:14,420 [INFO] ('172.20.0.1', 59648) >> b'QUIT'
+2025-05-15 13:00:14,421 [INFO] ('172.20.0.1', 59648) connection lost
+2025-05-15 13:00:14,423 [INFO] ('172.20.0.1', 59648) Connection lost during _handle_client()
+2025-05-15 13:00:14,530 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 13:00:14,531 [INFO] Peer: ('172.20.0.1', 59658)
+2025-05-15 13:00:14,533 [INFO] ('172.20.0.1', 59658) handling connection
+2025-05-15 13:00:15,409 [INFO] ('172.20.0.1', 59658) >> b'ehlo [172.27.224.1]'
+2025-05-15 13:00:15,413 [INFO] ('172.20.0.1', 59658) >> b'mail from:<sender@email-threat-docker.local> size=687'
+2025-05-15 13:00:15,414 [INFO] ('172.20.0.1', 59658) sender: sender@email-threat-docker.local
+2025-05-15 13:00:15,417 [INFO] ('172.20.0.1', 59658) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-15 13:00:15,418 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-15 13:00:15,419 [INFO] ('172.20.0.1', 59658) recip: recipient@email-threat-docker.local
+2025-05-15 13:00:15,421 [INFO] ('172.20.0.1', 59658) >> b'data'
+2025-05-15 13:00:15,431 [WARNING] Quarantined: /app/quarantine/quarantine_1747324815_4.eml | Threats: YARA:domain, YARA:without_images, YARA:url, YARA:with_urls
+2025-05-15 13:00:15,437 [INFO] ('172.20.0.1', 59658) >> b'QUIT'
+2025-05-15 13:00:15,438 [INFO] ('172.20.0.1', 59658) connection lost
+2025-05-15 13:00:15,440 [INFO] ('172.20.0.1', 59658) Connection lost during _handle_client()
+2025-05-15 22:18:58,598 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-15 22:18:58,637 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 22:18:58,644 [INFO] Peer: ('127.0.0.1', 43158)
+2025-05-15 22:18:58,651 [INFO] ('127.0.0.1', 43158) handling connection
+2025-05-15 22:18:58,655 [INFO] ('127.0.0.1', 43158) EOF received
+2025-05-15 22:18:58,656 [INFO] ('127.0.0.1', 43158) Connection lost during _handle_client()
+2025-05-15 22:18:58,658 [INFO] ('127.0.0.1', 43158) connection lost
+2025-05-15 23:31:15,238 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-15 23:31:15,256 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 23:31:15,257 [INFO] Peer: ('127.0.0.1', 37788)
+2025-05-15 23:31:15,258 [INFO] ('127.0.0.1', 37788) handling connection
+2025-05-15 23:31:15,260 [INFO] ('127.0.0.1', 37788) EOF received
+2025-05-15 23:31:15,261 [INFO] ('127.0.0.1', 37788) Connection lost during _handle_client()
+2025-05-15 23:31:15,262 [INFO] ('127.0.0.1', 37788) connection lost
+2025-05-15 23:33:18,662 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-15 23:33:18,685 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 23:33:18,687 [INFO] Peer: ('127.0.0.1', 46302)
+2025-05-15 23:33:18,687 [INFO] ('127.0.0.1', 46302) handling connection
+2025-05-15 23:33:18,689 [INFO] ('127.0.0.1', 46302) EOF received
+2025-05-15 23:33:18,690 [INFO] ('127.0.0.1', 46302) Connection lost during _handle_client()
+2025-05-15 23:33:18,690 [INFO] ('127.0.0.1', 46302) connection lost
+2025-05-15 23:36:38,273 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-15 23:36:38,293 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 23:36:38,295 [INFO] Peer: ('127.0.0.1', 50688)
+2025-05-15 23:36:38,296 [INFO] ('127.0.0.1', 50688) handling connection
+2025-05-15 23:36:38,297 [INFO] ('127.0.0.1', 50688) EOF received
+2025-05-15 23:36:38,299 [INFO] ('127.0.0.1', 50688) Connection lost during _handle_client()
+2025-05-15 23:36:38,300 [INFO] ('127.0.0.1', 50688) connection lost
+2025-05-15 23:38:41,339 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-15 23:38:41,360 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 23:38:41,362 [INFO] Peer: ('127.0.0.1', 55398)
+2025-05-15 23:38:41,363 [INFO] ('127.0.0.1', 55398) handling connection
+2025-05-15 23:38:41,365 [INFO] ('127.0.0.1', 55398) EOF received
+2025-05-15 23:38:41,366 [INFO] ('127.0.0.1', 55398) Connection lost during _handle_client()
+2025-05-15 23:38:41,366 [INFO] ('127.0.0.1', 55398) connection lost
+2025-05-15 23:40:04,597 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-15 23:40:04,614 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-15 23:40:04,615 [INFO] Peer: ('127.0.0.1', 46752)
+2025-05-15 23:40:04,616 [INFO] ('127.0.0.1', 46752) handling connection
+2025-05-15 23:40:04,618 [INFO] ('127.0.0.1', 46752) EOF received
+2025-05-15 23:40:04,619 [INFO] ('127.0.0.1', 46752) Connection lost during _handle_client()
+2025-05-15 23:40:04,620 [INFO] ('127.0.0.1', 46752) connection lost
+2025-05-16 09:53:09,586 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-16 09:53:09,607 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 09:53:09,608 [INFO] Peer: ('127.0.0.1', 44416)
+2025-05-16 09:53:09,608 [INFO] ('127.0.0.1', 44416) handling connection
+2025-05-16 09:53:09,610 [INFO] ('127.0.0.1', 44416) EOF received
+2025-05-16 09:53:09,611 [INFO] ('127.0.0.1', 44416) Connection lost during _handle_client()
+2025-05-16 09:53:09,612 [INFO] ('127.0.0.1', 44416) connection lost
+2025-05-16 10:44:15,380 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-16 10:44:15,397 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:44:15,398 [INFO] Peer: ('127.0.0.1', 55836)
+2025-05-16 10:44:15,399 [INFO] ('127.0.0.1', 55836) handling connection
+2025-05-16 10:44:15,401 [INFO] ('127.0.0.1', 55836) EOF received
+2025-05-16 10:44:15,402 [INFO] ('127.0.0.1', 55836) Connection lost during _handle_client()
+2025-05-16 10:44:15,404 [INFO] ('127.0.0.1', 55836) connection lost
+2025-05-16 10:47:08,155 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:08,157 [INFO] Peer: ('172.20.0.1', 49008)
+2025-05-16 10:47:08,158 [INFO] ('172.20.0.1', 49008) handling connection
+2025-05-16 10:47:09,465 [INFO] ('172.20.0.1', 49008) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:09,469 [INFO] ('172.20.0.1', 49008) >> b'mail from:<sender@email-threat-docker.local> size=230'
+2025-05-16 10:47:09,471 [INFO] ('172.20.0.1', 49008) sender: sender@email-threat-docker.local
+2025-05-16 10:47:09,473 [INFO] ('172.20.0.1', 49008) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:09,475 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:09,476 [INFO] ('172.20.0.1', 49008) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:09,478 [INFO] ('172.20.0.1', 49008) >> b'data'
+2025-05-16 10:47:09,494 [WARNING] Quarantined: /app/quarantine/quarantine_1747403229_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 10:47:09,502 [INFO] ('172.20.0.1', 49008) >> b'QUIT'
+2025-05-16 10:47:09,503 [INFO] ('172.20.0.1', 49008) connection lost
+2025-05-16 10:47:09,505 [INFO] ('172.20.0.1', 49008) Connection lost during _handle_client()
+2025-05-16 10:47:09,610 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:09,611 [INFO] Peer: ('172.20.0.1', 50578)
+2025-05-16 10:47:09,612 [INFO] ('172.20.0.1', 50578) handling connection
+2025-05-16 10:47:10,477 [INFO] ('172.20.0.1', 50578) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:10,481 [INFO] ('172.20.0.1', 50578) >> b'mail from:<sender@email-threat-docker.local> size=635'
+2025-05-16 10:47:10,482 [INFO] ('172.20.0.1', 50578) sender: sender@email-threat-docker.local
+2025-05-16 10:47:10,485 [INFO] ('172.20.0.1', 50578) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:10,486 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:10,486 [INFO] ('172.20.0.1', 50578) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:10,489 [INFO] ('172.20.0.1', 50578) >> b'data'
+2025-05-16 10:47:10,498 [WARNING] Quarantined: /app/quarantine/quarantine_1747403230_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-16 10:47:10,503 [INFO] ('172.20.0.1', 50578) >> b'QUIT'
+2025-05-16 10:47:10,505 [INFO] ('172.20.0.1', 50578) connection lost
+2025-05-16 10:47:10,506 [INFO] ('172.20.0.1', 50578) Connection lost during _handle_client()
+2025-05-16 10:47:10,611 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:10,612 [INFO] Peer: ('172.20.0.1', 50588)
+2025-05-16 10:47:10,613 [INFO] ('172.20.0.1', 50588) handling connection
+2025-05-16 10:47:11,487 [INFO] ('172.20.0.1', 50588) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:11,490 [INFO] ('172.20.0.1', 50588) >> b'mail from:<sender@email-threat-docker.local> size=236'
+2025-05-16 10:47:11,491 [INFO] ('172.20.0.1', 50588) sender: sender@email-threat-docker.local
+2025-05-16 10:47:11,494 [INFO] ('172.20.0.1', 50588) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:11,495 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:11,495 [INFO] ('172.20.0.1', 50588) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:11,498 [INFO] ('172.20.0.1', 50588) >> b'data'
+2025-05-16 10:47:11,504 [WARNING] Quarantined: /app/quarantine/quarantine_1747403231_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 10:47:11,510 [INFO] ('172.20.0.1', 50588) >> b'QUIT'
+2025-05-16 10:47:11,512 [INFO] ('172.20.0.1', 50588) connection lost
+2025-05-16 10:47:11,513 [INFO] ('172.20.0.1', 50588) Connection lost during _handle_client()
+2025-05-16 10:47:11,617 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:11,618 [INFO] Peer: ('172.20.0.1', 50602)
+2025-05-16 10:47:11,619 [INFO] ('172.20.0.1', 50602) handling connection
+2025-05-16 10:47:12,469 [INFO] ('172.20.0.1', 50602) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:12,472 [INFO] ('172.20.0.1', 50602) >> b'mail from:<sender@email-threat-docker.local> size=245'
+2025-05-16 10:47:12,474 [INFO] ('172.20.0.1', 50602) sender: sender@email-threat-docker.local
+2025-05-16 10:47:12,476 [INFO] ('172.20.0.1', 50602) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:12,477 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:12,478 [INFO] ('172.20.0.1', 50602) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:12,480 [INFO] ('172.20.0.1', 50602) >> b'data'
+2025-05-16 10:47:12,486 [WARNING] Quarantined: /app/quarantine/quarantine_1747403232_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 10:47:12,492 [INFO] ('172.20.0.1', 50602) >> b'QUIT'
+2025-05-16 10:47:12,493 [INFO] ('172.20.0.1', 50602) connection lost
+2025-05-16 10:47:12,494 [INFO] ('172.20.0.1', 50602) Connection lost during _handle_client()
+2025-05-16 10:47:12,600 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:12,601 [INFO] Peer: ('172.20.0.1', 50618)
+2025-05-16 10:47:12,602 [INFO] ('172.20.0.1', 50618) handling connection
+2025-05-16 10:47:13,452 [INFO] ('172.20.0.1', 50618) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:13,457 [INFO] ('172.20.0.1', 50618) >> b'mail from:<sender@email-threat-docker.local> size=642'
+2025-05-16 10:47:13,458 [INFO] ('172.20.0.1', 50618) sender: sender@email-threat-docker.local
+2025-05-16 10:47:13,460 [INFO] ('172.20.0.1', 50618) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:13,461 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:13,462 [INFO] ('172.20.0.1', 50618) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:13,465 [INFO] ('172.20.0.1', 50618) >> b'data'
+2025-05-16 10:47:13,472 [WARNING] Quarantined: /app/quarantine/quarantine_1747403233_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-16 10:47:13,478 [INFO] ('172.20.0.1', 50618) >> b'QUIT'
+2025-05-16 10:47:13,479 [INFO] ('172.20.0.1', 50618) connection lost
+2025-05-16 10:47:13,480 [INFO] ('172.20.0.1', 50618) Connection lost during _handle_client()
+2025-05-16 10:47:13,585 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:13,586 [INFO] Peer: ('172.20.0.1', 50628)
+2025-05-16 10:47:13,587 [INFO] ('172.20.0.1', 50628) handling connection
+2025-05-16 10:47:14,438 [INFO] ('172.20.0.1', 50628) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:14,442 [INFO] ('172.20.0.1', 50628) >> b'mail from:<sender@email-threat-docker.local> size=240'
+2025-05-16 10:47:14,443 [INFO] ('172.20.0.1', 50628) sender: sender@email-threat-docker.local
+2025-05-16 10:47:14,445 [INFO] ('172.20.0.1', 50628) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:14,446 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:14,447 [INFO] ('172.20.0.1', 50628) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:14,450 [INFO] ('172.20.0.1', 50628) >> b'data'
+2025-05-16 10:47:14,457 [WARNING] Quarantined: /app/quarantine/quarantine_1747403234_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 10:47:14,463 [INFO] ('172.20.0.1', 50628) >> b'QUIT'
+2025-05-16 10:47:14,464 [INFO] ('172.20.0.1', 50628) connection lost
+2025-05-16 10:47:14,465 [INFO] ('172.20.0.1', 50628) Connection lost during _handle_client()
+2025-05-16 10:47:14,569 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:14,570 [INFO] Peer: ('172.20.0.1', 50632)
+2025-05-16 10:47:14,571 [INFO] ('172.20.0.1', 50632) handling connection
+2025-05-16 10:47:15,420 [INFO] ('172.20.0.1', 50632) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:15,424 [INFO] ('172.20.0.1', 50632) >> b'mail from:<sender@email-threat-docker.local> size=239'
+2025-05-16 10:47:15,425 [INFO] ('172.20.0.1', 50632) sender: sender@email-threat-docker.local
+2025-05-16 10:47:15,427 [INFO] ('172.20.0.1', 50632) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:15,429 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:15,429 [INFO] ('172.20.0.1', 50632) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:15,431 [INFO] ('172.20.0.1', 50632) >> b'data'
+2025-05-16 10:47:15,438 [WARNING] Quarantined: /app/quarantine/quarantine_1747403235_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 10:47:15,444 [INFO] ('172.20.0.1', 50632) >> b'QUIT'
+2025-05-16 10:47:15,445 [INFO] ('172.20.0.1', 50632) connection lost
+2025-05-16 10:47:15,446 [INFO] ('172.20.0.1', 50632) Connection lost during _handle_client()
+2025-05-16 10:47:15,550 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:15,552 [INFO] Peer: ('172.20.0.1', 50638)
+2025-05-16 10:47:15,553 [INFO] ('172.20.0.1', 50638) handling connection
+2025-05-16 10:47:16,412 [INFO] ('172.20.0.1', 50638) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:16,416 [INFO] ('172.20.0.1', 50638) >> b'mail from:<sender@email-threat-docker.local> size=238'
+2025-05-16 10:47:16,417 [INFO] ('172.20.0.1', 50638) sender: sender@email-threat-docker.local
+2025-05-16 10:47:16,420 [INFO] ('172.20.0.1', 50638) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:16,422 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:16,423 [INFO] ('172.20.0.1', 50638) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:16,425 [INFO] ('172.20.0.1', 50638) >> b'data'
+2025-05-16 10:47:16,432 [WARNING] Quarantined: /app/quarantine/quarantine_1747403236_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 10:47:16,439 [INFO] ('172.20.0.1', 50638) >> b'QUIT'
+2025-05-16 10:47:16,440 [INFO] ('172.20.0.1', 50638) connection lost
+2025-05-16 10:47:16,443 [INFO] ('172.20.0.1', 50638) Connection lost during _handle_client()
+2025-05-16 10:47:16,546 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:16,547 [INFO] Peer: ('172.20.0.1', 50644)
+2025-05-16 10:47:16,548 [INFO] ('172.20.0.1', 50644) handling connection
+2025-05-16 10:47:17,395 [INFO] ('172.20.0.1', 50644) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:17,398 [INFO] ('172.20.0.1', 50644) >> b'mail from:<sender@email-threat-docker.local> size=253'
+2025-05-16 10:47:17,400 [INFO] ('172.20.0.1', 50644) sender: sender@email-threat-docker.local
+2025-05-16 10:47:17,402 [INFO] ('172.20.0.1', 50644) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:17,403 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:17,404 [INFO] ('172.20.0.1', 50644) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:17,406 [INFO] ('172.20.0.1', 50644) >> b'data'
+2025-05-16 10:47:17,412 [WARNING] Quarantined: /app/quarantine/quarantine_1747403237_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 10:47:17,418 [INFO] ('172.20.0.1', 50644) >> b'QUIT'
+2025-05-16 10:47:17,419 [INFO] ('172.20.0.1', 50644) connection lost
+2025-05-16 10:47:17,421 [INFO] ('172.20.0.1', 50644) Connection lost during _handle_client()
+2025-05-16 10:47:17,525 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:17,526 [INFO] Peer: ('172.20.0.1', 50648)
+2025-05-16 10:47:17,527 [INFO] ('172.20.0.1', 50648) handling connection
+2025-05-16 10:47:18,373 [INFO] ('172.20.0.1', 50648) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:18,376 [INFO] ('172.20.0.1', 50648) >> b'mail from:<sender@email-threat-docker.local> size=247'
+2025-05-16 10:47:18,378 [INFO] ('172.20.0.1', 50648) sender: sender@email-threat-docker.local
+2025-05-16 10:47:18,383 [INFO] ('172.20.0.1', 50648) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:18,385 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:18,386 [INFO] ('172.20.0.1', 50648) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:18,388 [INFO] ('172.20.0.1', 50648) >> b'data'
+2025-05-16 10:47:18,396 [WARNING] Quarantined: /app/quarantine/quarantine_1747403238_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 10:47:18,402 [INFO] ('172.20.0.1', 50648) >> b'QUIT'
+2025-05-16 10:47:18,403 [INFO] ('172.20.0.1', 50648) connection lost
+2025-05-16 10:47:18,404 [INFO] ('172.20.0.1', 50648) Connection lost during _handle_client()
+2025-05-16 10:47:18,509 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:18,511 [INFO] Peer: ('172.20.0.1', 44218)
+2025-05-16 10:47:18,512 [INFO] ('172.20.0.1', 44218) handling connection
+2025-05-16 10:47:19,377 [INFO] ('172.20.0.1', 44218) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:19,382 [INFO] ('172.20.0.1', 44218) >> b'mail from:<sender@email-threat-docker.local> size=699'
+2025-05-16 10:47:19,383 [INFO] ('172.20.0.1', 44218) sender: sender@email-threat-docker.local
+2025-05-16 10:47:19,385 [INFO] ('172.20.0.1', 44218) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:19,387 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:19,387 [INFO] ('172.20.0.1', 44218) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:19,389 [INFO] ('172.20.0.1', 44218) >> b'data'
+2025-05-16 10:47:19,398 [WARNING] Quarantined: /app/quarantine/quarantine_1747403239_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-16 10:47:19,403 [INFO] ('172.20.0.1', 44218) >> b'QUIT'
+2025-05-16 10:47:19,404 [INFO] ('172.20.0.1', 44218) connection lost
+2025-05-16 10:47:19,406 [INFO] ('172.20.0.1', 44218) Connection lost during _handle_client()
+2025-05-16 10:47:19,511 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:19,512 [INFO] Peer: ('172.20.0.1', 44222)
+2025-05-16 10:47:19,513 [INFO] ('172.20.0.1', 44222) handling connection
+2025-05-16 10:47:20,364 [INFO] ('172.20.0.1', 44222) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:20,368 [INFO] ('172.20.0.1', 44222) >> b'mail from:<sender@email-threat-docker.local> size=1994'
+2025-05-16 10:47:20,369 [INFO] ('172.20.0.1', 44222) sender: sender@email-threat-docker.local
+2025-05-16 10:47:20,371 [INFO] ('172.20.0.1', 44222) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:20,373 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:20,373 [INFO] ('172.20.0.1', 44222) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:20,375 [INFO] ('172.20.0.1', 44222) >> b'data'
+2025-05-16 10:47:20,388 [WARNING] Quarantined: /app/quarantine/quarantine_1747403240_3.eml | Threats: YARA:executable_attachment, YARA:without_images, YARA:without_urls
+2025-05-16 10:47:20,394 [INFO] ('172.20.0.1', 44222) >> b'QUIT'
+2025-05-16 10:47:20,395 [INFO] ('172.20.0.1', 44222) connection lost
+2025-05-16 10:47:20,396 [INFO] ('172.20.0.1', 44222) Connection lost during _handle_client()
+2025-05-16 10:47:20,501 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:20,502 [INFO] Peer: ('172.20.0.1', 44234)
+2025-05-16 10:47:20,503 [INFO] ('172.20.0.1', 44234) handling connection
+2025-05-16 10:47:21,357 [INFO] ('172.20.0.1', 44234) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:21,360 [INFO] ('172.20.0.1', 44234) >> b'mail from:<sender@email-threat-docker.local> size=293'
+2025-05-16 10:47:21,362 [INFO] ('172.20.0.1', 44234) sender: sender@email-threat-docker.local
+2025-05-16 10:47:21,364 [INFO] ('172.20.0.1', 44234) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:21,365 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:21,366 [INFO] ('172.20.0.1', 44234) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:21,368 [INFO] ('172.20.0.1', 44234) >> b'data'
+2025-05-16 10:47:21,374 [WARNING] Quarantined: /app/quarantine/quarantine_1747403241_5.eml | Threats: YARA:without_attachments, YARA:domain, YARA:without_images, YARA:url, YARA:with_urls
+2025-05-16 10:47:21,380 [INFO] ('172.20.0.1', 44234) >> b'QUIT'
+2025-05-16 10:47:21,381 [INFO] ('172.20.0.1', 44234) connection lost
+2025-05-16 10:47:21,382 [INFO] ('172.20.0.1', 44234) Connection lost during _handle_client()
+2025-05-16 10:47:21,486 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:21,487 [INFO] Peer: ('172.20.0.1', 44246)
+2025-05-16 10:47:21,488 [INFO] ('172.20.0.1', 44246) handling connection
+2025-05-16 10:47:22,336 [INFO] ('172.20.0.1', 44246) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:22,340 [INFO] ('172.20.0.1', 44246) >> b'mail from:<sender@email-threat-docker.local> size=279'
+2025-05-16 10:47:22,341 [INFO] ('172.20.0.1', 44246) sender: sender@email-threat-docker.local
+2025-05-16 10:47:22,343 [INFO] ('172.20.0.1', 44246) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:22,345 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:22,345 [INFO] ('172.20.0.1', 44246) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:22,347 [INFO] ('172.20.0.1', 44246) >> b'data'
+2025-05-16 10:47:22,354 [WARNING] Quarantined: /app/quarantine/quarantine_1747403242_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 10:47:22,360 [INFO] ('172.20.0.1', 44246) >> b'QUIT'
+2025-05-16 10:47:22,361 [INFO] ('172.20.0.1', 44246) connection lost
+2025-05-16 10:47:22,362 [INFO] ('172.20.0.1', 44246) Connection lost during _handle_client()
+2025-05-16 10:47:22,467 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:22,468 [INFO] Peer: ('172.20.0.1', 44262)
+2025-05-16 10:47:22,469 [INFO] ('172.20.0.1', 44262) handling connection
+2025-05-16 10:47:23,317 [INFO] ('172.20.0.1', 44262) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:23,321 [INFO] ('172.20.0.1', 44262) >> b'mail from:<sender@email-threat-docker.local> size=1987'
+2025-05-16 10:47:23,323 [INFO] ('172.20.0.1', 44262) sender: sender@email-threat-docker.local
+2025-05-16 10:47:23,326 [INFO] ('172.20.0.1', 44262) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:23,327 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:23,327 [INFO] ('172.20.0.1', 44262) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:23,329 [INFO] ('172.20.0.1', 44262) >> b'data'
+2025-05-16 10:47:23,342 [WARNING] Quarantined: /app/quarantine/quarantine_1747403243_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-16 10:47:23,349 [INFO] ('172.20.0.1', 44262) >> b'QUIT'
+2025-05-16 10:47:23,351 [INFO] ('172.20.0.1', 44262) connection lost
+2025-05-16 10:47:23,352 [INFO] ('172.20.0.1', 44262) Connection lost during _handle_client()
+2025-05-16 10:47:23,457 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:23,458 [INFO] Peer: ('172.20.0.1', 44276)
+2025-05-16 10:47:23,459 [INFO] ('172.20.0.1', 44276) handling connection
+2025-05-16 10:47:24,326 [INFO] ('172.20.0.1', 44276) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:24,329 [INFO] ('172.20.0.1', 44276) >> b'mail from:<sender@email-threat-docker.local> size=271'
+2025-05-16 10:47:24,330 [INFO] ('172.20.0.1', 44276) sender: sender@email-threat-docker.local
+2025-05-16 10:47:24,332 [INFO] ('172.20.0.1', 44276) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:24,333 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:24,334 [INFO] ('172.20.0.1', 44276) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:24,336 [INFO] ('172.20.0.1', 44276) >> b'data'
+2025-05-16 10:47:24,342 [WARNING] Quarantined: /app/quarantine/quarantine_1747403244_5.eml | Threats: YARA:without_attachments, YARA:domain, YARA:without_images, YARA:url, YARA:with_urls
+2025-05-16 10:47:24,347 [INFO] ('172.20.0.1', 44276) >> b'QUIT'
+2025-05-16 10:47:24,348 [INFO] ('172.20.0.1', 44276) connection lost
+2025-05-16 10:47:24,349 [INFO] ('172.20.0.1', 44276) Connection lost during _handle_client()
+2025-05-16 10:47:24,453 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:24,454 [INFO] Peer: ('172.20.0.1', 44278)
+2025-05-16 10:47:24,455 [INFO] ('172.20.0.1', 44278) handling connection
+2025-05-16 10:47:25,308 [INFO] ('172.20.0.1', 44278) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:25,311 [INFO] ('172.20.0.1', 44278) >> b'mail from:<sender@email-threat-docker.local> size=267'
+2025-05-16 10:47:25,313 [INFO] ('172.20.0.1', 44278) sender: sender@email-threat-docker.local
+2025-05-16 10:47:25,315 [INFO] ('172.20.0.1', 44278) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:25,316 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:25,317 [INFO] ('172.20.0.1', 44278) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:25,319 [INFO] ('172.20.0.1', 44278) >> b'data'
+2025-05-16 10:47:25,326 [WARNING] Quarantined: /app/quarantine/quarantine_1747403245_5.eml | Threats: YARA:without_attachments, YARA:domain, YARA:without_images, YARA:url, YARA:with_urls
+2025-05-16 10:47:25,331 [INFO] ('172.20.0.1', 44278) >> b'QUIT'
+2025-05-16 10:47:25,332 [INFO] ('172.20.0.1', 44278) connection lost
+2025-05-16 10:47:25,334 [INFO] ('172.20.0.1', 44278) Connection lost during _handle_client()
+2025-05-16 10:47:25,438 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:25,439 [INFO] Peer: ('172.20.0.1', 44292)
+2025-05-16 10:47:25,440 [INFO] ('172.20.0.1', 44292) handling connection
+2025-05-16 10:47:26,286 [INFO] ('172.20.0.1', 44292) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:26,290 [INFO] ('172.20.0.1', 44292) >> b'mail from:<sender@email-threat-docker.local> size=1278'
+2025-05-16 10:47:26,291 [INFO] ('172.20.0.1', 44292) sender: sender@email-threat-docker.local
+2025-05-16 10:47:26,294 [INFO] ('172.20.0.1', 44292) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:26,295 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:26,295 [INFO] ('172.20.0.1', 44292) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:26,298 [INFO] ('172.20.0.1', 44292) >> b'data'
+2025-05-16 10:47:26,308 [WARNING] Quarantined: /app/quarantine/quarantine_1747403246_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-16 10:47:26,314 [INFO] ('172.20.0.1', 44292) >> b'QUIT'
+2025-05-16 10:47:26,316 [INFO] ('172.20.0.1', 44292) connection lost
+2025-05-16 10:47:26,317 [INFO] ('172.20.0.1', 44292) Connection lost during _handle_client()
+2025-05-16 10:47:26,421 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:26,422 [INFO] Peer: ('172.20.0.1', 44296)
+2025-05-16 10:47:26,423 [INFO] ('172.20.0.1', 44296) handling connection
+2025-05-16 10:47:27,272 [INFO] ('172.20.0.1', 44296) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:27,276 [INFO] ('172.20.0.1', 44296) >> b'mail from:<sender@email-threat-docker.local> size=1982'
+2025-05-16 10:47:27,278 [INFO] ('172.20.0.1', 44296) sender: sender@email-threat-docker.local
+2025-05-16 10:47:27,280 [INFO] ('172.20.0.1', 44296) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:27,281 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:27,282 [INFO] ('172.20.0.1', 44296) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:27,284 [INFO] ('172.20.0.1', 44296) >> b'data'
+2025-05-16 10:47:27,297 [WARNING] Quarantined: /app/quarantine/quarantine_1747403247_3.eml | Threats: YARA:executable_attachment, YARA:without_images, YARA:without_urls
+2025-05-16 10:47:27,303 [INFO] ('172.20.0.1', 44296) >> b'QUIT'
+2025-05-16 10:47:27,304 [INFO] ('172.20.0.1', 44296) connection lost
+2025-05-16 10:47:27,305 [INFO] ('172.20.0.1', 44296) Connection lost during _handle_client()
+2025-05-16 10:47:27,410 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:27,412 [INFO] Peer: ('172.20.0.1', 44298)
+2025-05-16 10:47:27,412 [INFO] ('172.20.0.1', 44298) handling connection
+2025-05-16 10:47:28,269 [INFO] ('172.20.0.1', 44298) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:28,273 [INFO] ('172.20.0.1', 44298) >> b'mail from:<sender@email-threat-docker.local> size=687'
+2025-05-16 10:47:28,274 [INFO] ('172.20.0.1', 44298) sender: sender@email-threat-docker.local
+2025-05-16 10:47:28,277 [INFO] ('172.20.0.1', 44298) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:28,278 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:28,279 [INFO] ('172.20.0.1', 44298) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:28,281 [INFO] ('172.20.0.1', 44298) >> b'data'
+2025-05-16 10:47:28,290 [WARNING] Quarantined: /app/quarantine/quarantine_1747403248_4.eml | Threats: YARA:domain, YARA:without_images, YARA:url, YARA:with_urls
+2025-05-16 10:47:28,295 [INFO] ('172.20.0.1', 44298) >> b'QUIT'
+2025-05-16 10:47:28,296 [INFO] ('172.20.0.1', 44298) connection lost
+2025-05-16 10:47:28,297 [INFO] ('172.20.0.1', 44298) Connection lost during _handle_client()
+2025-05-16 10:47:46,680 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:46,681 [INFO] Peer: ('172.20.0.1', 34054)
+2025-05-16 10:47:46,682 [INFO] ('172.20.0.1', 34054) handling connection
+2025-05-16 10:47:47,971 [INFO] ('172.20.0.1', 34054) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:47,975 [INFO] ('172.20.0.1', 34054) >> b'mail from:<sender@email-threat-docker.local> size=230'
+2025-05-16 10:47:47,977 [INFO] ('172.20.0.1', 34054) sender: sender@email-threat-docker.local
+2025-05-16 10:47:47,979 [INFO] ('172.20.0.1', 34054) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:47,980 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:47,981 [INFO] ('172.20.0.1', 34054) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:47,984 [INFO] ('172.20.0.1', 34054) >> b'data'
+2025-05-16 10:47:47,994 [WARNING] Quarantined: /app/quarantine/quarantine_1747403267_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 10:47:48,001 [INFO] ('172.20.0.1', 34054) >> b'QUIT'
+2025-05-16 10:47:48,002 [INFO] ('172.20.0.1', 34054) connection lost
+2025-05-16 10:47:48,004 [INFO] ('172.20.0.1', 34054) Connection lost during _handle_client()
+2025-05-16 10:47:48,109 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:48,111 [INFO] Peer: ('172.20.0.1', 34064)
+2025-05-16 10:47:48,112 [INFO] ('172.20.0.1', 34064) handling connection
+2025-05-16 10:47:48,979 [INFO] ('172.20.0.1', 34064) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:48,984 [INFO] ('172.20.0.1', 34064) >> b'mail from:<sender@email-threat-docker.local> size=635'
+2025-05-16 10:47:48,985 [INFO] ('172.20.0.1', 34064) sender: sender@email-threat-docker.local
+2025-05-16 10:47:48,987 [INFO] ('172.20.0.1', 34064) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:48,988 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:48,988 [INFO] ('172.20.0.1', 34064) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:48,991 [INFO] ('172.20.0.1', 34064) >> b'data'
+2025-05-16 10:47:48,999 [WARNING] Quarantined: /app/quarantine/quarantine_1747403268_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-16 10:47:49,006 [INFO] ('172.20.0.1', 34064) >> b'QUIT'
+2025-05-16 10:47:49,006 [INFO] ('172.20.0.1', 34064) connection lost
+2025-05-16 10:47:49,008 [INFO] ('172.20.0.1', 34064) Connection lost during _handle_client()
+2025-05-16 10:47:49,112 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:49,114 [INFO] Peer: ('172.20.0.1', 48416)
+2025-05-16 10:47:49,115 [INFO] ('172.20.0.1', 48416) handling connection
+2025-05-16 10:47:49,964 [INFO] ('172.20.0.1', 48416) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:49,967 [INFO] ('172.20.0.1', 48416) >> b'mail from:<sender@email-threat-docker.local> size=236'
+2025-05-16 10:47:49,968 [INFO] ('172.20.0.1', 48416) sender: sender@email-threat-docker.local
+2025-05-16 10:47:49,971 [INFO] ('172.20.0.1', 48416) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:49,972 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:49,973 [INFO] ('172.20.0.1', 48416) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:49,976 [INFO] ('172.20.0.1', 48416) >> b'data'
+2025-05-16 10:47:49,986 [WARNING] Quarantined: /app/quarantine/quarantine_1747403269_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 10:47:49,995 [INFO] ('172.20.0.1', 48416) >> b'QUIT'
+2025-05-16 10:47:49,997 [INFO] ('172.20.0.1', 48416) connection lost
+2025-05-16 10:47:50,000 [INFO] ('172.20.0.1', 48416) Connection lost during _handle_client()
+2025-05-16 10:47:50,105 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:50,106 [INFO] Peer: ('172.20.0.1', 48422)
+2025-05-16 10:47:50,108 [INFO] ('172.20.0.1', 48422) handling connection
+2025-05-16 10:47:50,961 [INFO] ('172.20.0.1', 48422) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:50,965 [INFO] ('172.20.0.1', 48422) >> b'mail from:<sender@email-threat-docker.local> size=245'
+2025-05-16 10:47:50,966 [INFO] ('172.20.0.1', 48422) sender: sender@email-threat-docker.local
+2025-05-16 10:47:50,968 [INFO] ('172.20.0.1', 48422) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:50,970 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:50,970 [INFO] ('172.20.0.1', 48422) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:50,972 [INFO] ('172.20.0.1', 48422) >> b'data'
+2025-05-16 10:47:50,979 [WARNING] Quarantined: /app/quarantine/quarantine_1747403270_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 10:47:50,984 [INFO] ('172.20.0.1', 48422) >> b'QUIT'
+2025-05-16 10:47:50,985 [INFO] ('172.20.0.1', 48422) connection lost
+2025-05-16 10:47:50,986 [INFO] ('172.20.0.1', 48422) Connection lost during _handle_client()
+2025-05-16 10:47:51,091 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:51,092 [INFO] Peer: ('172.20.0.1', 48428)
+2025-05-16 10:47:51,093 [INFO] ('172.20.0.1', 48428) handling connection
+2025-05-16 10:47:51,945 [INFO] ('172.20.0.1', 48428) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:51,950 [INFO] ('172.20.0.1', 48428) >> b'mail from:<sender@email-threat-docker.local> size=642'
+2025-05-16 10:47:51,951 [INFO] ('172.20.0.1', 48428) sender: sender@email-threat-docker.local
+2025-05-16 10:47:51,954 [INFO] ('172.20.0.1', 48428) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:51,956 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:51,957 [INFO] ('172.20.0.1', 48428) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:51,959 [INFO] ('172.20.0.1', 48428) >> b'data'
+2025-05-16 10:47:51,970 [WARNING] Quarantined: /app/quarantine/quarantine_1747403271_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-16 10:47:51,978 [INFO] ('172.20.0.1', 48428) >> b'QUIT'
+2025-05-16 10:47:51,979 [INFO] ('172.20.0.1', 48428) connection lost
+2025-05-16 10:47:51,980 [INFO] ('172.20.0.1', 48428) Connection lost during _handle_client()
+2025-05-16 10:47:52,089 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:52,090 [INFO] Peer: ('172.20.0.1', 48432)
+2025-05-16 10:47:52,091 [INFO] ('172.20.0.1', 48432) handling connection
+2025-05-16 10:47:52,942 [INFO] ('172.20.0.1', 48432) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:52,945 [INFO] ('172.20.0.1', 48432) >> b'mail from:<sender@email-threat-docker.local> size=240'
+2025-05-16 10:47:52,946 [INFO] ('172.20.0.1', 48432) sender: sender@email-threat-docker.local
+2025-05-16 10:47:52,949 [INFO] ('172.20.0.1', 48432) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:52,950 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:52,951 [INFO] ('172.20.0.1', 48432) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:52,953 [INFO] ('172.20.0.1', 48432) >> b'data'
+2025-05-16 10:47:52,959 [WARNING] Quarantined: /app/quarantine/quarantine_1747403272_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 10:47:52,965 [INFO] ('172.20.0.1', 48432) >> b'QUIT'
+2025-05-16 10:47:52,967 [INFO] ('172.20.0.1', 48432) connection lost
+2025-05-16 10:47:52,968 [INFO] ('172.20.0.1', 48432) Connection lost during _handle_client()
+2025-05-16 10:47:53,073 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:53,074 [INFO] Peer: ('172.20.0.1', 48448)
+2025-05-16 10:47:53,075 [INFO] ('172.20.0.1', 48448) handling connection
+2025-05-16 10:47:53,922 [INFO] ('172.20.0.1', 48448) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:53,926 [INFO] ('172.20.0.1', 48448) >> b'mail from:<sender@email-threat-docker.local> size=239'
+2025-05-16 10:47:53,927 [INFO] ('172.20.0.1', 48448) sender: sender@email-threat-docker.local
+2025-05-16 10:47:53,930 [INFO] ('172.20.0.1', 48448) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:53,932 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:53,932 [INFO] ('172.20.0.1', 48448) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:53,935 [INFO] ('172.20.0.1', 48448) >> b'data'
+2025-05-16 10:47:53,943 [WARNING] Quarantined: /app/quarantine/quarantine_1747403273_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 10:47:53,951 [INFO] ('172.20.0.1', 48448) >> b'QUIT'
+2025-05-16 10:47:53,952 [INFO] ('172.20.0.1', 48448) connection lost
+2025-05-16 10:47:53,953 [INFO] ('172.20.0.1', 48448) Connection lost during _handle_client()
+2025-05-16 10:47:54,059 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:54,061 [INFO] Peer: ('172.20.0.1', 48464)
+2025-05-16 10:47:54,062 [INFO] ('172.20.0.1', 48464) handling connection
+2025-05-16 10:47:54,914 [INFO] ('172.20.0.1', 48464) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:54,918 [INFO] ('172.20.0.1', 48464) >> b'mail from:<sender@email-threat-docker.local> size=238'
+2025-05-16 10:47:54,919 [INFO] ('172.20.0.1', 48464) sender: sender@email-threat-docker.local
+2025-05-16 10:47:54,922 [INFO] ('172.20.0.1', 48464) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:54,923 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:54,924 [INFO] ('172.20.0.1', 48464) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:54,927 [INFO] ('172.20.0.1', 48464) >> b'data'
+2025-05-16 10:47:54,933 [WARNING] Quarantined: /app/quarantine/quarantine_1747403274_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 10:47:54,939 [INFO] ('172.20.0.1', 48464) >> b'QUIT'
+2025-05-16 10:47:54,941 [INFO] ('172.20.0.1', 48464) connection lost
+2025-05-16 10:47:54,942 [INFO] ('172.20.0.1', 48464) Connection lost during _handle_client()
+2025-05-16 10:47:55,047 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:55,048 [INFO] Peer: ('172.20.0.1', 48474)
+2025-05-16 10:47:55,049 [INFO] ('172.20.0.1', 48474) handling connection
+2025-05-16 10:47:55,899 [INFO] ('172.20.0.1', 48474) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:55,903 [INFO] ('172.20.0.1', 48474) >> b'mail from:<sender@email-threat-docker.local> size=253'
+2025-05-16 10:47:55,905 [INFO] ('172.20.0.1', 48474) sender: sender@email-threat-docker.local
+2025-05-16 10:47:55,907 [INFO] ('172.20.0.1', 48474) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:55,909 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:55,910 [INFO] ('172.20.0.1', 48474) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:55,913 [INFO] ('172.20.0.1', 48474) >> b'data'
+2025-05-16 10:47:55,920 [WARNING] Quarantined: /app/quarantine/quarantine_1747403275_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 10:47:55,928 [INFO] ('172.20.0.1', 48474) >> b'QUIT'
+2025-05-16 10:47:55,930 [INFO] ('172.20.0.1', 48474) connection lost
+2025-05-16 10:47:55,931 [INFO] ('172.20.0.1', 48474) Connection lost during _handle_client()
+2025-05-16 10:47:56,036 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:56,038 [INFO] Peer: ('172.20.0.1', 48490)
+2025-05-16 10:47:56,039 [INFO] ('172.20.0.1', 48490) handling connection
+2025-05-16 10:47:56,892 [INFO] ('172.20.0.1', 48490) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:56,896 [INFO] ('172.20.0.1', 48490) >> b'mail from:<sender@email-threat-docker.local> size=247'
+2025-05-16 10:47:56,898 [INFO] ('172.20.0.1', 48490) sender: sender@email-threat-docker.local
+2025-05-16 10:47:56,900 [INFO] ('172.20.0.1', 48490) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:56,901 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:56,902 [INFO] ('172.20.0.1', 48490) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:56,905 [INFO] ('172.20.0.1', 48490) >> b'data'
+2025-05-16 10:47:56,913 [WARNING] Quarantined: /app/quarantine/quarantine_1747403276_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 10:47:56,920 [INFO] ('172.20.0.1', 48490) >> b'QUIT'
+2025-05-16 10:47:56,921 [INFO] ('172.20.0.1', 48490) connection lost
+2025-05-16 10:47:56,922 [INFO] ('172.20.0.1', 48490) Connection lost during _handle_client()
+2025-05-16 10:47:57,027 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:57,029 [INFO] Peer: ('172.20.0.1', 48494)
+2025-05-16 10:47:57,030 [INFO] ('172.20.0.1', 48494) handling connection
+2025-05-16 10:47:57,878 [INFO] ('172.20.0.1', 48494) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:57,883 [INFO] ('172.20.0.1', 48494) >> b'mail from:<sender@email-threat-docker.local> size=699'
+2025-05-16 10:47:57,884 [INFO] ('172.20.0.1', 48494) sender: sender@email-threat-docker.local
+2025-05-16 10:47:57,887 [INFO] ('172.20.0.1', 48494) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:57,888 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:57,889 [INFO] ('172.20.0.1', 48494) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:57,893 [INFO] ('172.20.0.1', 48494) >> b'data'
+2025-05-16 10:47:57,904 [WARNING] Quarantined: /app/quarantine/quarantine_1747403277_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-16 10:47:57,911 [INFO] ('172.20.0.1', 48494) >> b'QUIT'
+2025-05-16 10:47:57,912 [INFO] ('172.20.0.1', 48494) connection lost
+2025-05-16 10:47:57,913 [INFO] ('172.20.0.1', 48494) Connection lost during _handle_client()
+2025-05-16 10:47:58,020 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:58,021 [INFO] Peer: ('172.20.0.1', 48498)
+2025-05-16 10:47:58,022 [INFO] ('172.20.0.1', 48498) handling connection
+2025-05-16 10:47:58,869 [INFO] ('172.20.0.1', 48498) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:58,874 [INFO] ('172.20.0.1', 48498) >> b'mail from:<sender@email-threat-docker.local> size=1994'
+2025-05-16 10:47:58,875 [INFO] ('172.20.0.1', 48498) sender: sender@email-threat-docker.local
+2025-05-16 10:47:58,877 [INFO] ('172.20.0.1', 48498) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:58,878 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:58,879 [INFO] ('172.20.0.1', 48498) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:58,881 [INFO] ('172.20.0.1', 48498) >> b'data'
+2025-05-16 10:47:58,894 [WARNING] Quarantined: /app/quarantine/quarantine_1747403278_3.eml | Threats: YARA:executable_attachment, YARA:without_images, YARA:without_urls
+2025-05-16 10:47:58,900 [INFO] ('172.20.0.1', 48498) >> b'QUIT'
+2025-05-16 10:47:58,901 [INFO] ('172.20.0.1', 48498) connection lost
+2025-05-16 10:47:58,903 [INFO] ('172.20.0.1', 48498) Connection lost during _handle_client()
+2025-05-16 10:47:59,008 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:47:59,009 [INFO] Peer: ('172.20.0.1', 45052)
+2025-05-16 10:47:59,010 [INFO] ('172.20.0.1', 45052) handling connection
+2025-05-16 10:47:59,888 [INFO] ('172.20.0.1', 45052) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:47:59,892 [INFO] ('172.20.0.1', 45052) >> b'mail from:<sender@email-threat-docker.local> size=293'
+2025-05-16 10:47:59,893 [INFO] ('172.20.0.1', 45052) sender: sender@email-threat-docker.local
+2025-05-16 10:47:59,896 [INFO] ('172.20.0.1', 45052) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:47:59,897 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:47:59,898 [INFO] ('172.20.0.1', 45052) recip: recipient@email-threat-docker.local
+2025-05-16 10:47:59,901 [INFO] ('172.20.0.1', 45052) >> b'data'
+2025-05-16 10:47:59,910 [WARNING] Quarantined: /app/quarantine/quarantine_1747403279_5.eml | Threats: YARA:without_attachments, YARA:domain, YARA:without_images, YARA:url, YARA:with_urls
+2025-05-16 10:47:59,918 [INFO] ('172.20.0.1', 45052) >> b'QUIT'
+2025-05-16 10:47:59,919 [INFO] ('172.20.0.1', 45052) connection lost
+2025-05-16 10:47:59,920 [INFO] ('172.20.0.1', 45052) Connection lost during _handle_client()
+2025-05-16 10:48:00,026 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:48:00,028 [INFO] Peer: ('172.20.0.1', 45054)
+2025-05-16 10:48:00,029 [INFO] ('172.20.0.1', 45054) handling connection
+2025-05-16 10:48:00,885 [INFO] ('172.20.0.1', 45054) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:48:00,889 [INFO] ('172.20.0.1', 45054) >> b'mail from:<sender@email-threat-docker.local> size=279'
+2025-05-16 10:48:00,890 [INFO] ('172.20.0.1', 45054) sender: sender@email-threat-docker.local
+2025-05-16 10:48:00,893 [INFO] ('172.20.0.1', 45054) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:48:00,894 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:48:00,895 [INFO] ('172.20.0.1', 45054) recip: recipient@email-threat-docker.local
+2025-05-16 10:48:00,898 [INFO] ('172.20.0.1', 45054) >> b'data'
+2025-05-16 10:48:00,905 [WARNING] Quarantined: /app/quarantine/quarantine_1747403280_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 10:48:00,911 [INFO] ('172.20.0.1', 45054) >> b'QUIT'
+2025-05-16 10:48:00,913 [INFO] ('172.20.0.1', 45054) connection lost
+2025-05-16 10:48:00,915 [INFO] ('172.20.0.1', 45054) Connection lost during _handle_client()
+2025-05-16 10:48:01,018 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:48:01,020 [INFO] Peer: ('172.20.0.1', 45056)
+2025-05-16 10:48:01,021 [INFO] ('172.20.0.1', 45056) handling connection
+2025-05-16 10:48:01,869 [INFO] ('172.20.0.1', 45056) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:48:01,873 [INFO] ('172.20.0.1', 45056) >> b'mail from:<sender@email-threat-docker.local> size=1987'
+2025-05-16 10:48:01,875 [INFO] ('172.20.0.1', 45056) sender: sender@email-threat-docker.local
+2025-05-16 10:48:01,877 [INFO] ('172.20.0.1', 45056) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:48:01,878 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:48:01,879 [INFO] ('172.20.0.1', 45056) recip: recipient@email-threat-docker.local
+2025-05-16 10:48:01,882 [INFO] ('172.20.0.1', 45056) >> b'data'
+2025-05-16 10:48:01,897 [WARNING] Quarantined: /app/quarantine/quarantine_1747403281_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-16 10:48:01,905 [INFO] ('172.20.0.1', 45056) >> b'QUIT'
+2025-05-16 10:48:01,906 [INFO] ('172.20.0.1', 45056) connection lost
+2025-05-16 10:48:01,910 [INFO] ('172.20.0.1', 45056) Connection lost during _handle_client()
+2025-05-16 10:48:02,022 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:48:02,032 [INFO] Peer: ('172.20.0.1', 45060)
+2025-05-16 10:48:02,037 [INFO] ('172.20.0.1', 45060) handling connection
+2025-05-16 10:48:02,893 [INFO] ('172.20.0.1', 45060) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:48:02,898 [INFO] ('172.20.0.1', 45060) >> b'mail from:<sender@email-threat-docker.local> size=271'
+2025-05-16 10:48:02,899 [INFO] ('172.20.0.1', 45060) sender: sender@email-threat-docker.local
+2025-05-16 10:48:02,903 [INFO] ('172.20.0.1', 45060) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:48:02,904 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:48:02,905 [INFO] ('172.20.0.1', 45060) recip: recipient@email-threat-docker.local
+2025-05-16 10:48:02,908 [INFO] ('172.20.0.1', 45060) >> b'data'
+2025-05-16 10:48:02,918 [WARNING] Quarantined: /app/quarantine/quarantine_1747403282_5.eml | Threats: YARA:without_attachments, YARA:domain, YARA:without_images, YARA:url, YARA:with_urls
+2025-05-16 10:48:02,936 [INFO] ('172.20.0.1', 45060) >> b'QUIT'
+2025-05-16 10:48:02,939 [INFO] ('172.20.0.1', 45060) connection lost
+2025-05-16 10:48:02,943 [INFO] ('172.20.0.1', 45060) Connection lost during _handle_client()
+2025-05-16 10:48:03,065 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:48:03,068 [INFO] Peer: ('172.20.0.1', 45074)
+2025-05-16 10:48:03,070 [INFO] ('172.20.0.1', 45074) handling connection
+2025-05-16 10:48:03,944 [INFO] ('172.20.0.1', 45074) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:48:03,948 [INFO] ('172.20.0.1', 45074) >> b'mail from:<sender@email-threat-docker.local> size=267'
+2025-05-16 10:48:03,949 [INFO] ('172.20.0.1', 45074) sender: sender@email-threat-docker.local
+2025-05-16 10:48:03,952 [INFO] ('172.20.0.1', 45074) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:48:03,953 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:48:03,954 [INFO] ('172.20.0.1', 45074) recip: recipient@email-threat-docker.local
+2025-05-16 10:48:03,956 [INFO] ('172.20.0.1', 45074) >> b'data'
+2025-05-16 10:48:03,963 [WARNING] Quarantined: /app/quarantine/quarantine_1747403283_5.eml | Threats: YARA:without_attachments, YARA:domain, YARA:without_images, YARA:url, YARA:with_urls
+2025-05-16 10:48:03,969 [INFO] ('172.20.0.1', 45074) >> b'QUIT'
+2025-05-16 10:48:03,971 [INFO] ('172.20.0.1', 45074) connection lost
+2025-05-16 10:48:03,972 [INFO] ('172.20.0.1', 45074) Connection lost during _handle_client()
+2025-05-16 10:48:04,078 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:48:04,079 [INFO] Peer: ('172.20.0.1', 45080)
+2025-05-16 10:48:04,080 [INFO] ('172.20.0.1', 45080) handling connection
+2025-05-16 10:48:04,932 [INFO] ('172.20.0.1', 45080) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:48:04,937 [INFO] ('172.20.0.1', 45080) >> b'mail from:<sender@email-threat-docker.local> size=1278'
+2025-05-16 10:48:04,938 [INFO] ('172.20.0.1', 45080) sender: sender@email-threat-docker.local
+2025-05-16 10:48:04,941 [INFO] ('172.20.0.1', 45080) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:48:04,943 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:48:04,944 [INFO] ('172.20.0.1', 45080) recip: recipient@email-threat-docker.local
+2025-05-16 10:48:04,946 [INFO] ('172.20.0.1', 45080) >> b'data'
+2025-05-16 10:48:04,959 [WARNING] Quarantined: /app/quarantine/quarantine_1747403284_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-16 10:48:04,965 [INFO] ('172.20.0.1', 45080) >> b'QUIT'
+2025-05-16 10:48:04,966 [INFO] ('172.20.0.1', 45080) connection lost
+2025-05-16 10:48:04,967 [INFO] ('172.20.0.1', 45080) Connection lost during _handle_client()
+2025-05-16 10:48:05,072 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:48:05,073 [INFO] Peer: ('172.20.0.1', 45090)
+2025-05-16 10:48:05,075 [INFO] ('172.20.0.1', 45090) handling connection
+2025-05-16 10:48:05,920 [INFO] ('172.20.0.1', 45090) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:48:05,925 [INFO] ('172.20.0.1', 45090) >> b'mail from:<sender@email-threat-docker.local> size=1982'
+2025-05-16 10:48:05,927 [INFO] ('172.20.0.1', 45090) sender: sender@email-threat-docker.local
+2025-05-16 10:48:05,930 [INFO] ('172.20.0.1', 45090) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:48:05,932 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:48:05,932 [INFO] ('172.20.0.1', 45090) recip: recipient@email-threat-docker.local
+2025-05-16 10:48:05,935 [INFO] ('172.20.0.1', 45090) >> b'data'
+2025-05-16 10:48:05,953 [WARNING] Quarantined: /app/quarantine/quarantine_1747403285_3.eml | Threats: YARA:executable_attachment, YARA:without_images, YARA:without_urls
+2025-05-16 10:48:05,960 [INFO] ('172.20.0.1', 45090) >> b'QUIT'
+2025-05-16 10:48:05,962 [INFO] ('172.20.0.1', 45090) connection lost
+2025-05-16 10:48:05,964 [INFO] ('172.20.0.1', 45090) Connection lost during _handle_client()
+2025-05-16 10:48:06,070 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 10:48:06,072 [INFO] Peer: ('172.20.0.1', 45104)
+2025-05-16 10:48:06,073 [INFO] ('172.20.0.1', 45104) handling connection
+2025-05-16 10:48:06,926 [INFO] ('172.20.0.1', 45104) >> b'ehlo [192.168.48.1]'
+2025-05-16 10:48:06,932 [INFO] ('172.20.0.1', 45104) >> b'mail from:<sender@email-threat-docker.local> size=687'
+2025-05-16 10:48:06,933 [INFO] ('172.20.0.1', 45104) sender: sender@email-threat-docker.local
+2025-05-16 10:48:06,935 [INFO] ('172.20.0.1', 45104) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 10:48:06,937 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 10:48:06,937 [INFO] ('172.20.0.1', 45104) recip: recipient@email-threat-docker.local
+2025-05-16 10:48:06,940 [INFO] ('172.20.0.1', 45104) >> b'data'
+2025-05-16 10:48:06,950 [WARNING] Quarantined: /app/quarantine/quarantine_1747403286_4.eml | Threats: YARA:domain, YARA:without_images, YARA:url, YARA:with_urls
+2025-05-16 10:48:06,957 [INFO] ('172.20.0.1', 45104) >> b'QUIT'
+2025-05-16 10:48:06,959 [INFO] ('172.20.0.1', 45104) connection lost
+2025-05-16 10:48:06,960 [INFO] ('172.20.0.1', 45104) Connection lost during _handle_client()
+2025-05-16 11:00:38,548 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-16 11:00:38,566 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:00:38,567 [INFO] Peer: ('127.0.0.1', 48770)
+2025-05-16 11:00:38,568 [INFO] ('127.0.0.1', 48770) handling connection
+2025-05-16 11:00:38,569 [INFO] ('127.0.0.1', 48770) EOF received
+2025-05-16 11:00:38,570 [INFO] ('127.0.0.1', 48770) Connection lost during _handle_client()
+2025-05-16 11:00:38,571 [INFO] ('127.0.0.1', 48770) connection lost
+2025-05-16 11:01:48,076 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:01:48,078 [INFO] Peer: ('172.20.0.1', 58716)
+2025-05-16 11:01:48,079 [INFO] ('172.20.0.1', 58716) handling connection
+2025-05-16 11:01:49,373 [INFO] ('172.20.0.1', 58716) >> b'ehlo [192.168.48.1]'
+2025-05-16 11:01:49,378 [INFO] ('172.20.0.1', 58716) >> b'mail from:<sender@email-threat-docker.local> size=230'
+2025-05-16 11:01:49,379 [INFO] ('172.20.0.1', 58716) sender: sender@email-threat-docker.local
+2025-05-16 11:01:49,382 [INFO] ('172.20.0.1', 58716) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 11:01:49,383 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:01:49,384 [INFO] ('172.20.0.1', 58716) recip: recipient@email-threat-docker.local
+2025-05-16 11:01:49,387 [INFO] ('172.20.0.1', 58716) >> b'data'
+2025-05-16 11:01:49,399 [WARNING] Quarantined: /app/quarantine/quarantine_1747404109_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 11:01:49,409 [INFO] ('172.20.0.1', 58716) >> b'QUIT'
+2025-05-16 11:01:49,411 [INFO] ('172.20.0.1', 58716) connection lost
+2025-05-16 11:01:49,412 [INFO] ('172.20.0.1', 58716) Connection lost during _handle_client()
+2025-05-16 11:01:49,518 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:01:49,519 [INFO] Peer: ('172.20.0.1', 60494)
+2025-05-16 11:01:49,520 [INFO] ('172.20.0.1', 60494) handling connection
+2025-05-16 11:01:50,373 [INFO] ('172.20.0.1', 60494) >> b'ehlo [192.168.48.1]'
+2025-05-16 11:01:50,378 [INFO] ('172.20.0.1', 60494) >> b'mail from:<sender@email-threat-docker.local> size=635'
+2025-05-16 11:01:50,379 [INFO] ('172.20.0.1', 60494) sender: sender@email-threat-docker.local
+2025-05-16 11:01:50,382 [INFO] ('172.20.0.1', 60494) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 11:01:50,383 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:01:50,383 [INFO] ('172.20.0.1', 60494) recip: recipient@email-threat-docker.local
+2025-05-16 11:01:50,386 [INFO] ('172.20.0.1', 60494) >> b'data'
+2025-05-16 11:01:50,398 [WARNING] Quarantined: /app/quarantine/quarantine_1747404110_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-16 11:01:50,407 [INFO] ('172.20.0.1', 60494) >> b'QUIT'
+2025-05-16 11:01:50,408 [INFO] ('172.20.0.1', 60494) connection lost
+2025-05-16 11:01:50,409 [INFO] ('172.20.0.1', 60494) Connection lost during _handle_client()
+2025-05-16 11:01:50,515 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:01:50,516 [INFO] Peer: ('172.20.0.1', 60500)
+2025-05-16 11:01:50,517 [INFO] ('172.20.0.1', 60500) handling connection
+2025-05-16 11:01:51,363 [INFO] ('172.20.0.1', 60500) >> b'ehlo [192.168.48.1]'
+2025-05-16 11:01:51,368 [INFO] ('172.20.0.1', 60500) >> b'mail from:<sender@email-threat-docker.local> size=236'
+2025-05-16 11:01:51,369 [INFO] ('172.20.0.1', 60500) sender: sender@email-threat-docker.local
+2025-05-16 11:01:51,371 [INFO] ('172.20.0.1', 60500) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 11:01:51,373 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:01:51,374 [INFO] ('172.20.0.1', 60500) recip: recipient@email-threat-docker.local
+2025-05-16 11:01:51,376 [INFO] ('172.20.0.1', 60500) >> b'data'
+2025-05-16 11:01:51,383 [WARNING] Quarantined: /app/quarantine/quarantine_1747404111_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 11:01:51,391 [INFO] ('172.20.0.1', 60500) >> b'QUIT'
+2025-05-16 11:01:51,392 [INFO] ('172.20.0.1', 60500) connection lost
+2025-05-16 11:01:51,393 [INFO] ('172.20.0.1', 60500) Connection lost during _handle_client()
+2025-05-16 11:01:51,499 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:01:51,500 [INFO] Peer: ('172.20.0.1', 60510)
+2025-05-16 11:01:51,501 [INFO] ('172.20.0.1', 60510) handling connection
+2025-05-16 11:01:52,345 [INFO] ('172.20.0.1', 60510) >> b'ehlo [192.168.48.1]'
+2025-05-16 11:01:52,349 [INFO] ('172.20.0.1', 60510) >> b'mail from:<sender@email-threat-docker.local> size=245'
+2025-05-16 11:01:52,350 [INFO] ('172.20.0.1', 60510) sender: sender@email-threat-docker.local
+2025-05-16 11:01:52,353 [INFO] ('172.20.0.1', 60510) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 11:01:52,354 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:01:52,355 [INFO] ('172.20.0.1', 60510) recip: recipient@email-threat-docker.local
+2025-05-16 11:01:52,357 [INFO] ('172.20.0.1', 60510) >> b'data'
+2025-05-16 11:01:52,363 [WARNING] Quarantined: /app/quarantine/quarantine_1747404112_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 11:01:52,370 [INFO] ('172.20.0.1', 60510) >> b'QUIT'
+2025-05-16 11:01:52,372 [INFO] ('172.20.0.1', 60510) connection lost
+2025-05-16 11:01:52,373 [INFO] ('172.20.0.1', 60510) Connection lost during _handle_client()
+2025-05-16 11:01:52,478 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:01:52,479 [INFO] Peer: ('172.20.0.1', 60518)
+2025-05-16 11:01:52,480 [INFO] ('172.20.0.1', 60518) handling connection
+2025-05-16 11:01:53,332 [INFO] ('172.20.0.1', 60518) >> b'ehlo [192.168.48.1]'
+2025-05-16 11:01:53,338 [INFO] ('172.20.0.1', 60518) >> b'mail from:<sender@email-threat-docker.local> size=642'
+2025-05-16 11:01:53,339 [INFO] ('172.20.0.1', 60518) sender: sender@email-threat-docker.local
+2025-05-16 11:01:53,342 [INFO] ('172.20.0.1', 60518) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 11:01:53,344 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:01:53,345 [INFO] ('172.20.0.1', 60518) recip: recipient@email-threat-docker.local
+2025-05-16 11:01:53,348 [INFO] ('172.20.0.1', 60518) >> b'data'
+2025-05-16 11:01:53,363 [WARNING] Quarantined: /app/quarantine/quarantine_1747404113_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-16 11:01:53,378 [INFO] ('172.20.0.1', 60518) >> b'QUIT'
+2025-05-16 11:01:53,379 [INFO] ('172.20.0.1', 60518) connection lost
+2025-05-16 11:01:53,382 [INFO] ('172.20.0.1', 60518) Connection lost during _handle_client()
+2025-05-16 11:01:53,488 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:01:53,489 [INFO] Peer: ('172.20.0.1', 60530)
+2025-05-16 11:01:53,490 [INFO] ('172.20.0.1', 60530) handling connection
+2025-05-16 11:01:54,325 [INFO] ('172.20.0.1', 60530) >> b'ehlo [192.168.48.1]'
+2025-05-16 11:01:54,329 [INFO] ('172.20.0.1', 60530) >> b'mail from:<sender@email-threat-docker.local> size=240'
+2025-05-16 11:01:54,330 [INFO] ('172.20.0.1', 60530) sender: sender@email-threat-docker.local
+2025-05-16 11:01:54,332 [INFO] ('172.20.0.1', 60530) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 11:01:54,334 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:01:54,335 [INFO] ('172.20.0.1', 60530) recip: recipient@email-threat-docker.local
+2025-05-16 11:01:54,337 [INFO] ('172.20.0.1', 60530) >> b'data'
+2025-05-16 11:01:54,343 [WARNING] Quarantined: /app/quarantine/quarantine_1747404114_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 11:01:54,349 [INFO] ('172.20.0.1', 60530) >> b'QUIT'
+2025-05-16 11:01:54,350 [INFO] ('172.20.0.1', 60530) connection lost
+2025-05-16 11:01:54,351 [INFO] ('172.20.0.1', 60530) Connection lost during _handle_client()
+2025-05-16 11:01:54,456 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:01:54,457 [INFO] Peer: ('172.20.0.1', 60536)
+2025-05-16 11:01:54,458 [INFO] ('172.20.0.1', 60536) handling connection
+2025-05-16 11:01:55,299 [INFO] ('172.20.0.1', 60536) >> b'ehlo [192.168.48.1]'
+2025-05-16 11:01:55,303 [INFO] ('172.20.0.1', 60536) >> b'mail from:<sender@email-threat-docker.local> size=239'
+2025-05-16 11:01:55,304 [INFO] ('172.20.0.1', 60536) sender: sender@email-threat-docker.local
+2025-05-16 11:01:55,307 [INFO] ('172.20.0.1', 60536) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 11:01:55,308 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:01:55,309 [INFO] ('172.20.0.1', 60536) recip: recipient@email-threat-docker.local
+2025-05-16 11:01:55,312 [INFO] ('172.20.0.1', 60536) >> b'data'
+2025-05-16 11:01:55,320 [WARNING] Quarantined: /app/quarantine/quarantine_1747404115_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 11:01:55,327 [INFO] ('172.20.0.1', 60536) >> b'QUIT'
+2025-05-16 11:01:55,328 [INFO] ('172.20.0.1', 60536) connection lost
+2025-05-16 11:01:55,330 [INFO] ('172.20.0.1', 60536) Connection lost during _handle_client()
+2025-05-16 11:01:55,434 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:01:55,435 [INFO] Peer: ('172.20.0.1', 60548)
+2025-05-16 11:01:55,437 [INFO] ('172.20.0.1', 60548) handling connection
+2025-05-16 11:01:56,322 [INFO] ('172.20.0.1', 60548) >> b'ehlo [192.168.48.1]'
+2025-05-16 11:01:56,327 [INFO] ('172.20.0.1', 60548) >> b'mail from:<sender@email-threat-docker.local> size=238'
+2025-05-16 11:01:56,328 [INFO] ('172.20.0.1', 60548) sender: sender@email-threat-docker.local
+2025-05-16 11:01:56,332 [INFO] ('172.20.0.1', 60548) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 11:01:56,333 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:01:56,334 [INFO] ('172.20.0.1', 60548) recip: recipient@email-threat-docker.local
+2025-05-16 11:01:56,337 [INFO] ('172.20.0.1', 60548) >> b'data'
+2025-05-16 11:01:56,345 [WARNING] Quarantined: /app/quarantine/quarantine_1747404116_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 11:01:56,353 [INFO] ('172.20.0.1', 60548) >> b'QUIT'
+2025-05-16 11:01:56,355 [INFO] ('172.20.0.1', 60548) connection lost
+2025-05-16 11:01:56,356 [INFO] ('172.20.0.1', 60548) Connection lost during _handle_client()
+2025-05-16 11:01:56,462 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:01:56,464 [INFO] Peer: ('172.20.0.1', 60552)
+2025-05-16 11:01:56,465 [INFO] ('172.20.0.1', 60552) handling connection
+2025-05-16 11:01:57,347 [INFO] ('172.20.0.1', 60552) >> b'ehlo [192.168.48.1]'
+2025-05-16 11:01:57,350 [INFO] ('172.20.0.1', 60552) >> b'mail from:<sender@email-threat-docker.local> size=253'
+2025-05-16 11:01:57,352 [INFO] ('172.20.0.1', 60552) sender: sender@email-threat-docker.local
+2025-05-16 11:01:57,354 [INFO] ('172.20.0.1', 60552) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 11:01:57,355 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:01:57,356 [INFO] ('172.20.0.1', 60552) recip: recipient@email-threat-docker.local
+2025-05-16 11:01:57,358 [INFO] ('172.20.0.1', 60552) >> b'data'
+2025-05-16 11:01:57,365 [WARNING] Quarantined: /app/quarantine/quarantine_1747404117_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 11:01:57,371 [INFO] ('172.20.0.1', 60552) >> b'QUIT'
+2025-05-16 11:01:57,372 [INFO] ('172.20.0.1', 60552) connection lost
+2025-05-16 11:01:57,373 [INFO] ('172.20.0.1', 60552) Connection lost during _handle_client()
+2025-05-16 11:01:57,477 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:01:57,478 [INFO] Peer: ('172.20.0.1', 60558)
+2025-05-16 11:01:57,479 [INFO] ('172.20.0.1', 60558) handling connection
+2025-05-16 11:01:58,339 [INFO] ('172.20.0.1', 60558) >> b'ehlo [192.168.48.1]'
+2025-05-16 11:01:58,343 [INFO] ('172.20.0.1', 60558) >> b'mail from:<sender@email-threat-docker.local> size=247'
+2025-05-16 11:01:58,344 [INFO] ('172.20.0.1', 60558) sender: sender@email-threat-docker.local
+2025-05-16 11:01:58,347 [INFO] ('172.20.0.1', 60558) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 11:01:58,349 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:01:58,349 [INFO] ('172.20.0.1', 60558) recip: recipient@email-threat-docker.local
+2025-05-16 11:01:58,352 [INFO] ('172.20.0.1', 60558) >> b'data'
+2025-05-16 11:01:58,360 [WARNING] Quarantined: /app/quarantine/quarantine_1747404118_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 11:01:58,367 [INFO] ('172.20.0.1', 60558) >> b'QUIT'
+2025-05-16 11:01:58,368 [INFO] ('172.20.0.1', 60558) connection lost
+2025-05-16 11:01:58,370 [INFO] ('172.20.0.1', 60558) Connection lost during _handle_client()
+2025-05-16 11:01:58,475 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:01:58,477 [INFO] Peer: ('172.20.0.1', 46556)
+2025-05-16 11:01:58,478 [INFO] ('172.20.0.1', 46556) handling connection
+2025-05-16 11:01:59,342 [INFO] ('172.20.0.1', 46556) >> b'ehlo [192.168.48.1]'
+2025-05-16 11:01:59,347 [INFO] ('172.20.0.1', 46556) >> b'mail from:<sender@email-threat-docker.local> size=699'
+2025-05-16 11:01:59,348 [INFO] ('172.20.0.1', 46556) sender: sender@email-threat-docker.local
+2025-05-16 11:01:59,351 [INFO] ('172.20.0.1', 46556) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 11:01:59,352 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:01:59,353 [INFO] ('172.20.0.1', 46556) recip: recipient@email-threat-docker.local
+2025-05-16 11:01:59,356 [INFO] ('172.20.0.1', 46556) >> b'data'
+2025-05-16 11:01:59,367 [WARNING] Quarantined: /app/quarantine/quarantine_1747404119_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-16 11:01:59,374 [INFO] ('172.20.0.1', 46556) >> b'QUIT'
+2025-05-16 11:01:59,375 [INFO] ('172.20.0.1', 46556) connection lost
+2025-05-16 11:01:59,376 [INFO] ('172.20.0.1', 46556) Connection lost during _handle_client()
+2025-05-16 11:01:59,481 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:01:59,483 [INFO] Peer: ('172.20.0.1', 46558)
+2025-05-16 11:01:59,484 [INFO] ('172.20.0.1', 46558) handling connection
+2025-05-16 11:02:00,320 [INFO] ('172.20.0.1', 46558) >> b'ehlo [192.168.48.1]'
+2025-05-16 11:02:00,325 [INFO] ('172.20.0.1', 46558) >> b'mail from:<sender@email-threat-docker.local> size=1994'
+2025-05-16 11:02:00,327 [INFO] ('172.20.0.1', 46558) sender: sender@email-threat-docker.local
+2025-05-16 11:02:00,331 [INFO] ('172.20.0.1', 46558) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 11:02:00,332 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:02:00,333 [INFO] ('172.20.0.1', 46558) recip: recipient@email-threat-docker.local
+2025-05-16 11:02:00,336 [INFO] ('172.20.0.1', 46558) >> b'data'
+2025-05-16 11:02:00,353 [WARNING] Quarantined: /app/quarantine/quarantine_1747404120_3.eml | Threats: YARA:executable_attachment, YARA:without_images, YARA:without_urls
+2025-05-16 11:02:00,362 [INFO] ('172.20.0.1', 46558) >> b'QUIT'
+2025-05-16 11:02:00,363 [INFO] ('172.20.0.1', 46558) connection lost
+2025-05-16 11:02:00,365 [INFO] ('172.20.0.1', 46558) Connection lost during _handle_client()
+2025-05-16 11:02:00,470 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:02:00,472 [INFO] Peer: ('172.20.0.1', 46570)
+2025-05-16 11:02:00,473 [INFO] ('172.20.0.1', 46570) handling connection
+2025-05-16 11:02:01,314 [INFO] ('172.20.0.1', 46570) >> b'ehlo [192.168.48.1]'
+2025-05-16 11:02:01,318 [INFO] ('172.20.0.1', 46570) >> b'mail from:<sender@email-threat-docker.local> size=293'
+2025-05-16 11:02:01,319 [INFO] ('172.20.0.1', 46570) sender: sender@email-threat-docker.local
+2025-05-16 11:02:01,322 [INFO] ('172.20.0.1', 46570) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 11:02:01,323 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:02:01,323 [INFO] ('172.20.0.1', 46570) recip: recipient@email-threat-docker.local
+2025-05-16 11:02:01,326 [INFO] ('172.20.0.1', 46570) >> b'data'
+2025-05-16 11:02:01,332 [WARNING] Quarantined: /app/quarantine/quarantine_1747404121_5.eml | Threats: YARA:without_attachments, YARA:domain, YARA:without_images, YARA:url, YARA:with_urls
+2025-05-16 11:02:01,338 [INFO] ('172.20.0.1', 46570) >> b'QUIT'
+2025-05-16 11:02:01,339 [INFO] ('172.20.0.1', 46570) connection lost
+2025-05-16 11:02:01,340 [INFO] ('172.20.0.1', 46570) Connection lost during _handle_client()
+2025-05-16 11:02:01,445 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:02:01,447 [INFO] Peer: ('172.20.0.1', 46578)
+2025-05-16 11:02:01,448 [INFO] ('172.20.0.1', 46578) handling connection
+2025-05-16 11:02:02,298 [INFO] ('172.20.0.1', 46578) >> b'ehlo [192.168.48.1]'
+2025-05-16 11:02:02,302 [INFO] ('172.20.0.1', 46578) >> b'mail from:<sender@email-threat-docker.local> size=279'
+2025-05-16 11:02:02,304 [INFO] ('172.20.0.1', 46578) sender: sender@email-threat-docker.local
+2025-05-16 11:02:02,306 [INFO] ('172.20.0.1', 46578) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 11:02:02,308 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:02:02,309 [INFO] ('172.20.0.1', 46578) recip: recipient@email-threat-docker.local
+2025-05-16 11:02:02,312 [INFO] ('172.20.0.1', 46578) >> b'data'
+2025-05-16 11:02:02,318 [WARNING] Quarantined: /app/quarantine/quarantine_1747404122_3.eml | Threats: YARA:without_attachments, YARA:without_images, YARA:without_urls
+2025-05-16 11:02:02,325 [INFO] ('172.20.0.1', 46578) >> b'QUIT'
+2025-05-16 11:02:02,326 [INFO] ('172.20.0.1', 46578) connection lost
+2025-05-16 11:02:02,327 [INFO] ('172.20.0.1', 46578) Connection lost during _handle_client()
+2025-05-16 11:02:02,433 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:02:02,435 [INFO] Peer: ('172.20.0.1', 46584)
+2025-05-16 11:02:02,436 [INFO] ('172.20.0.1', 46584) handling connection
+2025-05-16 11:02:03,275 [INFO] ('172.20.0.1', 46584) >> b'ehlo [192.168.48.1]'
+2025-05-16 11:02:03,280 [INFO] ('172.20.0.1', 46584) >> b'mail from:<sender@email-threat-docker.local> size=1987'
+2025-05-16 11:02:03,282 [INFO] ('172.20.0.1', 46584) sender: sender@email-threat-docker.local
+2025-05-16 11:02:03,285 [INFO] ('172.20.0.1', 46584) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 11:02:03,286 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:02:03,287 [INFO] ('172.20.0.1', 46584) recip: recipient@email-threat-docker.local
+2025-05-16 11:02:03,290 [INFO] ('172.20.0.1', 46584) >> b'data'
+2025-05-16 11:02:03,304 [WARNING] Quarantined: /app/quarantine/quarantine_1747404123_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-16 11:02:03,312 [INFO] ('172.20.0.1', 46584) >> b'QUIT'
+2025-05-16 11:02:03,314 [INFO] ('172.20.0.1', 46584) connection lost
+2025-05-16 11:02:03,315 [INFO] ('172.20.0.1', 46584) Connection lost during _handle_client()
+2025-05-16 11:02:03,422 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:02:03,424 [INFO] Peer: ('172.20.0.1', 46586)
+2025-05-16 11:02:03,424 [INFO] ('172.20.0.1', 46586) handling connection
+2025-05-16 11:02:04,282 [INFO] ('172.20.0.1', 46586) >> b'ehlo [192.168.48.1]'
+2025-05-16 11:02:04,285 [INFO] ('172.20.0.1', 46586) >> b'mail from:<sender@email-threat-docker.local> size=271'
+2025-05-16 11:02:04,286 [INFO] ('172.20.0.1', 46586) sender: sender@email-threat-docker.local
+2025-05-16 11:02:04,289 [INFO] ('172.20.0.1', 46586) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 11:02:04,290 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:02:04,291 [INFO] ('172.20.0.1', 46586) recip: recipient@email-threat-docker.local
+2025-05-16 11:02:04,293 [INFO] ('172.20.0.1', 46586) >> b'data'
+2025-05-16 11:02:04,299 [WARNING] Quarantined: /app/quarantine/quarantine_1747404124_5.eml | Threats: YARA:without_attachments, YARA:domain, YARA:without_images, YARA:url, YARA:with_urls
+2025-05-16 11:02:04,305 [INFO] ('172.20.0.1', 46586) >> b'QUIT'
+2025-05-16 11:02:04,306 [INFO] ('172.20.0.1', 46586) connection lost
+2025-05-16 11:02:04,307 [INFO] ('172.20.0.1', 46586) Connection lost during _handle_client()
+2025-05-16 11:02:04,412 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:02:04,413 [INFO] Peer: ('172.20.0.1', 46602)
+2025-05-16 11:02:04,414 [INFO] ('172.20.0.1', 46602) handling connection
+2025-05-16 11:02:05,257 [INFO] ('172.20.0.1', 46602) >> b'ehlo [192.168.48.1]'
+2025-05-16 11:02:05,261 [INFO] ('172.20.0.1', 46602) >> b'mail from:<sender@email-threat-docker.local> size=267'
+2025-05-16 11:02:05,263 [INFO] ('172.20.0.1', 46602) sender: sender@email-threat-docker.local
+2025-05-16 11:02:05,266 [INFO] ('172.20.0.1', 46602) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 11:02:05,268 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:02:05,269 [INFO] ('172.20.0.1', 46602) recip: recipient@email-threat-docker.local
+2025-05-16 11:02:05,272 [INFO] ('172.20.0.1', 46602) >> b'data'
+2025-05-16 11:02:05,281 [WARNING] Quarantined: /app/quarantine/quarantine_1747404125_5.eml | Threats: YARA:without_attachments, YARA:domain, YARA:without_images, YARA:url, YARA:with_urls
+2025-05-16 11:02:05,289 [INFO] ('172.20.0.1', 46602) >> b'QUIT'
+2025-05-16 11:02:05,290 [INFO] ('172.20.0.1', 46602) connection lost
+2025-05-16 11:02:05,291 [INFO] ('172.20.0.1', 46602) Connection lost during _handle_client()
+2025-05-16 11:02:05,397 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:02:05,398 [INFO] Peer: ('172.20.0.1', 46606)
+2025-05-16 11:02:05,400 [INFO] ('172.20.0.1', 46606) handling connection
+2025-05-16 11:02:06,248 [INFO] ('172.20.0.1', 46606) >> b'ehlo [192.168.48.1]'
+2025-05-16 11:02:06,252 [INFO] ('172.20.0.1', 46606) >> b'mail from:<sender@email-threat-docker.local> size=1278'
+2025-05-16 11:02:06,253 [INFO] ('172.20.0.1', 46606) sender: sender@email-threat-docker.local
+2025-05-16 11:02:06,256 [INFO] ('172.20.0.1', 46606) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 11:02:06,257 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:02:06,257 [INFO] ('172.20.0.1', 46606) recip: recipient@email-threat-docker.local
+2025-05-16 11:02:06,260 [INFO] ('172.20.0.1', 46606) >> b'data'
+2025-05-16 11:02:06,270 [WARNING] Quarantined: /app/quarantine/quarantine_1747404126_2.eml | Threats: YARA:without_images, YARA:without_urls
+2025-05-16 11:02:06,276 [INFO] ('172.20.0.1', 46606) >> b'QUIT'
+2025-05-16 11:02:06,277 [INFO] ('172.20.0.1', 46606) connection lost
+2025-05-16 11:02:06,278 [INFO] ('172.20.0.1', 46606) Connection lost during _handle_client()
+2025-05-16 11:02:06,384 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:02:06,386 [INFO] Peer: ('172.20.0.1', 46620)
+2025-05-16 11:02:06,387 [INFO] ('172.20.0.1', 46620) handling connection
+2025-05-16 11:02:07,236 [INFO] ('172.20.0.1', 46620) >> b'ehlo [192.168.48.1]'
+2025-05-16 11:02:07,241 [INFO] ('172.20.0.1', 46620) >> b'mail from:<sender@email-threat-docker.local> size=1982'
+2025-05-16 11:02:07,242 [INFO] ('172.20.0.1', 46620) sender: sender@email-threat-docker.local
+2025-05-16 11:02:07,244 [INFO] ('172.20.0.1', 46620) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 11:02:07,245 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:02:07,246 [INFO] ('172.20.0.1', 46620) recip: recipient@email-threat-docker.local
+2025-05-16 11:02:07,249 [INFO] ('172.20.0.1', 46620) >> b'data'
+2025-05-16 11:02:07,262 [WARNING] Quarantined: /app/quarantine/quarantine_1747404127_3.eml | Threats: YARA:executable_attachment, YARA:without_images, YARA:without_urls
+2025-05-16 11:02:07,269 [INFO] ('172.20.0.1', 46620) >> b'QUIT'
+2025-05-16 11:02:07,270 [INFO] ('172.20.0.1', 46620) connection lost
+2025-05-16 11:02:07,271 [INFO] ('172.20.0.1', 46620) Connection lost during _handle_client()
+2025-05-16 11:02:07,376 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:02:07,378 [INFO] Peer: ('172.20.0.1', 46634)
+2025-05-16 11:02:07,379 [INFO] ('172.20.0.1', 46634) handling connection
+2025-05-16 11:02:08,225 [INFO] ('172.20.0.1', 46634) >> b'ehlo [192.168.48.1]'
+2025-05-16 11:02:08,231 [INFO] ('172.20.0.1', 46634) >> b'mail from:<sender@email-threat-docker.local> size=687'
+2025-05-16 11:02:08,233 [INFO] ('172.20.0.1', 46634) sender: sender@email-threat-docker.local
+2025-05-16 11:02:08,236 [INFO] ('172.20.0.1', 46634) >> b'rcpt to:<recipient@email-threat-docker.local>'
+2025-05-16 11:02:08,238 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:02:08,239 [INFO] ('172.20.0.1', 46634) recip: recipient@email-threat-docker.local
+2025-05-16 11:02:08,242 [INFO] ('172.20.0.1', 46634) >> b'data'
+2025-05-16 11:02:08,257 [WARNING] Quarantined: /app/quarantine/quarantine_1747404128_4.eml | Threats: YARA:domain, YARA:without_images, YARA:url, YARA:with_urls
+2025-05-16 11:02:08,266 [INFO] ('172.20.0.1', 46634) >> b'QUIT'
+2025-05-16 11:02:08,267 [INFO] ('172.20.0.1', 46634) connection lost
+2025-05-16 11:02:08,268 [INFO] ('172.20.0.1', 46634) Connection lost during _handle_client()
+2025-05-16 11:07:02,451 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:07:02,452 [INFO] Peer: ('172.20.0.100', 43570)
+2025-05-16 11:07:02,453 [INFO] ('172.20.0.100', 43570) handling connection
+2025-05-16 11:07:02,455 [INFO] ('172.20.0.100', 43570) >> b'EHLO email-threat-docker.local'
+2025-05-16 11:07:02,457 [INFO] ('172.20.0.100', 43570) >> b'MAIL FROM:<sender@email-threat-docker.local> SIZE=306'
+2025-05-16 11:07:02,458 [INFO] ('172.20.0.100', 43570) sender: sender@email-threat-docker.local
+2025-05-16 11:07:02,459 [INFO] ('172.20.0.100', 43570) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-16 11:07:02,460 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:07:02,462 [INFO] ('172.20.0.100', 43570) recip: recipient@email-threat-docker.local
+2025-05-16 11:07:02,463 [INFO] ('172.20.0.100', 43570) >> b'DATA'
+2025-05-16 11:07:02,504 [INFO] Email reinjected successfully
+2025-05-16 11:07:02,506 [INFO] ('172.20.0.100', 43570) >> b'QUIT'
+2025-05-16 11:07:02,507 [INFO] ('172.20.0.100', 43570) connection lost
+2025-05-16 11:07:02,507 [INFO] ('172.20.0.100', 43570) Connection lost during _handle_client()
+2025-05-16 11:07:29,421 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-16 11:07:29,437 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:07:29,438 [INFO] Peer: ('127.0.0.1', 51578)
+2025-05-16 11:07:29,439 [INFO] ('127.0.0.1', 51578) handling connection
+2025-05-16 11:07:29,441 [INFO] ('127.0.0.1', 51578) EOF received
+2025-05-16 11:07:29,441 [INFO] ('127.0.0.1', 51578) Connection lost during _handle_client()
+2025-05-16 11:07:29,442 [INFO] ('127.0.0.1', 51578) connection lost
+2025-05-16 11:07:35,205 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:07:35,207 [INFO] Peer: ('172.20.0.100', 44958)
+2025-05-16 11:07:35,208 [INFO] ('172.20.0.100', 44958) handling connection
+2025-05-16 11:07:35,209 [INFO] ('172.20.0.100', 44958) >> b'EHLO email-threat-docker.local'
+2025-05-16 11:07:35,210 [INFO] ('172.20.0.100', 44958) >> b'MAIL FROM:<sender@email-threat-docker.local> SIZE=306'
+2025-05-16 11:07:35,211 [INFO] ('172.20.0.100', 44958) sender: sender@email-threat-docker.local
+2025-05-16 11:07:35,213 [INFO] ('172.20.0.100', 44958) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-16 11:07:35,214 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:07:35,214 [INFO] ('172.20.0.100', 44958) recip: recipient@email-threat-docker.local
+2025-05-16 11:07:35,215 [INFO] ('172.20.0.100', 44958) >> b'DATA'
+2025-05-16 11:07:35,245 [INFO] Email reinjected successfully
+2025-05-16 11:07:35,247 [INFO] ('172.20.0.100', 44958) >> b'QUIT'
+2025-05-16 11:07:35,248 [INFO] ('172.20.0.100', 44958) connection lost
+2025-05-16 11:07:35,249 [INFO] ('172.20.0.100', 44958) Connection lost during _handle_client()
+2025-05-16 11:09:09,548 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-16 11:09:09,570 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:09:09,571 [INFO] Peer: ('127.0.0.1', 54180)
+2025-05-16 11:09:09,572 [INFO] ('127.0.0.1', 54180) handling connection
+2025-05-16 11:09:09,573 [INFO] ('127.0.0.1', 54180) EOF received
+2025-05-16 11:09:09,574 [INFO] ('127.0.0.1', 54180) Connection lost during _handle_client()
+2025-05-16 11:09:09,575 [INFO] ('127.0.0.1', 54180) connection lost
+2025-05-16 11:09:21,016 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-16 11:09:21,020 [INFO] Peer: ('172.20.0.100', 60000)
+2025-05-16 11:09:21,021 [INFO] ('172.20.0.100', 60000) handling connection
+2025-05-16 11:09:21,022 [INFO] ('172.20.0.100', 60000) >> b'EHLO email-threat-docker.local'
+2025-05-16 11:09:21,024 [INFO] ('172.20.0.100', 60000) >> b'MAIL FROM:<sender@email-threat-docker.local> SIZE=306'
+2025-05-16 11:09:21,027 [INFO] ('172.20.0.100', 60000) sender: sender@email-threat-docker.local
+2025-05-16 11:09:21,029 [INFO] ('172.20.0.100', 60000) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-16 11:09:21,030 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-16 11:09:21,031 [INFO] ('172.20.0.100', 60000) recip: recipient@email-threat-docker.local
+2025-05-16 11:09:21,032 [INFO] ('172.20.0.100', 60000) >> b'DATA'
+2025-05-16 11:09:21,083 [INFO] Email reinjected successfully
+2025-05-16 11:09:21,085 [INFO] ('172.20.0.100', 60000) >> b'QUIT'
+2025-05-16 11:09:21,087 [INFO] ('172.20.0.100', 60000) connection lost
+2025-05-16 11:09:21,088 [INFO] ('172.20.0.100', 60000) Connection lost during _handle_client()

@@ -1,0 +1,1 @@
+{job=~".+"} | logfmt | Image=~`(?i).*/atop$` or Image=~`(?i).*/htop$` or Image=~`(?i).*/pgrep$` or Image=~`(?i).*/ps$` or Image=~`(?i).*/pstree$` or Image=~`(?i).*/top$`

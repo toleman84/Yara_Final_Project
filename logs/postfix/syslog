@@ -23,3 +23,73 @@ May 14 05:01:46 email-threat-docker rsyslogd: activation of module imklog failed
 May 14 05:01:46 email-threat-docker rsyslogd: rsyslogd's groupid changed to 101
 May 14 05:01:46 email-threat-docker rsyslogd: rsyslogd's userid changed to 101
 May 14 05:01:46 email-threat-docker rsyslogd: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+May 15 15:13:04 email-threat-docker rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+May 15 15:13:04 email-threat-docker rsyslogd: activation of module imklog failed [v8.2112.0 try https://www.rsyslog.com/e/2145 ]
+May 15 15:13:04 email-threat-docker rsyslogd: rsyslogd's groupid changed to 101
+May 15 15:13:04 email-threat-docker rsyslogd: rsyslogd's userid changed to 101
+May 15 15:13:04 email-threat-docker rsyslogd: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+May 15 15:20:37 email-threat-docker rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+May 15 15:20:37 email-threat-docker rsyslogd: activation of module imklog failed [v8.2112.0 try https://www.rsyslog.com/e/2145 ]
+May 15 15:20:37 email-threat-docker rsyslogd: rsyslogd's groupid changed to 101
+May 15 15:20:37 email-threat-docker rsyslogd: rsyslogd's userid changed to 101
+May 15 15:20:37 email-threat-docker rsyslogd: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+May 15 15:26:55 email-threat-docker rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+May 15 15:26:55 email-threat-docker rsyslogd: activation of module imklog failed [v8.2112.0 try https://www.rsyslog.com/e/2145 ]
+May 15 15:26:55 email-threat-docker rsyslogd: rsyslogd's groupid changed to 101
+May 15 15:26:55 email-threat-docker rsyslogd: rsyslogd's userid changed to 101
+May 15 15:26:55 email-threat-docker rsyslogd: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="7" x-info="https://www.rsyslog.com"] start
+May 16 01:18:52 email-threat-docker rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+May 16 01:18:52 email-threat-docker rsyslogd: activation of module imklog failed [v8.2112.0 try https://www.rsyslog.com/e/2145 ]
+May 16 01:18:52 email-threat-docker rsyslogd: rsyslogd's groupid changed to 101
+May 16 01:18:52 email-threat-docker rsyslogd: rsyslogd's userid changed to 101
+May 16 01:18:52 email-threat-docker rsyslogd: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="9" x-info="https://www.rsyslog.com"] start
+May 16 02:31:11 email-threat-docker rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+May 16 02:31:11 email-threat-docker rsyslogd: activation of module imklog failed [v8.2112.0 try https://www.rsyslog.com/e/2145 ]
+May 16 02:31:11 email-threat-docker rsyslogd: rsyslogd's groupid changed to 101
+May 16 02:31:11 email-threat-docker rsyslogd: rsyslogd's userid changed to 101
+May 16 02:31:11 email-threat-docker rsyslogd: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+May 16 02:33:15 email-threat-docker rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+May 16 02:33:15 email-threat-docker rsyslogd: activation of module imklog failed [v8.2112.0 try https://www.rsyslog.com/e/2145 ]
+May 16 02:33:15 email-threat-docker rsyslogd: rsyslogd's groupid changed to 101
+May 16 02:33:15 email-threat-docker rsyslogd: rsyslogd's userid changed to 101
+May 16 02:33:15 email-threat-docker rsyslogd: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+May 16 02:36:35 email-threat-docker rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+May 16 02:36:35 email-threat-docker rsyslogd: activation of module imklog failed [v8.2112.0 try https://www.rsyslog.com/e/2145 ]
+May 16 02:36:35 email-threat-docker rsyslogd: rsyslogd's groupid changed to 101
+May 16 02:36:35 email-threat-docker rsyslogd: rsyslogd's userid changed to 101
+May 16 02:36:35 email-threat-docker rsyslogd: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+May 16 02:38:37 email-threat-docker rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+May 16 02:38:37 email-threat-docker rsyslogd: activation of module imklog failed [v8.2112.0 try https://www.rsyslog.com/e/2145 ]
+May 16 02:38:37 email-threat-docker rsyslogd: rsyslogd's groupid changed to 101
+May 16 02:38:37 email-threat-docker rsyslogd: rsyslogd's userid changed to 101
+May 16 02:38:37 email-threat-docker rsyslogd: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="9" x-info="https://www.rsyslog.com"] start
+May 16 02:40:00 email-threat-docker rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+May 16 02:40:00 email-threat-docker rsyslogd: activation of module imklog failed [v8.2112.0 try https://www.rsyslog.com/e/2145 ]
+May 16 02:40:00 email-threat-docker rsyslogd: rsyslogd's groupid changed to 101
+May 16 02:40:00 email-threat-docker rsyslogd: rsyslogd's userid changed to 101
+May 16 02:40:00 email-threat-docker rsyslogd: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+May 16 12:53:02 email-threat-docker rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+May 16 12:53:02 email-threat-docker rsyslogd: activation of module imklog failed [v8.2112.0 try https://www.rsyslog.com/e/2145 ]
+May 16 12:53:02 email-threat-docker rsyslogd: rsyslogd's groupid changed to 101
+May 16 12:53:02 email-threat-docker rsyslogd: rsyslogd's userid changed to 101
+May 16 12:53:02 email-threat-docker rsyslogd: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+May 16 13:44:11 email-threat-docker rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+May 16 13:44:11 email-threat-docker rsyslogd: activation of module imklog failed [v8.2112.0 try https://www.rsyslog.com/e/2145 ]
+May 16 13:44:11 email-threat-docker rsyslogd: rsyslogd's groupid changed to 101
+May 16 13:44:11 email-threat-docker rsyslogd: rsyslogd's userid changed to 101
+May 16 13:44:11 email-threat-docker rsyslogd: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="9" x-info="https://www.rsyslog.com"] start
+May 16 14:00:34 email-threat-docker rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+May 16 14:00:34 email-threat-docker rsyslogd: activation of module imklog failed [v8.2112.0 try https://www.rsyslog.com/e/2145 ]
+May 16 14:00:34 email-threat-docker rsyslogd: rsyslogd's groupid changed to 101
+May 16 14:00:34 email-threat-docker rsyslogd: rsyslogd's userid changed to 101
+May 16 14:00:34 email-threat-docker rsyslogd: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+May 16 14:07:17 email-threat-docker rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+May 16 14:07:17 email-threat-docker rsyslogd: activation of module imklog failed [v8.2112.0 try https://www.rsyslog.com/e/2145 ]
+May 16 14:07:17 email-threat-docker rsyslogd: rsyslogd's groupid changed to 101
+May 16 14:07:17 email-threat-docker rsyslogd: rsyslogd's userid changed to 101
+May 16 14:07:17 email-threat-docker rsyslogd: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+May 16 14:09:06 email-threat-docker rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+May 16 14:09:06 email-threat-docker rsyslogd: activation of module imklog failed [v8.2112.0 try https://www.rsyslog.com/e/2145 ]
+May 16 14:09:06 email-threat-docker rsyslogd: rsyslogd's groupid changed to 101
+May 16 14:09:06 email-threat-docker rsyslogd: rsyslogd's userid changed to 101
+May 16 14:09:06 email-threat-docker rsyslogd: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="8" x-info="https://www.rsyslog.com"] start

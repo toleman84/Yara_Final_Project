@@ -1,0 +1,1 @@
+{job=~".+"} |~ `(?i)keywords\ \|\ count\(\)\ >\ 50\ by\ source_ip\ within\ 5m`

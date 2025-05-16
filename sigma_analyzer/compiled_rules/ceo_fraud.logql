@@ -1,0 +1,1 @@
+{job=~".+"} | logfmt | (from=~`(?i).*ceo@company\.com.*` or from=~`(?i).*executive@company\.com.*`) and (subject=~`(?i).*urgent.*` or subject=~`(?i).*confidential.*`) and (body=~`(?i).*wire\ transfer.*` or body=~`(?i).*immediately.*`)

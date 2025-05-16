@@ -14,16 +14,16 @@ scrape_configs:
       - targets: [localhost]
         labels:
           job: postfix
-          __path__: /logs/postfix/*.log  # Path inside Promtail container
+          __path__: /logs/postfix/*.log
 
   - job_name: scanner
     static_configs:
       - targets: [localhost]
         labels:
           job: scanner
-          __path__: /logs/scanner/*.log  # Path inside Promtail container
-          
-  - job_name: sigma_alerts
+          __path__: /logs/scanner/*.log
+
+  - job_name: sigma_scanner
     static_configs:
       - targets: [localhost]
         labels:

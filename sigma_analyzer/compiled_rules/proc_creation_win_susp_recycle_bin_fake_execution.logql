@@ -1,0 +1,1 @@
+{job=~"eventlog|winlog|windows|fluentbit.*"} | json | Image=~`(?i).*RECYCLERS\.BIN\\.*` or Image=~`(?i).*RECYCLER\.BIN\\.*`

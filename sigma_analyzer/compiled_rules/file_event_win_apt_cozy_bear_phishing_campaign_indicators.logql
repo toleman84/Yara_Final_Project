@@ -1,0 +1,1 @@
+{job=~"eventlog|winlog|windows|fluentbit.*"} | json | TargetFilename=~`(?i).*ds7002\.lnk.*` or TargetFilename=~`(?i).*ds7002\.pdf.*` or TargetFilename=~`(?i).*ds7002\.zip.*`

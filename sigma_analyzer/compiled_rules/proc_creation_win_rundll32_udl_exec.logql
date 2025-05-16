@@ -1,0 +1,1 @@
+{job=~"eventlog|winlog|windows|fluentbit.*"} | json | ParentImage=~`(?i).*\\explorer\.exe$` and (Image=~`(?i).*\\rundll32\.exe$` or OriginalFileName=~`(?i)^RUNDLL32\.EXE$`) and CommandLine=~`(?i).*oledb32\.dll.*` and CommandLine=~`(?i).*,OpenDSLFile\ .*` and CommandLine=~`(?i).*\\Users\\.*\\Downloads\\.*` and CommandLine=~`(?i).*\.udl$`

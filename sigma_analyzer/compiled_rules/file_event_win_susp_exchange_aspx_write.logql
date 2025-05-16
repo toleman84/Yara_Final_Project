@@ -1,0 +1,1 @@
+{job=~"eventlog|winlog|windows|fluentbit.*"} | json | Image=~`(?i).*\\MSExchangeMailboxReplication\.exe$` and (TargetFilename=~`(?i).*\.aspx$` or TargetFilename=~`(?i).*\.asp$`)

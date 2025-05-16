@@ -1,0 +1,11 @@
+title: Test Subject Match
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    Subject: "CNADA"
+  condition: selection
+fields:
+  - Subject
+level: low

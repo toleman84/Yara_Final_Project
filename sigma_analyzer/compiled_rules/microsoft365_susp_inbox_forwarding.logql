@@ -1,0 +1,1 @@
+{job=~".+"} | logfmt | eventSource=~`(?i)^SecurityComplianceCenter$` and eventName=~`(?i)^Suspicious\ inbox\ forwarding$` and status=~`(?i)^success$`
