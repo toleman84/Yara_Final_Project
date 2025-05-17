@@ -20,7 +20,8 @@ COPY transport /etc/postfix/transport
 COPY header_checks /etc/postfix/header_checks
 
 # Set permissions for Postfix files
-RUN chmod 644 /etc/postfix/main.cf /etc/postfix/header_checks && \
+RUN chmod +x /entrypoint.sh  && \
+    chmod 644 /etc/postfix/main.cf /etc/postfix/header_checks && \
     postmap /etc/postfix/transport && \
     chown root:postfix /etc/postfix/transport.db && \
     chmod 640 /etc/postfix/transport.db

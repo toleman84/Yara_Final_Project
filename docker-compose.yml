@@ -32,7 +32,7 @@ services:
     ports:
       - "10026:10025"
     healthcheck:
-      test: ["CMD-SHELL", "pgrep scanner || exit 1"]
+      test: ["CMD-SHELL", "nc -z localhost 10025"]
       interval: 5s
       timeout: 3s
       retries: 3

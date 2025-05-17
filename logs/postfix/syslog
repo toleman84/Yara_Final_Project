@@ -1203,3 +1203,38 @@ May 17 17:10:48 email-threat-docker postfix/smtp[243]: 1B981625FD: to=<recipient
 May 17 17:10:48 email-threat-docker postfix/qmgr[102]: 1B981625FD: removed
 May 17 17:10:48 email-threat-docker postfix/local[247]: 252E865B3A: to=<recipient@email-threat-docker.local>, relay=local, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (delivered to command: /usr/bin/procmail)
 May 17 17:10:48 email-threat-docker postfix/qmgr[102]: 252E865B3A: removed
+May 17 19:43:07 email-threat-docker postfix/postfix-script[72]: warning: group or other writable: /etc/postfix/./main.cf
+May 17 19:43:07 email-threat-docker postfix/postfix-script[73]: warning: group or other writable: /etc/postfix/./master.cf
+May 17 19:43:07 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./transport
+May 17 19:43:07 email-threat-docker postfix/postfix-script[98]: starting the Postfix mail system
+May 17 19:43:07 email-threat-docker postfix/master[100]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 17 19:43:08 email-threat-docker rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+May 17 19:43:08 email-threat-docker rsyslogd: activation of module imklog failed [v8.2112.0 try https://www.rsyslog.com/e/2145 ]
+May 17 19:43:08 email-threat-docker rsyslogd: rsyslogd's groupid changed to 101
+May 17 19:43:08 email-threat-docker rsyslogd: rsyslogd's userid changed to 101
+May 17 19:43:08 email-threat-docker rsyslogd: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+May 17 19:49:02 email-threat-docker postfix/postfix-script[72]: warning: group or other writable: /etc/postfix/./main.cf
+May 17 19:49:02 email-threat-docker postfix/postfix-script[73]: warning: group or other writable: /etc/postfix/./master.cf
+May 17 19:49:02 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./transport
+May 17 19:49:02 email-threat-docker postfix/postfix-script[98]: starting the Postfix mail system
+May 17 19:49:02 email-threat-docker postfix/master[100]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 17 19:49:02 email-threat-docker rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+May 17 19:49:02 email-threat-docker rsyslogd: activation of module imklog failed [v8.2112.0 try https://www.rsyslog.com/e/2145 ]
+May 17 19:49:02 email-threat-docker rsyslogd: rsyslogd's groupid changed to 101
+May 17 19:49:02 email-threat-docker rsyslogd: rsyslogd's userid changed to 101
+May 17 19:49:02 email-threat-docker rsyslogd: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+May 17 19:50:18 email-threat-docker postfix/pickup[101]: C35686E414: uid=0 from=<sender@email-threat-docker.local>
+May 17 19:50:18 email-threat-docker postfix/cleanup[219]: C35686E414: prepend: header Subject: Urgent login alert from local; from=<sender@email-threat-docker.local> to=<recipient@email-threat-docker.local>: [Subject: ]
+May 17 19:50:18 email-threat-docker postfix/cleanup[219]: C35686E414: message-id=<20250517195018.C35686E414@email-threat-docker.local>
+May 17 19:50:18 email-threat-docker postfix/qmgr[102]: C35686E414: from=<sender@email-threat-docker.local>, size=374, nrcpt=1 (queue active)
+May 17 19:50:18 email-threat-docker postfix/smtpd[222]: warning: dict_nis_init: NIS domain name not set - NIS lookups disabled
+May 17 19:50:18 email-threat-docker postfix/smtpd[222]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 17 19:50:18 email-threat-docker postfix/smtpd[222]: D7BD46E41B: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 17 19:50:18 email-threat-docker postfix/cleanup[219]: D7BD46E41B: message-id=<20250517195018.C35686E414@email-threat-docker.local>
+May 17 19:50:18 email-threat-docker postfix/qmgr[102]: D7BD46E41B: from=<sender@email-threat-docker.local>, size=609, nrcpt=1 (queue active)
+May 17 19:50:18 email-threat-docker postfix/smtpd[222]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 17 19:50:18 email-threat-docker postfix/smtp[221]: C35686E414: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.11, delays=0.03/0.01/0.01/0.05, dsn=2.0.0, status=sent (250 Message delivered)
+May 17 19:50:18 email-threat-docker postfix/qmgr[102]: C35686E414: removed
+May 17 19:50:18 email-threat-docker postfix/local[224]: warning: dict_nis_init: NIS domain name not set - NIS lookups disabled
+May 17 19:50:19 email-threat-docker postfix/local[224]: D7BD46E41B: to=<recipient@email-threat-docker.local>, relay=local, delay=1, delays=0.01/0.01/0/1, dsn=2.0.0, status=sent (delivered to command: /usr/bin/procmail)
+May 17 19:50:19 email-threat-docker postfix/qmgr[102]: D7BD46E41B: removed

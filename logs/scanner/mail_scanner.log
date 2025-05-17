@@ -6952,3 +6952,31 @@
 2025-05-17 16:29:38,343 [INFO] ('127.0.0.1', 54596) EOF received
 2025-05-17 16:29:38,344 [INFO] ('127.0.0.1', 54596) Connection lost during _handle_client()
 2025-05-17 16:29:38,345 [INFO] ('127.0.0.1', 54596) connection lost
+2025-05-17 16:43:07,403 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-17 16:43:07,408 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:43:07,410 [INFO] Peer: ('127.0.0.1', 52406)
+2025-05-17 16:43:07,410 [INFO] ('127.0.0.1', 52406) handling connection
+2025-05-17 16:43:07,412 [INFO] ('127.0.0.1', 52406) EOF received
+2025-05-17 16:43:07,413 [INFO] ('127.0.0.1', 52406) Connection lost during _handle_client()
+2025-05-17 16:43:07,413 [INFO] ('127.0.0.1', 52406) connection lost
+2025-05-17 16:49:01,628 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-17 16:49:01,632 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:49:01,633 [INFO] Peer: ('127.0.0.1', 46510)
+2025-05-17 16:49:01,634 [INFO] ('127.0.0.1', 46510) handling connection
+2025-05-17 16:49:01,636 [INFO] ('127.0.0.1', 46510) EOF received
+2025-05-17 16:49:01,636 [INFO] ('127.0.0.1', 46510) Connection lost during _handle_client()
+2025-05-17 16:49:01,638 [INFO] ('127.0.0.1', 46510) connection lost
+2025-05-17 16:50:18,836 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:50:18,838 [INFO] Peer: ('172.20.0.100', 37068)
+2025-05-17 16:50:18,839 [INFO] ('172.20.0.100', 37068) handling connection
+2025-05-17 16:50:18,840 [INFO] ('172.20.0.100', 37068) >> b'EHLO email-threat-docker.local'
+2025-05-17 16:50:18,842 [INFO] ('172.20.0.100', 37068) >> b'MAIL FROM:<sender@email-threat-docker.local> SIZE=374'
+2025-05-17 16:50:18,843 [INFO] ('172.20.0.100', 37068) sender: sender@email-threat-docker.local
+2025-05-17 16:50:18,844 [INFO] ('172.20.0.100', 37068) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-17 16:50:18,845 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-17 16:50:18,845 [INFO] ('172.20.0.100', 37068) recip: recipient@email-threat-docker.local
+2025-05-17 16:50:18,846 [INFO] ('172.20.0.100', 37068) >> b'DATA'
+2025-05-17 16:50:18,890 [INFO] Email reinjected successfully
+2025-05-17 16:50:18,894 [INFO] ('172.20.0.100', 37068) >> b'QUIT'
+2025-05-17 16:50:18,895 [INFO] ('172.20.0.100', 37068) connection lost
+2025-05-17 16:50:18,896 [INFO] ('172.20.0.100', 37068) Connection lost during _handle_client()
