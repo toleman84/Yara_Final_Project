@@ -2,7 +2,7 @@
 import subprocess
 import os
 
-SIGMA_DIR   = "rules"
+SIGMA_DIR   = "sigma_rules"
 CONFIG_PATH = "loki-backend.yaml"
 OUTPUT_DIR  = "compiled"
 
