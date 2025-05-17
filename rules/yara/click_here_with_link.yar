@@ -5,7 +5,12 @@ rule Click_Here_With_Link
         severity    = "medium"
     strings:
         $c = /click here/               nocase
-        $h = /https?:\/\/[^\s"']+/      nocase
+        $h = /https?:\/\/[^\s"']+/     nocase
     condition:
-        $c and $h and uint16(@c - @h) < 200 or uint16(@h - @c) < 200
+        $c and $h and
+        (
+            (@c > @h and uint16(@c - @h) < 200) or
+            (@h > @c and uint16(@h - @c) < 200)
+        )
 }
+

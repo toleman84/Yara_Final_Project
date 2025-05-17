@@ -1,8 +1,0 @@
-title: Subject Contains "Urgent"
-logsource:
-  product: email-scanner
-detection:
-  fields:
-    subject:
-      - "urgent"
-condition: selection
