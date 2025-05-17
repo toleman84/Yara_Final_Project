@@ -42,7 +42,7 @@ services:
       - SCANNER_LISTEN_PORT=10025
       - TZ=America/Argentina/Buenos_Aires
     volumes:
-      - ./logs/scanner:/var/log/scanner 
+      - ./logs/scanner:/var/log/
       - ./rules:/app/rules:ro
       - quarantine_data:/app/quarantine
       - /etc/localtime:/etc/localtime:ro
