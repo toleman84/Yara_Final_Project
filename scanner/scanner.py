@@ -1,19 +1,17 @@
 #!/usr/bin/env python3
 """
-Enhanced Email Threat Scanner with YARA Only
-- Improved attachment scanning
-- Better error handling and logging
-- Unique quarantine filenames
+Email Threat Scanner with YARA Only
+- Sigma scanning removed for simplicity
+- Docker-optimized paths
+- Logs both quarantined and successfully delivered emails to JSON file
 """
-import re
-import asyncio
-import logging
 import os
-import email
 import time
-import yara
 import json
-import uuid
+import logging
+import email
+import yara
+import asyncio
 from email.policy import default
 from aiosmtpd.controller import Controller
 from aiosmtpd.smtp import Envelope
@@ -62,25 +60,15 @@ class EmailScanner:
             ts = int(time.time())
             msg = email.message_from_bytes(envelope.content, policy=default)
 
-            # YARA scan: full message
             if self.yara_rules:
-                try:
-                    matches = self.yara_rules.match(data=envelope.content)
-                    threats.extend(f"YARA:{m.rule}" for m in matches)
-                except yara.Error as e:
-                    logging.error(f"YARA full scan failed: {str(e)}")
-
-                # YARA scan: attachments
+                # Scan all parts (attachments and text)
                 for part in msg.walk():
                     if part.get_content_maintype() == "multipart":
                         continue
-                    try:
-                        payload = part.get_payload(decode=True)
-                        if payload:
-                            matches = self.yara_rules.match(data=payload)
-                            threats.extend(f"YARA_ATTACHMENT:{m.rule}" for m in matches)
-                    except Exception as e:
-                        logging.warning(f"Attachment scan failed: {str(e)}")
+                    payload = part.get_payload(decode=True)
+                    if payload:
+                        matches = self.yara_rules.match(data=payload)
+                        threats.extend(m.rule for m in matches)
 
             if threats:
                 await self._quarantine_email(envelope, threats, ts, msg)
@@ -95,17 +83,17 @@ class EmailScanner:
             return "451 Temporary error"
 
     async def _reinject_email(self, envelope: Envelope):
-        async with SMTP(hostname=CONFIG["reinject_host"], port=CONFIG["reinject_port"], timeout=10) as client:
+        async with SMTP(
+            hostname=CONFIG["reinject_host"], port=CONFIG["reinject_port"], timeout=10
+        ) as client:
             await client.sendmail(envelope.mail_from, envelope.rcpt_tos, envelope.original_content)
         logging.info("Email reinjected successfully")
 
     async def _quarantine_email(self, envelope, threats: List[str], timestamp: int, msg):
         os.makedirs(CONFIG["quarantine_dir"], exist_ok=True)
-        unique_id = uuid.uuid4().hex
-        filename = f"quarantine_{timestamp}_{unique_id}.eml"
+        filename = f"quarantine_{timestamp}_{len(threats)}.eml"
         filepath = os.path.join(CONFIG["quarantine_dir"], filename)
-
-        with open(filepath, 'wb') as f:
+        with open(filepath, "wb") as f:
             f.write(envelope.content)
 
         logging.warning(f"Quarantined: {filepath} | Threats: {', '.join(threats)}")
@@ -115,10 +103,9 @@ class EmailScanner:
             "sender": envelope.mail_from,
             "recipient": ",".join(envelope.rcpt_tos),
             "subject": msg.get("subject", ""),
-            "message_id": msg.get("Message-ID", ""),
             "yara_hits": threats,
             "quarantined_file": filename,
-            "quarantined": True
+            "quarantined": True,
         }
 
         with open(CONFIG["json_log"], "a") as jf:
@@ -130,11 +117,9 @@ class EmailScanner:
             "sender": envelope.mail_from,
             "recipient": ",".join(envelope.rcpt_tos),
             "subject": msg.get("subject", ""),
-            "message_id": msg.get("Message-ID", ""),
             "yara_hits": "no matches",
-            "quarantined": False
+            "quarantined": False,
         }
-
         with open(CONFIG["json_log"], "a") as jf:
             jf.write(json.dumps(event) + "\n")
 
@@ -145,20 +130,19 @@ def main():
         format="%(asctime)s [%(levelname)s] %(message)s",
         handlers=[
             logging.FileHandler(CONFIG["log_file"]),
-            logging.StreamHandler()
-        ]
+            logging.StreamHandler(),
+        ],
     )
 
     yara_rules = load_yara_rules()
     controller = Controller(
-        EmailScanner(yara_rules),
-        hostname=CONFIG["listen_host"],
-        port=CONFIG["listen_port"]
+        EmailScanner(yara_rules), hostname=CONFIG["listen_host"], port=CONFIG["listen_port"]
     )
 
     logging.info(f"Starting YARA-only scanner on {CONFIG['listen_host']}:{CONFIG['listen_port']}")
     controller.start()
     asyncio.get_event_loop().run_forever()
+
 
 if __name__ == "__main__":
     main()
