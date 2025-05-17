@@ -7,7 +7,7 @@ services:
     ports:
       - "25:25"
     volumes:
-      - ./logs/postfix:/var/log
+      - ./logs/postfix:/var/log/postfix 
       - ./postfix/main.cf:/etc/postfix/main.cf:ro
       - ./postfix/master.cf:/etc/postfix/master.cf:ro
       - ./postfix/transport:/etc/postfix/transport:ro
@@ -42,7 +42,7 @@ services:
       - SCANNER_LISTEN_PORT=10025
       - TZ=America/Argentina/Buenos_Aires
     volumes:
-      - ./logs/scanner:/var/log
+      - ./logs/scanner:/var/log/scanner 
       - ./rules:/app/rules:ro
       - quarantine_data:/app/quarantine
       - /etc/localtime:/etc/localtime:ro
@@ -117,24 +117,16 @@ services:
     image: grafana/promtail:2.9.1
     container_name: promtail
     command: -config.file=/etc/promtail/config.yml
-    healthcheck:
-     test: ["CMD-SHELL", "pgrep promtail || exit 1"]
-     interval: 10s
-     timeout: 5s
-     retries: 3
     volumes:
-      - ./logs/postfix:/logs/postfix:ro
-      - ./logs/scanner:/logs/scanner:ro
-      - ./logs/sigma:/logs/sigma:ro
-      - ./promtail:/etc/promtail
+      - ./logs/postfix:/var/log/postfix
+      - ./logs/scanner:/var/log/scanner
+      - ./logs/sigma:/var/log/sigma
+      - ./promtail/config.yml:/etc/promtail/config.yml
       - positions:/tmp
       - /etc/localtime:/etc/localtime:ro
     depends_on:
-      - loki
-      - postfix
-      - scanner
-    environment:
-      - TZ=America/Argentina/Buenos_Aires
+      loki:
+        condition: service_healthy
     networks:
       - threat-net
 

@@ -14,15 +14,14 @@ scrape_configs:
       - targets: [localhost]
         labels:
           job: postfix
-          __path__: /logs/postfix/*.log
+          __path__: /var/log/postfix/*.log  
 
   - job_name: scanner
     static_configs:
-      - targets:
-          - localhost
+      - targets: [localhost]
         labels:
           job: scanner
-          __path__: /logs/scanner/*.json
+          __path__: /var/log/scanner/*.json  
     pipeline_stages:
       - json:
           expressions:
@@ -41,4 +40,4 @@ scrape_configs:
       - targets: [localhost]
         labels:
           job: sigma_scanner
-          __path__: /logs/sigma/*.log
+          __path__: /var/log/sigma/*.log  
