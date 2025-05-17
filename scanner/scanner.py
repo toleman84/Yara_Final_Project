@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Email Threat Scanner with YARA Only
-- Sigma scanning removed for simplicity
-- Docker-optimized paths
-- Logs both quarantined and successfully delivered emails to JSON file
+Enhanced Email Threat Scanner with YARA Only
+- Improved attachment scanning
+- Better error handling and logging
+- Unique quarantine filenames
 """
 import re
 import asyncio
@@ -13,6 +13,7 @@ import email
 import time
 import yara
 import json
+import uuid
 from email.policy import default
 from aiosmtpd.controller import Controller
 from aiosmtpd.smtp import Envelope
@@ -58,12 +59,28 @@ class EmailScanner:
     async def handle_DATA(self, server, session, envelope: Envelope):
         try:
             threats = []
-            if self.yara_rules:
-                matches = self.yara_rules.match(data=envelope.content)
-                threats.extend(f"YARA:{m.rule}" for m in matches)
-
-            msg = email.message_from_bytes(envelope.content, policy=default)
             ts = int(time.time())
+            msg = email.message_from_bytes(envelope.content, policy=default)
+
+            # YARA scan: full message
+            if self.yara_rules:
+                try:
+                    matches = self.yara_rules.match(data=envelope.content)
+                    threats.extend(f"YARA:{m.rule}" for m in matches)
+                except yara.Error as e:
+                    logging.error(f"YARA full scan failed: {str(e)}")
+
+                # YARA scan: attachments
+                for part in msg.walk():
+                    if part.get_content_maintype() == "multipart":
+                        continue
+                    try:
+                        payload = part.get_payload(decode=True)
+                        if payload:
+                            matches = self.yara_rules.match(data=payload)
+                            threats.extend(f"YARA_ATTACHMENT:{m.rule}" for m in matches)
+                    except Exception as e:
+                        logging.warning(f"Attachment scan failed: {str(e)}")
 
             if threats:
                 await self._quarantine_email(envelope, threats, ts, msg)
@@ -84,8 +101,10 @@ class EmailScanner:
 
     async def _quarantine_email(self, envelope, threats: List[str], timestamp: int, msg):
         os.makedirs(CONFIG["quarantine_dir"], exist_ok=True)
-        filename = f"quarantine_{timestamp}_{len(threats)}.eml"
+        unique_id = uuid.uuid4().hex
+        filename = f"quarantine_{timestamp}_{unique_id}.eml"
         filepath = os.path.join(CONFIG["quarantine_dir"], filename)
+
         with open(filepath, 'wb') as f:
             f.write(envelope.content)
 
@@ -96,6 +115,7 @@ class EmailScanner:
             "sender": envelope.mail_from,
             "recipient": ",".join(envelope.rcpt_tos),
             "subject": msg.get("subject", ""),
+            "message_id": msg.get("Message-ID", ""),
             "yara_hits": threats,
             "quarantined_file": filename,
             "quarantined": True
@@ -110,10 +130,11 @@ class EmailScanner:
             "sender": envelope.mail_from,
             "recipient": ",".join(envelope.rcpt_tos),
             "subject": msg.get("subject", ""),
+            "message_id": msg.get("Message-ID", ""),
             "yara_hits": "no matches",
             "quarantined": False
         }
-        # Append to JSON log
+
         with open(CONFIG["json_log"], "a") as jf:
             jf.write(json.dumps(event) + "\n")
 
