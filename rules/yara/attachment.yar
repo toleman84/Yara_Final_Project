@@ -15,6 +15,7 @@ rule with_attachment : mail {
 }
 
 
+/*
 rule without_attachments : mail {
 	meta:
 		author = "Antonio Sanchez <asanchez@hispasec.com>"
@@ -31,4 +32,4 @@ rule without_attachments : mail {
 		not $attachment_id and 
                 not $mime_type
 }
-
+*/
