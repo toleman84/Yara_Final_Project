@@ -6980,3 +6980,137 @@
 2025-05-17 16:50:18,894 [INFO] ('172.20.0.100', 37068) >> b'QUIT'
 2025-05-17 16:50:18,895 [INFO] ('172.20.0.100', 37068) connection lost
 2025-05-17 16:50:18,896 [INFO] ('172.20.0.100', 37068) Connection lost during _handle_client()
+2025-05-17 16:54:39,782 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-17 16:54:39,793 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:54:39,795 [INFO] Peer: ('127.0.0.1', 52952)
+2025-05-17 16:54:39,796 [INFO] ('127.0.0.1', 52952) handling connection
+2025-05-17 16:54:39,798 [INFO] ('127.0.0.1', 52952) EOF received
+2025-05-17 16:54:39,799 [INFO] ('127.0.0.1', 52952) Connection lost during _handle_client()
+2025-05-17 16:54:39,800 [INFO] ('127.0.0.1', 52952) connection lost
+2025-05-17 16:58:25,357 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-17 16:58:25,364 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:58:25,368 [INFO] Peer: ('127.0.0.1', 37244)
+2025-05-17 16:58:25,372 [INFO] ('127.0.0.1', 37244) handling connection
+2025-05-17 16:58:25,374 [INFO] ('127.0.0.1', 37244) EOF received
+2025-05-17 16:58:25,374 [INFO] ('127.0.0.1', 37244) Connection lost during _handle_client()
+2025-05-17 16:58:25,375 [INFO] ('127.0.0.1', 37244) connection lost
+2025-05-17 16:58:30,057 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:58:30,058 [INFO] Peer: ('127.0.0.1', 44968)
+2025-05-17 16:58:30,059 [INFO] ('127.0.0.1', 44968) handling connection
+2025-05-17 16:58:30,060 [INFO] ('127.0.0.1', 44968) EOF received
+2025-05-17 16:58:30,061 [INFO] ('127.0.0.1', 44968) Connection lost during _handle_client()
+2025-05-17 16:58:30,062 [INFO] ('127.0.0.1', 44968) connection lost
+2025-05-17 16:58:35,134 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:58:35,135 [INFO] Peer: ('127.0.0.1', 44970)
+2025-05-17 16:58:35,136 [INFO] ('127.0.0.1', 44970) handling connection
+2025-05-17 16:58:35,139 [INFO] ('127.0.0.1', 44970) EOF received
+2025-05-17 16:58:35,141 [INFO] ('127.0.0.1', 44970) Connection lost during _handle_client()
+2025-05-17 16:58:35,142 [INFO] ('127.0.0.1', 44970) connection lost
+2025-05-17 16:58:40,504 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:58:40,505 [INFO] Peer: ('127.0.0.1', 49736)
+2025-05-17 16:58:40,506 [INFO] ('127.0.0.1', 49736) handling connection
+2025-05-17 16:58:40,507 [INFO] ('127.0.0.1', 49736) EOF received
+2025-05-17 16:58:40,508 [INFO] ('127.0.0.1', 49736) Connection lost during _handle_client()
+2025-05-17 16:58:40,509 [INFO] ('127.0.0.1', 49736) connection lost
+2025-05-17 16:58:45,582 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:58:45,584 [INFO] Peer: ('127.0.0.1', 49750)
+2025-05-17 16:58:45,585 [INFO] ('127.0.0.1', 49750) handling connection
+2025-05-17 16:58:45,586 [INFO] ('127.0.0.1', 49750) EOF received
+2025-05-17 16:58:45,587 [INFO] ('127.0.0.1', 49750) Connection lost during _handle_client()
+2025-05-17 16:58:45,588 [INFO] ('127.0.0.1', 49750) connection lost
+2025-05-17 16:58:50,653 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:58:50,654 [INFO] Peer: ('127.0.0.1', 52842)
+2025-05-17 16:58:50,655 [INFO] ('127.0.0.1', 52842) handling connection
+2025-05-17 16:58:50,656 [INFO] ('127.0.0.1', 52842) EOF received
+2025-05-17 16:58:50,656 [INFO] ('127.0.0.1', 52842) Connection lost during _handle_client()
+2025-05-17 16:58:50,657 [INFO] ('127.0.0.1', 52842) connection lost
+2025-05-17 16:58:55,744 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:58:55,746 [INFO] Peer: ('127.0.0.1', 52856)
+2025-05-17 16:58:55,747 [INFO] ('127.0.0.1', 52856) handling connection
+2025-05-17 16:58:55,748 [INFO] ('127.0.0.1', 52856) EOF received
+2025-05-17 16:58:55,749 [INFO] ('127.0.0.1', 52856) Connection lost during _handle_client()
+2025-05-17 16:58:55,750 [INFO] ('127.0.0.1', 52856) connection lost
+2025-05-17 16:59:00,815 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:59:00,816 [INFO] Peer: ('127.0.0.1', 33448)
+2025-05-17 16:59:00,817 [INFO] ('127.0.0.1', 33448) handling connection
+2025-05-17 16:59:00,818 [INFO] ('127.0.0.1', 33448) EOF received
+2025-05-17 16:59:00,819 [INFO] ('127.0.0.1', 33448) Connection lost during _handle_client()
+2025-05-17 16:59:00,819 [INFO] ('127.0.0.1', 33448) connection lost
+2025-05-17 16:59:05,891 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:59:05,892 [INFO] Peer: ('127.0.0.1', 33458)
+2025-05-17 16:59:05,893 [INFO] ('127.0.0.1', 33458) handling connection
+2025-05-17 16:59:05,893 [INFO] ('127.0.0.1', 33458) EOF received
+2025-05-17 16:59:05,894 [INFO] ('127.0.0.1', 33458) Connection lost during _handle_client()
+2025-05-17 16:59:05,895 [INFO] ('127.0.0.1', 33458) connection lost
+2025-05-17 16:59:11,249 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:59:11,250 [INFO] Peer: ('127.0.0.1', 60528)
+2025-05-17 16:59:11,251 [INFO] ('127.0.0.1', 60528) handling connection
+2025-05-17 16:59:11,252 [INFO] ('127.0.0.1', 60528) EOF received
+2025-05-17 16:59:11,253 [INFO] ('127.0.0.1', 60528) Connection lost during _handle_client()
+2025-05-17 16:59:11,254 [INFO] ('127.0.0.1', 60528) connection lost
+2025-05-17 16:59:16,313 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:59:16,314 [INFO] Peer: ('127.0.0.1', 60544)
+2025-05-17 16:59:16,315 [INFO] ('127.0.0.1', 60544) handling connection
+2025-05-17 16:59:16,316 [INFO] ('127.0.0.1', 60544) EOF received
+2025-05-17 16:59:16,317 [INFO] ('127.0.0.1', 60544) Connection lost during _handle_client()
+2025-05-17 16:59:16,318 [INFO] ('127.0.0.1', 60544) connection lost
+2025-05-17 16:59:21,383 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:59:21,384 [INFO] Peer: ('127.0.0.1', 49672)
+2025-05-17 16:59:21,385 [INFO] ('127.0.0.1', 49672) handling connection
+2025-05-17 16:59:21,386 [INFO] ('127.0.0.1', 49672) EOF received
+2025-05-17 16:59:21,387 [INFO] ('127.0.0.1', 49672) Connection lost during _handle_client()
+2025-05-17 16:59:21,388 [INFO] ('127.0.0.1', 49672) connection lost
+2025-05-17 16:59:26,465 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:59:26,466 [INFO] Peer: ('127.0.0.1', 49684)
+2025-05-17 16:59:26,467 [INFO] ('127.0.0.1', 49684) handling connection
+2025-05-17 16:59:26,468 [INFO] ('127.0.0.1', 49684) EOF received
+2025-05-17 16:59:26,469 [INFO] ('127.0.0.1', 49684) Connection lost during _handle_client()
+2025-05-17 16:59:26,470 [INFO] ('127.0.0.1', 49684) connection lost
+2025-05-17 16:59:31,542 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:59:31,543 [INFO] Peer: ('127.0.0.1', 42752)
+2025-05-17 16:59:31,544 [INFO] ('127.0.0.1', 42752) handling connection
+2025-05-17 16:59:31,545 [INFO] ('127.0.0.1', 42752) EOF received
+2025-05-17 16:59:31,546 [INFO] ('127.0.0.1', 42752) Connection lost during _handle_client()
+2025-05-17 16:59:31,547 [INFO] ('127.0.0.1', 42752) connection lost
+2025-05-17 16:59:36,634 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:59:36,636 [INFO] Peer: ('127.0.0.1', 40148)
+2025-05-17 16:59:36,637 [INFO] ('127.0.0.1', 40148) handling connection
+2025-05-17 16:59:36,639 [INFO] ('127.0.0.1', 40148) EOF received
+2025-05-17 16:59:36,640 [INFO] ('127.0.0.1', 40148) Connection lost during _handle_client()
+2025-05-17 16:59:36,644 [INFO] ('127.0.0.1', 40148) connection lost
+2025-05-17 16:59:42,015 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:59:42,016 [INFO] Peer: ('127.0.0.1', 40152)
+2025-05-17 16:59:42,017 [INFO] ('127.0.0.1', 40152) handling connection
+2025-05-17 16:59:42,018 [INFO] ('127.0.0.1', 40152) EOF received
+2025-05-17 16:59:42,019 [INFO] ('127.0.0.1', 40152) Connection lost during _handle_client()
+2025-05-17 16:59:42,020 [INFO] ('127.0.0.1', 40152) connection lost
+2025-05-17 16:59:47,088 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:59:47,089 [INFO] Peer: ('127.0.0.1', 42084)
+2025-05-17 16:59:47,090 [INFO] ('127.0.0.1', 42084) handling connection
+2025-05-17 16:59:47,091 [INFO] ('127.0.0.1', 42084) EOF received
+2025-05-17 16:59:47,092 [INFO] ('127.0.0.1', 42084) Connection lost during _handle_client()
+2025-05-17 16:59:47,093 [INFO] ('127.0.0.1', 42084) connection lost
+2025-05-17 16:59:52,185 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:59:52,187 [INFO] Peer: ('127.0.0.1', 42100)
+2025-05-17 16:59:52,188 [INFO] ('127.0.0.1', 42100) handling connection
+2025-05-17 16:59:52,189 [INFO] ('127.0.0.1', 42100) EOF received
+2025-05-17 16:59:52,191 [INFO] ('127.0.0.1', 42100) Connection lost during _handle_client()
+2025-05-17 16:59:52,192 [INFO] ('127.0.0.1', 42100) connection lost
+2025-05-17 16:59:57,262 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:59:57,263 [INFO] Peer: ('127.0.0.1', 48578)
+2025-05-17 16:59:57,264 [INFO] ('127.0.0.1', 48578) handling connection
+2025-05-17 16:59:57,264 [INFO] ('127.0.0.1', 48578) EOF received
+2025-05-17 16:59:57,265 [INFO] ('127.0.0.1', 48578) Connection lost during _handle_client()
+2025-05-17 16:59:57,266 [INFO] ('127.0.0.1', 48578) connection lost
+2025-05-17 17:00:02,354 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 17:00:02,356 [INFO] Peer: ('127.0.0.1', 48584)
+2025-05-17 17:00:02,357 [INFO] ('127.0.0.1', 48584) handling connection
+2025-05-17 17:00:02,358 [INFO] ('127.0.0.1', 48584) EOF received
+2025-05-17 17:00:02,359 [INFO] ('127.0.0.1', 48584) Connection lost during _handle_client()
+2025-05-17 17:00:02,360 [INFO] ('127.0.0.1', 48584) connection lost
+2025-05-17 17:00:07,426 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 17:00:07,427 [INFO] Peer: ('127.0.0.1', 38662)
+2025-05-17 17:00:07,428 [INFO] ('127.0.0.1', 38662) handling connection
+2025-05-17 17:00:07,429 [INFO] ('127.0.0.1', 38662) EOF received
+2025-05-17 17:00:07,430 [INFO] ('127.0.0.1', 38662) Connection lost during _handle_client()
+2025-05-17 17:00:07,431 [INFO] ('127.0.0.1', 38662) connection lost

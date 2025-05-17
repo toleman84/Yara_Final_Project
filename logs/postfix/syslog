@@ -1238,3 +1238,23 @@ May 17 19:50:18 email-threat-docker postfix/qmgr[102]: C35686E414: removed
 May 17 19:50:18 email-threat-docker postfix/local[224]: warning: dict_nis_init: NIS domain name not set - NIS lookups disabled
 May 17 19:50:19 email-threat-docker postfix/local[224]: D7BD46E41B: to=<recipient@email-threat-docker.local>, relay=local, delay=1, delays=0.01/0.01/0/1, dsn=2.0.0, status=sent (delivered to command: /usr/bin/procmail)
 May 17 19:50:19 email-threat-docker postfix/qmgr[102]: D7BD46E41B: removed
+May 17 19:54:40 email-threat-docker postfix/postfix-script[72]: warning: group or other writable: /etc/postfix/./main.cf
+May 17 19:54:40 email-threat-docker postfix/postfix-script[74]: warning: group or other writable: /etc/postfix/./master.cf
+May 17 19:54:40 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./transport
+May 17 19:54:40 email-threat-docker postfix/postfix-script[98]: starting the Postfix mail system
+May 17 19:54:40 email-threat-docker postfix/master[100]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 17 19:54:40 email-threat-docker rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+May 17 19:54:40 email-threat-docker rsyslogd: activation of module imklog failed [v8.2112.0 try https://www.rsyslog.com/e/2145 ]
+May 17 19:54:40 email-threat-docker rsyslogd: rsyslogd's groupid changed to 101
+May 17 19:54:40 email-threat-docker rsyslogd: rsyslogd's userid changed to 101
+May 17 19:54:40 email-threat-docker rsyslogd: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="8" x-info="https://www.rsyslog.com"] start
+May 17 19:58:25 email-threat-docker postfix/postfix-script[73]: warning: group or other writable: /etc/postfix/./main.cf
+May 17 19:58:25 email-threat-docker postfix/postfix-script[75]: warning: group or other writable: /etc/postfix/./master.cf
+May 17 19:58:25 email-threat-docker postfix/postfix-script[76]: warning: group or other writable: /etc/postfix/./transport
+May 17 19:58:25 email-threat-docker postfix/postfix-script[99]: starting the Postfix mail system
+May 17 19:58:25 email-threat-docker postfix/master[101]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 17 19:58:26 email-threat-docker rsyslogd: imklog: cannot open kernel log (/proc/kmsg): Operation not permitted.
+May 17 19:58:26 email-threat-docker rsyslogd: activation of module imklog failed [v8.2112.0 try https://www.rsyslog.com/e/2145 ]
+May 17 19:58:26 email-threat-docker rsyslogd: rsyslogd's groupid changed to 101
+May 17 19:58:26 email-threat-docker rsyslogd: rsyslogd's userid changed to 101
+May 17 19:58:26 email-threat-docker rsyslogd: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="9" x-info="https://www.rsyslog.com"] start
