@@ -1,12 +1,12 @@
 rule Malicious_Attachment_Detection {
     meta:
-        author = "Security Team"
-        description = "Detecta archivos adjuntos potencialmente maliciosos en correos electrónicos"
+        author = "SeMail"
+        description = "Detects potentially malicious attachments in emails"
         severity = "high"
         created = "2025-05-16"
     
     strings:
-        // Extensiones de archivo sospechosas
+        // Suspicious file extensions
         $ext_exe = ".exe" nocase
         $ext_scr = ".scr" nocase
         $ext_bat = ".bat" nocase
@@ -16,14 +16,14 @@ rule Malicious_Attachment_Detection {
         $ext_ps1 = ".ps1" nocase
         $ext_jar = ".jar" nocase
         
-        // Nombres de archivo sospechosos
+        // Suspicious file names
         $filename1 = "security_update" nocase
         $filename2 = "invoice" nocase
         $filename3 = "document" nocase
         $filename4 = "urgent" nocase
         $filename5 = "confidential" nocase
         
-        // Patrones de contenido sospechoso en archivos adjuntos
+        // Suspicious content patterns in attachments
         $content1 = "powershell -e" nocase
         $content2 = "cmd.exe /c" nocase
         $content3 = "rundll32" nocase
