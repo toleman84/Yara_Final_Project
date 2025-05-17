@@ -6945,3 +6945,10 @@
 2025-05-17 14:10:48,163 [INFO] ('172.20.0.100', 55298) >> b'QUIT'
 2025-05-17 14:10:48,165 [INFO] ('172.20.0.100', 55298) connection lost
 2025-05-17 14:10:48,166 [INFO] ('172.20.0.100', 55298) Connection lost during _handle_client()
+2025-05-17 16:29:38,331 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-17 16:29:38,339 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-17 16:29:38,340 [INFO] Peer: ('127.0.0.1', 54596)
+2025-05-17 16:29:38,342 [INFO] ('127.0.0.1', 54596) handling connection
+2025-05-17 16:29:38,343 [INFO] ('127.0.0.1', 54596) EOF received
+2025-05-17 16:29:38,344 [INFO] ('127.0.0.1', 54596) Connection lost during _handle_client()
+2025-05-17 16:29:38,345 [INFO] ('127.0.0.1', 54596) connection lost

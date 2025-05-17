@@ -8,7 +8,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application files
 COPY sigma_analyzer/analyzer.py .
 COPY sigma_analyzer/loki-backend.yaml .
-COPY sigma_analyzer/rules ./rules
+COPY sigma_analyzer/sigma_rules ./rules
 COPY sigma_analyzer/compiled ./compiled
 
 COPY sigma_analyzer/entrypoint.sh .
