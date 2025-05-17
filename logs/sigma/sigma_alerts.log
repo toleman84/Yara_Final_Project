@@ -1,9 +1,0 @@
-2025-05-14 07:35:09,725 [INFO] Loaded 98 Sigma rules
-2025-05-14 07:36:52,547 [INFO] Loaded 98 Sigma rules
-2025-05-14 07:40:04,029 [INFO] Loaded 98 Sigma rules
-2025-05-14 07:42:17,571 [WARNING] Sigma Alert: Phishing Email - Urgent Action Required | sender@email-threat-docker.local → recipient@email-threat-docker.local
-2025-05-14 07:42:26,390 [WARNING] Sigma Alert: Subject Contains "Urgent" | sender@email-threat-docker.local → recipient@email-threat-docker.local
-2025-05-14 07:42:26,391 [WARNING] Sigma Alert: Phishing Email - Urgent Action Required | sender@email-threat-docker.local → recipient@email-threat-docker.local
-2025-05-14 02:01:45,537 [INFO] Loaded 98 Sigma rules
-2025-05-15 12:13:03,392 [INFO] Loaded 98 Sigma rules
-2025-05-15 12:26:54,418 [INFO] Loaded 98 Sigma rules

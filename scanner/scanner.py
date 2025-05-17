@@ -5,7 +5,7 @@ Email Threat Scanner with YARA Only
 - Docker-optimized paths
 - Logs both quarantined and successfully delivered emails to JSON file
 """
-
+import re
 import asyncio
 import logging
 import os
@@ -57,7 +57,6 @@ class EmailScanner:
 
     async def handle_DATA(self, server, session, envelope: Envelope):
         try:
-            # Run YARA scan
             threats = []
             if self.yara_rules:
                 matches = self.yara_rules.match(data=envelope.content)
@@ -98,10 +97,10 @@ class EmailScanner:
             "recipient": ",".join(envelope.rcpt_tos),
             "subject": msg.get("subject", ""),
             "yara_hits": threats,
+            "quarantined_file": filename,
             "quarantined": True
         }
 
-        # Append to JSON log
         with open(CONFIG["json_log"], "a") as jf:
             jf.write(json.dumps(event) + "\n")
 

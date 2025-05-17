@@ -14,7 +14,8 @@ mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain
 local_transport = local:
 disable_dns_lookups = yes
 ignore_mx_lookup_error = yes
-local_recipient_maps =
+local_recipient_maps = proxy:unix:passwd.byname $alias_maps
+mailbox_command = /usr/bin/procmail
 
 # Custom transport map for relaying mail
 transport_maps = hash:/etc/postfix/transport
@@ -37,5 +38,13 @@ content_filter = smtp:[scanner]:10025
 # Limits
 mailbox_size_limit = 0
 
-# Logging (optional — log to a file inside container, or stdout)
-maillog_file = /var/log/mail.log
+# ====== LOGGING CONFIGURATION ======
+# Enable verbose logging for debugging
+debug_peer_level = 2
+
+# Log the email subject via header checks
+header_checks = regexp:/etc/postfix/header_checks
+
+# Send logs to syslog (required for /var/log/mail.log)
+syslog_name = postfix
+

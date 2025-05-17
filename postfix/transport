@@ -1,1 +1,2 @@
-email-threat-docker.local local:
+email-threat-docker.local   local:
+*                           smtp:[scanner]:10025

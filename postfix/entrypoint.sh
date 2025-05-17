@@ -1,15 +1,14 @@
 #!/bin/bash
 set -e
 
-# Start rsyslog daemon
+# Start rsyslog (ignore kernel log errors)
 echo "[*] Starting rsyslogd..."
-rsyslogd
+rsyslogd 2>/dev/null  # Silence imklog warnings
 
-# Start Postfix in foreground mode (container-friendly)
-echo "[*] Starting postfix in foreground mode...[*]"
-exec postfix start-fg
-echo "[*] postfix started...[*]"
+# Start Postfix in the background
+echo "[*] Starting postfix..."
+postfix start
 
-mkdir -p /var/log/scanner
-# This ensures all stdout/stderr (including the “Quarantined…” warnings) go into /var/log/scanner/scanner.log.
-exec python3 /app/scanner 2>&1 | tee -a /var/log/scanner/scanner.log
+
+# Keep the container alive
+tail -f /dev/null

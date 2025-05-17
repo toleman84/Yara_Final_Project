@@ -4,7 +4,7 @@ import os
 
 SIGMA_DIR   = "rules"
 CONFIG_PATH = "loki-backend.yaml"
-OUTPUT_DIR  = "compiled_rules"
+OUTPUT_DIR  = "compiled"
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
