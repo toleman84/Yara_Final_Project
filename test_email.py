@@ -1,15 +1,14 @@
+#!/usr/bin/env python3
 import smtplib
-import time
 from email.message import EmailMessage
 
 # Configuration
 SMTP_SERVER = '127.0.0.1'
 SMTP_PORT = 25
 RECIPIENT = 'recipient@email-threat-docker.local'
-DELAY_SECONDS = 1  # delay between sending emails in seconds
 
 # Define 10 clean emails
-emails = [
+clean_emails = [
     {
         "from": "notifications@company.com",
         "subject": "Welcome to Our Service",
@@ -121,7 +120,7 @@ Communications
     },
 ]
 
-# Define 20 malicious emails
+# Define 19 malicious emails
 malicious_emails = [
     {
         "from": "billing@legit-company.com",
@@ -159,17 +158,6 @@ Regards.
         "body": """Hello,
 
 Your password must be reset due to a security issue. Click here to reset your password immediately: http://service.example.com/reset-password
-
-Thanks.
-"""
-    },
-    {
-        "from": "Alice Smith <alice.smith@bigcorp.com>",
-        "subject": "Urgent Wire Transfer",
-        "body": """Hi,
-
-I am in a meeting right now. Please urgently transfer $15,000 to account 987654321 at ACME Bank.
-Do not reply to this email.
 
 Thanks.
 """
@@ -280,17 +268,23 @@ Click here to provide feedback and win a prize: http://survey.example.com/
     {
         "from": "recruiter@jobs.com",
         "subject": "Job Interview Invitation",
-        "body": """Hi,
+        "body": """Dear Candidate,
 
-We received your resume for an open position. Please fill out this form: http://jobs.example.com/form
+You are invited for an interview. Please download the attached form.exe and complete it.
 """
     },
 ]
 
-# Combine into one list
-emails += malicious_emails
+# Combine emails with type info
+emails = []
+for e in clean_emails:
+    e['type'] = 'clean'
+    emails.append(e)
+for e in malicious_emails:
+    e['type'] = 'malicious'
+    emails.append(e)
 
-# Send emails
+# Send emails without delay
 with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as smtp:
     for idx, email in enumerate(emails, start=1):
         msg = EmailMessage()
@@ -298,13 +292,10 @@ with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as smtp:
         msg['To'] = RECIPIENT
         msg['Subject'] = email['subject']
         msg.set_content(email['body'])
-        
+
         try:
             smtp.send_message(msg)
-            print(f"[✔] Sent email {idx}/{len(emails)}: {email['subject']}")
+            print(f"[✔] Sent {email['type'].upper()} email {idx}/{len(emails)}: {email['subject']}")
         except Exception as e:
             print(f"[✗] Failed to send email {idx}: {e}")
-        
-        # Delay before sending the next email
-        if idx < len(emails):
-            time.sleep(DELAY_SECONDS)
+
