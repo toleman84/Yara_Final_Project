@@ -1,0 +1,1 @@
+{job=~".+"} |~ `(?i)Threats:\ EICAR_Test_File` | line_format "{{.quarantined_file}}"

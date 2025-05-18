@@ -1,5 +1,5 @@
 title: Email Containing YARA-Detected Threat
-id: a1b2c3d4-1234-5678-abcd-1234567890ab
+id: 7d766434-4b5e-4ee8-9399-f91932d66b56
 status: experimental
 description: Detection of emails matching known malicious patterns via YARA
 logsource:

@@ -1,6 +1,5 @@
 title: Compressed File Attachment
-id: zip-file-detection-5678-1234-efgh
-status: experimental
+id: 7a8d2f1e-4b3c-45d6-a9b0-c1d2e3f4a5b6
 description: Detects ZIP files in emails
 logsource:
   product: email_security

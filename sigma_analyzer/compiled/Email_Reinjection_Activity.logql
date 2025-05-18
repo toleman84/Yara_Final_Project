@@ -1,0 +1,1 @@
+{job=~".+"} |~ `(?i)Email\ reinjected\ successfully` | line_format "{{.log_message}}"

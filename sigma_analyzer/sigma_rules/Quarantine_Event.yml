@@ -1,24 +1,34 @@
 title: Multiple Email Quarantine Events
-id: d3f5a7b8-9c1e-4d6f-b234-d567e890f123
+id: 7079843a-5902-4905-b255-2c91726aa4b0
 status: experimental
 description: Detects multiple email quarantine events (more than 5 in 1 hour)
 logsource:
+  category: email
   product: email_security
   service: scanner
 detection:
   selection:
-    - '*Quarantined: * | Threats: *'
-  timeframe: 1h
-  threshold:
-    count: 5
+    EventType: "Quarantine"
+    QuarantineAction: "blocked"
+  correlation:
+    type: event_count
     group_by:
-      - host  # Or use 'source_ip' if available in logs
-  condition: selection | count() > threshold.count by group_by
+      - SourceHost  # Use actual field name from your logs
+      - SenderAddress
+    time_frame: 1h
+    threshold: 5
+  condition: selection and correlation
 fields:
-  - quarantined_file
-  - detected_threats
-  - event_count
+  - SenderAddress
+  - RecipientAddress
+  - QuarantinedFile
+  - DetectedThreats
+  - Timestamp
 falsepositives:
-  - Bulk legitimate emails triggering false positives
-  - Scheduled security tests
+  - Bulk marketing campaigns
+  - Phishing simulation exercises
 level: critical
+tags:
+  - attack.initial_access
+  - attack.t1566.001  # Phishing: Spearphishing Attachment
+  - attack.t1048

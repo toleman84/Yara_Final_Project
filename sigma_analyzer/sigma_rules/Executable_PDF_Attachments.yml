@@ -1,6 +1,33 @@
-title: Email with Executable + PDF Attachments
+title: Email with Executable and PDF Attachments
+id: 1f8b39bb-67f0-43d9-8cc3-32142cd5e71f
+status: experimental
+description: Detects emails containing both PDF and executable attachments
+references:
+  - https://attack.mitre.org/techniques/T1193/
+  - https://attack.mitre.org/techniques/T1566/
+logsource:
+  category: email
+  product: email_security
+  service: scanner
 detection:
   selection:
-    - 'application/pdf' in attachments[].type
-    - 'application/x-dosexec' in attachments[].type
-  condition: all of selection
+    attachments.type|contains:
+      - 'application/pdf'
+      - 'application/x-dosexec'
+  condition: selection
+fields:
+  - sender
+  - recipient
+  - subject
+  - attachments.name
+  - attachments.type
+falsepositives:
+  - Legitimate software documentation with PDF manuals and installers
+  - Security teams sending analysis reports with samples
+level: high
+tags:
+  - attack.initial_access
+  - attack.t1193
+  - attack.t1566.001  # Phishing: Spearphishing Attachment
+  - attack.t1566.002  # Phishing: Spearphishing Link
+  - attack.malware

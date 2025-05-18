@@ -1,7 +1,35 @@
 title: Multiple Quarantined Emails from Same Sender
-description: >-
-  5+ quarantined emails from same sender within 1 hour
+id: 2c863c99-21ba-423c-b60e-24c6808f9981
+status: experimental
+description: Detects 5+ quarantined emails from the same sender within 1 hour
+logsource:
+  category: email
+  product: email_security
+  service: scanner
 detection:
-  timeframe: 1h
-  count_field: sender
-  condition: count > 5
+  selection:
+    EventType: EmailQuarantine
+    QuarantineReason|contains: 
+      - 'Phishing'
+      - 'Malware'
+  correlation:
+    type: event_count
+    time_frame: 1h
+    group_by:
+      - SenderAddress
+    threshold: 5
+  condition: selection and correlation
+fields:
+  - SenderAddress
+  - RecipientAddress
+  - QuarantinedFileName
+  - DetectedThreats
+  - Timestamp
+falsepositives:
+  - Marketing campaigns with attachments
+  - Internal security testing
+level: high
+tags:
+  - attack.initial_access
+  - attack.t1566.002  # Phishing: Spearphishing Link
+  - attack.t1048.003  # Exfiltration Over Unencrypted Non-C2 Protocol

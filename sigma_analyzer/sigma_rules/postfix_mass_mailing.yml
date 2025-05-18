@@ -1,4 +1,5 @@
 title: Postfix Mass Mailing Detection
+id: b22a31c7-2845-4d71-8380-1cbf06dde0b2
 status: experimental
 description: Detects a high volume of outgoing emails from a single source IP or sender address within a short time frame, potentially indicating spam or a compromised account.
 logsource:

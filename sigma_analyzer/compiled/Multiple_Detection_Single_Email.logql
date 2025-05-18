@@ -1,0 +1,1 @@
+{job=~".+"} |~ `(?i)Threats:\ .*\\S\+,\ \\S\+` | line_format "{{.detected_threats}} {{.quarantined_file}}"

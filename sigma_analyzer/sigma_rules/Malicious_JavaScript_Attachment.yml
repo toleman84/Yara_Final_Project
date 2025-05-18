@@ -1,5 +1,5 @@
 title: Malicious JavaScript Attachment
-id: js-malware-90ab-cdef-1234
+id: c5ab2014-68cd-4a9c-9c92-24800af1817f
 status: experimental
 description: Detects emails with JS malware attachments
 logsource:

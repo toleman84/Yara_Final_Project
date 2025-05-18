@@ -1,6 +1,5 @@
 title: Survey Phishing Lure
-id: survey-lure-1234-5678-mnop
-status: experimental
+id: 9dae1e89-aaaa-4902-a14c-efb4e7cd51c3
 description: Detects survey-based phishing attempts
 logsource:
   product: email_security

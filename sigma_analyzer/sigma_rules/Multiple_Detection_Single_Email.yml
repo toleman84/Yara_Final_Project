@@ -1,5 +1,5 @@
 title: Multiple Threat Detection in Single Email
-id: b2c4d6e8-f1a3-45c7-9d8e-0f123456789a
+id: 6e5ca630-182a-430a-9a61-9c6e79e5ba51
 status: experimental
 description: Detects emails containing multiple distinct threats
 logsource:

@@ -1,0 +1,1 @@
+{job=~".+"} |~ `(?i)Threats:\ Detect_Zip_File` | line_format "{{.quarantined_file}}"

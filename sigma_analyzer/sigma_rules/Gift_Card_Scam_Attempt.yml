@@ -1,5 +1,5 @@
 title: Gift Card Scam Attempt
-id: gift-card-scam-1234-5678-ijkl
+id: 39ee0024-a94b-48f9-9c52-a727201f78ae
 status: experimental
 description: Detects gift card scam emails
 logsource:

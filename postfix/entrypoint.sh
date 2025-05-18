@@ -3,12 +3,11 @@ set -e
 
 # Start rsyslog (ignore kernel log errors)
 echo "[*] Starting rsyslogd..."
-rsyslogd 2>/dev/null  # Silence imklog warnings
+rsyslogd 
 
-# Start Postfix in the background
-echo "[*] Starting postfix..."
-postfix start
+# Make sure the transport map is up to date (optional safety)
+postmap /etc/postfix/transport
 
-
-# Keep the container alive
-tail -f /dev/null
+# Start Postfix in the foreground (best practice for Docker)
+echo "[*] Starting Postfix in foreground..."
+exec postfix start-fg

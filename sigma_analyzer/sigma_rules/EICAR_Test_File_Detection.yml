@@ -1,6 +1,5 @@
 title: EICAR Test File Detection
-id: eicar-detection-1234-5678-90ab
-status: experimental
+id: 5863accd-23fa-4d8d-8228-571824816c46
 description: Detects quarantine of EICAR test file
 logsource:
   product: email_security

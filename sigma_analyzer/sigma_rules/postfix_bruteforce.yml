@@ -1,5 +1,5 @@
 title: Postfix Failed Authentication Attempts
-id: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+id: 7c79ab92-c658-4231-8ad7-23d93b5a0036
 status: experimental
 description: Detects failed SMTP authentication attempts.
 logsource:

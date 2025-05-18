@@ -28,7 +28,6 @@ CONFIG = {
     "quarantine_dir": "/app/quarantine",
     "log_file": "/var/log/mail_scanner.log",
     "json_log": "/var/log/mail_scanner.json",
-    "log_level": logging.INFO,
 }
 
 # ===================== YARA Implementation =====================
@@ -51,9 +50,9 @@ class EmailScanner:
         self.yara_rules = yara_rules
 
     async def handle_RCPT(self, server, session, envelope, address, rcpt_options):
-      envelope.rcpt_tos.append(address)
-      logging.debug(f"Accepted recipient: {address}")  # Changed to debug
-      return "250 OK"
+        envelope.rcpt_tos.append(address)
+        logging.info(f"Accepted recipient: {address}")
+        return "250 OK"
 
     async def handle_DATA(self, server, session, envelope: Envelope):
         try:
@@ -133,18 +132,13 @@ class EmailScanner:
 # ===================== Main Service =====================
 def main():
     logging.basicConfig(
-        level=CONFIG["log_level"],
+        level=logging.INFO,
         format="%(asctime)s [%(levelname)s] %(message)s",
         handlers=[
             logging.FileHandler(CONFIG["log_file"]),
             logging.StreamHandler(),
         ],
     )
-
-    # Reduce verbosity for aiosmtpd and asyncio
-    logging.getLogger("asyncio").setLevel(logging.WARNING)
-    logging.getLogger("mail.log").setLevel(logging.WARNING)
-    logging.getLogger("aiosmtpd").setLevel(logging.WARNING)
 
     yara_rules = load_yara_rules()
     controller = Controller(

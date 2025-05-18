@@ -1,0 +1,1 @@
+{job=~".+"} |~ `(?i)Threats:\ Gift_Card_Scam` | line_format "{{.quarantined_file}} {{.detected_threats}}"

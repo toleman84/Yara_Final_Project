@@ -1,6 +1,5 @@
 title: Executable File Detection
-id: pe-file-detection-1234-abcd-5678
-status: experimental
+id: b0dc642e-4063-4d2e-ad69-f3f022722184
 description: Detects PE files in emails
 logsource:
   product: email_security

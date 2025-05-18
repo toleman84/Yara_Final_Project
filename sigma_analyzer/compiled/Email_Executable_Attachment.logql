@@ -1,0 +1,1 @@
+{job=~".+"} | logfmt | attachments___type=~`(?i).*application/x\-msdownload.*` or attachments___type=~`(?i).*application/x\-dosexec.*` or attachments___type=~`(?i).*application/x\-sh.*`

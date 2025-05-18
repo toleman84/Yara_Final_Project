@@ -1,6 +1,5 @@
 title: Email Reinjection Activity
-id: email-reinjection-1234-5678-cdef
-status: experimental
+id: b2c803ee-e0d7-462f-932a-be69a9b735ac 
 description: Detects successful email reinjections
 logsource:
   product: email_security

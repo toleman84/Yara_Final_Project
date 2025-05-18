@@ -1,17 +1,29 @@
 title: Phishing Email Characteristics
-id: c3d4e5f6-3456-7890-cdef-34567890abcd
-status: stable
+id: adadf400-7327-45ec-b6b9-dd3c393b20dc
+status: experimental
 description: Detection of common phishing keywords in subjects
 logsource:
-  product: email_scanner
+  category: email
+  product: email_security  # Changed from email_scanner
+  service: scanner
 detection:
-  keywords:
+  selection:
     subject|contains|all:
       - 'urgent'
       - 'password'
       - 'verify'
       - 'account'
-level: medium
+  condition: selection
+fields:
+  - sender
+  - recipient
+  - subject
+  - attachments.name
+falsepositives:
+  - Legitimate password reset emails
+  - Account verification notifications
+level: high
 tags:
   - attack.initial_access
-  - attack.t1566.001
+  - attack.t1566.001  # Phishing: Spearphishing Attachment
+  - attack.t1598.003  # Phishing for Information

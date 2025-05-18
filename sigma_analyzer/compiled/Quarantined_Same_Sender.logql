@@ -1,0 +1,1 @@
+{job=~".+"} | logfmt | EventType=~`(?i)^EmailQuarantine$` and (QuarantineReason=~`(?i).*Phishing.*` or QuarantineReason=~`(?i).*Malware.*`) and type=~`(?i)^event_count$` and time_frame=~`(?i)^1h$` and group_by=~`(?i)^SenderAddress$` and threshold=5 | line_format "{{.SenderAddress}} {{.RecipientAddress}} {{.QuarantinedFileName}} {{.DetectedThreats}} {{.Timestamp}}"

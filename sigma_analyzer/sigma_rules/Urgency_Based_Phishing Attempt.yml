@@ -1,6 +1,5 @@
 title: Urgency-Based Phishing Attempt
-id: urgency-phishing-1234-5678-qrst
-status: experimental
+id: a819192d-338e-4e16-bdb4-68fed675b322
 description: Detects emails using urgent language
 logsource:
   product: email_security

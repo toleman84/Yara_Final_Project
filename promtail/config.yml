@@ -14,7 +14,7 @@ scrape_configs:
       - targets: [localhost]
         labels:
           job: postfix
-          __path__: /var/log/postfix/*.log  
+          __path__: /var/log/*.log  
 
   - job_name: scanner
     static_configs:
