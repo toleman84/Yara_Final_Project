@@ -1,0 +1,1 @@
+{job=~".+"} |~ `(?i)warning:\ SASL\ LOGIN\ authentication\ failed`

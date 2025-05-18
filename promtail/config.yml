@@ -34,10 +34,22 @@ scrape_configs:
       - timestamp:
           source: timestamp
           format: Unix
-
-  - job_name: sigma_scanner
+          
+  - job_name: sigma_analyzer_json
     static_configs:
-      - targets: [localhost]
+      - targets:
+          - localhost
         labels:
-          job: sigma_scanner
-          __path__: /var/log/sigma/*.log  
+          job: sigma_analyzer
+          __path__: /var/log/sigma/analyzer_output.json
+    pipeline_stages:
+      - json:
+          expressions:
+            rule: rule
+            timestamp: timestamp
+            log: log
+            labels: labels
+      - timestamp:
+          source: timestamp
+          format: RFC3339Nano
+ 

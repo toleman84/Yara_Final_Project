@@ -1,4 +1,0 @@
-May 17 15:43:47 email-threat-docker postfix/cleanup[162]: error: open /etc/postfix/header_checks: No such file or directory
-May 17 16:12:33 email-threat-docker local[190]: fatal: execvp /usr/bin/procmail: No such file or directory
-May 17 16:21:43 email-threat-docker local[921]: fatal: execvp /usr/bin/procmail: No such file or directory
-May 17 16:31:46 email-threat-docker local[1711]: fatal: execvp /usr/bin/procmail: No such file or directory

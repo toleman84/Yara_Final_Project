@@ -1,1 +1,0 @@
-{job=~"eventlog|winlog|windows|fluentbit.*"} | json | EventID=5379 and TargetName=~`(?i).*Microsoft_Windows_Shell_ZipFolder:filename.*` and TargetName=~`(?i).*\\Temporary\ Internet\ Files\\Content\.Outlook.*`

@@ -1,1 +1,0 @@
-{job=~".+"} | logfmt | cs_uri=~`(?i)(ipfs\.io/|ipfs\.io\s).+\..+@.+\.[a-z]+`

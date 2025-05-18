@@ -1,1 +1,0 @@
-{job=~"eventlog|winlog|windows|fluentbit.*"} | json | (Image=~`(?i).*\\powershell\.exe$` or Image=~`(?i).*\\pwsh\.exe$`) and CommandLine=~`(?i).*Add\-PSSnapin.*` and CommandLine=~`(?i).*Get\-Recipient.*` and CommandLine=~`(?i).*\-ExpandProperty.*` and CommandLine=~`(?i).*EmailAddresses.*` and CommandLine=~`(?i).*SmtpAddress.*` and CommandLine=~`(?i).*\-hidetableheaders.*`

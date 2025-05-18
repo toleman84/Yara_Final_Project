@@ -1,1 +1,0 @@
-{job=~".+"} | logfmt | eventSource=~`(?i)^SecurityComplianceCenter$` and eventName=~`(?i)^eDiscovery\ search\ started\ or\ exported$` and status=~`(?i)^success$`

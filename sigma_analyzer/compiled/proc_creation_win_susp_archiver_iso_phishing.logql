@@ -1,1 +1,0 @@
-{job=~"eventlog|winlog|windows|fluentbit.*"} | json | (ParentImage=~`(?i).*\\Winrar\.exe$` or ParentImage=~`(?i).*\\7zFM\.exe$` or ParentImage=~`(?i).*\\peazip\.exe$`) and (Image=~`(?i).*\\isoburn\.exe$` or Image=~`(?i).*\\PowerISO\.exe$` or Image=~`(?i).*\\ImgBurn\.exe$`)

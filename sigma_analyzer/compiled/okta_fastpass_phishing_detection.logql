@@ -1,1 +1,0 @@
-{job=~".+"} | logfmt | outcome_reason=~`(?i)^FastPass\ declined\ phishing\ attempt$` and outcome_result=~`(?i)^FAILURE$` and eventtype=~`(?i)^user\.authentication\.auth_via_mfa$`

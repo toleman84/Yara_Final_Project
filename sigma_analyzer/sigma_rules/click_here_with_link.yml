@@ -1,0 +1,14 @@
+title: Suspicious Click Here Link
+id: 9e97b4d5-5b5a-4d4d-8f8e-3b3b3b3b3b3b
+status: experimental
+description: Detects emails with "click here" links
+references:
+  - https://example.com
+author: Your Name
+logsource:
+  category: proxy
+  product: email
+detection:
+  keywords:
+    - 'click here'
+  condition: keywords

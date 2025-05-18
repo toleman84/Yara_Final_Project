@@ -1,1 +1,0 @@
-{job=~"eventlog|winlog|windows|fluentbit.*"} | json | (TargetFilename=~`(?i).*\.iso\.lnk$` or TargetFilename=~`(?i).*\.img\.lnk$` or TargetFilename=~`(?i).*\.vhd\.lnk$` or TargetFilename=~`(?i).*\.vhdx\.lnk$`) and TargetFilename=~`(?i).*\\Microsoft\\Windows\\Recent\\.*`

@@ -1,3 +1,4 @@
-sigma
 requests
-pyyaml
+pandas
+pysigma
+pysigma-backend-loki

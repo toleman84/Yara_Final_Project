@@ -1,0 +1,17 @@
+title: Postfix Failed Authentication Attempts
+id: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+status: experimental
+description: Detects failed SMTP authentication attempts.
+logsource:
+  product: postfix
+  service: smtp
+detection:
+  keywords:
+    - 'warning: SASL LOGIN authentication failed'
+  condition: keywords
+falsepositives:
+  - Legitimate users failing login multiple times
+level: medium
+tags:
+  - attack.credential_access
+  - attack.t1110.001

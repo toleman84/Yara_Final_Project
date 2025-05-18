@@ -1,1 +1,0 @@
-{job=~".+"} | logfmt | Image=~`(?i).*/kill$` or Image=~`(?i).*/killall$` or Image=~`(?i).*/pkill$` or Image=~`(?i).*/xkill$`

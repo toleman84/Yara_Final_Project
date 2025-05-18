@@ -1,1 +1,0 @@
-{job=~".+"} | logfmt | c_uri=~`(?i).*\.class$`

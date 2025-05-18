@@ -1,1 +1,0 @@
-{job="logstash"} | json | ActivityDetails=~`(?i)^Sign\-ins$` and (ClientApp=~`(?i)^Other\ client$` or ClientApp=~`(?i)^IMAP$` or ClientApp=~`(?i)^POP3$` or ClientApp=~`(?i)^MAPI$` or ClientApp=~`(?i)^SMTP$` or ClientApp=~`(?i)^Exchange\ ActiveSync$` or ClientApp=~`(?i)^Exchange\ Web\ Services$`) and Username=~`(?i)^UPN$`

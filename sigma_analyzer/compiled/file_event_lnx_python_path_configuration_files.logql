@@ -1,1 +1,0 @@
-{job=~".+"} | logfmt | TargetFilename=~`(?i)/lib/python3\.([5-9]|[0-9]{2})/site-packages/` and TargetFilename=~`(?i).*\.pth$`

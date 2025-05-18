@@ -1,20 +1,18 @@
+# Use your preferred Python base
 FROM python:3.11-slim
+
 WORKDIR /app
 
-# Copy dependencies first to leverage Docker cache
-COPY sigma_analyzer/requirements.txt .
+# 1) Install dependencies
+COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application files
-COPY sigma_analyzer/analyzer.py .
-COPY sigma_analyzer/loki-backend.yaml .
-COPY sigma_analyzer/sigma_rules ./rules
-COPY sigma_analyzer/compiled ./compiled
+# 2) Copy your analyzer code and compiled rules
+COPY analyzer.py ./
+COPY compiled/ ./compiled/
 
-COPY sigma_analyzer/entrypoint.sh .
+# 3) Ensure log directory exists
+RUN mkdir -p /var/log/sigma
 
-# executable
-RUN chmod +x entrypoint.sh
-
-# loop script as the entrypoint
-ENTRYPOINT ["./entrypoint.sh"]
+# 4) Run the analyzer
+CMD ["python", "analyzer.py"]

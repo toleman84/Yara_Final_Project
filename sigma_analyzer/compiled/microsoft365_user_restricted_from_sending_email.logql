@@ -1,1 +1,0 @@
-{job=~".+"} | logfmt | eventSource=~`(?i)^SecurityComplianceCenter$` and eventName=~`(?i)^User\ restricted\ from\ sending\ email$` and status=~`(?i)^success$`
