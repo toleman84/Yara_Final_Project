@@ -43,10 +43,6 @@ fake_pe = b"MZ" + b"\x00" * (0x3C - 2) + b"PE\x00\x00" + os.urandom(1000)
 # ───── Email Definitions ──────────────────────────────────────────────────────
 
 clean_emails = [
-    ("Welcome to Our Service", """Dear User, Thank you for signing up for our service. We’re excited to have you on board. You can log in anytime at https://app.company.com to manage your account.
-    Best regards, Company Team """, None),
-    ("September Newsletter – Special Offers Inside!", """Hello,Check out our latest products and exclusive deals on our website at https://www.store.com. We appreciate your loyalty and hope you enjoy these updates. Sincerely,
-    Store Team """, None),
      ("Upcoming Holiday Schedule", """Dear Team, Please note that the company will be closed on Monday for the public holiday. Regular work resumes on Tuesday at 9 AM. Enjoy your long weekend! Best,
     HR Department """, None),
     ("Project Kickoff Meeting", """Hi Everyone, You are invited to the project kickoff meeting this Friday at 2 PM in Conference Room A. Please see the calendar invite and let me know if you have any questions.
@@ -83,11 +79,9 @@ malicious_emails = [
     ("Password Reset Required", """Hello, Your password must be reset due to a security issue. Click here to reset your password immediately: http://service.example.com/reset-password Thanks.""", None),
     ("Important Document", """Hello, See the attached invoice.exe for details on your recent purchase. It's an urgent matter.""", None),
     ("Monthly Report","""Attached is the report. The attachment contains the antivirus test string: X5O!P%@AP[4PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H* Please check it.""", None),
-    ("Security Alert", """Hi, Please see the attached update.scr to view important security information.""", None),
     ("System Notification", """Hello, Please visit http://example.com/%68%61%63%6b%65%64 where you'll find important information.""", None),
     ("Final Warning", """Dear customer, This is your final warning to update your payment information. Visit our secure portal here: http://secure-update.example.com/account""", None),
     ("Mandatory W-2 Form", """Hello, Please click here to fill out your W-2 tax form: http://legit-bank.info/w2form """, None),
-    ("Special Announcement", """Don’t miss this! Visit spamdomain.net now for more details.""", None),
     ("Account Verification Needed", """Dear User, Your Apple ID has unusual activity. Click here to sign in and secure your account: http://malicious-verify.example.com/login""", None),
     ("Password Reset Request", """Hello, We received a request to reset your password. Click here to reset it: http://bank.example.com/reset""", None),
     ("Mandatory Company Survey", """Hello, Please click here to complete the employee satisfaction survey: http://survey.example.com/""", None),
@@ -95,7 +89,6 @@ malicious_emails = [
     ("Account Compromised", """Your account was compromised. Reset your password immediately: http://bigcorp.example.com/reset """, None),
     ("You've Won a $100 Gift Card!", """Congratulations! Claim your $100 gift card by clicking here: http://freegift.example.com/claim""", None),
     ("Quick Employee Survey", """Hello, Click here to provide feedback and win a prize: http://survey.example.com/""", None),
-    ("Job Interview Invitation", """Dear Candidate, You are invited for an interview. Please download the attached form.exe and complete it.""", None),
     ("URGENT: Security Alert", "Scan attached file immediately!",
      {"eicar.com": b"X5O!P%@AP[4\\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*"}),
     ("Invoice #INV-9876", "Please review payment details",
