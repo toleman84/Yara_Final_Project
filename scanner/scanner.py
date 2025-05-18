@@ -91,8 +91,13 @@ class EmailScanner:
 
     async def _quarantine_email(self, envelope, threats: List[str], timestamp: int, msg):
         os.makedirs(CONFIG["quarantine_dir"], exist_ok=True)
-        filename = f"quarantine_{timestamp}_{len(threats)}.eml"
+
+        # Use the rule name as the filename identifier
+        rule_tag = threats[0] if threats else "unknown_rule"
+        safe_tag = "".join(c for c in rule_tag if c.isalnum() or c in ("-", "_"))
+        filename = f"quarantine_{safe_tag}.eml"
         filepath = os.path.join(CONFIG["quarantine_dir"], filename)
+
         with open(filepath, "wb") as f:
             f.write(envelope.content)
 
@@ -110,6 +115,7 @@ class EmailScanner:
 
         with open(CONFIG["json_log"], "a") as jf:
             jf.write(json.dumps(event) + "\n")
+
 
     async def _log_success(self, envelope, timestamp: int, msg):
         event = {
