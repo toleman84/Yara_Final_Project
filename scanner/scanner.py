@@ -26,6 +26,7 @@ CONFIG = {
     "reinject_port": 10026,
     "yara_rules_dir": "/app/rules/yara",
     "quarantine_dir": "/app/quarantine",
+    "log_level": logging.INFO,
     "log_file": "/var/log/mail_scanner.log",
     "json_log": "/var/log/mail_scanner.json",
 }
@@ -51,7 +52,7 @@ class EmailScanner:
 
     async def handle_RCPT(self, server, session, envelope, address, rcpt_options):
         envelope.rcpt_tos.append(address)
-        logging.info(f"Accepted recipient: {address}")
+        logging.debug(f"Accepted recipient: {address}")
         return "250 OK"
 
     async def handle_DATA(self, server, session, envelope: Envelope):
@@ -131,8 +132,9 @@ class EmailScanner:
 
 # ===================== Main Service =====================
 def main():
+    # Configure root logger
     logging.basicConfig(
-        level=logging.INFO,
+        level=CONFIG["log_level"],
         format="%(asctime)s [%(levelname)s] %(message)s",
         handlers=[
             logging.FileHandler(CONFIG["log_file"]),
@@ -140,9 +142,16 @@ def main():
         ],
     )
 
+    # Reduce verbosity for aiosmtpd and asyncio
+    logging.getLogger("asyncio").setLevel(logging.WARNING)
+    logging.getLogger("mail.log").setLevel(logging.WARNING)
+    logging.getLogger("aiosmtpd").setLevel(logging.WARNING)
+
     yara_rules = load_yara_rules()
     controller = Controller(
-        EmailScanner(yara_rules), hostname=CONFIG["listen_host"], port=CONFIG["listen_port"]
+        EmailScanner(yara_rules), 
+        hostname=CONFIG["listen_host"], 
+        port=CONFIG["listen_port"]
     )
 
     logging.info(f"Starting YARA-only scanner on {CONFIG['listen_host']}:{CONFIG['listen_port']}")
