@@ -284,3 +284,33 @@
 {"timestamp": 1747523069, "sender": "sender@email-threat-docker.local", "recipient": "recipient@email-threat-docker.local", "subject": "Microsoft Security Update", "yara_hits": ["Detect_PE_File"], "quarantined_file": "quarantine_1747523069_1.eml", "quarantined": true}
 {"timestamp": 1747523069, "sender": "sender@email-threat-docker.local", "recipient": "recipient@email-threat-docker.local", "subject": "Undelivered Mail Notification", "yara_hits": ["Phishing_URL_Detection2"], "quarantined_file": "quarantine_1747523069_1.eml", "quarantined": true}
 >>>>>>> 0e38c59ed7c40c9a5708ed7fc6c25df32f7365ef
+{"timestamp": 1747526190, "sender": "notifications@company.com", "recipient": "recipient@email-threat-docker.local", "subject": "Welcome to Our Service", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526191, "sender": "newsletter@store.com", "recipient": "recipient@email-threat-docker.local", "subject": "September Newsletter \u2013 Special Offers Inside!", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526192, "sender": "hr@company.com", "recipient": "recipient@email-threat-docker.local", "subject": "Upcoming Holiday Schedule", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526193, "sender": "teamlead@company.com", "recipient": "recipient@email-threat-docker.local", "subject": "Project Kickoff Meeting", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526194, "sender": "noreply@itdept.company.com", "recipient": "recipient@email-threat-docker.local", "subject": "Scheduled Maintenance Tonight", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526195, "sender": "alerts@service.com", "recipient": "recipient@email-threat-docker.local", "subject": "Your Subscription Renewal Confirmation", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526196, "sender": "events@company.com", "recipient": "recipient@email-threat-docker.local", "subject": "Join Us for the Charity Run!", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526197, "sender": "security@service.com", "recipient": "recipient@email-threat-docker.local", "subject": "Password Change Successful", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526198, "sender": "devteam@company.com", "recipient": "recipient@email-threat-docker.local", "subject": "Feature X Deployment", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526200, "sender": "communications@company.com", "recipient": "recipient@email-threat-docker.local", "subject": "Town Hall Meeting Next Week", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526201, "sender": "billing@legit-company.com", "recipient": "recipient@email-threat-docker.local", "subject": "Urgent: Invoice Payment Required", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526202, "sender": "deals@newsletter.com", "recipient": "recipient@email-threat-docker.local", "subject": "Hot Deals This Weekend!", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526203, "sender": "security@onlinebank.com", "recipient": "recipient@email-threat-docker.local", "subject": "Account Locked", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526204, "sender": "support@service.com", "recipient": "recipient@email-threat-docker.local", "subject": "Password Reset Required", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526204, "sender": "alice.smith@bigcorp.com", "recipient": "recipient@email-threat-docker.local", "subject": "Urgent Wire Transfer", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526205, "sender": "info@company.com", "recipient": "recipient@email-threat-docker.local", "subject": "Important Document", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526206, "sender": "admin@company.com", "recipient": "recipient@email-threat-docker.local", "subject": "Monthly Report", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526207, "sender": "notifications@company.com", "recipient": "recipient@email-threat-docker.local", "subject": "Security Alert", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526208, "sender": "support@service.com", "recipient": "recipient@email-threat-docker.local", "subject": "System Notification", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526209, "sender": "support@service.com", "recipient": "recipient@email-threat-docker.local", "subject": "Final Warning", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526210, "sender": "hr@company.com", "recipient": "recipient@email-threat-docker.local", "subject": "Mandatory W-2 Form", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526211, "sender": "updates@deals.com", "recipient": "recipient@email-threat-docker.local", "subject": "Special Announcement", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526212, "sender": "support@apple.com", "recipient": "recipient@email-threat-docker.local", "subject": "Account Verification Needed", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526213, "sender": "support@bank.com", "recipient": "recipient@email-threat-docker.local", "subject": "Password Reset Request", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526214, "sender": "hr@company.com", "recipient": "recipient@email-threat-docker.local", "subject": "Mandatory Company Survey", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526215, "sender": "support@onlineservice.com", "recipient": "recipient@email-threat-docker.local", "subject": "Suspicious Login Attempt", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526216, "sender": "security@bigcorp.com", "recipient": "recipient@email-threat-docker.local", "subject": "Account Compromised", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526218, "sender": "rewards@shopping.com", "recipient": "recipient@email-threat-docker.local", "subject": "You've Won a $100 Gift Card!", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526219, "sender": "survey@company.com", "recipient": "recipient@email-threat-docker.local", "subject": "Quick Employee Survey", "yara_hits": "no matches", "quarantined": false}
+{"timestamp": 1747526220, "sender": "recruiter@jobs.com", "recipient": "recipient@email-threat-docker.local", "subject": "Job Interview Invitation", "yara_hits": "no matches", "quarantined": false}
