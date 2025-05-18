@@ -1,0 +1,16 @@
+title: Compressed File Attachment
+id: zip-file-detection-5678-1234-efgh
+status: experimental
+description: Detects ZIP files in emails
+logsource:
+  product: email_security
+  service: scanner
+detection:
+  selection:
+    - '*Threats: Detect_Zip_File*'
+  condition: selection
+fields:
+  - quarantined_file
+falsepositives:
+  - Legitimate compressed file attachments
+level: medium

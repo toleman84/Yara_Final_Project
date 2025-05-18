@@ -1,0 +1,16 @@
+title: EICAR Test File Detection
+id: eicar-detection-1234-5678-90ab
+status: experimental
+description: Detects quarantine of EICAR test file
+logsource:
+  product: email_security
+  service: scanner
+detection:
+  selection:
+    - '*Threats: EICAR_Test_File*'
+  condition: selection
+fields:
+  - quarantined_file
+falsepositives:
+  - Intentional test submissions
+level: low

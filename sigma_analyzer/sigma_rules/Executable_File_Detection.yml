@@ -1,0 +1,16 @@
+title: Executable File Detection
+id: pe-file-detection-1234-abcd-5678
+status: experimental
+description: Detects PE files in emails
+logsource:
+  product: email_security
+  service: scanner
+detection:
+  selection:
+    - '*Threats: Detect_PE_File*'
+  condition: selection
+fields:
+  - quarantined_file
+falsepositives:
+  - Legitimate executable attachments in controlled environments
+level: high

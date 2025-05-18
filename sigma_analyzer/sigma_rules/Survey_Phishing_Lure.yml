@@ -1,0 +1,17 @@
+title: Survey Phishing Lure
+id: survey-lure-1234-5678-mnop
+status: experimental
+description: Detects survey-based phishing attempts
+logsource:
+  product: email_security
+  service: scanner
+detection:
+  selection:
+    - '*Threats: Survey_Lure*'
+  condition: selection
+fields:
+  - quarantined_file
+  - detected_threats
+falsepositives:
+  - Legitimate survey requests
+level: medium

@@ -26,9 +26,9 @@ CONFIG = {
     "reinject_port": 10026,
     "yara_rules_dir": "/app/rules/yara",
     "quarantine_dir": "/app/quarantine",
-    "log_level": logging.INFO,
     "log_file": "/var/log/mail_scanner.log",
     "json_log": "/var/log/mail_scanner.json",
+    "log_level": logging.INFO,
 }
 
 # ===================== YARA Implementation =====================
@@ -51,9 +51,9 @@ class EmailScanner:
         self.yara_rules = yara_rules
 
     async def handle_RCPT(self, server, session, envelope, address, rcpt_options):
-        envelope.rcpt_tos.append(address)
-        logging.debug(f"Accepted recipient: {address}")
-        return "250 OK"
+      envelope.rcpt_tos.append(address)
+      logging.debug(f"Accepted recipient: {address}")  # Changed to debug
+      return "250 OK"
 
     async def handle_DATA(self, server, session, envelope: Envelope):
         try:
@@ -132,7 +132,6 @@ class EmailScanner:
 
 # ===================== Main Service =====================
 def main():
-    # Configure root logger
     logging.basicConfig(
         level=CONFIG["log_level"],
         format="%(asctime)s [%(levelname)s] %(message)s",
@@ -149,9 +148,7 @@ def main():
 
     yara_rules = load_yara_rules()
     controller = Controller(
-        EmailScanner(yara_rules), 
-        hostname=CONFIG["listen_host"], 
-        port=CONFIG["listen_port"]
+        EmailScanner(yara_rules), hostname=CONFIG["listen_host"], port=CONFIG["listen_port"]
     )
 
     logging.info(f"Starting YARA-only scanner on {CONFIG['listen_host']}:{CONFIG['listen_port']}")
@@ -161,4 +158,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

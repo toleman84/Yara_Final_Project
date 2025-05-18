@@ -1,0 +1,17 @@
+title: Phishing URL with Encoding Evasion
+id: phishing-url-encoding-5678-1234
+status: experimental
+description: Detects phishing attempts with URL encoding evasion
+logsource:
+  product: email_security
+  service: scanner
+detection:
+  selection:
+    - '*Threats: *URL_Encoding_Evasion*'
+  condition: selection
+fields:
+  - quarantined_file
+  - detected_threats
+falsepositives:
+  - Legitimate encoded URLs in marketing emails
+level: high

@@ -1,0 +1,17 @@
+title: Malicious JavaScript Attachment
+id: js-malware-90ab-cdef-1234
+status: experimental
+description: Detects emails with JS malware attachments
+logsource:
+  product: email_security
+  service: scanner
+detection:
+  selection:
+    - '*Threats: JS_Malware_Trigger*'
+  condition: selection
+fields:
+  - quarantined_file
+  - detected_threats
+falsepositives:
+  - Legitimate JavaScript attachments in business communications
+level: high 

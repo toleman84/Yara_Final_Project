@@ -22912,3 +22912,1304 @@
 2025-05-18 12:32:54,636 [WARNING] Quarantined: /app/quarantine/quarantine_Detect_Zip_File.eml | Threats: Detect_Zip_File
 2025-05-18 12:32:55,830 [WARNING] Quarantined: /app/quarantine/quarantine_Detect_PE_File.eml | Threats: Detect_PE_File
 2025-05-18 12:32:57,008 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection2.eml | Threats: Phishing_URL_Detection2
+2025-05-18 15:30:34,612 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-18 15:31:54,444 [WARNING] {"timestamp": 1747593114, "message_id": "unknown", "sender": "notifications@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Welcome to Our Service", "yara_matches": ["Phishing_URL_Detection2"], "attachments": [], "message_size": 649, "smtp_session_id": "SESS-087E48", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Phishing_URL_Detection2_e81ed91c.eml"}
+2025-05-18 15:31:54,659 [WARNING] {"timestamp": 1747593114, "message_id": "unknown", "sender": "notifications@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "September Newsletter \u2013 Special Offers Inside!", "yara_matches": ["Phishing_URL_Detection2"], "attachments": [], "message_size": 669, "smtp_session_id": "SESS-D5FF23", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Phishing_URL_Detection2_ea8f7a56.eml"}
+2025-05-18 15:31:54,941 [INFO] {"timestamp": 1747593114, "message_id": "unknown", "sender": "info@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Upcoming Holiday Schedule", "yara_matches": [], "attachments": [], "message_size": 620, "smtp_session_id": "SESS-BCE815", "quarantined": false}
+2025-05-18 15:31:55,162 [INFO] {"timestamp": 1747593115, "message_id": "unknown", "sender": "security@service.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Project Kickoff Meeting", "yara_matches": [], "attachments": [], "message_size": 638, "smtp_session_id": "SESS-25AE26", "quarantined": false}
+2025-05-18 15:31:55,412 [INFO] {"timestamp": 1747593115, "message_id": "unknown", "sender": "noreply@itdept.company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Scheduled Maintenance Tonight", "yara_matches": [], "attachments": [], "message_size": 645, "smtp_session_id": "SESS-D06983", "quarantined": false}
+2025-05-18 15:31:55,660 [INFO] {"timestamp": 1747593115, "message_id": "unknown", "sender": "info@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Your Subscription Renewal Confirmation", "yara_matches": [], "attachments": [], "message_size": 600, "smtp_session_id": "SESS-19A963", "quarantined": false}
+2025-05-18 15:31:55,902 [INFO] {"timestamp": 1747593115, "message_id": "unknown", "sender": "notifications@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Join Us for the Charity Run!", "yara_matches": [], "attachments": [], "message_size": 652, "smtp_session_id": "SESS-CC3574", "quarantined": false}
+2025-05-18 15:31:56,147 [INFO] {"timestamp": 1747593116, "message_id": "unknown", "sender": "rewards@shopping.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Password Change Successful", "yara_matches": [], "attachments": [], "message_size": 635, "smtp_session_id": "SESS-E79E11", "quarantined": false}
+2025-05-18 15:31:56,392 [INFO] {"timestamp": 1747593116, "message_id": "unknown", "sender": "alerts@service.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Feature X Deployment", "yara_matches": [], "attachments": [], "message_size": 621, "smtp_session_id": "SESS-6245C8", "quarantined": false}
+2025-05-18 15:31:56,638 [INFO] {"timestamp": 1747593116, "message_id": "unknown", "sender": "support@service.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Town Hall Meeting Next Week", "yara_matches": [], "attachments": [], "message_size": 643, "smtp_session_id": "SESS-18B04B", "quarantined": false}
+2025-05-18 15:31:56,889 [INFO] {"timestamp": 1747593116, "message_id": "unknown", "sender": "deals@newsletter.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Team Lunch", "yara_matches": [], "attachments": [], "message_size": 438, "smtp_session_id": "SESS-7C9508", "quarantined": false}
+2025-05-18 15:31:57,124 [ERROR] Attachment processing failed: decoding str is not supported
+2025-05-18 15:31:57,137 [INFO] {"timestamp": 1747593117, "message_id": "unknown", "sender": "noreply@itdept.company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Project Update", "yara_matches": [], "attachments": [], "message_size": 849, "smtp_session_id": "SESS-F2EA09", "quarantined": false}
+2025-05-18 15:31:57,379 [INFO] {"timestamp": 1747593117, "message_id": "unknown", "sender": "newsletter@store.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Meeting Reminder", "yara_matches": [], "attachments": [], "message_size": 444, "smtp_session_id": "SESS-E7E3BF", "quarantined": false}
+2025-05-18 15:31:57,628 [INFO] {"timestamp": 1747593117, "message_id": "unknown", "sender": "support@apple.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Network Maintenance", "yara_matches": [], "attachments": [], "message_size": 450, "smtp_session_id": "SESS-B9612F", "quarantined": false}
+2025-05-18 15:31:57,863 [ERROR] Attachment processing failed: decoding str is not supported
+2025-05-18 15:31:57,878 [INFO] {"timestamp": 1747593117, "message_id": "unknown", "sender": "events@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "New Policy Document", "yara_matches": [], "attachments": [], "message_size": 848, "smtp_session_id": "SESS-85F03A", "quarantined": false}
+2025-05-18 15:31:58,124 [INFO] {"timestamp": 1747593118, "message_id": "unknown", "sender": "security@onlinebank.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Welcome New Hire", "yara_matches": [], "attachments": [], "message_size": 451, "smtp_session_id": "SESS-E4286C", "quarantined": false}
+2025-05-18 15:31:58,368 [INFO] {"timestamp": 1747593118, "message_id": "unknown", "sender": "deals@newsletter.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Office Closure", "yara_matches": [], "attachments": [], "message_size": 447, "smtp_session_id": "SESS-050837", "quarantined": false}
+2025-05-18 15:31:58,623 [INFO] {"timestamp": 1747593118, "message_id": "unknown", "sender": "communications@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Benefits Update", "yara_matches": [], "attachments": [], "message_size": 452, "smtp_session_id": "SESS-F05433", "quarantined": false}
+2025-05-18 15:31:58,860 [INFO] {"timestamp": 1747593118, "message_id": "unknown", "sender": "security@onlinebank.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Password Policy Reminder", "yara_matches": [], "attachments": [], "message_size": 464, "smtp_session_id": "SESS-0A9C47", "quarantined": false}
+2025-05-18 15:31:59,105 [INFO] {"timestamp": 1747593119, "message_id": "unknown", "sender": "support@service.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Conference Registration", "yara_matches": [], "attachments": [], "message_size": 454, "smtp_session_id": "SESS-A42E27", "quarantined": false}
+2025-05-18 15:31:59,338 [WARNING] {"timestamp": 1747593119, "message_id": "unknown", "sender": "devteam@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Urgent: Invoice Payment Required", "yara_matches": ["Phishing_URL_Detection", "Phishing_URL_Detection2"], "attachments": [], "message_size": 571, "smtp_session_id": "SESS-80D996", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Phishing_URL_Detection_65aad483.eml"}
+2025-05-18 15:31:59,588 [WARNING] {"timestamp": 1747593119, "message_id": "unknown", "sender": "communications@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Hot Deals This Weekend!", "yara_matches": ["Phishing_URL_Detection2"], "attachments": [], "message_size": 551, "smtp_session_id": "SESS-221FEC", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Phishing_URL_Detection2_e241dd29.eml"}
+2025-05-18 15:31:59,832 [WARNING] {"timestamp": 1747593119, "message_id": "unknown", "sender": "security@service.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Account Locked", "yara_matches": ["Phishing_URL_Detection", "Phishing_URL_Detection2"], "attachments": [], "message_size": 557, "smtp_session_id": "SESS-B7EF89", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Phishing_URL_Detection_1630dd9d.eml"}
+2025-05-18 15:32:00,081 [WARNING] {"timestamp": 1747593120, "message_id": "unknown", "sender": "billing@legit-company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Password Reset Required", "yara_matches": ["Password_Hint_Detected", "Phishing_URL_Detection2"], "attachments": [], "message_size": 601, "smtp_session_id": "SESS-966289", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Password_Hint_Detected_79379232.eml"}
+2025-05-18 15:32:00,323 [WARNING] {"timestamp": 1747593120, "message_id": "unknown", "sender": "events@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Important Document", "yara_matches": ["Malicious_Attachment_Detection"], "attachments": [], "message_size": 525, "smtp_session_id": "SESS-85BE77", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Malicious_Attachment_Detection_4be32c80.eml"}
+2025-05-18 15:32:00,570 [WARNING] {"timestamp": 1747593120, "message_id": "unknown", "sender": "info@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Monthly Report", "yara_matches": ["EICAR_Test_File"], "attachments": [], "message_size": 586, "smtp_session_id": "SESS-8E5993", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_EICAR_Test_File_be15bc3d.eml"}
+2025-05-18 15:32:00,831 [INFO] {"timestamp": 1747593120, "message_id": "unknown", "sender": "support@bank.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Security Alert", "yara_matches": [], "attachments": [], "message_size": 487, "smtp_session_id": "SESS-D4D64A", "quarantined": false}
+2025-05-18 15:32:01,066 [WARNING] {"timestamp": 1747593121, "message_id": "unknown", "sender": "hr@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "System Notification", "yara_matches": ["Phishing_URL_Detection2", "URL_Encoding_Evasion"], "attachments": [], "message_size": 525, "smtp_session_id": "SESS-34FFF0", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Phishing_URL_Detection2_e190615e.eml"}
+2025-05-18 15:32:01,320 [WARNING] {"timestamp": 1747593121, "message_id": "unknown", "sender": "devteam@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Final Warning", "yara_matches": ["Phishing_URL_Detection", "Phishing_URL_Detection2"], "attachments": [], "message_size": 574, "smtp_session_id": "SESS-8B1E95", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Phishing_URL_Detection_888cd315.eml"}
+2025-05-18 15:32:01,564 [WARNING] {"timestamp": 1747593121, "message_id": "unknown", "sender": "support@bank.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Mandatory W-2 Form", "yara_matches": ["Phishing_URL_Detection2"], "attachments": [], "message_size": 516, "smtp_session_id": "SESS-D5BFCC", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Phishing_URL_Detection2_af5e51bd.eml"}
+2025-05-18 15:32:01,020 [INFO] {"timestamp": 1747593121, "message_id": "unknown", "sender": "rewards@shopping.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Special Announcement", "yara_matches": [], "attachments": [], "message_size": 480, "smtp_session_id": "SESS-0160FF", "quarantined": false}
+2025-05-18 15:31:59,985 [WARNING] {"timestamp": 1747593119, "message_id": "unknown", "sender": "info@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Account Verification Needed", "yara_matches": ["Phishing_URL_Detection", "Phishing_URL_Detection2"], "attachments": [], "message_size": 572, "smtp_session_id": "SESS-324D8B", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Phishing_URL_Detection_711e0e90.eml"}
+2025-05-18 15:32:00,229 [WARNING] {"timestamp": 1747593120, "message_id": "unknown", "sender": "communications@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Password Reset Request", "yara_matches": ["Password_Hint_Detected", "Phishing_URL_Detection2"], "attachments": [], "message_size": 548, "smtp_session_id": "SESS-858C68", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Password_Hint_Detected_b674e36f.eml"}
+2025-05-18 15:32:00,474 [WARNING] {"timestamp": 1747593120, "message_id": "unknown", "sender": "teamlead@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Mandatory Company Survey", "yara_matches": ["Phishing_URL_Detection2"], "attachments": [], "message_size": 535, "smtp_session_id": "SESS-D91302", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Phishing_URL_Detection2_dac82480.eml"}
+2025-05-18 15:32:00,720 [WARNING] {"timestamp": 1747593120, "message_id": "unknown", "sender": "security@bigcorp.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Suspicious Login Attempt", "yara_matches": ["Phishing_URL_Detection2"], "attachments": [], "message_size": 556, "smtp_session_id": "SESS-59135E", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Phishing_URL_Detection2_b889d1d6.eml"}
+2025-05-18 15:32:00,964 [WARNING] {"timestamp": 1747593120, "message_id": "unknown", "sender": "communications@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Account Compromised", "yara_matches": ["Password_Hint_Detected", "Phishing_URL_Detection2"], "attachments": [], "message_size": 537, "smtp_session_id": "SESS-E8C3CC", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Password_Hint_Detected_2cad0213.eml"}
+2025-05-18 15:32:01,213 [WARNING] {"timestamp": 1747593121, "message_id": "unknown", "sender": "billing@legit-company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "You've Won a $100 Gift Card!", "yara_matches": ["Gift_Card_Scam", "Phishing_URL_Detection2"], "attachments": [], "message_size": 541, "smtp_session_id": "SESS-1BF7BD", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Gift_Card_Scam_37079fdb.eml"}
+2025-05-18 15:32:01,455 [WARNING] {"timestamp": 1747593121, "message_id": "unknown", "sender": "rewards@shopping.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Quick Employee Survey", "yara_matches": ["Phishing_URL_Detection2", "Survey_Lure"], "attachments": [], "message_size": 516, "smtp_session_id": "SESS-E189E4", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Phishing_URL_Detection2_c91389e5.eml"}
+2025-05-18 15:32:01,716 [INFO] {"timestamp": 1747593121, "message_id": "unknown", "sender": "admin@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Job Interview Invitation", "yara_matches": [], "attachments": [], "message_size": 539, "smtp_session_id": "SESS-9E2F8B", "quarantined": false}
+2025-05-18 15:32:01,949 [ERROR] Attachment processing failed: decoding str is not supported
+2025-05-18 15:32:01,964 [INFO] {"timestamp": 1747593121, "message_id": "unknown", "sender": "hr@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "URGENT: Security Alert", "yara_matches": [], "attachments": [], "message_size": 901, "smtp_session_id": "SESS-0D7C82", "quarantined": false}
+2025-05-18 15:32:02,204 [ERROR] Attachment processing failed: decoding str is not supported
+2025-05-18 15:32:02,206 [WARNING] {"timestamp": 1747593122, "message_id": "unknown", "sender": "security@bigcorp.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Invoice #INV-9876", "yara_matches": ["Detect_PE_File"], "attachments": [], "message_size": 2202, "smtp_session_id": "SESS-6B13B4", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Detect_PE_File_75e8b431.eml"}
+2025-05-18 15:32:02,449 [WARNING] {"timestamp": 1747593122, "message_id": "unknown", "sender": "devteam@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Account Verification Needed", "yara_matches": ["JS_Malware_Trigger", "Phishing_URL_Detection", "Phishing_URL_Detection2"], "attachments": [], "message_size": 500, "smtp_session_id": "SESS-EB084E", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_JS_Malware_Trigger_34c42767.eml"}
+2025-05-18 15:32:02,695 [WARNING] {"timestamp": 1747593122, "message_id": "unknown", "sender": "communications@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Document Shared", "yara_matches": ["JS_Malware_Trigger", "Phishing_URL_Detection2"], "attachments": [], "message_size": 667, "smtp_session_id": "SESS-02D2C8", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_JS_Malware_Trigger_407223c9.eml"}
+2025-05-18 15:32:02,942 [ERROR] Attachment processing failed: decoding str is not supported
+2025-05-18 15:32:02,943 [WARNING] {"timestamp": 1747593122, "message_id": "unknown", "sender": "rewards@shopping.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Encrypted Report", "yara_matches": ["Password_Hint_Detected", "Password_Hint_Detected"], "attachments": [], "message_size": 2195, "smtp_session_id": "SESS-AD1CD6", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Password_Hint_Detected_684b1d38.eml"}
+2025-05-18 15:32:03,183 [WARNING] {"timestamp": 1747593123, "message_id": "unknown", "sender": "support@service.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Password Reset Required", "yara_matches": ["Phishing_URL_Detection2", "Suspicious_Urgency_Language"], "attachments": [], "message_size": 478, "smtp_session_id": "SESS-676527", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Phishing_URL_Detection2_baa4c227.eml"}
+2025-05-18 15:32:03,426 [WARNING] {"timestamp": 1747593123, "message_id": "unknown", "sender": "info@company.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Your Package Tracking", "yara_matches": ["Phishing_URL_Detection", "Phishing_URL_Detection2"], "attachments": [], "message_size": 471, "smtp_session_id": "SESS-3A4108", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Phishing_URL_Detection_9400f79f.eml"}
+2025-05-18 15:32:03,681 [ERROR] Attachment processing failed: decoding str is not supported
+2025-05-18 15:32:03,682 [WARNING] {"timestamp": 1747593123, "message_id": "unknown", "sender": "security@bigcorp.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Financial Report", "yara_matches": ["Detect_Zip_File"], "attachments": [], "message_size": 814, "smtp_session_id": "SESS-2101B2", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Detect_Zip_File_1deb404a.eml"}
+2025-05-18 15:32:03,925 [ERROR] Attachment processing failed: decoding str is not supported
+2025-05-18 15:32:03,926 [WARNING] {"timestamp": 1747593123, "message_id": "unknown", "sender": "deals@newsletter.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Microsoft Security Update", "yara_matches": ["Detect_PE_File"], "attachments": [], "message_size": 2276, "smtp_session_id": "SESS-9A4097", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Detect_PE_File_ac317fbc.eml"}
+2025-05-18 15:32:04,171 [ERROR] Attachment processing failed: decoding str is not supported
+2025-05-18 15:32:04,173 [WARNING] {"timestamp": 1747593124, "message_id": "unknown", "sender": "alerts@service.com", "recipients": ["recipient@email-threat-docker.local"], "subject": "Undelivered Mail Notification", "yara_matches": ["Phishing_URL_Detection2"], "attachments": [], "message_size": 893, "smtp_session_id": "SESS-CD0ECB", "quarantined": true, "quarantine_path": "/app/quarantine/quarantine_Phishing_URL_Detection2_c38ba10a.eml"}
+2025-05-18 15:40:25,152 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-18 15:41:20,500 [INFO] {"timestamp": 1747593680, "message_id": "<20250518184120.60C777D553@email-threat-docker.local>", "sender": "sender@email-threat-docker.local", "recipients": ["recipient@email-threat-docker.local"], "subject": "Urgent login alert", "yara_matches": [], "attachments": [], "message_size": 374, "smtp_session_id": "SESS-57DF69", "quarantined": false}
+2025-05-18 15:49:14,994 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-18 15:49:15,002 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:49:15,004 [INFO] Peer: ('127.0.0.1', 60144)
+2025-05-18 15:49:15,005 [INFO] ('127.0.0.1', 60144) handling connection
+2025-05-18 15:49:15,009 [INFO] ('127.0.0.1', 60144) EOF received
+2025-05-18 15:49:15,010 [INFO] ('127.0.0.1', 60144) Connection lost during _handle_client()
+2025-05-18 15:49:15,011 [INFO] ('127.0.0.1', 60144) connection lost
+2025-05-18 15:49:17,524 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:49:17,526 [INFO] Peer: ('127.0.0.1', 60148)
+2025-05-18 15:49:17,527 [INFO] ('127.0.0.1', 60148) handling connection
+2025-05-18 15:49:17,528 [INFO] ('127.0.0.1', 60148) EOF received
+2025-05-18 15:49:17,529 [INFO] ('127.0.0.1', 60148) Connection lost during _handle_client()
+2025-05-18 15:49:17,530 [INFO] ('127.0.0.1', 60148) connection lost
+2025-05-18 15:49:22,608 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:49:22,610 [INFO] Peer: ('127.0.0.1', 51918)
+2025-05-18 15:49:22,610 [INFO] ('127.0.0.1', 51918) handling connection
+2025-05-18 15:49:22,611 [INFO] ('127.0.0.1', 51918) EOF received
+2025-05-18 15:49:22,612 [INFO] ('127.0.0.1', 51918) Connection lost during _handle_client()
+2025-05-18 15:49:22,613 [INFO] ('127.0.0.1', 51918) connection lost
+2025-05-18 15:49:27,695 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:49:27,696 [INFO] Peer: ('127.0.0.1', 44770)
+2025-05-18 15:49:27,697 [INFO] ('127.0.0.1', 44770) handling connection
+2025-05-18 15:49:27,698 [INFO] ('127.0.0.1', 44770) EOF received
+2025-05-18 15:49:27,699 [INFO] ('127.0.0.1', 44770) Connection lost during _handle_client()
+2025-05-18 15:49:27,699 [INFO] ('127.0.0.1', 44770) connection lost
+2025-05-18 15:49:32,771 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:49:32,772 [INFO] Peer: ('127.0.0.1', 44786)
+2025-05-18 15:49:32,773 [INFO] ('127.0.0.1', 44786) handling connection
+2025-05-18 15:49:32,774 [INFO] ('127.0.0.1', 44786) EOF received
+2025-05-18 15:49:32,775 [INFO] ('127.0.0.1', 44786) Connection lost during _handle_client()
+2025-05-18 15:49:32,775 [INFO] ('127.0.0.1', 44786) connection lost
+2025-05-18 15:49:37,849 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:49:37,850 [INFO] Peer: ('127.0.0.1', 59068)
+2025-05-18 15:49:37,851 [INFO] ('127.0.0.1', 59068) handling connection
+2025-05-18 15:49:37,853 [INFO] ('127.0.0.1', 59068) EOF received
+2025-05-18 15:49:37,854 [INFO] ('127.0.0.1', 59068) Connection lost during _handle_client()
+2025-05-18 15:49:37,855 [INFO] ('127.0.0.1', 59068) connection lost
+2025-05-18 15:49:42,963 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:49:42,964 [INFO] Peer: ('127.0.0.1', 59076)
+2025-05-18 15:49:42,965 [INFO] ('127.0.0.1', 59076) handling connection
+2025-05-18 15:49:42,966 [INFO] ('127.0.0.1', 59076) EOF received
+2025-05-18 15:49:42,967 [INFO] ('127.0.0.1', 59076) Connection lost during _handle_client()
+2025-05-18 15:49:42,968 [INFO] ('127.0.0.1', 59076) connection lost
+2025-05-18 15:49:45,965 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:49:45,966 [INFO] Peer: ('127.0.0.1', 57126)
+2025-05-18 15:49:45,967 [INFO] ('127.0.0.1', 57126) handling connection
+2025-05-18 15:49:45,968 [INFO] ('127.0.0.1', 57126) EOF received
+2025-05-18 15:49:45,969 [INFO] ('127.0.0.1', 57126) Connection lost during _handle_client()
+2025-05-18 15:49:45,970 [INFO] ('127.0.0.1', 57126) connection lost
+2025-05-18 15:49:51,042 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:49:51,043 [INFO] Peer: ('127.0.0.1', 57134)
+2025-05-18 15:49:51,044 [INFO] ('127.0.0.1', 57134) handling connection
+2025-05-18 15:49:51,045 [INFO] ('127.0.0.1', 57134) EOF received
+2025-05-18 15:49:51,047 [INFO] ('127.0.0.1', 57134) Connection lost during _handle_client()
+2025-05-18 15:49:51,048 [INFO] ('127.0.0.1', 57134) connection lost
+2025-05-18 15:49:56,139 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:49:56,140 [INFO] Peer: ('127.0.0.1', 46070)
+2025-05-18 15:49:56,142 [INFO] ('127.0.0.1', 46070) handling connection
+2025-05-18 15:49:56,143 [INFO] ('127.0.0.1', 46070) EOF received
+2025-05-18 15:49:56,144 [INFO] ('127.0.0.1', 46070) Connection lost during _handle_client()
+2025-05-18 15:49:56,145 [INFO] ('127.0.0.1', 46070) connection lost
+2025-05-18 15:50:01,245 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:01,246 [INFO] Peer: ('127.0.0.1', 46082)
+2025-05-18 15:50:01,247 [INFO] ('127.0.0.1', 46082) handling connection
+2025-05-18 15:50:01,248 [INFO] ('127.0.0.1', 46082) EOF received
+2025-05-18 15:50:01,249 [INFO] ('127.0.0.1', 46082) Connection lost during _handle_client()
+2025-05-18 15:50:01,250 [INFO] ('127.0.0.1', 46082) connection lost
+2025-05-18 15:50:06,338 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:06,340 [INFO] Peer: ('127.0.0.1', 39722)
+2025-05-18 15:50:06,341 [INFO] ('127.0.0.1', 39722) handling connection
+2025-05-18 15:50:06,342 [INFO] ('127.0.0.1', 39722) EOF received
+2025-05-18 15:50:06,343 [INFO] ('127.0.0.1', 39722) Connection lost during _handle_client()
+2025-05-18 15:50:06,344 [INFO] ('127.0.0.1', 39722) connection lost
+2025-05-18 15:50:11,443 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:11,445 [INFO] Peer: ('127.0.0.1', 39724)
+2025-05-18 15:50:11,446 [INFO] ('127.0.0.1', 39724) handling connection
+2025-05-18 15:50:11,447 [INFO] ('127.0.0.1', 39724) EOF received
+2025-05-18 15:50:11,449 [INFO] ('127.0.0.1', 39724) Connection lost during _handle_client()
+2025-05-18 15:50:11,450 [INFO] ('127.0.0.1', 39724) connection lost
+2025-05-18 15:50:14,433 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:14,435 [INFO] Peer: ('127.0.0.1', 57418)
+2025-05-18 15:50:14,436 [INFO] ('127.0.0.1', 57418) handling connection
+2025-05-18 15:50:14,437 [INFO] ('127.0.0.1', 57418) EOF received
+2025-05-18 15:50:14,439 [INFO] ('127.0.0.1', 57418) Connection lost during _handle_client()
+2025-05-18 15:50:14,440 [INFO] ('127.0.0.1', 57418) connection lost
+2025-05-18 15:50:19,534 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:19,536 [INFO] Peer: ('127.0.0.1', 57424)
+2025-05-18 15:50:19,538 [INFO] ('127.0.0.1', 57424) handling connection
+2025-05-18 15:50:19,539 [INFO] ('127.0.0.1', 57424) EOF received
+2025-05-18 15:50:19,540 [INFO] ('127.0.0.1', 57424) Connection lost during _handle_client()
+2025-05-18 15:50:19,541 [INFO] ('127.0.0.1', 57424) connection lost
+2025-05-18 15:50:24,619 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:24,621 [INFO] Peer: ('127.0.0.1', 46456)
+2025-05-18 15:50:24,622 [INFO] ('127.0.0.1', 46456) handling connection
+2025-05-18 15:50:24,624 [INFO] ('127.0.0.1', 46456) EOF received
+2025-05-18 15:50:24,625 [INFO] ('127.0.0.1', 46456) Connection lost during _handle_client()
+2025-05-18 15:50:24,626 [INFO] ('127.0.0.1', 46456) connection lost
+2025-05-18 15:50:29,711 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:29,713 [INFO] Peer: ('127.0.0.1', 46470)
+2025-05-18 15:50:29,714 [INFO] ('127.0.0.1', 46470) handling connection
+2025-05-18 15:50:29,716 [INFO] ('127.0.0.1', 46470) EOF received
+2025-05-18 15:50:29,717 [INFO] ('127.0.0.1', 46470) Connection lost during _handle_client()
+2025-05-18 15:50:29,718 [INFO] ('127.0.0.1', 46470) connection lost
+2025-05-18 15:50:34,794 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:34,795 [INFO] Peer: ('127.0.0.1', 39326)
+2025-05-18 15:50:34,796 [INFO] ('127.0.0.1', 39326) handling connection
+2025-05-18 15:50:34,797 [INFO] ('127.0.0.1', 39326) EOF received
+2025-05-18 15:50:34,798 [INFO] ('127.0.0.1', 39326) Connection lost during _handle_client()
+2025-05-18 15:50:34,799 [INFO] ('127.0.0.1', 39326) connection lost
+2025-05-18 15:50:39,121 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:39,122 [INFO] Peer: ('127.0.0.1', 39328)
+2025-05-18 15:50:39,123 [INFO] ('127.0.0.1', 39328) handling connection
+2025-05-18 15:50:39,124 [INFO] ('127.0.0.1', 39328) EOF received
+2025-05-18 15:50:39,125 [INFO] ('127.0.0.1', 39328) Connection lost during _handle_client()
+2025-05-18 15:50:39,126 [INFO] ('127.0.0.1', 39328) connection lost
+2025-05-18 15:50:42,882 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:42,883 [INFO] Peer: ('127.0.0.1', 46992)
+2025-05-18 15:50:42,885 [INFO] ('127.0.0.1', 46992) handling connection
+2025-05-18 15:50:42,886 [INFO] ('127.0.0.1', 46992) EOF received
+2025-05-18 15:50:42,887 [INFO] ('127.0.0.1', 46992) Connection lost during _handle_client()
+2025-05-18 15:50:42,888 [INFO] ('127.0.0.1', 46992) connection lost
+2025-05-18 15:50:47,965 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:47,967 [INFO] Peer: ('127.0.0.1', 47000)
+2025-05-18 15:50:47,968 [INFO] ('127.0.0.1', 47000) handling connection
+2025-05-18 15:50:47,969 [INFO] ('127.0.0.1', 47000) EOF received
+2025-05-18 15:50:47,970 [INFO] ('127.0.0.1', 47000) Connection lost during _handle_client()
+2025-05-18 15:50:47,971 [INFO] ('127.0.0.1', 47000) connection lost
+2025-05-18 15:50:53,050 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:53,052 [INFO] Peer: ('127.0.0.1', 54112)
+2025-05-18 15:50:53,053 [INFO] ('127.0.0.1', 54112) handling connection
+2025-05-18 15:50:53,054 [INFO] ('127.0.0.1', 54112) EOF received
+2025-05-18 15:50:53,055 [INFO] ('127.0.0.1', 54112) Connection lost during _handle_client()
+2025-05-18 15:50:53,055 [INFO] ('127.0.0.1', 54112) connection lost
+2025-05-18 15:50:56,757 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:56,758 [INFO] Peer: ('172.20.0.100', 46648)
+2025-05-18 15:50:56,759 [INFO] ('172.20.0.100', 46648) handling connection
+2025-05-18 15:50:56,760 [INFO] ('172.20.0.100', 46648) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:50:56,761 [INFO] ('172.20.0.100', 46648) >> b'MAIL FROM:<info@company.com> SIZE=640'
+2025-05-18 15:50:56,763 [INFO] ('172.20.0.100', 46648) sender: info@company.com
+2025-05-18 15:50:56,764 [INFO] ('172.20.0.100', 46648) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:50:56,765 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:50:56,766 [INFO] ('172.20.0.100', 46648) recip: recipient@email-threat-docker.local
+2025-05-18 15:50:56,767 [INFO] ('172.20.0.100', 46648) >> b'DATA'
+2025-05-18 15:50:56,772 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection2.eml | Threats: Phishing_URL_Detection2
+2025-05-18 15:50:56,776 [INFO] ('172.20.0.100', 46648) >> b'QUIT'
+2025-05-18 15:50:56,777 [INFO] ('172.20.0.100', 46648) connection lost
+2025-05-18 15:50:56,779 [INFO] ('172.20.0.100', 46648) Connection lost during _handle_client()
+2025-05-18 15:50:56,990 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:56,992 [INFO] Peer: ('172.20.0.100', 46664)
+2025-05-18 15:50:56,993 [INFO] ('172.20.0.100', 46664) handling connection
+2025-05-18 15:50:56,995 [INFO] ('172.20.0.100', 46664) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:50:56,996 [INFO] ('172.20.0.100', 46664) >> b'MAIL FROM:<billing@legit-company.com> SIZE=669'
+2025-05-18 15:50:56,997 [INFO] ('172.20.0.100', 46664) sender: billing@legit-company.com
+2025-05-18 15:50:56,998 [INFO] ('172.20.0.100', 46664) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:50:56,999 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:50:56,999 [INFO] ('172.20.0.100', 46664) recip: recipient@email-threat-docker.local
+2025-05-18 15:50:57,001 [INFO] ('172.20.0.100', 46664) >> b'DATA'
+2025-05-18 15:50:57,004 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection2.eml | Threats: Phishing_URL_Detection2
+2025-05-18 15:50:57,008 [INFO] ('172.20.0.100', 46664) >> b'QUIT'
+2025-05-18 15:50:57,009 [INFO] ('172.20.0.100', 46664) connection lost
+2025-05-18 15:50:57,010 [INFO] ('172.20.0.100', 46664) Connection lost during _handle_client()
+2025-05-18 15:50:57,238 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:57,240 [INFO] Peer: ('172.20.0.100', 46678)
+2025-05-18 15:50:57,241 [INFO] ('172.20.0.100', 46678) handling connection
+2025-05-18 15:50:57,242 [INFO] ('172.20.0.100', 46678) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:50:57,243 [INFO] ('172.20.0.100', 46678) >> b'MAIL FROM:<teamlead@company.com> SIZE=624'
+2025-05-18 15:50:57,244 [INFO] ('172.20.0.100', 46678) sender: teamlead@company.com
+2025-05-18 15:50:57,246 [INFO] ('172.20.0.100', 46678) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:50:57,247 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:50:57,248 [INFO] ('172.20.0.100', 46678) recip: recipient@email-threat-docker.local
+2025-05-18 15:50:57,249 [INFO] ('172.20.0.100', 46678) >> b'DATA'
+2025-05-18 15:50:57,282 [INFO] Email reinjected successfully
+2025-05-18 15:50:57,286 [INFO] ('172.20.0.100', 46678) >> b'QUIT'
+2025-05-18 15:50:57,288 [INFO] ('172.20.0.100', 46678) connection lost
+2025-05-18 15:50:57,289 [INFO] ('172.20.0.100', 46678) Connection lost during _handle_client()
+2025-05-18 15:50:57,493 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:57,495 [INFO] Peer: ('172.20.0.100', 46680)
+2025-05-18 15:50:57,496 [INFO] ('172.20.0.100', 46680) handling connection
+2025-05-18 15:50:57,497 [INFO] ('172.20.0.100', 46680) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:50:57,499 [INFO] ('172.20.0.100', 46680) >> b'MAIL FROM:<support@onlineservice.com> SIZE=643'
+2025-05-18 15:50:57,500 [INFO] ('172.20.0.100', 46680) sender: support@onlineservice.com
+2025-05-18 15:50:57,502 [INFO] ('172.20.0.100', 46680) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:50:57,503 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:50:57,504 [INFO] ('172.20.0.100', 46680) recip: recipient@email-threat-docker.local
+2025-05-18 15:50:57,505 [INFO] ('172.20.0.100', 46680) >> b'DATA'
+2025-05-18 15:50:57,525 [INFO] Email reinjected successfully
+2025-05-18 15:50:57,531 [INFO] ('172.20.0.100', 46680) >> b'QUIT'
+2025-05-18 15:50:57,532 [INFO] ('172.20.0.100', 46680) connection lost
+2025-05-18 15:50:57,532 [INFO] ('172.20.0.100', 46680) Connection lost during _handle_client()
+2025-05-18 15:50:57,739 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:57,740 [INFO] Peer: ('172.20.0.100', 46694)
+2025-05-18 15:50:57,741 [INFO] ('172.20.0.100', 46694) handling connection
+2025-05-18 15:50:57,742 [INFO] ('172.20.0.100', 46694) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:50:57,744 [INFO] ('172.20.0.100', 46694) >> b'MAIL FROM:<notifications@company.com> SIZE=644'
+2025-05-18 15:50:57,745 [INFO] ('172.20.0.100', 46694) sender: notifications@company.com
+2025-05-18 15:50:57,746 [INFO] ('172.20.0.100', 46694) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:50:57,747 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:50:57,748 [INFO] ('172.20.0.100', 46694) recip: recipient@email-threat-docker.local
+2025-05-18 15:50:57,749 [INFO] ('172.20.0.100', 46694) >> b'DATA'
+2025-05-18 15:50:57,764 [INFO] Email reinjected successfully
+2025-05-18 15:50:57,769 [INFO] ('172.20.0.100', 46694) >> b'QUIT'
+2025-05-18 15:50:57,770 [INFO] ('172.20.0.100', 46694) connection lost
+2025-05-18 15:50:57,771 [INFO] ('172.20.0.100', 46694) Connection lost during _handle_client()
+2025-05-18 15:50:57,985 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:57,986 [INFO] Peer: ('172.20.0.100', 46702)
+2025-05-18 15:50:57,987 [INFO] ('172.20.0.100', 46702) handling connection
+2025-05-18 15:50:57,988 [INFO] ('172.20.0.100', 46702) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:50:57,990 [INFO] ('172.20.0.100', 46702) >> b'MAIL FROM:<support@service.com> SIZE=603'
+2025-05-18 15:50:57,991 [INFO] ('172.20.0.100', 46702) sender: support@service.com
+2025-05-18 15:50:57,992 [INFO] ('172.20.0.100', 46702) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:50:57,993 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:50:57,994 [INFO] ('172.20.0.100', 46702) recip: recipient@email-threat-docker.local
+2025-05-18 15:50:57,995 [INFO] ('172.20.0.100', 46702) >> b'DATA'
+2025-05-18 15:50:58,011 [INFO] Email reinjected successfully
+2025-05-18 15:50:58,014 [INFO] ('172.20.0.100', 46702) >> b'QUIT'
+2025-05-18 15:50:58,015 [INFO] ('172.20.0.100', 46702) connection lost
+2025-05-18 15:50:58,016 [INFO] ('172.20.0.100', 46702) Connection lost during _handle_client()
+2025-05-18 15:50:58,131 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:58,133 [INFO] Peer: ('127.0.0.1', 54118)
+2025-05-18 15:50:58,134 [INFO] ('127.0.0.1', 54118) handling connection
+2025-05-18 15:50:58,135 [INFO] ('127.0.0.1', 54118) EOF received
+2025-05-18 15:50:58,135 [INFO] ('127.0.0.1', 54118) Connection lost during _handle_client()
+2025-05-18 15:50:58,136 [INFO] ('127.0.0.1', 54118) connection lost
+2025-05-18 15:50:58,229 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:58,230 [INFO] Peer: ('172.20.0.100', 46714)
+2025-05-18 15:50:58,231 [INFO] ('172.20.0.100', 46714) handling connection
+2025-05-18 15:50:58,232 [INFO] ('172.20.0.100', 46714) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:50:58,233 [INFO] ('172.20.0.100', 46714) >> b'MAIL FROM:<billing@legit-company.com> SIZE=652'
+2025-05-18 15:50:58,234 [INFO] ('172.20.0.100', 46714) sender: billing@legit-company.com
+2025-05-18 15:50:58,236 [INFO] ('172.20.0.100', 46714) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:50:58,236 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:50:58,237 [INFO] ('172.20.0.100', 46714) recip: recipient@email-threat-docker.local
+2025-05-18 15:50:58,238 [INFO] ('172.20.0.100', 46714) >> b'DATA'
+2025-05-18 15:50:58,253 [INFO] Email reinjected successfully
+2025-05-18 15:50:58,258 [INFO] ('172.20.0.100', 46714) >> b'QUIT'
+2025-05-18 15:50:58,259 [INFO] ('172.20.0.100', 46714) connection lost
+2025-05-18 15:50:58,259 [INFO] ('172.20.0.100', 46714) Connection lost during _handle_client()
+2025-05-18 15:50:58,474 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:58,475 [INFO] Peer: ('172.20.0.100', 46720)
+2025-05-18 15:50:58,476 [INFO] ('172.20.0.100', 46720) handling connection
+2025-05-18 15:50:58,477 [INFO] ('172.20.0.100', 46720) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:50:58,479 [INFO] ('172.20.0.100', 46720) >> b'MAIL FROM:<support@onlineservice.com> SIZE=640'
+2025-05-18 15:50:58,480 [INFO] ('172.20.0.100', 46720) sender: support@onlineservice.com
+2025-05-18 15:50:58,481 [INFO] ('172.20.0.100', 46720) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:50:58,482 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:50:58,483 [INFO] ('172.20.0.100', 46720) recip: recipient@email-threat-docker.local
+2025-05-18 15:50:58,484 [INFO] ('172.20.0.100', 46720) >> b'DATA'
+2025-05-18 15:50:58,500 [INFO] Email reinjected successfully
+2025-05-18 15:50:58,504 [INFO] ('172.20.0.100', 46720) >> b'QUIT'
+2025-05-18 15:50:58,506 [INFO] ('172.20.0.100', 46720) connection lost
+2025-05-18 15:50:58,507 [INFO] ('172.20.0.100', 46720) Connection lost during _handle_client()
+2025-05-18 15:50:58,722 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:58,725 [INFO] Peer: ('172.20.0.100', 46736)
+2025-05-18 15:50:58,726 [INFO] ('172.20.0.100', 46736) handling connection
+2025-05-18 15:50:58,728 [INFO] ('172.20.0.100', 46736) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:50:58,729 [INFO] ('172.20.0.100', 46736) >> b'MAIL FROM:<security@service.com> SIZE=623'
+2025-05-18 15:50:58,731 [INFO] ('172.20.0.100', 46736) sender: security@service.com
+2025-05-18 15:50:58,732 [INFO] ('172.20.0.100', 46736) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:50:58,734 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:50:58,734 [INFO] ('172.20.0.100', 46736) recip: recipient@email-threat-docker.local
+2025-05-18 15:50:58,736 [INFO] ('172.20.0.100', 46736) >> b'DATA'
+2025-05-18 15:50:58,754 [INFO] Email reinjected successfully
+2025-05-18 15:50:58,759 [INFO] ('172.20.0.100', 46736) >> b'QUIT'
+2025-05-18 15:50:58,760 [INFO] ('172.20.0.100', 46736) connection lost
+2025-05-18 15:50:58,762 [INFO] ('172.20.0.100', 46736) Connection lost during _handle_client()
+2025-05-18 15:50:58,968 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:58,970 [INFO] Peer: ('172.20.0.100', 46744)
+2025-05-18 15:50:58,971 [INFO] ('172.20.0.100', 46744) handling connection
+2025-05-18 15:50:58,972 [INFO] ('172.20.0.100', 46744) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:50:58,974 [INFO] ('172.20.0.100', 46744) >> b'MAIL FROM:<notifications@company.com> SIZE=649'
+2025-05-18 15:50:58,974 [INFO] ('172.20.0.100', 46744) sender: notifications@company.com
+2025-05-18 15:50:58,976 [INFO] ('172.20.0.100', 46744) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:50:58,977 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:50:58,978 [INFO] ('172.20.0.100', 46744) recip: recipient@email-threat-docker.local
+2025-05-18 15:50:58,979 [INFO] ('172.20.0.100', 46744) >> b'DATA'
+2025-05-18 15:50:58,993 [INFO] Email reinjected successfully
+2025-05-18 15:50:58,998 [INFO] ('172.20.0.100', 46744) >> b'QUIT'
+2025-05-18 15:50:58,999 [INFO] ('172.20.0.100', 46744) connection lost
+2025-05-18 15:50:59,000 [INFO] ('172.20.0.100', 46744) Connection lost during _handle_client()
+2025-05-18 15:50:59,212 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:59,214 [INFO] Peer: ('172.20.0.100', 46758)
+2025-05-18 15:50:59,215 [INFO] ('172.20.0.100', 46758) handling connection
+2025-05-18 15:50:59,216 [INFO] ('172.20.0.100', 46758) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:50:59,218 [INFO] ('172.20.0.100', 46758) >> b'MAIL FROM:<support@onlineservice.com> SIZE=443'
+2025-05-18 15:50:59,219 [INFO] ('172.20.0.100', 46758) sender: support@onlineservice.com
+2025-05-18 15:50:59,220 [INFO] ('172.20.0.100', 46758) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:50:59,220 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:50:59,222 [INFO] ('172.20.0.100', 46758) recip: recipient@email-threat-docker.local
+2025-05-18 15:50:59,223 [INFO] ('172.20.0.100', 46758) >> b'DATA'
+2025-05-18 15:50:59,238 [INFO] Email reinjected successfully
+2025-05-18 15:50:59,241 [INFO] ('172.20.0.100', 46758) >> b'QUIT'
+2025-05-18 15:50:59,242 [INFO] ('172.20.0.100', 46758) connection lost
+2025-05-18 15:50:59,243 [INFO] ('172.20.0.100', 46758) Connection lost during _handle_client()
+2025-05-18 15:50:59,460 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:59,462 [INFO] Peer: ('172.20.0.100', 46770)
+2025-05-18 15:50:59,462 [INFO] ('172.20.0.100', 46770) handling connection
+2025-05-18 15:50:59,463 [INFO] ('172.20.0.100', 46770) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:50:59,465 [INFO] ('172.20.0.100', 46770) >> b'MAIL FROM:<admin@company.com> SIZE=840'
+2025-05-18 15:50:59,466 [INFO] ('172.20.0.100', 46770) sender: admin@company.com
+2025-05-18 15:50:59,467 [INFO] ('172.20.0.100', 46770) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:50:59,468 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:50:59,469 [INFO] ('172.20.0.100', 46770) recip: recipient@email-threat-docker.local
+2025-05-18 15:50:59,470 [INFO] ('172.20.0.100', 46770) >> b'DATA'
+2025-05-18 15:50:59,488 [INFO] Email reinjected successfully
+2025-05-18 15:50:59,492 [INFO] ('172.20.0.100', 46770) >> b'QUIT'
+2025-05-18 15:50:59,493 [INFO] ('172.20.0.100', 46770) connection lost
+2025-05-18 15:50:59,494 [INFO] ('172.20.0.100', 46770) Connection lost during _handle_client()
+2025-05-18 15:50:59,706 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:59,708 [INFO] Peer: ('172.20.0.100', 46782)
+2025-05-18 15:50:59,709 [INFO] ('172.20.0.100', 46782) handling connection
+2025-05-18 15:50:59,710 [INFO] ('172.20.0.100', 46782) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:50:59,712 [INFO] ('172.20.0.100', 46782) >> b'MAIL FROM:<notifications@company.com> SIZE=449'
+2025-05-18 15:50:59,713 [INFO] ('172.20.0.100', 46782) sender: notifications@company.com
+2025-05-18 15:50:59,715 [INFO] ('172.20.0.100', 46782) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:50:59,716 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:50:59,716 [INFO] ('172.20.0.100', 46782) recip: recipient@email-threat-docker.local
+2025-05-18 15:50:59,717 [INFO] ('172.20.0.100', 46782) >> b'DATA'
+2025-05-18 15:50:59,735 [INFO] Email reinjected successfully
+2025-05-18 15:50:59,740 [INFO] ('172.20.0.100', 46782) >> b'QUIT'
+2025-05-18 15:50:59,741 [INFO] ('172.20.0.100', 46782) connection lost
+2025-05-18 15:50:59,743 [INFO] ('172.20.0.100', 46782) Connection lost during _handle_client()
+2025-05-18 15:50:59,960 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:50:59,962 [INFO] Peer: ('172.20.0.100', 46796)
+2025-05-18 15:50:59,963 [INFO] ('172.20.0.100', 46796) handling connection
+2025-05-18 15:50:59,965 [INFO] ('172.20.0.100', 46796) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:50:59,967 [INFO] ('172.20.0.100', 46796) >> b'MAIL FROM:<billing@legit-company.com> SIZE=458'
+2025-05-18 15:50:59,969 [INFO] ('172.20.0.100', 46796) sender: billing@legit-company.com
+2025-05-18 15:50:59,970 [INFO] ('172.20.0.100', 46796) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:50:59,971 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:50:59,972 [INFO] ('172.20.0.100', 46796) recip: recipient@email-threat-docker.local
+2025-05-18 15:50:59,975 [INFO] ('172.20.0.100', 46796) >> b'DATA'
+2025-05-18 15:50:59,991 [INFO] Email reinjected successfully
+2025-05-18 15:50:59,998 [INFO] ('172.20.0.100', 46796) >> b'QUIT'
+2025-05-18 15:50:59,999 [INFO] ('172.20.0.100', 46796) connection lost
+2025-05-18 15:51:00,000 [INFO] ('172.20.0.100', 46796) Connection lost during _handle_client()
+2025-05-18 15:51:00,209 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:00,211 [INFO] Peer: ('172.20.0.100', 46798)
+2025-05-18 15:51:00,213 [INFO] ('172.20.0.100', 46798) handling connection
+2025-05-18 15:51:00,214 [INFO] ('172.20.0.100', 46798) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:00,215 [INFO] ('172.20.0.100', 46798) >> b'MAIL FROM:<support@apple.com> SIZE=847'
+2025-05-18 15:51:00,216 [INFO] ('172.20.0.100', 46798) sender: support@apple.com
+2025-05-18 15:51:00,218 [INFO] ('172.20.0.100', 46798) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:00,220 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:00,221 [INFO] ('172.20.0.100', 46798) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:00,221 [INFO] ('172.20.0.100', 46798) >> b'DATA'
+2025-05-18 15:51:00,241 [INFO] Email reinjected successfully
+2025-05-18 15:51:00,245 [INFO] ('172.20.0.100', 46798) >> b'QUIT'
+2025-05-18 15:51:00,246 [INFO] ('172.20.0.100', 46798) connection lost
+2025-05-18 15:51:00,247 [INFO] ('172.20.0.100', 46798) Connection lost during _handle_client()
+2025-05-18 15:51:00,458 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:00,459 [INFO] Peer: ('172.20.0.100', 46808)
+2025-05-18 15:51:00,460 [INFO] ('172.20.0.100', 46808) handling connection
+2025-05-18 15:51:00,461 [INFO] ('172.20.0.100', 46808) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:00,463 [INFO] ('172.20.0.100', 46808) >> b'MAIL FROM:<rewards@shopping.com> SIZE=448'
+2025-05-18 15:51:00,465 [INFO] ('172.20.0.100', 46808) sender: rewards@shopping.com
+2025-05-18 15:51:00,466 [INFO] ('172.20.0.100', 46808) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:00,467 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:00,468 [INFO] ('172.20.0.100', 46808) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:00,469 [INFO] ('172.20.0.100', 46808) >> b'DATA'
+2025-05-18 15:51:00,487 [INFO] Email reinjected successfully
+2025-05-18 15:51:00,492 [INFO] ('172.20.0.100', 46808) >> b'QUIT'
+2025-05-18 15:51:00,494 [INFO] ('172.20.0.100', 46808) connection lost
+2025-05-18 15:51:00,495 [INFO] ('172.20.0.100', 46808) Connection lost during _handle_client()
+2025-05-18 15:51:00,705 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:00,707 [INFO] Peer: ('172.20.0.100', 46816)
+2025-05-18 15:51:00,708 [INFO] ('172.20.0.100', 46816) handling connection
+2025-05-18 15:51:00,710 [INFO] ('172.20.0.100', 46816) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:00,711 [INFO] ('172.20.0.100', 46816) >> b'MAIL FROM:<security@service.com> SIZE=447'
+2025-05-18 15:51:00,712 [INFO] ('172.20.0.100', 46816) sender: security@service.com
+2025-05-18 15:51:00,713 [INFO] ('172.20.0.100', 46816) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:00,715 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:00,716 [INFO] ('172.20.0.100', 46816) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:00,718 [INFO] ('172.20.0.100', 46816) >> b'DATA'
+2025-05-18 15:51:00,734 [INFO] Email reinjected successfully
+2025-05-18 15:51:00,739 [INFO] ('172.20.0.100', 46816) >> b'QUIT'
+2025-05-18 15:51:00,740 [INFO] ('172.20.0.100', 46816) connection lost
+2025-05-18 15:51:00,741 [INFO] ('172.20.0.100', 46816) Connection lost during _handle_client()
+2025-05-18 15:51:00,956 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:00,957 [INFO] Peer: ('172.20.0.100', 46832)
+2025-05-18 15:51:00,958 [INFO] ('172.20.0.100', 46832) handling connection
+2025-05-18 15:51:00,959 [INFO] ('172.20.0.100', 46832) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:00,961 [INFO] ('172.20.0.100', 46832) >> b'MAIL FROM:<devteam@company.com> SIZE=445'
+2025-05-18 15:51:00,963 [INFO] ('172.20.0.100', 46832) sender: devteam@company.com
+2025-05-18 15:51:00,964 [INFO] ('172.20.0.100', 46832) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:00,965 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:00,966 [INFO] ('172.20.0.100', 46832) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:00,967 [INFO] ('172.20.0.100', 46832) >> b'DATA'
+2025-05-18 15:51:00,984 [INFO] Email reinjected successfully
+2025-05-18 15:51:00,988 [INFO] ('172.20.0.100', 46832) >> b'QUIT'
+2025-05-18 15:51:00,990 [INFO] ('172.20.0.100', 46832) connection lost
+2025-05-18 15:51:00,991 [INFO] ('172.20.0.100', 46832) Connection lost during _handle_client()
+2025-05-18 15:51:01,208 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:01,210 [INFO] Peer: ('172.20.0.100', 46848)
+2025-05-18 15:51:01,211 [INFO] ('172.20.0.100', 46848) handling connection
+2025-05-18 15:51:01,213 [INFO] ('172.20.0.100', 46848) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:01,216 [INFO] ('172.20.0.100', 46848) >> b'MAIL FROM:<alerts@service.com> SIZE=459'
+2025-05-18 15:51:01,217 [INFO] ('172.20.0.100', 46848) sender: alerts@service.com
+2025-05-18 15:51:01,219 [INFO] ('172.20.0.100', 46848) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:01,220 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:01,222 [INFO] ('172.20.0.100', 46848) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:01,223 [INFO] ('172.20.0.100', 46848) >> b'DATA'
+2025-05-18 15:51:01,245 [INFO] Email reinjected successfully
+2025-05-18 15:51:01,250 [INFO] ('172.20.0.100', 46848) >> b'QUIT'
+2025-05-18 15:51:01,252 [INFO] ('172.20.0.100', 46848) connection lost
+2025-05-18 15:51:01,253 [INFO] ('172.20.0.100', 46848) Connection lost during _handle_client()
+2025-05-18 15:51:01,459 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:01,461 [INFO] Peer: ('172.20.0.100', 53132)
+2025-05-18 15:51:01,461 [INFO] ('172.20.0.100', 53132) handling connection
+2025-05-18 15:51:01,462 [INFO] ('172.20.0.100', 53132) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:01,464 [INFO] ('172.20.0.100', 53132) >> b'MAIL FROM:<teamlead@company.com> SIZE=455'
+2025-05-18 15:51:01,465 [INFO] ('172.20.0.100', 53132) sender: teamlead@company.com
+2025-05-18 15:51:01,467 [INFO] ('172.20.0.100', 53132) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:01,468 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:01,469 [INFO] ('172.20.0.100', 53132) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:01,470 [INFO] ('172.20.0.100', 53132) >> b'DATA'
+2025-05-18 15:51:01,485 [INFO] Email reinjected successfully
+2025-05-18 15:51:01,490 [INFO] ('172.20.0.100', 53132) >> b'QUIT'
+2025-05-18 15:51:01,491 [INFO] ('172.20.0.100', 53132) connection lost
+2025-05-18 15:51:01,492 [INFO] ('172.20.0.100', 53132) Connection lost during _handle_client()
+2025-05-18 15:51:01,705 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:01,706 [INFO] Peer: ('172.20.0.100', 53140)
+2025-05-18 15:51:01,707 [INFO] ('172.20.0.100', 53140) handling connection
+2025-05-18 15:51:01,708 [INFO] ('172.20.0.100', 53140) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:01,710 [INFO] ('172.20.0.100', 53140) >> b'MAIL FROM:<rewards@shopping.com> SIZE=572'
+2025-05-18 15:51:01,711 [INFO] ('172.20.0.100', 53140) sender: rewards@shopping.com
+2025-05-18 15:51:01,712 [INFO] ('172.20.0.100', 53140) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:01,713 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:01,714 [INFO] ('172.20.0.100', 53140) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:01,715 [INFO] ('172.20.0.100', 53140) >> b'DATA'
+2025-05-18 15:51:01,719 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection.eml | Threats: Phishing_URL_Detection, Phishing_URL_Detection2
+2025-05-18 15:51:01,723 [INFO] ('172.20.0.100', 53140) >> b'QUIT'
+2025-05-18 15:51:01,724 [INFO] ('172.20.0.100', 53140) connection lost
+2025-05-18 15:51:01,725 [INFO] ('172.20.0.100', 53140) Connection lost during _handle_client()
+2025-05-18 15:51:01,950 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:01,951 [INFO] Peer: ('172.20.0.100', 53146)
+2025-05-18 15:51:01,952 [INFO] ('172.20.0.100', 53146) handling connection
+2025-05-18 15:51:01,953 [INFO] ('172.20.0.100', 53146) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:01,954 [INFO] ('172.20.0.100', 53146) >> b'MAIL FROM:<notifications@company.com> SIZE=550'
+2025-05-18 15:51:01,956 [INFO] ('172.20.0.100', 53146) sender: notifications@company.com
+2025-05-18 15:51:01,957 [INFO] ('172.20.0.100', 53146) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:01,958 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:01,959 [INFO] ('172.20.0.100', 53146) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:01,960 [INFO] ('172.20.0.100', 53146) >> b'DATA'
+2025-05-18 15:51:01,962 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection2.eml | Threats: Phishing_URL_Detection2
+2025-05-18 15:51:01,967 [INFO] ('172.20.0.100', 53146) >> b'QUIT'
+2025-05-18 15:51:01,968 [INFO] ('172.20.0.100', 53146) connection lost
+2025-05-18 15:51:01,968 [INFO] ('172.20.0.100', 53146) Connection lost during _handle_client()
+2025-05-18 15:51:02,196 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:02,198 [INFO] Peer: ('172.20.0.100', 53150)
+2025-05-18 15:51:02,199 [INFO] ('172.20.0.100', 53150) handling connection
+2025-05-18 15:51:02,200 [INFO] ('172.20.0.100', 53150) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:02,201 [INFO] ('172.20.0.100', 53150) >> b'MAIL FROM:<support@service.com> SIZE=556'
+2025-05-18 15:51:02,203 [INFO] ('172.20.0.100', 53150) sender: support@service.com
+2025-05-18 15:51:02,204 [INFO] ('172.20.0.100', 53150) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:02,205 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:02,206 [INFO] ('172.20.0.100', 53150) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:02,207 [INFO] ('172.20.0.100', 53150) >> b'DATA'
+2025-05-18 15:51:02,211 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection.eml | Threats: Phishing_URL_Detection, Phishing_URL_Detection2
+2025-05-18 15:51:02,214 [INFO] ('172.20.0.100', 53150) >> b'QUIT'
+2025-05-18 15:51:02,216 [INFO] ('172.20.0.100', 53150) connection lost
+2025-05-18 15:51:02,217 [INFO] ('172.20.0.100', 53150) Connection lost during _handle_client()
+2025-05-18 15:51:02,442 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:02,444 [INFO] Peer: ('172.20.0.100', 53154)
+2025-05-18 15:51:02,444 [INFO] ('172.20.0.100', 53154) handling connection
+2025-05-18 15:51:02,446 [INFO] ('172.20.0.100', 53154) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:02,447 [INFO] ('172.20.0.100', 53154) >> b'MAIL FROM:<notifications@company.com> SIZE=601'
+2025-05-18 15:51:02,449 [INFO] ('172.20.0.100', 53154) sender: notifications@company.com
+2025-05-18 15:51:02,450 [INFO] ('172.20.0.100', 53154) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:02,450 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:02,451 [INFO] ('172.20.0.100', 53154) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:02,452 [INFO] ('172.20.0.100', 53154) >> b'DATA'
+2025-05-18 15:51:02,456 [WARNING] Quarantined: /app/quarantine/quarantine_Password_Hint_Detected.eml | Threats: Password_Hint_Detected, Phishing_URL_Detection2
+2025-05-18 15:51:02,464 [INFO] ('172.20.0.100', 53154) >> b'QUIT'
+2025-05-18 15:51:02,466 [INFO] ('172.20.0.100', 53154) connection lost
+2025-05-18 15:51:02,467 [INFO] ('172.20.0.100', 53154) Connection lost during _handle_client()
+2025-05-18 15:51:02,694 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:02,695 [INFO] Peer: ('172.20.0.100', 53166)
+2025-05-18 15:51:02,696 [INFO] ('172.20.0.100', 53166) handling connection
+2025-05-18 15:51:02,697 [INFO] ('172.20.0.100', 53166) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:02,699 [INFO] ('172.20.0.100', 53166) >> b'MAIL FROM:<noreply@itdept.company.com> SIZE=533'
+2025-05-18 15:51:02,700 [INFO] ('172.20.0.100', 53166) sender: noreply@itdept.company.com
+2025-05-18 15:51:02,701 [INFO] ('172.20.0.100', 53166) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:02,702 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:02,703 [INFO] ('172.20.0.100', 53166) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:02,704 [INFO] ('172.20.0.100', 53166) >> b'DATA'
+2025-05-18 15:51:02,707 [WARNING] Quarantined: /app/quarantine/quarantine_Malicious_Attachment_Detection.eml | Threats: Malicious_Attachment_Detection
+2025-05-18 15:51:02,712 [INFO] ('172.20.0.100', 53166) >> b'QUIT'
+2025-05-18 15:51:02,713 [INFO] ('172.20.0.100', 53166) connection lost
+2025-05-18 15:51:02,714 [INFO] ('172.20.0.100', 53166) Connection lost during _handle_client()
+2025-05-18 15:51:02,943 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:02,945 [INFO] Peer: ('172.20.0.100', 53176)
+2025-05-18 15:51:02,946 [INFO] ('172.20.0.100', 53176) handling connection
+2025-05-18 15:51:02,947 [INFO] ('172.20.0.100', 53176) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:02,948 [INFO] ('172.20.0.100', 53176) >> b'MAIL FROM:<hr@company.com> SIZE=584'
+2025-05-18 15:51:02,949 [INFO] ('172.20.0.100', 53176) sender: hr@company.com
+2025-05-18 15:51:02,952 [INFO] ('172.20.0.100', 53176) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:02,953 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:02,954 [INFO] ('172.20.0.100', 53176) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:02,956 [INFO] ('172.20.0.100', 53176) >> b'DATA'
+2025-05-18 15:51:02,959 [WARNING] Quarantined: /app/quarantine/quarantine_EICAR_Test_File.eml | Threats: EICAR_Test_File
+2025-05-18 15:51:02,963 [INFO] ('172.20.0.100', 53176) >> b'QUIT'
+2025-05-18 15:51:02,964 [INFO] ('172.20.0.100', 53176) connection lost
+2025-05-18 15:51:02,966 [INFO] ('172.20.0.100', 53176) Connection lost during _handle_client()
+2025-05-18 15:51:03,202 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:03,204 [INFO] Peer: ('172.20.0.100', 53184)
+2025-05-18 15:51:03,206 [INFO] ('172.20.0.100', 53184) handling connection
+2025-05-18 15:51:03,207 [INFO] ('172.20.0.100', 53184) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:03,209 [INFO] ('172.20.0.100', 53184) >> b'MAIL FROM:<events@company.com> SIZE=489'
+2025-05-18 15:51:03,210 [INFO] ('172.20.0.100', 53184) sender: events@company.com
+2025-05-18 15:51:03,212 [INFO] ('172.20.0.100', 53184) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:03,213 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:03,214 [INFO] ('172.20.0.100', 53184) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:03,216 [INFO] ('172.20.0.100', 53184) >> b'DATA'
+2025-05-18 15:51:03,239 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:03,241 [INFO] Peer: ('127.0.0.1', 49596)
+2025-05-18 15:51:03,243 [INFO] ('127.0.0.1', 49596) handling connection
+2025-05-18 15:51:03,244 [INFO] ('127.0.0.1', 49596) EOF received
+2025-05-18 15:51:03,246 [INFO] ('127.0.0.1', 49596) Connection lost during _handle_client()
+2025-05-18 15:51:03,247 [INFO] ('127.0.0.1', 49596) connection lost
+2025-05-18 15:51:03,248 [INFO] Email reinjected successfully
+2025-05-18 15:51:03,257 [INFO] ('172.20.0.100', 53184) >> b'QUIT'
+2025-05-18 15:51:03,259 [INFO] ('172.20.0.100', 53184) connection lost
+2025-05-18 15:51:03,260 [INFO] ('172.20.0.100', 53184) Connection lost during _handle_client()
+2025-05-18 15:51:03,451 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:03,453 [INFO] Peer: ('172.20.0.100', 53198)
+2025-05-18 15:51:03,454 [INFO] ('172.20.0.100', 53198) handling connection
+2025-05-18 15:51:03,455 [INFO] ('172.20.0.100', 53198) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:03,457 [INFO] ('172.20.0.100', 53198) >> b'MAIL FROM:<hr@company.com> SIZE=525'
+2025-05-18 15:51:03,458 [INFO] ('172.20.0.100', 53198) sender: hr@company.com
+2025-05-18 15:51:03,460 [INFO] ('172.20.0.100', 53198) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:03,461 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:03,461 [INFO] ('172.20.0.100', 53198) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:03,463 [INFO] ('172.20.0.100', 53198) >> b'DATA'
+2025-05-18 15:51:03,466 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection2.eml | Threats: Phishing_URL_Detection2, URL_Encoding_Evasion
+2025-05-18 15:51:03,470 [INFO] ('172.20.0.100', 53198) >> b'QUIT'
+2025-05-18 15:51:03,472 [INFO] ('172.20.0.100', 53198) connection lost
+2025-05-18 15:51:03,473 [INFO] ('172.20.0.100', 53198) Connection lost during _handle_client()
+2025-05-18 15:51:03,697 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:03,698 [INFO] Peer: ('172.20.0.100', 53212)
+2025-05-18 15:51:03,699 [INFO] ('172.20.0.100', 53212) handling connection
+2025-05-18 15:51:03,700 [INFO] ('172.20.0.100', 53212) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:03,702 [INFO] ('172.20.0.100', 53212) >> b'MAIL FROM:<admin@company.com> SIZE=572'
+2025-05-18 15:51:03,703 [INFO] ('172.20.0.100', 53212) sender: admin@company.com
+2025-05-18 15:51:03,704 [INFO] ('172.20.0.100', 53212) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:03,705 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:03,706 [INFO] ('172.20.0.100', 53212) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:03,707 [INFO] ('172.20.0.100', 53212) >> b'DATA'
+2025-05-18 15:51:03,710 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection.eml | Threats: Phishing_URL_Detection, Phishing_URL_Detection2
+2025-05-18 15:51:03,714 [INFO] ('172.20.0.100', 53212) >> b'QUIT'
+2025-05-18 15:51:03,715 [INFO] ('172.20.0.100', 53212) connection lost
+2025-05-18 15:51:03,716 [INFO] ('172.20.0.100', 53212) Connection lost during _handle_client()
+2025-05-18 15:51:03,951 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:03,952 [INFO] Peer: ('172.20.0.100', 53228)
+2025-05-18 15:51:03,953 [INFO] ('172.20.0.100', 53228) handling connection
+2025-05-18 15:51:03,956 [INFO] ('172.20.0.100', 53228) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:03,957 [INFO] ('172.20.0.100', 53228) >> b'MAIL FROM:<events@company.com> SIZE=518'
+2025-05-18 15:51:03,959 [INFO] ('172.20.0.100', 53228) sender: events@company.com
+2025-05-18 15:51:03,960 [INFO] ('172.20.0.100', 53228) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:03,961 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:03,962 [INFO] ('172.20.0.100', 53228) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:03,964 [INFO] ('172.20.0.100', 53228) >> b'DATA'
+2025-05-18 15:51:03,966 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection2.eml | Threats: Phishing_URL_Detection2
+2025-05-18 15:51:03,972 [INFO] ('172.20.0.100', 53228) >> b'QUIT'
+2025-05-18 15:51:03,973 [INFO] ('172.20.0.100', 53228) connection lost
+2025-05-18 15:51:03,974 [INFO] ('172.20.0.100', 53228) Connection lost during _handle_client()
+2025-05-18 15:51:04,197 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:04,198 [INFO] Peer: ('172.20.0.100', 53244)
+2025-05-18 15:51:04,200 [INFO] ('172.20.0.100', 53244) handling connection
+2025-05-18 15:51:04,201 [INFO] ('172.20.0.100', 53244) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:04,203 [INFO] ('172.20.0.100', 53244) >> b'MAIL FROM:<support@bank.com> SIZE=476 BODY=8BITMIME'
+2025-05-18 15:51:04,204 [INFO] ('172.20.0.100', 53244) sender: support@bank.com
+2025-05-18 15:51:04,205 [INFO] ('172.20.0.100', 53244) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:04,206 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:04,207 [INFO] ('172.20.0.100', 53244) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:04,209 [INFO] ('172.20.0.100', 53244) >> b'DATA'
+2025-05-18 15:51:04,225 [INFO] Email reinjected successfully
+2025-05-18 15:51:04,229 [INFO] ('172.20.0.100', 53244) >> b'QUIT'
+2025-05-18 15:51:04,231 [INFO] ('172.20.0.100', 53244) connection lost
+2025-05-18 15:51:04,231 [INFO] ('172.20.0.100', 53244) Connection lost during _handle_client()
+2025-05-18 15:51:04,440 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:04,441 [INFO] Peer: ('172.20.0.100', 53252)
+2025-05-18 15:51:04,442 [INFO] ('172.20.0.100', 53252) handling connection
+2025-05-18 15:51:04,443 [INFO] ('172.20.0.100', 53252) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:04,445 [INFO] ('172.20.0.100', 53252) >> b'MAIL FROM:<info@company.com> SIZE=572'
+2025-05-18 15:51:04,446 [INFO] ('172.20.0.100', 53252) sender: info@company.com
+2025-05-18 15:51:04,447 [INFO] ('172.20.0.100', 53252) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:04,448 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:04,449 [INFO] ('172.20.0.100', 53252) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:04,450 [INFO] ('172.20.0.100', 53252) >> b'DATA'
+2025-05-18 15:51:04,453 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection.eml | Threats: Phishing_URL_Detection, Phishing_URL_Detection2
+2025-05-18 15:51:04,457 [INFO] ('172.20.0.100', 53252) >> b'QUIT'
+2025-05-18 15:51:04,458 [INFO] ('172.20.0.100', 53252) connection lost
+2025-05-18 15:51:04,460 [INFO] ('172.20.0.100', 53252) Connection lost during _handle_client()
+2025-05-18 15:51:04,686 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:04,688 [INFO] Peer: ('172.20.0.100', 53266)
+2025-05-18 15:51:04,689 [INFO] ('172.20.0.100', 53266) handling connection
+2025-05-18 15:51:04,691 [INFO] ('172.20.0.100', 53266) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:04,692 [INFO] ('172.20.0.100', 53266) >> b'MAIL FROM:<teamlead@company.com> SIZE=542'
+2025-05-18 15:51:04,694 [INFO] ('172.20.0.100', 53266) sender: teamlead@company.com
+2025-05-18 15:51:04,695 [INFO] ('172.20.0.100', 53266) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:04,697 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:04,698 [INFO] ('172.20.0.100', 53266) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:04,700 [INFO] ('172.20.0.100', 53266) >> b'DATA'
+2025-05-18 15:51:04,704 [WARNING] Quarantined: /app/quarantine/quarantine_Password_Hint_Detected.eml | Threats: Password_Hint_Detected, Phishing_URL_Detection2
+2025-05-18 15:51:04,708 [INFO] ('172.20.0.100', 53266) >> b'QUIT'
+2025-05-18 15:51:04,709 [INFO] ('172.20.0.100', 53266) connection lost
+2025-05-18 15:51:04,711 [INFO] ('172.20.0.100', 53266) Connection lost during _handle_client()
+2025-05-18 15:51:04,934 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:04,936 [INFO] Peer: ('172.20.0.100', 53272)
+2025-05-18 15:51:04,937 [INFO] ('172.20.0.100', 53272) handling connection
+2025-05-18 15:51:04,939 [INFO] ('172.20.0.100', 53272) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:04,941 [INFO] ('172.20.0.100', 53272) >> b'MAIL FROM:<communications@company.com> SIZE=541'
+2025-05-18 15:51:04,942 [INFO] ('172.20.0.100', 53272) sender: communications@company.com
+2025-05-18 15:51:04,944 [INFO] ('172.20.0.100', 53272) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:04,945 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:04,947 [INFO] ('172.20.0.100', 53272) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:04,948 [INFO] ('172.20.0.100', 53272) >> b'DATA'
+2025-05-18 15:51:04,952 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection2.eml | Threats: Phishing_URL_Detection2
+2025-05-18 15:51:04,955 [INFO] ('172.20.0.100', 53272) >> b'QUIT'
+2025-05-18 15:51:04,957 [INFO] ('172.20.0.100', 53272) connection lost
+2025-05-18 15:51:04,958 [INFO] ('172.20.0.100', 53272) Connection lost during _handle_client()
+2025-05-18 15:51:05,185 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:05,186 [INFO] Peer: ('172.20.0.100', 53276)
+2025-05-18 15:51:05,188 [INFO] ('172.20.0.100', 53276) handling connection
+2025-05-18 15:51:05,190 [INFO] ('172.20.0.100', 53276) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:05,192 [INFO] ('172.20.0.100', 53276) >> b'MAIL FROM:<communications@company.com> SIZE=562'
+2025-05-18 15:51:05,193 [INFO] ('172.20.0.100', 53276) sender: communications@company.com
+2025-05-18 15:51:05,195 [INFO] ('172.20.0.100', 53276) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:05,197 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:05,198 [INFO] ('172.20.0.100', 53276) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:05,199 [INFO] ('172.20.0.100', 53276) >> b'DATA'
+2025-05-18 15:51:05,204 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection2.eml | Threats: Phishing_URL_Detection2
+2025-05-18 15:51:05,208 [INFO] ('172.20.0.100', 53276) >> b'QUIT'
+2025-05-18 15:51:05,210 [INFO] ('172.20.0.100', 53276) connection lost
+2025-05-18 15:51:05,211 [INFO] ('172.20.0.100', 53276) Connection lost during _handle_client()
+2025-05-18 15:51:05,431 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:05,433 [INFO] Peer: ('172.20.0.100', 53280)
+2025-05-18 15:51:05,434 [INFO] ('172.20.0.100', 53280) handling connection
+2025-05-18 15:51:05,435 [INFO] ('172.20.0.100', 53280) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:05,437 [INFO] ('172.20.0.100', 53280) >> b'MAIL FROM:<notifications@company.com> SIZE=536'
+2025-05-18 15:51:05,438 [INFO] ('172.20.0.100', 53280) sender: notifications@company.com
+2025-05-18 15:51:05,440 [INFO] ('172.20.0.100', 53280) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:05,441 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:05,442 [INFO] ('172.20.0.100', 53280) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:05,443 [INFO] ('172.20.0.100', 53280) >> b'DATA'
+2025-05-18 15:51:05,447 [WARNING] Quarantined: /app/quarantine/quarantine_Password_Hint_Detected.eml | Threats: Password_Hint_Detected, Phishing_URL_Detection2
+2025-05-18 15:51:05,451 [INFO] ('172.20.0.100', 53280) >> b'QUIT'
+2025-05-18 15:51:05,452 [INFO] ('172.20.0.100', 53280) connection lost
+2025-05-18 15:51:05,454 [INFO] ('172.20.0.100', 53280) Connection lost during _handle_client()
+2025-05-18 15:51:05,680 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:05,681 [INFO] Peer: ('172.20.0.100', 53284)
+2025-05-18 15:51:05,683 [INFO] ('172.20.0.100', 53284) handling connection
+2025-05-18 15:51:05,684 [INFO] ('172.20.0.100', 53284) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:05,686 [INFO] ('172.20.0.100', 53284) >> b'MAIL FROM:<rewards@shopping.com> SIZE=536'
+2025-05-18 15:51:05,687 [INFO] ('172.20.0.100', 53284) sender: rewards@shopping.com
+2025-05-18 15:51:05,689 [INFO] ('172.20.0.100', 53284) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:05,690 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:05,691 [INFO] ('172.20.0.100', 53284) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:05,692 [INFO] ('172.20.0.100', 53284) >> b'DATA'
+2025-05-18 15:51:05,696 [WARNING] Quarantined: /app/quarantine/quarantine_Gift_Card_Scam.eml | Threats: Gift_Card_Scam, Phishing_URL_Detection2
+2025-05-18 15:51:05,701 [INFO] ('172.20.0.100', 53284) >> b'QUIT'
+2025-05-18 15:51:05,702 [INFO] ('172.20.0.100', 53284) connection lost
+2025-05-18 15:51:05,703 [INFO] ('172.20.0.100', 53284) Connection lost during _handle_client()
+2025-05-18 15:51:05,930 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:05,931 [INFO] Peer: ('172.20.0.100', 53294)
+2025-05-18 15:51:05,932 [INFO] ('172.20.0.100', 53294) handling connection
+2025-05-18 15:51:05,934 [INFO] ('172.20.0.100', 53294) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:05,935 [INFO] ('172.20.0.100', 53294) >> b'MAIL FROM:<support@onlineservice.com> SIZE=521'
+2025-05-18 15:51:05,937 [INFO] ('172.20.0.100', 53294) sender: support@onlineservice.com
+2025-05-18 15:51:05,938 [INFO] ('172.20.0.100', 53294) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:05,940 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:05,941 [INFO] ('172.20.0.100', 53294) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:05,942 [INFO] ('172.20.0.100', 53294) >> b'DATA'
+2025-05-18 15:51:05,946 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection2.eml | Threats: Phishing_URL_Detection2, Survey_Lure
+2025-05-18 15:51:05,950 [INFO] ('172.20.0.100', 53294) >> b'QUIT'
+2025-05-18 15:51:05,952 [INFO] ('172.20.0.100', 53294) connection lost
+2025-05-18 15:51:05,953 [INFO] ('172.20.0.100', 53294) Connection lost during _handle_client()
+2025-05-18 15:51:06,177 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:06,179 [INFO] Peer: ('172.20.0.100', 53302)
+2025-05-18 15:51:06,180 [INFO] ('172.20.0.100', 53302) handling connection
+2025-05-18 15:51:06,181 [INFO] ('172.20.0.100', 53302) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:06,183 [INFO] ('172.20.0.100', 53302) >> b'MAIL FROM:<support@apple.com> SIZE=539'
+2025-05-18 15:51:06,184 [INFO] ('172.20.0.100', 53302) sender: support@apple.com
+2025-05-18 15:51:06,185 [INFO] ('172.20.0.100', 53302) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:06,186 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:06,187 [INFO] ('172.20.0.100', 53302) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:06,188 [INFO] ('172.20.0.100', 53302) >> b'DATA'
+2025-05-18 15:51:06,205 [INFO] Email reinjected successfully
+2025-05-18 15:51:06,209 [INFO] ('172.20.0.100', 53302) >> b'QUIT'
+2025-05-18 15:51:06,210 [INFO] ('172.20.0.100', 53302) connection lost
+2025-05-18 15:51:06,212 [INFO] ('172.20.0.100', 53302) Connection lost during _handle_client()
+2025-05-18 15:51:06,430 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:06,431 [INFO] Peer: ('172.20.0.100', 53306)
+2025-05-18 15:51:06,433 [INFO] ('172.20.0.100', 53306) handling connection
+2025-05-18 15:51:06,434 [INFO] ('172.20.0.100', 53306) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:06,436 [INFO] ('172.20.0.100', 53306) >> b'MAIL FROM:<events@company.com> SIZE=905'
+2025-05-18 15:51:06,437 [INFO] ('172.20.0.100', 53306) sender: events@company.com
+2025-05-18 15:51:06,438 [INFO] ('172.20.0.100', 53306) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:06,439 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:06,440 [INFO] ('172.20.0.100', 53306) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:06,442 [INFO] ('172.20.0.100', 53306) >> b'DATA'
+2025-05-18 15:51:06,462 [INFO] Email reinjected successfully
+2025-05-18 15:51:06,469 [INFO] ('172.20.0.100', 53306) >> b'QUIT'
+2025-05-18 15:51:06,470 [INFO] ('172.20.0.100', 53306) connection lost
+2025-05-18 15:51:06,471 [INFO] ('172.20.0.100', 53306) Connection lost during _handle_client()
+2025-05-18 15:51:06,680 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:06,682 [INFO] Peer: ('172.20.0.100', 53320)
+2025-05-18 15:51:06,683 [INFO] ('172.20.0.100', 53320) handling connection
+2025-05-18 15:51:06,684 [INFO] ('172.20.0.100', 53320) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:06,685 [INFO] ('172.20.0.100', 53320) >> b'MAIL FROM:<support@service.com> SIZE=2201'
+2025-05-18 15:51:06,687 [INFO] ('172.20.0.100', 53320) sender: support@service.com
+2025-05-18 15:51:06,691 [INFO] ('172.20.0.100', 53320) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:06,693 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:06,694 [INFO] ('172.20.0.100', 53320) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:06,696 [INFO] ('172.20.0.100', 53320) >> b'DATA'
+2025-05-18 15:51:06,705 [WARNING] Quarantined: /app/quarantine/quarantine_Detect_PE_File.eml | Threats: Detect_PE_File
+2025-05-18 15:51:06,710 [INFO] ('172.20.0.100', 53320) >> b'QUIT'
+2025-05-18 15:51:06,712 [INFO] ('172.20.0.100', 53320) connection lost
+2025-05-18 15:51:06,713 [INFO] ('172.20.0.100', 53320) Connection lost during _handle_client()
+2025-05-18 15:51:06,925 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:06,926 [INFO] Peer: ('172.20.0.100', 53334)
+2025-05-18 15:51:06,927 [INFO] ('172.20.0.100', 53334) handling connection
+2025-05-18 15:51:06,928 [INFO] ('172.20.0.100', 53334) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:06,930 [INFO] ('172.20.0.100', 53334) >> b'MAIL FROM:<teamlead@company.com> SIZE=501'
+2025-05-18 15:51:06,931 [INFO] ('172.20.0.100', 53334) sender: teamlead@company.com
+2025-05-18 15:51:06,933 [INFO] ('172.20.0.100', 53334) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:06,934 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:06,935 [INFO] ('172.20.0.100', 53334) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:06,936 [INFO] ('172.20.0.100', 53334) >> b'DATA'
+2025-05-18 15:51:06,938 [WARNING] Quarantined: /app/quarantine/quarantine_JS_Malware_Trigger.eml | Threats: JS_Malware_Trigger, Phishing_URL_Detection, Phishing_URL_Detection2
+2025-05-18 15:51:06,942 [INFO] ('172.20.0.100', 53334) >> b'QUIT'
+2025-05-18 15:51:06,943 [INFO] ('172.20.0.100', 53334) connection lost
+2025-05-18 15:51:06,944 [INFO] ('172.20.0.100', 53334) Connection lost during _handle_client()
+2025-05-18 15:51:07,172 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:07,174 [INFO] Peer: ('172.20.0.100', 53348)
+2025-05-18 15:51:07,175 [INFO] ('172.20.0.100', 53348) handling connection
+2025-05-18 15:51:07,176 [INFO] ('172.20.0.100', 53348) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:07,178 [INFO] ('172.20.0.100', 53348) >> b'MAIL FROM:<notifications@company.com> SIZE=666'
+2025-05-18 15:51:07,179 [INFO] ('172.20.0.100', 53348) sender: notifications@company.com
+2025-05-18 15:51:07,181 [INFO] ('172.20.0.100', 53348) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:07,182 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:07,182 [INFO] ('172.20.0.100', 53348) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:07,184 [INFO] ('172.20.0.100', 53348) >> b'DATA'
+2025-05-18 15:51:07,189 [WARNING] Quarantined: /app/quarantine/quarantine_JS_Malware_Trigger.eml | Threats: JS_Malware_Trigger, Phishing_URL_Detection2
+2025-05-18 15:51:07,194 [INFO] ('172.20.0.100', 53348) >> b'QUIT'
+2025-05-18 15:51:07,195 [INFO] ('172.20.0.100', 53348) connection lost
+2025-05-18 15:51:07,196 [INFO] ('172.20.0.100', 53348) Connection lost during _handle_client()
+2025-05-18 15:51:07,420 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:07,422 [INFO] Peer: ('172.20.0.100', 53356)
+2025-05-18 15:51:07,423 [INFO] ('172.20.0.100', 53356) handling connection
+2025-05-18 15:51:07,424 [INFO] ('172.20.0.100', 53356) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:07,426 [INFO] ('172.20.0.100', 53356) >> b'MAIL FROM:<security@onlinebank.com> SIZE=2198'
+2025-05-18 15:51:07,428 [INFO] ('172.20.0.100', 53356) sender: security@onlinebank.com
+2025-05-18 15:51:07,429 [INFO] ('172.20.0.100', 53356) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:07,430 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:07,431 [INFO] ('172.20.0.100', 53356) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:07,433 [INFO] ('172.20.0.100', 53356) >> b'DATA'
+2025-05-18 15:51:07,440 [WARNING] Quarantined: /app/quarantine/quarantine_Password_Hint_Detected.eml | Threats: Password_Hint_Detected, Password_Hint_Detected
+2025-05-18 15:51:07,443 [INFO] ('172.20.0.100', 53356) >> b'QUIT'
+2025-05-18 15:51:07,445 [INFO] ('172.20.0.100', 53356) connection lost
+2025-05-18 15:51:07,446 [INFO] ('172.20.0.100', 53356) Connection lost during _handle_client()
+2025-05-18 15:51:07,673 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:07,675 [INFO] Peer: ('172.20.0.100', 53362)
+2025-05-18 15:51:07,676 [INFO] ('172.20.0.100', 53362) handling connection
+2025-05-18 15:51:07,678 [INFO] ('172.20.0.100', 53362) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:07,680 [INFO] ('172.20.0.100', 53362) >> b'MAIL FROM:<devteam@company.com> SIZE=478'
+2025-05-18 15:51:07,681 [INFO] ('172.20.0.100', 53362) sender: devteam@company.com
+2025-05-18 15:51:07,683 [INFO] ('172.20.0.100', 53362) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:07,685 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:07,686 [INFO] ('172.20.0.100', 53362) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:07,687 [INFO] ('172.20.0.100', 53362) >> b'DATA'
+2025-05-18 15:51:07,691 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection2.eml | Threats: Phishing_URL_Detection2, Suspicious_Urgency_Language
+2025-05-18 15:51:07,696 [INFO] ('172.20.0.100', 53362) >> b'QUIT'
+2025-05-18 15:51:07,698 [INFO] ('172.20.0.100', 53362) connection lost
+2025-05-18 15:51:07,699 [INFO] ('172.20.0.100', 53362) Connection lost during _handle_client()
+2025-05-18 15:51:07,138 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:07,139 [INFO] Peer: ('172.20.0.100', 53366)
+2025-05-18 15:51:07,141 [INFO] ('172.20.0.100', 53366) handling connection
+2025-05-18 15:51:07,142 [INFO] ('172.20.0.100', 53366) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:07,144 [INFO] ('172.20.0.100', 53366) >> b'MAIL FROM:<communications@company.com> SIZE=481'
+2025-05-18 15:51:07,145 [INFO] ('172.20.0.100', 53366) sender: communications@company.com
+2025-05-18 15:51:07,147 [INFO] ('172.20.0.100', 53366) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:07,148 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:07,149 [INFO] ('172.20.0.100', 53366) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:07,150 [INFO] ('172.20.0.100', 53366) >> b'DATA'
+2025-05-18 15:51:07,153 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection.eml | Threats: Phishing_URL_Detection, Phishing_URL_Detection2
+2025-05-18 15:51:07,156 [INFO] ('172.20.0.100', 53366) >> b'QUIT'
+2025-05-18 15:51:07,157 [INFO] ('172.20.0.100', 53366) connection lost
+2025-05-18 15:51:07,158 [INFO] ('172.20.0.100', 53366) Connection lost during _handle_client()
+2025-05-18 15:51:06,066 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:06,067 [INFO] Peer: ('172.20.0.100', 53370)
+2025-05-18 15:51:06,069 [INFO] ('172.20.0.100', 53370) handling connection
+2025-05-18 15:51:06,070 [INFO] ('172.20.0.100', 53370) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:06,072 [INFO] ('172.20.0.100', 53370) >> b'MAIL FROM:<devteam@company.com> SIZE=813'
+2025-05-18 15:51:06,073 [INFO] ('172.20.0.100', 53370) sender: devteam@company.com
+2025-05-18 15:51:06,075 [INFO] ('172.20.0.100', 53370) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:06,076 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:06,077 [INFO] ('172.20.0.100', 53370) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:06,078 [INFO] ('172.20.0.100', 53370) >> b'DATA'
+2025-05-18 15:51:06,084 [WARNING] Quarantined: /app/quarantine/quarantine_Detect_Zip_File.eml | Threats: Detect_Zip_File
+2025-05-18 15:51:06,088 [INFO] ('172.20.0.100', 53370) >> b'QUIT'
+2025-05-18 15:51:06,089 [INFO] ('172.20.0.100', 53370) connection lost
+2025-05-18 15:51:06,090 [INFO] ('172.20.0.100', 53370) Connection lost during _handle_client()
+2025-05-18 15:51:06,252 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:06,254 [INFO] Peer: ('127.0.0.1', 49606)
+2025-05-18 15:51:06,255 [INFO] ('127.0.0.1', 49606) handling connection
+2025-05-18 15:51:06,257 [INFO] ('127.0.0.1', 49606) EOF received
+2025-05-18 15:51:06,258 [INFO] ('127.0.0.1', 49606) Connection lost during _handle_client()
+2025-05-18 15:51:06,259 [INFO] ('127.0.0.1', 49606) connection lost
+2025-05-18 15:51:06,315 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:06,316 [INFO] Peer: ('172.20.0.100', 53372)
+2025-05-18 15:51:06,317 [INFO] ('172.20.0.100', 53372) handling connection
+2025-05-18 15:51:06,319 [INFO] ('172.20.0.100', 53372) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:06,320 [INFO] ('172.20.0.100', 53372) >> b'MAIL FROM:<teamlead@company.com> SIZE=2276'
+2025-05-18 15:51:06,322 [INFO] ('172.20.0.100', 53372) sender: teamlead@company.com
+2025-05-18 15:51:06,323 [INFO] ('172.20.0.100', 53372) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:06,324 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:06,325 [INFO] ('172.20.0.100', 53372) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:06,326 [INFO] ('172.20.0.100', 53372) >> b'DATA'
+2025-05-18 15:51:06,332 [WARNING] Quarantined: /app/quarantine/quarantine_Detect_PE_File.eml | Threats: Detect_PE_File
+2025-05-18 15:51:06,337 [INFO] ('172.20.0.100', 53372) >> b'QUIT'
+2025-05-18 15:51:06,338 [INFO] ('172.20.0.100', 53372) connection lost
+2025-05-18 15:51:06,339 [INFO] ('172.20.0.100', 53372) Connection lost during _handle_client()
+2025-05-18 15:51:06,562 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:06,563 [INFO] Peer: ('172.20.0.100', 53382)
+2025-05-18 15:51:06,565 [INFO] ('172.20.0.100', 53382) handling connection
+2025-05-18 15:51:06,566 [INFO] ('172.20.0.100', 53382) >> b'EHLO email-threat-docker.local'
+2025-05-18 15:51:06,567 [INFO] ('172.20.0.100', 53382) >> b'MAIL FROM:<info@company.com> SIZE=891'
+2025-05-18 15:51:06,569 [INFO] ('172.20.0.100', 53382) sender: info@company.com
+2025-05-18 15:51:06,570 [INFO] ('172.20.0.100', 53382) >> b'RCPT TO:<recipient@email-threat-docker.local>'
+2025-05-18 15:51:06,571 [INFO] Accepted recipient: recipient@email-threat-docker.local
+2025-05-18 15:51:06,572 [INFO] ('172.20.0.100', 53382) recip: recipient@email-threat-docker.local
+2025-05-18 15:51:06,573 [INFO] ('172.20.0.100', 53382) >> b'DATA'
+2025-05-18 15:51:06,579 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection2.eml | Threats: Phishing_URL_Detection2
+2025-05-18 15:51:06,584 [INFO] ('172.20.0.100', 53382) >> b'QUIT'
+2025-05-18 15:51:06,585 [INFO] ('172.20.0.100', 53382) connection lost
+2025-05-18 15:51:06,585 [INFO] ('172.20.0.100', 53382) Connection lost during _handle_client()
+2025-05-18 15:51:11,343 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:11,345 [INFO] Peer: ('127.0.0.1', 56790)
+2025-05-18 15:51:11,346 [INFO] ('127.0.0.1', 56790) handling connection
+2025-05-18 15:51:11,347 [INFO] ('127.0.0.1', 56790) EOF received
+2025-05-18 15:51:11,348 [INFO] ('127.0.0.1', 56790) Connection lost during _handle_client()
+2025-05-18 15:51:11,349 [INFO] ('127.0.0.1', 56790) connection lost
+2025-05-18 15:51:16,452 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:16,454 [INFO] Peer: ('127.0.0.1', 56804)
+2025-05-18 15:51:16,455 [INFO] ('127.0.0.1', 56804) handling connection
+2025-05-18 15:51:16,456 [INFO] ('127.0.0.1', 56804) EOF received
+2025-05-18 15:51:16,457 [INFO] ('127.0.0.1', 56804) Connection lost during _handle_client()
+2025-05-18 15:51:16,458 [INFO] ('127.0.0.1', 56804) connection lost
+2025-05-18 15:51:21,536 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:21,537 [INFO] Peer: ('127.0.0.1', 47290)
+2025-05-18 15:51:21,539 [INFO] ('127.0.0.1', 47290) handling connection
+2025-05-18 15:51:21,540 [INFO] ('127.0.0.1', 47290) EOF received
+2025-05-18 15:51:21,541 [INFO] ('127.0.0.1', 47290) Connection lost during _handle_client()
+2025-05-18 15:51:21,542 [INFO] ('127.0.0.1', 47290) connection lost
+2025-05-18 15:51:26,622 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:26,624 [INFO] Peer: ('127.0.0.1', 47302)
+2025-05-18 15:51:26,625 [INFO] ('127.0.0.1', 47302) handling connection
+2025-05-18 15:51:26,626 [INFO] ('127.0.0.1', 47302) EOF received
+2025-05-18 15:51:26,627 [INFO] ('127.0.0.1', 47302) Connection lost during _handle_client()
+2025-05-18 15:51:26,628 [INFO] ('127.0.0.1', 47302) connection lost
+2025-05-18 15:51:31,724 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:31,725 [INFO] Peer: ('127.0.0.1', 57172)
+2025-05-18 15:51:31,726 [INFO] ('127.0.0.1', 57172) handling connection
+2025-05-18 15:51:31,727 [INFO] ('127.0.0.1', 57172) EOF received
+2025-05-18 15:51:31,728 [INFO] ('127.0.0.1', 57172) Connection lost during _handle_client()
+2025-05-18 15:51:31,730 [INFO] ('127.0.0.1', 57172) connection lost
+2025-05-18 15:51:34,762 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:34,764 [INFO] Peer: ('127.0.0.1', 57184)
+2025-05-18 15:51:34,765 [INFO] ('127.0.0.1', 57184) handling connection
+2025-05-18 15:51:34,766 [INFO] ('127.0.0.1', 57184) EOF received
+2025-05-18 15:51:34,767 [INFO] ('127.0.0.1', 57184) Connection lost during _handle_client()
+2025-05-18 15:51:34,768 [INFO] ('127.0.0.1', 57184) connection lost
+2025-05-18 15:51:39,848 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:39,849 [INFO] Peer: ('127.0.0.1', 47088)
+2025-05-18 15:51:39,850 [INFO] ('127.0.0.1', 47088) handling connection
+2025-05-18 15:51:39,851 [INFO] ('127.0.0.1', 47088) EOF received
+2025-05-18 15:51:39,852 [INFO] ('127.0.0.1', 47088) Connection lost during _handle_client()
+2025-05-18 15:51:39,853 [INFO] ('127.0.0.1', 47088) connection lost
+2025-05-18 15:51:44,927 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:44,928 [INFO] Peer: ('127.0.0.1', 47104)
+2025-05-18 15:51:44,929 [INFO] ('127.0.0.1', 47104) handling connection
+2025-05-18 15:51:44,930 [INFO] ('127.0.0.1', 47104) EOF received
+2025-05-18 15:51:44,931 [INFO] ('127.0.0.1', 47104) Connection lost during _handle_client()
+2025-05-18 15:51:44,932 [INFO] ('127.0.0.1', 47104) connection lost
+2025-05-18 15:51:50,015 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:50,017 [INFO] Peer: ('127.0.0.1', 59364)
+2025-05-18 15:51:50,018 [INFO] ('127.0.0.1', 59364) handling connection
+2025-05-18 15:51:50,019 [INFO] ('127.0.0.1', 59364) EOF received
+2025-05-18 15:51:50,020 [INFO] ('127.0.0.1', 59364) Connection lost during _handle_client()
+2025-05-18 15:51:50,022 [INFO] ('127.0.0.1', 59364) connection lost
+2025-05-18 15:51:55,093 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:51:55,095 [INFO] Peer: ('127.0.0.1', 59368)
+2025-05-18 15:51:55,096 [INFO] ('127.0.0.1', 59368) handling connection
+2025-05-18 15:51:55,097 [INFO] ('127.0.0.1', 59368) EOF received
+2025-05-18 15:51:55,098 [INFO] ('127.0.0.1', 59368) Connection lost during _handle_client()
+2025-05-18 15:51:55,099 [INFO] ('127.0.0.1', 59368) connection lost
+2025-05-18 15:52:00,189 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:52:00,191 [INFO] Peer: ('127.0.0.1', 40306)
+2025-05-18 15:52:00,192 [INFO] ('127.0.0.1', 40306) handling connection
+2025-05-18 15:52:00,192 [INFO] ('127.0.0.1', 40306) EOF received
+2025-05-18 15:52:00,193 [INFO] ('127.0.0.1', 40306) Connection lost during _handle_client()
+2025-05-18 15:52:00,194 [INFO] ('127.0.0.1', 40306) connection lost
+2025-05-18 15:52:03,186 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:52:03,187 [INFO] Peer: ('127.0.0.1', 40312)
+2025-05-18 15:52:03,188 [INFO] ('127.0.0.1', 40312) handling connection
+2025-05-18 15:52:03,189 [INFO] ('127.0.0.1', 40312) EOF received
+2025-05-18 15:52:03,190 [INFO] ('127.0.0.1', 40312) Connection lost during _handle_client()
+2025-05-18 15:52:03,191 [INFO] ('127.0.0.1', 40312) connection lost
+2025-05-18 15:52:08,277 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:52:08,278 [INFO] Peer: ('127.0.0.1', 37626)
+2025-05-18 15:52:08,279 [INFO] ('127.0.0.1', 37626) handling connection
+2025-05-18 15:52:08,280 [INFO] ('127.0.0.1', 37626) EOF received
+2025-05-18 15:52:08,281 [INFO] ('127.0.0.1', 37626) Connection lost during _handle_client()
+2025-05-18 15:52:08,282 [INFO] ('127.0.0.1', 37626) connection lost
+2025-05-18 15:52:13,356 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:52:13,357 [INFO] Peer: ('127.0.0.1', 37628)
+2025-05-18 15:52:13,358 [INFO] ('127.0.0.1', 37628) handling connection
+2025-05-18 15:52:13,359 [INFO] ('127.0.0.1', 37628) EOF received
+2025-05-18 15:52:13,360 [INFO] ('127.0.0.1', 37628) Connection lost during _handle_client()
+2025-05-18 15:52:13,361 [INFO] ('127.0.0.1', 37628) connection lost
+2025-05-18 15:52:18,458 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:52:18,459 [INFO] Peer: ('127.0.0.1', 36754)
+2025-05-18 15:52:18,460 [INFO] ('127.0.0.1', 36754) handling connection
+2025-05-18 15:52:18,461 [INFO] ('127.0.0.1', 36754) EOF received
+2025-05-18 15:52:18,462 [INFO] ('127.0.0.1', 36754) Connection lost during _handle_client()
+2025-05-18 15:52:18,463 [INFO] ('127.0.0.1', 36754) connection lost
+2025-05-18 15:52:23,565 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:52:23,567 [INFO] Peer: ('127.0.0.1', 36768)
+2025-05-18 15:52:23,568 [INFO] ('127.0.0.1', 36768) handling connection
+2025-05-18 15:52:23,570 [INFO] ('127.0.0.1', 36768) EOF received
+2025-05-18 15:52:23,571 [INFO] ('127.0.0.1', 36768) Connection lost during _handle_client()
+2025-05-18 15:52:23,572 [INFO] ('127.0.0.1', 36768) connection lost
+2025-05-18 15:52:28,652 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:52:28,653 [INFO] Peer: ('127.0.0.1', 51808)
+2025-05-18 15:52:28,654 [INFO] ('127.0.0.1', 51808) handling connection
+2025-05-18 15:52:28,655 [INFO] ('127.0.0.1', 51808) EOF received
+2025-05-18 15:52:28,656 [INFO] ('127.0.0.1', 51808) Connection lost during _handle_client()
+2025-05-18 15:52:28,657 [INFO] ('127.0.0.1', 51808) connection lost
+2025-05-18 15:52:31,692 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:52:31,694 [INFO] Peer: ('127.0.0.1', 51816)
+2025-05-18 15:52:31,695 [INFO] ('127.0.0.1', 51816) handling connection
+2025-05-18 15:52:31,696 [INFO] ('127.0.0.1', 51816) EOF received
+2025-05-18 15:52:31,697 [INFO] ('127.0.0.1', 51816) Connection lost during _handle_client()
+2025-05-18 15:52:31,698 [INFO] ('127.0.0.1', 51816) connection lost
+2025-05-18 15:52:36,798 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:52:36,799 [INFO] Peer: ('127.0.0.1', 39114)
+2025-05-18 15:52:36,801 [INFO] ('127.0.0.1', 39114) handling connection
+2025-05-18 15:52:36,802 [INFO] ('127.0.0.1', 39114) EOF received
+2025-05-18 15:52:36,803 [INFO] ('127.0.0.1', 39114) Connection lost during _handle_client()
+2025-05-18 15:52:36,804 [INFO] ('127.0.0.1', 39114) connection lost
+2025-05-18 15:52:41,912 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:52:41,913 [INFO] Peer: ('127.0.0.1', 39122)
+2025-05-18 15:52:41,914 [INFO] ('127.0.0.1', 39122) handling connection
+2025-05-18 15:52:41,915 [INFO] ('127.0.0.1', 39122) EOF received
+2025-05-18 15:52:41,916 [INFO] ('127.0.0.1', 39122) Connection lost during _handle_client()
+2025-05-18 15:52:41,917 [INFO] ('127.0.0.1', 39122) connection lost
+2025-05-18 15:52:47,049 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:52:47,050 [INFO] Peer: ('127.0.0.1', 38186)
+2025-05-18 15:52:47,052 [INFO] ('127.0.0.1', 38186) handling connection
+2025-05-18 15:52:47,053 [INFO] ('127.0.0.1', 38186) EOF received
+2025-05-18 15:52:47,054 [INFO] ('127.0.0.1', 38186) Connection lost during _handle_client()
+2025-05-18 15:52:47,055 [INFO] ('127.0.0.1', 38186) connection lost
+2025-05-18 15:52:52,151 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:52:52,152 [INFO] Peer: ('127.0.0.1', 38198)
+2025-05-18 15:52:52,153 [INFO] ('127.0.0.1', 38198) handling connection
+2025-05-18 15:52:52,154 [INFO] ('127.0.0.1', 38198) EOF received
+2025-05-18 15:52:52,155 [INFO] ('127.0.0.1', 38198) Connection lost during _handle_client()
+2025-05-18 15:52:52,156 [INFO] ('127.0.0.1', 38198) connection lost
+2025-05-18 15:52:57,238 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:52:57,239 [INFO] Peer: ('127.0.0.1', 38582)
+2025-05-18 15:52:57,240 [INFO] ('127.0.0.1', 38582) handling connection
+2025-05-18 15:52:57,241 [INFO] ('127.0.0.1', 38582) EOF received
+2025-05-18 15:52:57,242 [INFO] ('127.0.0.1', 38582) Connection lost during _handle_client()
+2025-05-18 15:52:57,243 [INFO] ('127.0.0.1', 38582) connection lost
+2025-05-18 15:53:00,252 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:53:00,254 [INFO] Peer: ('127.0.0.1', 38588)
+2025-05-18 15:53:00,255 [INFO] ('127.0.0.1', 38588) handling connection
+2025-05-18 15:53:00,256 [INFO] ('127.0.0.1', 38588) EOF received
+2025-05-18 15:53:00,257 [INFO] ('127.0.0.1', 38588) Connection lost during _handle_client()
+2025-05-18 15:53:00,258 [INFO] ('127.0.0.1', 38588) connection lost
+2025-05-18 15:53:05,350 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:53:05,352 [INFO] Peer: ('127.0.0.1', 36652)
+2025-05-18 15:53:05,353 [INFO] ('127.0.0.1', 36652) handling connection
+2025-05-18 15:53:05,355 [INFO] ('127.0.0.1', 36652) EOF received
+2025-05-18 15:53:05,356 [INFO] ('127.0.0.1', 36652) Connection lost during _handle_client()
+2025-05-18 15:53:05,357 [INFO] ('127.0.0.1', 36652) connection lost
+2025-05-18 15:53:10,463 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:53:10,464 [INFO] Peer: ('127.0.0.1', 36656)
+2025-05-18 15:53:10,465 [INFO] ('127.0.0.1', 36656) handling connection
+2025-05-18 15:53:10,466 [INFO] ('127.0.0.1', 36656) EOF received
+2025-05-18 15:53:10,467 [INFO] ('127.0.0.1', 36656) Connection lost during _handle_client()
+2025-05-18 15:53:10,468 [INFO] ('127.0.0.1', 36656) connection lost
+2025-05-18 15:53:15,646 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:53:15,648 [INFO] Peer: ('127.0.0.1', 38594)
+2025-05-18 15:53:15,652 [INFO] ('127.0.0.1', 38594) handling connection
+2025-05-18 15:53:15,653 [INFO] ('127.0.0.1', 38594) EOF received
+2025-05-18 15:53:15,654 [INFO] ('127.0.0.1', 38594) Connection lost during _handle_client()
+2025-05-18 15:53:15,655 [INFO] ('127.0.0.1', 38594) connection lost
+2025-05-18 15:53:20,757 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:53:20,759 [INFO] Peer: ('127.0.0.1', 38598)
+2025-05-18 15:53:20,760 [INFO] ('127.0.0.1', 38598) handling connection
+2025-05-18 15:53:20,761 [INFO] ('127.0.0.1', 38598) EOF received
+2025-05-18 15:53:20,762 [INFO] ('127.0.0.1', 38598) Connection lost during _handle_client()
+2025-05-18 15:53:20,764 [INFO] ('127.0.0.1', 38598) connection lost
+2025-05-18 15:53:25,858 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:53:25,860 [INFO] Peer: ('127.0.0.1', 38164)
+2025-05-18 15:53:25,861 [INFO] ('127.0.0.1', 38164) handling connection
+2025-05-18 15:53:25,863 [INFO] ('127.0.0.1', 38164) EOF received
+2025-05-18 15:53:25,864 [INFO] ('127.0.0.1', 38164) Connection lost during _handle_client()
+2025-05-18 15:53:25,865 [INFO] ('127.0.0.1', 38164) connection lost
+2025-05-18 15:53:28,872 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:53:28,873 [INFO] Peer: ('127.0.0.1', 38172)
+2025-05-18 15:53:28,874 [INFO] ('127.0.0.1', 38172) handling connection
+2025-05-18 15:53:28,876 [INFO] ('127.0.0.1', 38172) EOF received
+2025-05-18 15:53:28,876 [INFO] ('127.0.0.1', 38172) Connection lost during _handle_client()
+2025-05-18 15:53:28,877 [INFO] ('127.0.0.1', 38172) connection lost
+2025-05-18 15:53:33,981 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:53:33,983 [INFO] Peer: ('127.0.0.1', 49342)
+2025-05-18 15:53:33,984 [INFO] ('127.0.0.1', 49342) handling connection
+2025-05-18 15:53:33,985 [INFO] ('127.0.0.1', 49342) EOF received
+2025-05-18 15:53:33,986 [INFO] ('127.0.0.1', 49342) Connection lost during _handle_client()
+2025-05-18 15:53:33,987 [INFO] ('127.0.0.1', 49342) connection lost
+2025-05-18 15:53:39,067 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:53:39,068 [INFO] Peer: ('127.0.0.1', 59062)
+2025-05-18 15:53:39,070 [INFO] ('127.0.0.1', 59062) handling connection
+2025-05-18 15:53:39,071 [INFO] ('127.0.0.1', 59062) EOF received
+2025-05-18 15:53:39,072 [INFO] ('127.0.0.1', 59062) Connection lost during _handle_client()
+2025-05-18 15:53:39,073 [INFO] ('127.0.0.1', 59062) connection lost
+2025-05-18 15:53:44,161 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:53:44,163 [INFO] Peer: ('127.0.0.1', 59070)
+2025-05-18 15:53:44,164 [INFO] ('127.0.0.1', 59070) handling connection
+2025-05-18 15:53:44,165 [INFO] ('127.0.0.1', 59070) EOF received
+2025-05-18 15:53:44,166 [INFO] ('127.0.0.1', 59070) Connection lost during _handle_client()
+2025-05-18 15:53:44,167 [INFO] ('127.0.0.1', 59070) connection lost
+2025-05-18 15:53:49,243 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:53:49,244 [INFO] Peer: ('127.0.0.1', 51596)
+2025-05-18 15:53:49,246 [INFO] ('127.0.0.1', 51596) handling connection
+2025-05-18 15:53:49,247 [INFO] ('127.0.0.1', 51596) EOF received
+2025-05-18 15:53:49,248 [INFO] ('127.0.0.1', 51596) Connection lost during _handle_client()
+2025-05-18 15:53:49,249 [INFO] ('127.0.0.1', 51596) connection lost
+2025-05-18 15:53:54,331 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:53:54,333 [INFO] Peer: ('127.0.0.1', 51598)
+2025-05-18 15:53:54,334 [INFO] ('127.0.0.1', 51598) handling connection
+2025-05-18 15:53:54,336 [INFO] ('127.0.0.1', 51598) EOF received
+2025-05-18 15:53:54,336 [INFO] ('127.0.0.1', 51598) Connection lost during _handle_client()
+2025-05-18 15:53:54,337 [INFO] ('127.0.0.1', 51598) connection lost
+2025-05-18 15:53:57,401 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:53:57,405 [INFO] Peer: ('127.0.0.1', 41790)
+2025-05-18 15:53:57,406 [INFO] ('127.0.0.1', 41790) handling connection
+2025-05-18 15:53:57,408 [INFO] ('127.0.0.1', 41790) EOF received
+2025-05-18 15:53:57,409 [INFO] ('127.0.0.1', 41790) Connection lost during _handle_client()
+2025-05-18 15:53:57,410 [INFO] ('127.0.0.1', 41790) connection lost
+2025-05-18 15:54:02,498 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:54:02,499 [INFO] Peer: ('127.0.0.1', 41804)
+2025-05-18 15:54:02,500 [INFO] ('127.0.0.1', 41804) handling connection
+2025-05-18 15:54:02,501 [INFO] ('127.0.0.1', 41804) EOF received
+2025-05-18 15:54:02,503 [INFO] ('127.0.0.1', 41804) Connection lost during _handle_client()
+2025-05-18 15:54:02,504 [INFO] ('127.0.0.1', 41804) connection lost
+2025-05-18 15:54:07,605 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:54:07,607 [INFO] Peer: ('127.0.0.1', 56400)
+2025-05-18 15:54:07,608 [INFO] ('127.0.0.1', 56400) handling connection
+2025-05-18 15:54:07,609 [INFO] ('127.0.0.1', 56400) EOF received
+2025-05-18 15:54:07,610 [INFO] ('127.0.0.1', 56400) Connection lost during _handle_client()
+2025-05-18 15:54:07,612 [INFO] ('127.0.0.1', 56400) connection lost
+2025-05-18 15:54:12,698 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:54:12,699 [INFO] Peer: ('127.0.0.1', 56416)
+2025-05-18 15:54:12,700 [INFO] ('127.0.0.1', 56416) handling connection
+2025-05-18 15:54:12,701 [INFO] ('127.0.0.1', 56416) EOF received
+2025-05-18 15:54:12,702 [INFO] ('127.0.0.1', 56416) Connection lost during _handle_client()
+2025-05-18 15:54:12,703 [INFO] ('127.0.0.1', 56416) connection lost
+2025-05-18 15:54:17,787 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:54:17,788 [INFO] Peer: ('127.0.0.1', 47764)
+2025-05-18 15:54:17,790 [INFO] ('127.0.0.1', 47764) handling connection
+2025-05-18 15:54:17,791 [INFO] ('127.0.0.1', 47764) EOF received
+2025-05-18 15:54:17,792 [INFO] ('127.0.0.1', 47764) Connection lost during _handle_client()
+2025-05-18 15:54:17,793 [INFO] ('127.0.0.1', 47764) connection lost
+2025-05-18 15:54:22,870 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:54:22,871 [INFO] Peer: ('127.0.0.1', 47776)
+2025-05-18 15:54:22,872 [INFO] ('127.0.0.1', 47776) handling connection
+2025-05-18 15:54:22,873 [INFO] ('127.0.0.1', 47776) EOF received
+2025-05-18 15:54:22,874 [INFO] ('127.0.0.1', 47776) Connection lost during _handle_client()
+2025-05-18 15:54:22,875 [INFO] ('127.0.0.1', 47776) connection lost
+2025-05-18 15:54:25,861 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:54:25,862 [INFO] Peer: ('127.0.0.1', 60098)
+2025-05-18 15:54:25,864 [INFO] ('127.0.0.1', 60098) handling connection
+2025-05-18 15:54:25,865 [INFO] ('127.0.0.1', 60098) EOF received
+2025-05-18 15:54:25,866 [INFO] ('127.0.0.1', 60098) Connection lost during _handle_client()
+2025-05-18 15:54:25,867 [INFO] ('127.0.0.1', 60098) connection lost
+2025-05-18 15:54:30,964 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:54:30,965 [INFO] Peer: ('127.0.0.1', 60114)
+2025-05-18 15:54:30,966 [INFO] ('127.0.0.1', 60114) handling connection
+2025-05-18 15:54:30,968 [INFO] ('127.0.0.1', 60114) EOF received
+2025-05-18 15:54:30,969 [INFO] ('127.0.0.1', 60114) Connection lost during _handle_client()
+2025-05-18 15:54:30,970 [INFO] ('127.0.0.1', 60114) connection lost
+2025-05-18 15:54:36,050 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:54:36,052 [INFO] Peer: ('127.0.0.1', 33792)
+2025-05-18 15:54:36,053 [INFO] ('127.0.0.1', 33792) handling connection
+2025-05-18 15:54:36,054 [INFO] ('127.0.0.1', 33792) EOF received
+2025-05-18 15:54:36,055 [INFO] ('127.0.0.1', 33792) Connection lost during _handle_client()
+2025-05-18 15:54:36,056 [INFO] ('127.0.0.1', 33792) connection lost
+2025-05-18 15:54:41,169 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:54:41,171 [INFO] Peer: ('127.0.0.1', 33794)
+2025-05-18 15:54:41,172 [INFO] ('127.0.0.1', 33794) handling connection
+2025-05-18 15:54:41,173 [INFO] ('127.0.0.1', 33794) EOF received
+2025-05-18 15:54:41,174 [INFO] ('127.0.0.1', 33794) Connection lost during _handle_client()
+2025-05-18 15:54:41,175 [INFO] ('127.0.0.1', 33794) connection lost
+2025-05-18 15:54:46,306 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:54:46,307 [INFO] Peer: ('127.0.0.1', 56814)
+2025-05-18 15:54:46,309 [INFO] ('127.0.0.1', 56814) handling connection
+2025-05-18 15:54:46,310 [INFO] ('127.0.0.1', 56814) EOF received
+2025-05-18 15:54:46,311 [INFO] ('127.0.0.1', 56814) Connection lost during _handle_client()
+2025-05-18 15:54:46,313 [INFO] ('127.0.0.1', 56814) connection lost
+2025-05-18 15:54:50,675 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:54:50,676 [INFO] Peer: ('127.0.0.1', 56816)
+2025-05-18 15:54:50,677 [INFO] ('127.0.0.1', 56816) handling connection
+2025-05-18 15:54:50,678 [INFO] ('127.0.0.1', 56816) EOF received
+2025-05-18 15:54:50,679 [INFO] ('127.0.0.1', 56816) Connection lost during _handle_client()
+2025-05-18 15:54:50,680 [INFO] ('127.0.0.1', 56816) connection lost
+2025-05-18 15:54:54,437 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:54:54,438 [INFO] Peer: ('127.0.0.1', 32840)
+2025-05-18 15:54:54,439 [INFO] ('127.0.0.1', 32840) handling connection
+2025-05-18 15:54:54,440 [INFO] ('127.0.0.1', 32840) EOF received
+2025-05-18 15:54:54,441 [INFO] ('127.0.0.1', 32840) Connection lost during _handle_client()
+2025-05-18 15:54:54,442 [INFO] ('127.0.0.1', 32840) connection lost
+2025-05-18 15:54:59,551 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:54:59,552 [INFO] Peer: ('127.0.0.1', 32850)
+2025-05-18 15:54:59,553 [INFO] ('127.0.0.1', 32850) handling connection
+2025-05-18 15:54:59,554 [INFO] ('127.0.0.1', 32850) EOF received
+2025-05-18 15:54:59,555 [INFO] ('127.0.0.1', 32850) Connection lost during _handle_client()
+2025-05-18 15:54:59,556 [INFO] ('127.0.0.1', 32850) connection lost
+2025-05-18 15:55:04,641 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:55:04,643 [INFO] Peer: ('127.0.0.1', 58608)
+2025-05-18 15:55:04,644 [INFO] ('127.0.0.1', 58608) handling connection
+2025-05-18 15:55:04,645 [INFO] ('127.0.0.1', 58608) EOF received
+2025-05-18 15:55:04,646 [INFO] ('127.0.0.1', 58608) Connection lost during _handle_client()
+2025-05-18 15:55:04,647 [INFO] ('127.0.0.1', 58608) connection lost
+2025-05-18 15:55:09,743 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:55:09,744 [INFO] Peer: ('127.0.0.1', 58620)
+2025-05-18 15:55:09,745 [INFO] ('127.0.0.1', 58620) handling connection
+2025-05-18 15:55:09,746 [INFO] ('127.0.0.1', 58620) EOF received
+2025-05-18 15:55:09,748 [INFO] ('127.0.0.1', 58620) Connection lost during _handle_client()
+2025-05-18 15:55:09,749 [INFO] ('127.0.0.1', 58620) connection lost
+2025-05-18 15:55:14,888 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:55:14,890 [INFO] Peer: ('127.0.0.1', 42790)
+2025-05-18 15:55:14,891 [INFO] ('127.0.0.1', 42790) handling connection
+2025-05-18 15:55:14,893 [INFO] ('127.0.0.1', 42790) EOF received
+2025-05-18 15:55:14,894 [INFO] ('127.0.0.1', 42790) Connection lost during _handle_client()
+2025-05-18 15:55:14,897 [INFO] ('127.0.0.1', 42790) connection lost
+2025-05-18 15:55:17,880 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:55:17,881 [INFO] Peer: ('127.0.0.1', 42798)
+2025-05-18 15:55:17,882 [INFO] ('127.0.0.1', 42798) handling connection
+2025-05-18 15:55:17,883 [INFO] ('127.0.0.1', 42798) EOF received
+2025-05-18 15:55:17,885 [INFO] ('127.0.0.1', 42798) Connection lost during _handle_client()
+2025-05-18 15:55:17,886 [INFO] ('127.0.0.1', 42798) connection lost
+2025-05-18 15:55:23,066 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:55:23,067 [INFO] Peer: ('127.0.0.1', 45652)
+2025-05-18 15:55:23,068 [INFO] ('127.0.0.1', 45652) handling connection
+2025-05-18 15:55:23,069 [INFO] ('127.0.0.1', 45652) EOF received
+2025-05-18 15:55:23,070 [INFO] ('127.0.0.1', 45652) Connection lost during _handle_client()
+2025-05-18 15:55:23,071 [INFO] ('127.0.0.1', 45652) connection lost
+2025-05-18 15:55:28,172 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:55:28,174 [INFO] Peer: ('127.0.0.1', 45658)
+2025-05-18 15:55:28,175 [INFO] ('127.0.0.1', 45658) handling connection
+2025-05-18 15:55:28,177 [INFO] ('127.0.0.1', 45658) EOF received
+2025-05-18 15:55:28,178 [INFO] ('127.0.0.1', 45658) Connection lost during _handle_client()
+2025-05-18 15:55:28,179 [INFO] ('127.0.0.1', 45658) connection lost
+2025-05-18 15:55:33,270 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:55:33,271 [INFO] Peer: ('127.0.0.1', 42354)
+2025-05-18 15:55:33,272 [INFO] ('127.0.0.1', 42354) handling connection
+2025-05-18 15:55:33,273 [INFO] ('127.0.0.1', 42354) EOF received
+2025-05-18 15:55:33,273 [INFO] ('127.0.0.1', 42354) Connection lost during _handle_client()
+2025-05-18 15:55:33,274 [INFO] ('127.0.0.1', 42354) connection lost
+2025-05-18 15:55:38,353 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:55:38,355 [INFO] Peer: ('127.0.0.1', 42356)
+2025-05-18 15:55:38,356 [INFO] ('127.0.0.1', 42356) handling connection
+2025-05-18 15:55:38,357 [INFO] ('127.0.0.1', 42356) EOF received
+2025-05-18 15:55:38,358 [INFO] ('127.0.0.1', 42356) Connection lost during _handle_client()
+2025-05-18 15:55:38,359 [INFO] ('127.0.0.1', 42356) connection lost
+2025-05-18 15:55:43,439 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:55:43,441 [INFO] Peer: ('127.0.0.1', 51282)
+2025-05-18 15:55:43,442 [INFO] ('127.0.0.1', 51282) handling connection
+2025-05-18 15:55:43,442 [INFO] ('127.0.0.1', 51282) EOF received
+2025-05-18 15:55:43,443 [INFO] ('127.0.0.1', 51282) Connection lost during _handle_client()
+2025-05-18 15:55:43,444 [INFO] ('127.0.0.1', 51282) connection lost
+2025-05-18 15:55:46,476 [INFO] Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-05-18 15:55:46,478 [INFO] Peer: ('127.0.0.1', 51298)
+2025-05-18 15:55:46,479 [INFO] ('127.0.0.1', 51298) handling connection
+2025-05-18 15:55:46,480 [INFO] ('127.0.0.1', 51298) EOF received
+2025-05-18 15:55:46,481 [INFO] ('127.0.0.1', 51298) Connection lost during _handle_client()
+2025-05-18 15:55:46,481 [INFO] ('127.0.0.1', 51298) connection lost
+2025-05-18 15:56:39,466 [INFO] Starting YARA-only scanner on 0.0.0.0:10025
+2025-05-18 15:58:18,986 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection2.eml | Threats: Phishing_URL_Detection2
+2025-05-18 15:58:19,219 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection2.eml | Threats: Phishing_URL_Detection2
+2025-05-18 15:58:19,502 [INFO] Email reinjected successfully
+2025-05-18 15:58:19,743 [INFO] Email reinjected successfully
+2025-05-18 15:58:19,992 [INFO] Email reinjected successfully
+2025-05-18 15:58:20,241 [INFO] Email reinjected successfully
+2025-05-18 15:58:20,489 [INFO] Email reinjected successfully
+2025-05-18 15:58:20,761 [INFO] Email reinjected successfully
+2025-05-18 15:58:21,015 [INFO] Email reinjected successfully
+2025-05-18 15:58:21,267 [INFO] Email reinjected successfully
+2025-05-18 15:58:21,517 [INFO] Email reinjected successfully
+2025-05-18 15:58:21,774 [INFO] Email reinjected successfully
+2025-05-18 15:58:22,033 [INFO] Email reinjected successfully
+2025-05-18 15:58:22,288 [INFO] Email reinjected successfully
+2025-05-18 15:58:22,538 [INFO] Email reinjected successfully
+2025-05-18 15:58:22,785 [INFO] Email reinjected successfully
+2025-05-18 15:58:23,039 [INFO] Email reinjected successfully
+2025-05-18 15:58:23,296 [INFO] Email reinjected successfully
+2025-05-18 15:58:23,562 [INFO] Email reinjected successfully
+2025-05-18 15:58:23,802 [INFO] Email reinjected successfully
+2025-05-18 15:58:24,041 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection.eml | Threats: Phishing_URL_Detection, Phishing_URL_Detection2
+2025-05-18 15:58:24,289 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection2.eml | Threats: Phishing_URL_Detection2
+2025-05-18 15:58:24,535 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection.eml | Threats: Phishing_URL_Detection, Phishing_URL_Detection2
+2025-05-18 15:58:24,780 [WARNING] Quarantined: /app/quarantine/quarantine_Password_Hint_Detected.eml | Threats: Password_Hint_Detected, Phishing_URL_Detection2
+2025-05-18 15:58:25,030 [WARNING] Quarantined: /app/quarantine/quarantine_Malicious_Attachment_Detection.eml | Threats: Malicious_Attachment_Detection
+2025-05-18 15:58:25,275 [WARNING] Quarantined: /app/quarantine/quarantine_EICAR_Test_File.eml | Threats: EICAR_Test_File
+2025-05-18 15:58:25,539 [INFO] Email reinjected successfully
+2025-05-18 15:58:25,772 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection2.eml | Threats: Phishing_URL_Detection2, URL_Encoding_Evasion
+2025-05-18 15:58:26,019 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection.eml | Threats: Phishing_URL_Detection, Phishing_URL_Detection2
+2025-05-18 15:58:26,267 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection2.eml | Threats: Phishing_URL_Detection2
+2025-05-18 15:58:26,528 [INFO] Email reinjected successfully
+2025-05-18 15:58:26,763 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection.eml | Threats: Phishing_URL_Detection, Phishing_URL_Detection2
+2025-05-18 15:58:27,009 [WARNING] Quarantined: /app/quarantine/quarantine_Password_Hint_Detected.eml | Threats: Password_Hint_Detected, Phishing_URL_Detection2
+2025-05-18 15:58:27,257 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection2.eml | Threats: Phishing_URL_Detection2
+2025-05-18 15:58:27,507 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection2.eml | Threats: Phishing_URL_Detection2
+2025-05-18 15:58:27,755 [WARNING] Quarantined: /app/quarantine/quarantine_Password_Hint_Detected.eml | Threats: Password_Hint_Detected, Phishing_URL_Detection2
+2025-05-18 15:58:28,001 [WARNING] Quarantined: /app/quarantine/quarantine_Gift_Card_Scam.eml | Threats: Gift_Card_Scam, Phishing_URL_Detection2
+2025-05-18 15:58:28,249 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection2.eml | Threats: Phishing_URL_Detection2, Survey_Lure
+2025-05-18 15:58:28,508 [INFO] Email reinjected successfully
+2025-05-18 15:58:28,771 [INFO] Email reinjected successfully
+2025-05-18 15:58:29,001 [WARNING] Quarantined: /app/quarantine/quarantine_Detect_PE_File.eml | Threats: Detect_PE_File
+2025-05-18 15:58:29,244 [WARNING] Quarantined: /app/quarantine/quarantine_JS_Malware_Trigger.eml | Threats: JS_Malware_Trigger, Phishing_URL_Detection, Phishing_URL_Detection2
+2025-05-18 15:58:29,494 [WARNING] Quarantined: /app/quarantine/quarantine_JS_Malware_Trigger.eml | Threats: JS_Malware_Trigger, Phishing_URL_Detection2
+2025-05-18 15:58:29,745 [WARNING] Quarantined: /app/quarantine/quarantine_Password_Hint_Detected.eml | Threats: Password_Hint_Detected, Password_Hint_Detected, URL_Encoding_Evasion
+2025-05-18 15:58:29,996 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection2.eml | Threats: Phishing_URL_Detection2, Suspicious_Urgency_Language
+2025-05-18 15:58:30,238 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection.eml | Threats: Phishing_URL_Detection, Phishing_URL_Detection2
+2025-05-18 15:58:30,487 [WARNING] Quarantined: /app/quarantine/quarantine_Detect_Zip_File.eml | Threats: Detect_Zip_File
+2025-05-18 15:58:30,737 [WARNING] Quarantined: /app/quarantine/quarantine_Detect_PE_File.eml | Threats: Detect_PE_File
+2025-05-18 15:58:30,992 [WARNING] Quarantined: /app/quarantine/quarantine_Phishing_URL_Detection2.eml | Threats: Phishing_URL_Detection2

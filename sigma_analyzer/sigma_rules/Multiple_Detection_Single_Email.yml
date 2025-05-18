@@ -1,0 +1,17 @@
+title: Multiple Threat Detection in Single Email
+id: b2c4d6e8-f1a3-45c7-9d8e-0f123456789a
+status: experimental
+description: Detects emails containing multiple distinct threats
+logsource:
+  product: email_security
+  service: scanner
+detection:
+  selection:
+    - '*Threats: *\S+, \S+*'  # Matches comma-separated threats
+  condition: selection
+fields:
+  - detected_threats
+  - quarantined_file
+falsepositives:
+  - Complex legitimate emails with multiple suspicious indicators
+level: medium

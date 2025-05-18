@@ -1,0 +1,17 @@
+title: Urgency-Based Phishing Attempt
+id: urgency-phishing-1234-5678-qrst
+status: experimental
+description: Detects emails using urgent language
+logsource:
+  product: email_security
+  service: scanner
+detection:
+  selection:
+    - '*Threats: Suspicious_Urgency_Language*'
+  condition: selection
+fields:
+  - quarantined_file
+  - detected_threats
+falsepositives:
+  - Legitimate time-sensitive communications
+level: medium

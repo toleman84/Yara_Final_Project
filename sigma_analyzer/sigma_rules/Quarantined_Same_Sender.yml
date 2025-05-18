@@ -1,0 +1,7 @@
+title: Multiple Quarantined Emails from Same Sender
+description: >-
+  5+ quarantined emails from same sender within 1 hour
+detection:
+  timeframe: 1h
+  count_field: sender
+  condition: count > 5

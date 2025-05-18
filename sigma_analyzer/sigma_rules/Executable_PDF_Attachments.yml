@@ -1,0 +1,6 @@
+title: Email with Executable + PDF Attachments
+detection:
+  selection:
+    - 'application/pdf' in attachments[].type
+    - 'application/x-dosexec' in attachments[].type
+  condition: all of selection

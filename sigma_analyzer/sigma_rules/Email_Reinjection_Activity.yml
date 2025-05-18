@@ -1,0 +1,16 @@
+title: Email Reinjection Activity
+id: email-reinjection-1234-5678-cdef
+status: experimental
+description: Detects successful email reinjections
+logsource:
+  product: email_security
+  service: scanner
+detection:
+  selection:
+    - '*Email reinjected successfully*'
+  condition: selection
+fields:
+  - log_message
+falsepositives:
+  - Normal system operation after cleaning legitimate emails
+level: low
