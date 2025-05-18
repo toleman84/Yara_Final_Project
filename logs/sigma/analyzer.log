@@ -177,3 +177,20 @@
 2025-05-18 08:33:21,269 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747578501213531136&end=1747578801213531136&limit=1000 HTTP/1.1" 200 None
 2025-05-18 08:33:21,271 INFO Found 0 matches for postfix_mass_mailing.logql
 2025-05-18 08:33:21,276 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 08:36:13,778 INFO Starting Sigma Analyzer
+2025-05-18 08:36:13,779 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 08:36:13,779 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 08:36:13,780 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 08:36:13,780 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 08:36:13,783 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 08:36:13,809 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747578673780730880&end=1747578973780730880&limit=1000 HTTP/1.1" 200 None
+2025-05-18 08:36:13,810 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 08:36:13,811 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 08:36:13,812 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 08:36:13,826 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747578673780730880&end=1747578973780730880&limit=1000 HTTP/1.1" 200 None
+2025-05-18 08:36:13,827 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 08:36:13,828 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 08:36:13,830 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 08:36:13,845 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747578673780730880&end=1747578973780730880&limit=1000 HTTP/1.1" 200 None
+2025-05-18 08:36:13,846 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 08:36:13,851 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
