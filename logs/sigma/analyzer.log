@@ -194,3 +194,734 @@
 2025-05-18 08:36:13,845 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747578673780730880&end=1747578973780730880&limit=1000 HTTP/1.1" 200 None
 2025-05-18 08:36:13,846 INFO Found 0 matches for postfix_mass_mailing.logql
 2025-05-18 08:36:13,851 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 08:40:57,128 INFO Starting Sigma Analyzer
+2025-05-18 08:40:57,131 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 08:40:57,132 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 08:40:57,134 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 08:40:57,135 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 08:40:57,140 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 08:40:57,169 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747578957135034112&end=1747579257135034112&limit=1000 HTTP/1.1" 200 None
+2025-05-18 08:40:57,171 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 08:40:57,171 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 08:40:57,173 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 08:40:57,188 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747578957135034112&end=1747579257135034112&limit=1000 HTTP/1.1" 200 None
+2025-05-18 08:40:57,189 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 08:40:57,190 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 08:40:57,192 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 08:40:57,210 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747578957135034112&end=1747579257135034112&limit=1000 HTTP/1.1" 200 None
+2025-05-18 08:40:57,211 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 08:40:57,214 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 08:45:40,350 INFO Starting Sigma Analyzer
+2025-05-18 08:45:40,352 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 08:45:40,353 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 08:45:40,354 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 08:45:40,355 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 08:45:40,359 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 08:45:40,387 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747579240355292928&end=1747579540355292928&limit=1000 HTTP/1.1" 200 None
+2025-05-18 08:45:40,388 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 08:45:40,389 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 08:45:40,391 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 08:45:40,409 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747579240355292928&end=1747579540355292928&limit=1000 HTTP/1.1" 200 None
+2025-05-18 08:45:40,411 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 08:45:40,411 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 08:45:40,413 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 08:45:40,430 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747579240355292928&end=1747579540355292928&limit=1000 HTTP/1.1" 200 None
+2025-05-18 08:45:40,432 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 08:45:40,435 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 08:50:23,460 INFO Starting Sigma Analyzer
+2025-05-18 08:50:23,463 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 08:50:23,465 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 08:50:23,466 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 08:50:23,467 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 08:50:23,471 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 08:50:23,489 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747579523467905024&end=1747579823467905024&limit=1000 HTTP/1.1" 200 None
+2025-05-18 08:50:23,491 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 08:50:23,492 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 08:50:23,494 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 08:50:23,516 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747579523467905024&end=1747579823467905024&limit=1000 HTTP/1.1" 200 None
+2025-05-18 08:50:23,517 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 08:50:23,517 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 08:50:23,519 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 08:50:23,533 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747579523467905024&end=1747579823467905024&limit=1000 HTTP/1.1" 200 None
+2025-05-18 08:50:23,535 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 08:50:23,538 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 08:55:06,443 INFO Starting Sigma Analyzer
+2025-05-18 08:55:06,447 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 08:55:06,448 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 08:55:06,448 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 08:55:06,449 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 08:55:06,456 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 08:55:06,475 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747579806449637888&end=1747580106449637888&limit=1000 HTTP/1.1" 200 None
+2025-05-18 08:55:06,477 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 08:55:06,478 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 08:55:06,479 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 08:55:06,491 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747579806449637888&end=1747580106449637888&limit=1000 HTTP/1.1" 200 None
+2025-05-18 08:55:06,493 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 08:55:06,494 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 08:55:06,496 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 08:55:06,510 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747579806449637888&end=1747580106449637888&limit=1000 HTTP/1.1" 200 None
+2025-05-18 08:55:06,511 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 08:55:06,514 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 08:59:49,379 INFO Starting Sigma Analyzer
+2025-05-18 08:59:49,380 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 08:59:49,381 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 08:59:49,382 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 08:59:49,383 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 08:59:49,385 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 08:59:49,399 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747580089383032064&end=1747580389383032064&limit=1000 HTTP/1.1" 200 None
+2025-05-18 08:59:49,400 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 08:59:49,401 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 08:59:49,402 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 08:59:49,416 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747580089383032064&end=1747580389383032064&limit=1000 HTTP/1.1" 200 None
+2025-05-18 08:59:49,417 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 08:59:49,418 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 08:59:49,420 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 08:59:49,438 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747580089383032064&end=1747580389383032064&limit=1000 HTTP/1.1" 200 None
+2025-05-18 08:59:49,439 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 08:59:49,442 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 09:04:32,288 INFO Starting Sigma Analyzer
+2025-05-18 09:04:32,291 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 09:04:32,292 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 09:04:32,293 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 09:04:32,294 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 09:04:32,300 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:04:32,330 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747580372294441984&end=1747580672294441984&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:04:32,331 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 09:04:32,332 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 09:04:32,333 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:04:32,356 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747580372294441984&end=1747580672294441984&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:04:32,357 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 09:04:32,358 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 09:04:32,360 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:04:32,386 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747580372294441984&end=1747580672294441984&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:04:32,387 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 09:04:32,391 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 09:09:15,210 INFO Starting Sigma Analyzer
+2025-05-18 09:09:15,212 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 09:09:15,213 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 09:09:15,214 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 09:09:15,215 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 09:09:15,219 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:09:15,238 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747580655215271936&end=1747580955215271936&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:09:15,239 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 09:09:15,240 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 09:09:15,242 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:09:15,256 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747580655215271936&end=1747580955215271936&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:09:15,257 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 09:09:15,258 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 09:09:15,259 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:09:15,275 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747580655215271936&end=1747580955215271936&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:09:15,276 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 09:09:15,280 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 09:13:57,775 INFO Starting Sigma Analyzer
+2025-05-18 09:13:57,778 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 09:13:57,779 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 09:13:57,780 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 09:13:57,781 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 09:13:57,784 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:13:57,803 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747580937780982016&end=1747581237780982016&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:13:57,805 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 09:13:57,805 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 09:13:57,807 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:13:57,820 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747580937780982016&end=1747581237780982016&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:13:57,821 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 09:13:57,822 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 09:13:57,823 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:13:57,837 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747580937780982016&end=1747581237780982016&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:13:57,838 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 09:13:57,841 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 09:18:39,480 INFO Starting Sigma Analyzer
+2025-05-18 09:18:39,483 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 09:18:39,484 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 09:18:39,485 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 09:18:39,486 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 09:18:39,489 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:18:39,511 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747581219486134016&end=1747581519486134016&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:18:39,513 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 09:18:39,514 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 09:18:39,516 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:18:39,534 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747581219486134016&end=1747581519486134016&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:18:39,536 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 09:18:39,536 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 09:18:39,539 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:18:39,560 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747581219486134016&end=1747581519486134016&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:18:39,561 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 09:18:39,566 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 09:23:21,223 INFO Starting Sigma Analyzer
+2025-05-18 09:23:21,226 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 09:23:21,227 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 09:23:21,227 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 09:23:21,228 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 09:23:21,231 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:23:21,247 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747581501228594176&end=1747581801228594176&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:23:21,249 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 09:23:21,249 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 09:23:21,250 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:23:21,264 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747581501228594176&end=1747581801228594176&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:23:21,265 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 09:23:21,265 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 09:23:21,267 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:23:21,280 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747581501228594176&end=1747581801228594176&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:23:21,281 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 09:23:21,284 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 09:28:02,757 INFO Starting Sigma Analyzer
+2025-05-18 09:28:02,759 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 09:28:02,760 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 09:28:02,761 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 09:28:02,762 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 09:28:02,766 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:28:02,787 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747581782762160128&end=1747582082762160128&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:28:02,788 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 09:28:02,789 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 09:28:02,790 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:28:02,805 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747581782762160128&end=1747582082762160128&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:28:02,806 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 09:28:02,807 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 09:28:02,808 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:28:02,822 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747581782762160128&end=1747582082762160128&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:28:02,824 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 09:28:02,827 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 09:32:43,946 INFO Starting Sigma Analyzer
+2025-05-18 09:32:43,949 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 09:32:43,950 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 09:32:43,950 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 09:32:43,951 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 09:32:43,954 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:32:43,975 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747582063951448064&end=1747582363951448064&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:32:43,977 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 09:32:43,977 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 09:32:43,979 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:32:43,995 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747582063951448064&end=1747582363951448064&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:32:43,997 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 09:32:43,997 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 09:32:43,999 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:32:44,014 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747582063951448064&end=1747582363951448064&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:32:44,015 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 09:32:44,018 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 09:37:24,919 INFO Starting Sigma Analyzer
+2025-05-18 09:37:24,921 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 09:37:24,922 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 09:37:24,923 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 09:37:24,925 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 09:37:24,928 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:37:24,950 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747582344925329920&end=1747582644925329920&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:37:24,951 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 09:37:24,952 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 09:37:24,954 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:37:24,979 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747582344925329920&end=1747582644925329920&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:37:24,981 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 09:37:24,982 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 09:37:24,983 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:37:25,001 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747582344925329920&end=1747582644925329920&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:37:25,003 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 09:37:25,006 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 09:42:05,847 INFO Starting Sigma Analyzer
+2025-05-18 09:42:05,849 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 09:42:05,850 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 09:42:05,851 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 09:42:05,852 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 09:42:05,854 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:42:05,879 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747582625852080128&end=1747582925852080128&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:42:05,881 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 09:42:05,882 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 09:42:05,883 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:42:05,899 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747582625852080128&end=1747582925852080128&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:42:05,900 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 09:42:05,901 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 09:42:05,902 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:42:05,917 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747582625852080128&end=1747582925852080128&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:42:05,918 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 09:42:05,922 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 09:46:46,516 INFO Starting Sigma Analyzer
+2025-05-18 09:46:46,517 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 09:46:46,518 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 09:46:46,519 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 09:46:46,519 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 09:46:46,521 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:46:46,538 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747582906519833088&end=1747583206519833088&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:46:46,539 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 09:46:46,539 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 09:46:46,541 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:46:46,552 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747582906519833088&end=1747583206519833088&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:46:46,554 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 09:46:46,554 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 09:46:46,556 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:46:46,570 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747582906519833088&end=1747583206519833088&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:46:46,571 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 09:46:46,574 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 09:51:26,956 INFO Starting Sigma Analyzer
+2025-05-18 09:51:26,958 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 09:51:26,959 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 09:51:26,959 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 09:51:26,960 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 09:51:26,963 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:51:26,989 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747583186960690944&end=1747583486960690944&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:51:26,990 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 09:51:26,991 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 09:51:26,993 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:51:27,013 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747583186960690944&end=1747583486960690944&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:51:27,014 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 09:51:27,015 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 09:51:27,017 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:51:27,034 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747583186960690944&end=1747583486960690944&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:51:27,035 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 09:51:27,039 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 09:56:07,290 INFO Starting Sigma Analyzer
+2025-05-18 09:56:07,291 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 09:56:07,292 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 09:56:07,293 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 09:56:07,294 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 09:56:07,296 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:56:07,318 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747583467293972992&end=1747583767293972992&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:56:07,319 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 09:56:07,319 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 09:56:07,321 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:56:07,336 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747583467293972992&end=1747583767293972992&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:56:07,337 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 09:56:07,338 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 09:56:07,339 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 09:56:07,352 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747583467293972992&end=1747583767293972992&limit=1000 HTTP/1.1" 200 None
+2025-05-18 09:56:07,353 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 09:56:07,357 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 10:00:47,383 INFO Starting Sigma Analyzer
+2025-05-18 10:00:47,385 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 10:00:47,386 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 10:00:47,387 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 10:00:47,388 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 10:00:47,391 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:00:47,425 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747583747387996928&end=1747584047387996928&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:00:47,426 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 10:00:47,427 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 10:00:47,428 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:00:47,451 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747583747387996928&end=1747584047387996928&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:00:47,453 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 10:00:47,453 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 10:00:47,455 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:00:47,479 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747583747387996928&end=1747584047387996928&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:00:47,481 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 10:00:47,484 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 10:05:27,459 INFO Starting Sigma Analyzer
+2025-05-18 10:05:27,460 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 10:05:27,460 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 10:05:27,461 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 10:05:27,462 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 10:05:27,464 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:05:27,480 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747584027462256896&end=1747584327462256896&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:05:27,481 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 10:05:27,482 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 10:05:27,484 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:05:27,498 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747584027462256896&end=1747584327462256896&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:05:27,499 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 10:05:27,500 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 10:05:27,502 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:05:27,519 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747584027462256896&end=1747584327462256896&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:05:27,520 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 10:05:27,523 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 10:10:07,341 INFO Starting Sigma Analyzer
+2025-05-18 10:10:07,342 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 10:10:07,343 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 10:10:07,343 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 10:10:07,344 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 10:10:07,346 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:10:07,362 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747584307344454144&end=1747584607344454144&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:10:07,363 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 10:10:07,364 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 10:10:07,365 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:10:07,384 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747584307344454144&end=1747584607344454144&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:10:07,385 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 10:10:07,386 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 10:10:07,387 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:10:07,400 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747584307344454144&end=1747584607344454144&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:10:07,402 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 10:10:07,405 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 10:14:47,145 INFO Starting Sigma Analyzer
+2025-05-18 10:14:47,147 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 10:14:47,148 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 10:14:47,149 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 10:14:47,150 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 10:14:47,154 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:14:47,170 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747584587150470144&end=1747584887150470144&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:14:47,171 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 10:14:47,172 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 10:14:47,174 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:14:47,187 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747584587150470144&end=1747584887150470144&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:14:47,188 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 10:14:47,189 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 10:14:47,190 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:14:47,208 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747584587150470144&end=1747584887150470144&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:14:47,209 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 10:14:47,212 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 10:19:26,747 INFO Starting Sigma Analyzer
+2025-05-18 10:19:26,749 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 10:19:26,749 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 10:19:26,750 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 10:19:26,751 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 10:19:26,754 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:19:26,772 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747584866751365888&end=1747585166751365888&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:19:26,774 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 10:19:26,775 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 10:19:26,776 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:19:26,792 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747584866751365888&end=1747585166751365888&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:19:26,793 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 10:19:26,794 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 10:19:26,795 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:19:26,812 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747584866751365888&end=1747585166751365888&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:19:26,813 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 10:19:26,816 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 10:24:06,227 INFO Starting Sigma Analyzer
+2025-05-18 10:24:06,228 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 10:24:06,229 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 10:24:06,230 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 10:24:06,231 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 10:24:06,234 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:24:06,251 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747585146231222016&end=1747585446231222016&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:24:06,252 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 10:24:06,253 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 10:24:06,254 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:24:06,272 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747585146231222016&end=1747585446231222016&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:24:06,273 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 10:24:06,274 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 10:24:06,275 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:24:06,292 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747585146231222016&end=1747585446231222016&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:24:06,293 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 10:24:06,296 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 10:28:45,560 INFO Starting Sigma Analyzer
+2025-05-18 10:28:45,562 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 10:28:45,563 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 10:28:45,564 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 10:28:45,565 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 10:28:45,568 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:28:45,588 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747585425565072128&end=1747585725565072128&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:28:45,589 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 10:28:45,590 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 10:28:45,592 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:28:45,607 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747585425565072128&end=1747585725565072128&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:28:45,609 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 10:28:45,609 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 10:28:45,611 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:28:45,627 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747585425565072128&end=1747585725565072128&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:28:45,628 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 10:28:45,631 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 10:33:24,769 INFO Starting Sigma Analyzer
+2025-05-18 10:33:24,771 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 10:33:24,772 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 10:33:24,772 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 10:33:24,773 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 10:33:24,776 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:33:24,797 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747585704773731072&end=1747586004773731072&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:33:24,799 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 10:33:24,799 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 10:33:24,801 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:33:24,818 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747585704773731072&end=1747586004773731072&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:33:24,819 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 10:33:24,820 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 10:33:24,821 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:33:24,837 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747585704773731072&end=1747586004773731072&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:33:24,838 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 10:33:24,842 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 10:38:03,897 INFO Starting Sigma Analyzer
+2025-05-18 10:38:03,898 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 10:38:03,899 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 10:38:03,900 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 10:38:03,901 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 10:38:03,903 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:38:03,922 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747585983901128960&end=1747586283901128960&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:38:03,923 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 10:38:03,924 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 10:38:03,925 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:38:03,940 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747585983901128960&end=1747586283901128960&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:38:03,941 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 10:38:03,942 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 10:38:03,943 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:38:03,957 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747585983901128960&end=1747586283901128960&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:38:03,958 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 10:38:03,962 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 10:42:42,912 INFO Starting Sigma Analyzer
+2025-05-18 10:42:42,915 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 10:42:42,916 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 10:42:42,917 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 10:42:42,918 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 10:42:42,922 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:42:42,942 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747586262918302976&end=1747586562918302976&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:42:42,944 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 10:42:42,944 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 10:42:42,946 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:42:42,965 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747586262918302976&end=1747586562918302976&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:42:42,966 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 10:42:42,967 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 10:42:42,969 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:42:42,984 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747586262918302976&end=1747586562918302976&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:42:42,985 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 10:42:42,988 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 10:47:21,808 INFO Starting Sigma Analyzer
+2025-05-18 10:47:21,809 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 10:47:21,810 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 10:47:21,810 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 10:47:21,811 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 10:47:21,814 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:47:21,832 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747586541811678976&end=1747586841811678976&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:47:21,833 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 10:47:21,834 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 10:47:21,835 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:47:21,850 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747586541811678976&end=1747586841811678976&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:47:21,851 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 10:47:21,852 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 10:47:21,853 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:47:21,869 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747586541811678976&end=1747586841811678976&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:47:21,871 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 10:47:21,874 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 10:52:00,545 INFO Starting Sigma Analyzer
+2025-05-18 10:52:00,547 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 10:52:00,547 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 10:52:00,548 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 10:52:00,549 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 10:52:00,553 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:52:00,573 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747586820549722880&end=1747587120549722880&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:52:00,574 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 10:52:00,575 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 10:52:00,576 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:52:00,591 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747586820549722880&end=1747587120549722880&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:52:00,592 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 10:52:00,593 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 10:52:00,594 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:52:00,609 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747586820549722880&end=1747587120549722880&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:52:00,610 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 10:52:00,614 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 10:56:39,160 INFO Starting Sigma Analyzer
+2025-05-18 10:56:39,163 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 10:56:39,164 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 10:56:39,164 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 10:56:39,166 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 10:56:39,171 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:56:39,193 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747587099165921024&end=1747587399165921024&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:56:39,195 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 10:56:39,196 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 10:56:39,198 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:56:39,213 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747587099165921024&end=1747587399165921024&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:56:39,215 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 10:56:39,215 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 10:56:39,218 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 10:56:39,235 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747587099165921024&end=1747587399165921024&limit=1000 HTTP/1.1" 200 None
+2025-05-18 10:56:39,236 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 10:56:39,240 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 11:01:17,629 INFO Starting Sigma Analyzer
+2025-05-18 11:01:17,631 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 11:01:17,632 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 11:01:17,633 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 11:01:17,634 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 11:01:17,639 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:01:17,669 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747587377634291968&end=1747587677634291968&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:01:17,671 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 11:01:17,672 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 11:01:17,673 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:01:17,701 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747587377634291968&end=1747587677634291968&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:01:17,702 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 11:01:17,703 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 11:01:17,705 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:01:17,732 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747587377634291968&end=1747587677634291968&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:01:17,733 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 11:01:17,737 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 11:05:56,035 INFO Starting Sigma Analyzer
+2025-05-18 11:05:56,036 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 11:05:56,037 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 11:05:56,039 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 11:05:56,040 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 11:05:56,042 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:05:56,061 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747587656040211968&end=1747587956040211968&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:05:56,063 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 11:05:56,063 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 11:05:56,065 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:05:56,079 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747587656040211968&end=1747587956040211968&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:05:56,080 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 11:05:56,080 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 11:05:56,082 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:05:56,095 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747587656040211968&end=1747587956040211968&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:05:56,097 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 11:05:56,101 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 11:10:34,258 INFO Starting Sigma Analyzer
+2025-05-18 11:10:34,260 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 11:10:34,261 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 11:10:34,262 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 11:10:34,262 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 11:10:34,266 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:10:34,288 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747587934262900992&end=1747588234262900992&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:10:34,290 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 11:10:34,291 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 11:10:34,293 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:10:34,313 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747587934262900992&end=1747588234262900992&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:10:34,314 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 11:10:34,315 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 11:10:34,317 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:10:34,334 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747587934262900992&end=1747588234262900992&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:10:34,336 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 11:10:34,340 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 11:15:12,418 INFO Starting Sigma Analyzer
+2025-05-18 11:15:12,420 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 11:15:12,421 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 11:15:12,422 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 11:15:12,423 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 11:15:12,426 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:15:12,452 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747588212423366912&end=1747588512423366912&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:15:12,453 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 11:15:12,454 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 11:15:12,456 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:15:12,474 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747588212423366912&end=1747588512423366912&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:15:12,475 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 11:15:12,476 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 11:15:12,478 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:15:12,499 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747588212423366912&end=1747588512423366912&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:15:12,500 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 11:15:12,506 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 11:19:50,384 INFO Starting Sigma Analyzer
+2025-05-18 11:19:50,385 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 11:19:50,388 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 11:19:50,389 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 11:19:50,391 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 11:19:50,393 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:19:50,412 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747588490391094016&end=1747588790391094016&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:19:50,413 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 11:19:50,414 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 11:19:50,416 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:19:50,433 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747588490391094016&end=1747588790391094016&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:19:50,435 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 11:19:50,435 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 11:19:50,438 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:19:50,458 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747588490391094016&end=1747588790391094016&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:19:50,460 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 11:19:50,464 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 11:24:28,208 INFO Starting Sigma Analyzer
+2025-05-18 11:24:28,210 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 11:24:28,211 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 11:24:28,211 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 11:24:28,212 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 11:24:28,216 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:24:28,239 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747588768212721152&end=1747589068212721152&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:24:28,241 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 11:24:28,241 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 11:24:28,243 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:24:28,260 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747588768212721152&end=1747589068212721152&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:24:28,261 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 11:24:28,262 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 11:24:28,264 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:24:28,280 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747588768212721152&end=1747589068212721152&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:24:28,282 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 11:24:28,286 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 11:29:05,831 INFO Starting Sigma Analyzer
+2025-05-18 11:29:05,832 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 11:29:05,833 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 11:29:05,834 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 11:29:05,835 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 11:29:05,839 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:29:05,859 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747589045835386880&end=1747589345835386880&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:29:05,861 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 11:29:05,861 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 11:29:05,863 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:29:05,878 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747589045835386880&end=1747589345835386880&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:29:05,880 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 11:29:05,881 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 11:29:05,882 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:29:05,898 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747589045835386880&end=1747589345835386880&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:29:05,900 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 11:29:05,904 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 11:33:43,359 INFO Starting Sigma Analyzer
+2025-05-18 11:33:43,361 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 11:33:43,362 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 11:33:43,362 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 11:33:43,363 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 11:33:43,367 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:33:43,390 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747589323363857152&end=1747589623363857152&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:33:43,391 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 11:33:43,392 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 11:33:43,394 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:33:43,415 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747589323363857152&end=1747589623363857152&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:33:43,416 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 11:33:43,417 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 11:33:43,419 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:33:43,434 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747589323363857152&end=1747589623363857152&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:33:43,435 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 11:33:43,439 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 11:38:20,837 INFO Starting Sigma Analyzer
+2025-05-18 11:38:20,838 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 11:38:20,839 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 11:38:20,840 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 11:38:20,841 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 11:38:20,844 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:38:20,863 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747589600841062912&end=1747589900841062912&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:38:20,864 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 11:38:20,865 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 11:38:20,866 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:38:20,884 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747589600841062912&end=1747589900841062912&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:38:20,886 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 11:38:20,886 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 11:38:20,888 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:38:20,903 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747589600841062912&end=1747589900841062912&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:38:20,904 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 11:38:20,907 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 11:42:58,151 INFO Starting Sigma Analyzer
+2025-05-18 11:42:58,153 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 11:42:58,154 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 11:42:58,155 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 11:42:58,156 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 11:42:58,159 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:42:58,177 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747589878156056832&end=1747590178156056832&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:42:58,178 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 11:42:58,179 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 11:42:58,181 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:42:58,196 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747589878156056832&end=1747590178156056832&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:42:58,198 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 11:42:58,199 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 11:42:58,200 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:42:58,215 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747589878156056832&end=1747590178156056832&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:42:58,216 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 11:42:58,219 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 11:47:35,265 INFO Starting Sigma Analyzer
+2025-05-18 11:47:35,267 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 11:47:35,268 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 11:47:35,268 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 11:47:35,269 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 11:47:35,272 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:47:35,290 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747590155269623040&end=1747590455269623040&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:47:35,291 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 11:47:35,292 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 11:47:35,294 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:47:35,310 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747590155269623040&end=1747590455269623040&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:47:35,312 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 11:47:35,312 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 11:47:35,314 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:47:35,331 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747590155269623040&end=1747590455269623040&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:47:35,333 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 11:47:35,336 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 11:52:12,287 INFO Starting Sigma Analyzer
+2025-05-18 11:52:12,289 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 11:52:12,290 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 11:52:12,291 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 11:52:12,292 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 11:52:12,295 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:52:12,313 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747590432292249088&end=1747590732292249088&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:52:12,314 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 11:52:12,315 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 11:52:12,317 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:52:12,332 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747590432292249088&end=1747590732292249088&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:52:12,333 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 11:52:12,334 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 11:52:12,336 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:52:12,352 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747590432292249088&end=1747590732292249088&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:52:12,353 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 11:52:12,357 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json
+2025-05-18 11:56:48,962 INFO Starting Sigma Analyzer
+2025-05-18 11:56:48,964 DEBUG Loaded rule: postfix_bruteforce.logql
+2025-05-18 11:56:48,965 DEBUG Loaded rule: click_here_with_link.logql
+2025-05-18 11:56:48,966 DEBUG Loaded rule: postfix_mass_mailing.logql
+2025-05-18 11:56:48,967 INFO Querying Loki for rule: postfix_bruteforce.logql
+2025-05-18 11:56:48,970 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:56:48,990 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29warning%3A%5C+SASL%5C+LOGIN%5C+authentication%5C+failed%60&start=1747590708967112192&end=1747591008967112192&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:56:48,992 INFO Found 0 matches for postfix_bruteforce.logql
+2025-05-18 11:56:48,992 INFO Querying Loki for rule: click_here_with_link.logql
+2025-05-18 11:56:48,994 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:56:49,009 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29click%5C+here%60&start=1747590708967112192&end=1747591008967112192&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:56:49,010 INFO Found 0 matches for click_here_with_link.logql
+2025-05-18 11:56:49,011 INFO Querying Loki for rule: postfix_mass_mailing.logql
+2025-05-18 11:56:49,013 DEBUG Starting new HTTP connection (1): loki:3100
+2025-05-18 11:56:49,030 DEBUG http://loki:3100 "GET /loki/api/v1/query_range?query=%7Bjob%3D~%22.%2B%22%7D+%7C~+%60%28%3Fi%29keywords%5C+%5C%7C%5C+count%5C%28%5C%29%5C+%3E%5C+50%5C+by%5C+source_ip%5C+within%5C+5m%60&start=1747590708967112192&end=1747591008967112192&limit=1000 HTTP/1.1" 200 None
+2025-05-18 11:56:49,031 INFO Found 0 matches for postfix_mass_mailing.logql
+2025-05-18 11:56:49,035 INFO Analysis complete, results written to /var/log/sigma/analyzer_output.json

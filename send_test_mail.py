@@ -22,7 +22,19 @@ SENDER_POOL = [
     "events@company.com",
     "security@service.com",
     "devteam@company.com",
-    "communications@company.com"
+    "communications@company.com",
+    "billing@legit-company.com",
+    "deals@newsletter.com",
+    "security@onlinebank.com",
+    "support@service.com",
+    "info@company.com",
+    "admin@company.com",
+    "notifications@company.com",
+    "support@apple.com",
+    "support@bank.com",
+    "support@onlineservice.com",
+    "rewards@shopping.com",
+    "security@bigcorp.com",
 ]
 
 # create a fake PE binary for one of the attachments
