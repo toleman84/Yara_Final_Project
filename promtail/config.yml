@@ -41,7 +41,7 @@ scrape_configs:
           - localhost
         labels:
           job: sigma_analyzer
-          __path__: /var/log/sigma/analyzer_output.json
+          __path__: /var/log/sigma/analyzer.log
     pipeline_stages:
       - json:
           expressions:

@@ -1,136 +1,203 @@
 #!/usr/bin/env python3
+"""
+Sigma Analyzer for Loki Logs
+- Queries Loki using compiled LogQL rules
+- Runs continuously with dynamic time windows
+- Threaded queries for performance
+- Built-in alerting and rotation
+"""
 
 import os
 import json
 import logging
 import time
-from datetime import datetime, timedelta
+from datetime import datetime, timezone 
+from concurrent.futures import ThreadPoolExecutor
 import requests
+from logging.handlers import RotatingFileHandler
 
-LOG_DIR = "/var/log/sigma"
-COMPILED_DIR = "/app/compiled"
-OUTPUT_FILE = os.path.join(LOG_DIR, "analyzer_output.json")
+# Configuration (override with environment variables)
+CONFIG = {
+    "LOG_DIR": os.getenv("LOG_DIR", "/var/log/sigma"),
+    "COMPILED_RULES_DIR": os.getenv("COMPILED_DIR", "/app/compiled"),
+    "LOKI_URL": os.getenv("LOKI_URL", "http://loki:3100"),
+    "QUERY_WINDOW": int(os.getenv("QUERY_WINDOW_MINUTES", "5")),  # Default 5 min
+    "SLEEP_INTERVAL": int(os.getenv("SLEEP_SECONDS", "300")),     # Default 5 min
+    "ALERT_WEBHOOK": os.getenv("ALERT_WEBHOOK", ""),             # Slack/MS Teams URL
+    "LOG_LEVEL": os.getenv("LOG_LEVEL", "INFO").upper()
+}
 
-LOKI_URL = os.getenv("LOKI_URL", "http://loki:3100") 
-QUERY_ENDPOINT = f"{LOKI_URL}/loki/api/v1/query_range"
+# Global setup
+QUERY_ENDPOINT = f"{CONFIG['LOKI_URL']}/loki/api/v1/query_range"
+OUTPUT_TEMPLATE = "analyzer_output_{timestamp}.json"
 
-LOG_LEVEL = logging.DEBUG
-
-# Ensure log directory exists BEFORE configuring logging
-os.makedirs(LOG_DIR, exist_ok=True)
-
-# Configure logging
+# Initialize logging
+os.makedirs(CONFIG["LOG_DIR"], exist_ok=True)
 logging.basicConfig(
-    level=LOG_LEVEL,
-    format="%(asctime)s %(levelname)s %(message)s",
+    level=CONFIG["LOG_LEVEL"],
+    format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
-        logging.StreamHandler(),
-        logging.FileHandler(os.path.join(LOG_DIR, "analyzer.log"))
+        RotatingFileHandler(
+            os.path.join(CONFIG["LOG_DIR"], "analyzer.log"),
+            maxBytes=10*1024*1024,  # 10MB rotation
+            backupCount=5
+        ),
+        logging.StreamHandler()
     ]
 )
+logger = logging.getLogger(__name__)
 
 def load_compiled_rules():
+    """Load all .logql files from rules directory"""
     rules = {}
-    for filename in os.listdir(COMPILED_DIR):
-        if filename.endswith(".logql"):
-            path = os.path.join(COMPILED_DIR, filename)
-            try:
-                with open(path, "r", encoding="utf-8") as f:
-                    query = f.read().strip()
-                    rules[filename] = query
-                    logging.debug(f"Loaded rule: {filename}")
-            except Exception as e:
-                logging.error(f"Failed to load rule {filename}: {e}")
+    try:
+        for filename in os.listdir(CONFIG["COMPILED_RULES_DIR"]):
+            if filename.endswith(".logql"):
+                path = os.path.join(CONFIG["COMPILED_RULES_DIR"], filename)
+                with open(path, "r") as f:
+                    rules[filename] = f.read().strip()
+                logger.debug(f"Loaded rule: {filename}")
+    except Exception as e:
+        logger.error(f"Rule loading failed: {e}")
     return rules
 
-def query_loki(logql, start, end, retries=3):
+def query_loki(logql_query, start_time, end_time):
+    """Execute LogQL query against Loki with retries"""
     params = {
-        "query": logql,
-        "start": str(int(start.timestamp() * 1e9)),  # nanoseconds
-        "end": str(int(end.timestamp() * 1e9)),
-        "limit": "1000"
+        "query": logql_query,
+        "start": str(int(start_time.timestamp() * 1e9)),
+        "end": str(int(end_time.timestamp() * 1e9)),
+        "limit": "5000"  # Increase for dense logs
     }
-    attempt = 0
-    while attempt < retries:
+    
+    for attempt in range(3):
         try:
-            resp = requests.get(QUERY_ENDPOINT, params=params, timeout=10)
-            resp.raise_for_status()
-            return resp.json()
+            response = requests.get(QUERY_ENDPOINT, params=params, timeout=15)
+            response.raise_for_status()
+            return response.json().get("data", {}).get("result", [])
         except requests.RequestException as e:
-            logging.error(f"Loki query failed (attempt {attempt+1}): {e}")
+            logger.warning(f"Query attempt {attempt+1} failed: {str(e)}")
             time.sleep(2 ** attempt)
-            attempt += 1
-    logging.error("Max retries reached, giving up on query.")
     return None
 
-def parse_results(rule_name, result_json):
+def process_rule(rule_name, logql, start_time, end_time):
+    """Thread-safe rule processing"""
+    logger.info(f"Executing rule: {rule_name}")
+    results = query_loki(logql, start_time, end_time)
+    matches = parse_results(rule_name, results)
+    
+    # NEW: Add logging for match count here
+    if matches:
+        logger.info(f"Found {len(matches)} matches for {rule_name}")
+    else:
+        logger.debug(f"No matches found for {rule_name}")  # Optional debug line
+    
+    return matches
+
+def parse_results(rule_name, loki_results):
+    """Extract matches from Loki response"""
     matches = []
-    if not result_json:
+    if not loki_results:
         return matches
-    data = result_json.get("data", {})
-    result = data.get("result", [])
-    for entry in result:
-        stream = entry.get("stream", {})
-        values = entry.get("values", [])
-        for timestamp, log_line in values:
-            ts = datetime.fromtimestamp(int(timestamp) / 1e9).isoformat()
+    
+    for stream_result in loki_results:
+        labels = stream_result.get("stream", {})
+        for timestamp, log_line in stream_result.get("values", []):
             matches.append({
                 "rule": rule_name,
-                "timestamp": ts,
+                "timestamp": datetime.fromtimestamp(int(timestamp)/1e9).isoformat(),
                 "log": log_line,
-                "labels": stream
+                "labels": labels
             })
     return matches
 
-
-def main():
-    try:
-        logging.info("Starting Sigma Analyzer")
-
-        # Load all compiled LogQL rules
-        rules = load_compiled_rules()
-        if not rules:
-            logging.warning("No compiled rules found, exiting.")
-            return
-
-        # Query time window: last 5 minutes
-        end_time = datetime.utcnow()
-        start_time = end_time - timedelta(minutes=5)
-
-        all_matches = []
-
-        for rule_name, logql in rules.items():
-            logging.info(f"Querying Loki for rule: {rule_name}")
-            result_json = query_loki(logql, start_time, end_time)
-            matches = parse_results(rule_name, result_json)
-            logging.info(f"Found {len(matches)} matches for {rule_name}")
-            all_matches.extend(matches)
-
-        # Write all matches to JSON output
+def trigger_alerts(matches):
+    """Send high-severity matches to alerting webhook"""
+    if not CONFIG["ALERT_WEBHOOK"]:
+        return
+    
+    critical_matches = [m for m in matches if m["labels"].get("severity") == "critical"]
+    for match in critical_matches:
         try:
-            with open(OUTPUT_FILE, "w", encoding="utf-8") as out_f:
-                for match in all_matches:
-                    out_f.write(json.dumps(match) + "\n")
-            logging.info(f"Analysis complete, results written to {OUTPUT_FILE}")
+            requests.post(
+                CONFIG["ALERT_WEBHOOK"],
+                json={"text": f"🚨 Critical threat detected: {match['rule']}"}
+            )
         except Exception as e:
-            logging.error(f"Failed to write output file: {e}")
+            logger.error(f"Alert failed: {e}")
 
+def write_output(matches):
+    """Write results with timestamped filename"""
+    if not matches:
+        return
+    
+    try:
+        filename = OUTPUT_TEMPLATE.format(
+            timestamp=datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+        )
+        path = os.path.join(CONFIG["LOG_DIR"], filename)
+        
+        with open(path, "w") as f:
+            for match in matches:
+                f.write(json.dumps(match) + "\n")
+        logger.info(f"Wrote {len(matches)} matches to {filename}")
     except Exception as e:
-        logging.error(f"Critical error in main execution: {e}", exc_info=True)
-        raise  # Re-raise to ensure container restart if needed
+        logger.error(f"Output write failed: {e}")
 
-if __name__ == "__main__":
+def main_loop():
+    """Continuous analysis loop with dynamic time windows"""
+    last_run_time = datetime.now(timezone.utc) - timezone(minutes=CONFIG["QUERY_WINDOW"])
+    rules = load_compiled_rules()
+    rules_last_reloaded = time.time()
+    
     while True:
         try:
-            main()
-            # Sleep before next execution cycle (e.g., 5 minutes)
-            time.sleep(300)
+            # Reload rules every hour
+            if time.time() - rules_last_reloaded > 3600:
+                logger.info("Reloading rules...")
+                rules = load_compiled_rules()
+                rules_last_reloaded = time.time()
+            
+            # Calculate time window
+            start_time = last_run_time
+            end_time = datetime.now(timezone.utc)
+            logger.info(f"Processing window: {start_time} to {end_time}")
+            
+            # Parallel execution of rules
+            with ThreadPoolExecutor(max_workers=4) as executor:
+                futures = [
+                    executor.submit(
+                        process_rule,
+                        rule_name,
+                        logql,
+                        start_time,
+                        end_time
+                    ) for rule_name, logql in rules.items()
+                ]
+                
+                all_matches = []
+                for future in futures:
+                    all_matches.extend(future.result())
+            
+            # Output and alerts
+            trigger_alerts(all_matches)
+            write_output(all_matches)
+            
+            # Prepare for next iteration
+            last_run_time = end_time
+            logger.info(f"Sleeping for {CONFIG['SLEEP_INTERVAL']} seconds")
+            time.sleep(CONFIG["SLEEP_INTERVAL"])
+            
         except KeyboardInterrupt:
-            logging.info("Shutting down gracefully...")
+            logger.info("Shutdown requested")
             break
         except Exception as e:
-            logging.error(f"Fatal error: {e}", exc_info=True)
-            logging.info("Restarting analyzer in 60 seconds...")
+            logger.error(f"Fatal error: {e}", exc_info=True)
+            logger.info("Restarting in 60 seconds...")
             time.sleep(60)
-    
-    main()
+
+if __name__ == "__main__":
+    logger.info("Starting Sigma Analyzer")
+    logger.info(f"Configuration: {json.dumps(CONFIG, indent=2)}")
+    main_loop()
+    logger.info("Sigma Analyzer stopped")
