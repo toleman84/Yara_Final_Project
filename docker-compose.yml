@@ -7,11 +7,12 @@ services:
     ports:
       - "25:25"
     volumes:
-      - ./logs/postfix:/var/log/postfix 
+      - ./logs/postfix:/var/log/postfix
       - ./postfix/main.cf:/etc/postfix/main.cf:ro
       - ./postfix/master.cf:/etc/postfix/master.cf:ro
       - ./postfix/transport:/etc/postfix/transport:ro
       - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
     healthcheck:
       test: ["CMD-SHELL", "pgrep master || exit 1"]
       interval: 5s

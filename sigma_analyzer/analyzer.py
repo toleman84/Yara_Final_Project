@@ -11,7 +11,7 @@ import os
 import json
 import logging
 import time
-from datetime import datetime, timezone 
+from datetime import datetime, timedelta, timezone 
 from concurrent.futures import ThreadPoolExecutor
 import requests
 from logging.handlers import RotatingFileHandler
@@ -146,7 +146,7 @@ def write_output(matches):
 
 def main_loop():
     """Continuous analysis loop with dynamic time windows"""
-    last_run_time = datetime.now(timezone.utc) - timezone(minutes=CONFIG["QUERY_WINDOW"])
+    last_run_time = datetime.now(timezone.utc) - timedelta(minutes=CONFIG["QUERY_WINDOW"])
     rules = load_compiled_rules()
     rules_last_reloaded = time.time()
     
