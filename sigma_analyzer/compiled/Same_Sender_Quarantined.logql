@@ -1,0 +1,1 @@
+{job=~".+"} | json | level=~"(?i)^WARNING$" and quarantined=~"(?i)^true$" | line_format "{{.sender}} {{.quarantined_file}} {{.timestamp}}"

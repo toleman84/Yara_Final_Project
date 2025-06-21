@@ -7,11 +7,14 @@ logsource:
   service: scanner
 detection:
   selection:
-    - '*Threats: JS_Malware_Trigger*'
+    yara_hit: "JS_Malware_Trigger"
   condition: selection
+aggregation:
+  timespan: 1h
+  count: '> 5'
 fields:
   - quarantined_file
-  - detected_threats
+  - yara_hit
 falsepositives:
   - Legitimate JavaScript attachments in business communications
-level: high 
+level: high

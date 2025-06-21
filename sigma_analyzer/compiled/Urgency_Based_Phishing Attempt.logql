@@ -1,1 +1,1 @@
-{job=~".+"} |~ `(?i)Threats:\ Suspicious_Urgency_Language` | line_format "{{.quarantined_file}} {{.detected_threats}}"
+{job=~".+"} | json |~ "(?i)Threats:\ Suspicious_Urgency_Language" | line_format "{{.quarantined_file}} {{.detected_threats}}"

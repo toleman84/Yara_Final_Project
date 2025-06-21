@@ -1,0 +1,11 @@
+plugins:
+  - name: grafana-piechart-panel
+    version: latest
+  - name: marcusolsson-treemap-panel
+    version: latest
+  - name: flant-statusmap-panel
+    version: latest
+# - name: grafana-worldmap-panel
+  #  version: latest
+  - name: grafana-clock-panel
+    version: latest

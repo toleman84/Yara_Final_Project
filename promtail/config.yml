@@ -31,17 +31,50 @@ scrape_configs:
             subject: subject
             yara_hits: yara_hits
             quarantined: quarantined
+            status: status 
+            service: service
+
+      - labels:
+          service:
+          status:
+          quarantined:
+          
       - timestamp:
           source: timestamp
           format: Unix
           
-  - job_name: sigma_analyzer_json
+# Sigma Analyzer Main Logs (JSON format)
+  - job_name: sigma_analyzer
     static_configs:
-      - targets:
-          - localhost
+      - targets: [localhost]
         labels:
           job: sigma_analyzer
-          __path__: /var/log/sigma/analyzer.log
+          __path__: /var/log/sigma/analyzer.json
+    pipeline_stages:
+      - json:
+          expressions:
+            timestamp: timestamp
+            level: level
+            message: message
+            rule: rule
+            service: service
+            function: function
+      - timestamp:
+          source: timestamp
+          format: "2006-01-02 15:04:05,%f"
+      - labels:
+          level:
+          service:
+      - output:
+          source: message
+
+  # Sigma Analyzer Output Files (JSON Lines format)
+  - job_name: sigma_analyzer_results
+    static_configs:
+      - targets: [localhost]
+        labels:
+          job: sigma_analyzer_results
+          __path__: /var/log/sigma/analyzer_output_*.json
     pipeline_stages:
       - json:
           expressions:
@@ -51,5 +84,6 @@ scrape_configs:
             labels: labels
       - timestamp:
           source: timestamp
-          format: RFC3339Nano
- 
+          format: RFC3339
+      - labels:
+          rule:

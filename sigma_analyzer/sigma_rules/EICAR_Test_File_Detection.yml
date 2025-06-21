@@ -6,7 +6,7 @@ logsource:
   service: scanner
 detection:
   selection:
-    - '*Threats: EICAR_Test_File*'
+    yara_hit: "EICAR_Test_File"
   condition: selection
 fields:
   - quarantined_file

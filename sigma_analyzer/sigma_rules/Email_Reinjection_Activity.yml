@@ -8,6 +8,9 @@ detection:
   selection:
     - '*Email reinjected successfully*'
   condition: selection
+aggregation:
+  timespan: 1h
+  count: '> 5'
 fields:
   - log_message
 falsepositives:

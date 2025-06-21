@@ -1,0 +1,28 @@
+title: Common Phishing Email Subject Patterns
+id: c2a72d75-06ab-41a1-bf93-f2fd00addf99
+status: experimental
+description: Detects emails with subjects commonly used in phishing campaigns
+references:
+  - Phishing trend reports Q2 2025
+author: Your Name
+date: 2025/06/16
+logsource:
+  category: antispam
+  product: email_scanner
+  service: scanner
+detection:
+  keywords:
+    - "Urgent:"
+    - "Password Reset"
+    - "Account Verification"
+    - "Final Warning"
+    - "Invoice Payment"
+    - "Security Alert"
+  selection:
+    level: WARNING
+    quarantined: 'true'
+  condition: keywords and selection
+falsepositives:
+  - Legitimate urgent communications
+  - Security alerts from trusted sources
+level: medium

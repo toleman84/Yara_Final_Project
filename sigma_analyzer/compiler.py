@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import subprocess
 import os
+import re
 
 SIGMA_DIR   = "sigma_rules"
 CONFIG_PATH = "loki-backend.yaml"
@@ -17,7 +18,7 @@ for filename in os.listdir(SIGMA_DIR):
         )
 
         try:
-            # Call the sigma.exe CLI directly
+            # Call sigma.exe CLI
             result = subprocess.run(
                 [
                     "sigma.exe", "convert",
@@ -30,8 +31,18 @@ for filename in os.listdir(SIGMA_DIR):
                 check=True
             )
 
+            # Patch: replace '| logfmt' with '| json' and fix regex quotes
+            query = result.stdout
+            query = query.replace("| logfmt", "| json")
+            query = query.replace("=~`", "=~\"").replace("`", "\"")
+
+            # Insert '| json' before '|~' if 'line_format' present and '| json' missing
+            if "line_format" in query and "| json" not in query:
+                # Insert '| json' before the first '|~' or similar operator
+                query = re.sub(r"(\|~)", r"| json \1", query, count=1)
+
             with open(output_path, "w", encoding="utf-8") as out_file:
-                out_file.write(result.stdout)
+                out_file.write(query)
 
             print(f"[✔] Compiled: {filename} → {output_path}")
 

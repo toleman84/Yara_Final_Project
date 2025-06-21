@@ -2,3 +2,4 @@ requests
 pandas
 pysigma
 pysigma-backend-loki
+python-json-logger

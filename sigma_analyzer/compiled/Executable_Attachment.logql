@@ -1,0 +1,1 @@
+{job=~".+"} | json | level=~"(?i)^WARNING$" and quarantined=~"(?i)^true$" and (yara_hit=~"(?i).*PE_File.*" or yara_hit=~"(?i).*JS_Malware.*" or yara_hit=~"(?i).*EICAR_Test.*" or yara_hit=~"(?i).*Malicious_Attachment.*")

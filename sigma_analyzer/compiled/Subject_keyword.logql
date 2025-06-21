@@ -1,1 +1,1 @@
-{job=~".+"} | logfmt | subject=~`(?i).*urgent.*` and subject=~`(?i).*password.*` and subject=~`(?i).*verify.*` and subject=~`(?i).*account.*` | line_format "{{.sender}} {{.recipient}} {{.subject}} {{.attachments_name}}"
+{job=~".+"} | json | subject=~"(?i).*urgent.*" and subject=~"(?i).*password.*" and subject=~"(?i).*verify.*" and subject=~"(?i).*account.*" | line_format "{{.sender}} {{.recipient}} {{.subject}} {{.attachments_name}}"

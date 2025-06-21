@@ -1,0 +1,1 @@
+{job=~".+"} |~ "(?i)Urgent:|Password\ Reset|Account\ Verification|Final\ Warning|Invoice\ Payment|Security\ Alert" | json | level=~"(?i)^WARNING$" and quarantined=~"(?i)^true$"

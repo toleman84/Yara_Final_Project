@@ -135,11 +135,11 @@ def normalize_entry(entry, tag):
 
 # Add clean emails
 for e in clean_emails:
-    all_tests.append(normalize_entry(e, "CLEAN"))
+    all_tests.append(normalize_entry(e, "#"))
 
 # Add malicious emails
 for e in malicious_emails:
-    all_tests.append(normalize_entry(e, "MALICIOUS"))
+    all_tests.append(normalize_entry(e, "#"))
 
 # ───── Email Sending Function ────────────────────────────────────────────────
 def send_email(subject, body, attachment=None, content_type="plain"):
@@ -182,5 +182,5 @@ if __name__ == "__main__":
         except Exception as e:
             status = f"✗ Failed ({e})"
 
-        print(f"[{idx:02d}/{total}] [{mail['type']}] {mail['subject']} → {status}")
+        print(f"[{mail['type']}] {mail['subject']} → {status}")
         time.sleep(0.2)

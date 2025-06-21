@@ -1,0 +1,26 @@
+title: Suspicious Executable Attachment Types
+id: e3a314ed-dbc6-4c9f-b86f-f02c77d061fb
+status: experimental
+description: Detects emails with executable attachments that were quarantined
+references:
+  - MITRE ATT&CK T1193 (Spearphishing Attachment)
+author: Your Name
+date: 2025/06/16
+logsource:
+  category: antispam
+  product: email_scanner
+  service: scanner
+detection:
+  selection:
+    level: WARNING
+    quarantined: 'true'
+    yara_hit|contains:
+      - 'PE_File'
+      - 'JS_Malware'
+      - 'EICAR_Test'
+      - 'Malicious_Attachment'
+  condition: selection
+falsepositives:
+  - Legitimate software updates
+  - Developer communications with executables
+level: critical

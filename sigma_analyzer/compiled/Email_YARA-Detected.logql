@@ -1,1 +1,1 @@
-{job=~".+"} | logfmt | yara_matches=~`(?i).*Phishing_.*` or yara_matches=~`(?i).*Malware_.*` or yara_matches=~`(?i).*Ransomware_.*`
+{job=~".+"} | json | yara_hits=~"(?i)^Phishing_$" or yara_hits=~"(?i)^Malware_$" or yara_hits=~"(?i)^Ransomware_$"

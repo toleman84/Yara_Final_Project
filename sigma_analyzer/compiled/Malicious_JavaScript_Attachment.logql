@@ -1,1 +1,1 @@
-{job=~".+"} |~ `(?i)Threats:\ JS_Malware_Trigger` | line_format "{{.quarantined_file}} {{.detected_threats}}"
+{job=~".+"} | json | yara_hit=~"(?i)^JS_Malware_Trigger$" | line_format "{{.quarantined_file}} {{.yara_hit}}"

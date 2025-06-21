@@ -1,1 +1,1 @@
-{job=~".+"} |~ `(?i)Threats:\ Survey_Lure` | line_format "{{.quarantined_file}} {{.detected_threats}}"
+{job=~".+"} | json |~ "(?i)Threats:\ Survey_Lure" | line_format "{{.quarantined_file}} {{.detected_threats}}"

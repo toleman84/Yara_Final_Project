@@ -6,7 +6,7 @@ logsource:
   product: email_scanner
 detection:
   selection:
-    yara_matches|contains:
+    yara_hits:
       - 'Phishing_'
       - 'Malware_'
       - 'Ransomware_'

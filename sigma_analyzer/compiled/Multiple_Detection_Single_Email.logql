@@ -1,1 +1,1 @@
-{job=~".+"} |~ `(?i)Threats:\ .*\\S\+,\ \\S\+` | line_format "{{.detected_threats}} {{.quarantined_file}}"
+{job=~".+"} | json |~ "(?i)Threats:\ .*\\S\+,\ \\S\+" | line_format "{{.detected_threats}} {{.quarantined_file}}"

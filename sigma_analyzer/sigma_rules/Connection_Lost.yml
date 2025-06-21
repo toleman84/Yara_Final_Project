@@ -1,0 +1,22 @@
+title: Scanner Connection Lost Events
+id: 5a8f7d3e-1b4c-4a9d-b8e2-f3a6b5c7d8e9
+status: experimental
+description: Detects when connections to the email scanner service are lost
+references:
+  - Internal network monitoring policy
+author: Your Name
+date: 2025/06/16
+logsource:
+  category: network
+  product: email_scanner
+  service: scanner
+detection:
+  selection:
+    level: INFO
+    message|contains: 'connection lost'
+  timeframe: 5m
+  condition: selection
+falsepositives:
+  - Network connectivity issues
+  - Scheduled maintenance
+level: medium

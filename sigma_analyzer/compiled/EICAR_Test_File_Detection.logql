@@ -1,1 +1,1 @@
-{job=~".+"} |~ `(?i)Threats:\ EICAR_Test_File` | line_format "{{.quarantined_file}}"
+{job=~".+"} | json | yara_hit=~"(?i)^EICAR_Test_File$" | line_format "{{.quarantined_file}}"

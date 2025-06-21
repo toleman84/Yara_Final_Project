@@ -92,13 +92,16 @@ services:
 
   # Grafana for dashboards
   grafana:
-    image: grafana/grafana:10.1.1
+    build:
+      context: ./grafana
+      dockerfile: Dockerfile
     container_name: grafana
     ports:
       - "3000:3000"
     volumes:
       - grafana_data:/var/lib/grafana
       - ./grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
+      - ./grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards
       - ./grafana/provisioning/plugins:/etc/grafana/provisioning/plugins
       - ./grafana/provisioning/notifiers:/etc/grafana/provisioning/notifiers
       - ./grafana/provisioning/alerting:/etc/grafana/provisioning/alerting
@@ -119,7 +122,7 @@ services:
     container_name: promtail
     command: -config.file=/etc/promtail/config.yml
     volumes:
-      - ./logs/postfix:/var/log/postfix
+      - ./logs/postfix/:/var/log/postfix
       - ./logs/scanner:/var/log/scanner
       - ./logs/sigma:/var/log/sigma
       - ./promtail/config.yml:/etc/promtail/config.yml

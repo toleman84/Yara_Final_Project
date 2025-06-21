@@ -1,1 +1,1 @@
-{job=~".+"} | logfmt | EventType=~`(?i)^Quarantine$` and QuarantineAction=~`(?i)^blocked$` and type=~`(?i)^event_count$` and (group_by=~`(?i)^SourceHost$` or group_by=~`(?i)^SenderAddress$`) and time_frame=~`(?i)^1h$` and threshold=5 | line_format "{{.SenderAddress}} {{.RecipientAddress}} {{.QuarantinedFile}} {{.DetectedThreats}} {{.Timestamp}}"
+{job=~".+"} | json |~ "(?i)WARNING" | line_format "{{.log_message}}"

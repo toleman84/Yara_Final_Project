@@ -1,0 +1,1 @@
+{job=~".+"} | json | level=~"(?i)^INFO$" and message=~"(?i).*connection\ lost.*"

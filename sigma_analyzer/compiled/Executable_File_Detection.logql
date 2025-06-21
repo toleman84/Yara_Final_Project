@@ -1,1 +1,1 @@
-{job=~".+"} |~ `(?i)Threats:\ Detect_PE_File` | line_format "{{.quarantined_file}}"
+{job=~".+"} | json |~ "(?i)Threats:\ Detect_PE_File" | line_format "{{.quarantined_file}}"

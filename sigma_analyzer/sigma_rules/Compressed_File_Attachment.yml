@@ -6,8 +6,11 @@ logsource:
   service: scanner
 detection:
   selection:
-    - '*Threats: Detect_Zip_File*'
+    yara_hit: "Detect_Zip_File"
   condition: selection
+aggregation:
+  timespan: 1h
+  count: '> 5'
 fields:
   - quarantined_file
 falsepositives:

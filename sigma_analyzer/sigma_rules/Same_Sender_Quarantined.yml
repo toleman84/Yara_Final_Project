@@ -1,0 +1,25 @@
+title: Repeated Quarantine Events from Same Sender
+id: c2a72d75-06ab-41a1-bf93-f2fd00addf99
+status: experimental
+description: Detects multiple quarantine events from the same sender within a short timeframe
+logsource:
+  category: antispam
+  product: email_scanner
+  service: scanner
+detection:
+  selection:
+    level: WARNING
+    quarantined: 'true'
+  condition: selection
+aggregation:
+  field: sender
+  timespan: 5m
+  count: '> 3'
+fields:
+  - sender
+  - quarantined_file
+  - timestamp
+falsepositives:
+  - Bulk mailing services
+  - Legitimate senders with multiple flagged messages
+level: high

@@ -1,1 +1,1 @@
-{job=~".+"} | logfmt | attachments_type=~`(?i).*application/pdf.*` or attachments_type=~`(?i).*application/x\-dosexec.*` | line_format "{{.sender}} {{.recipient}} {{.subject}} {{.attachments_name}} {{.attachments_type}}"
+{job=~".+"} | json | attachments_type=~"(?i).*application/pdf.*" or attachments_type=~"(?i).*application/x\-dosexec.*" | line_format "{{.sender}} {{.recipient}} {{.subject}} {{.attachments_name}} {{.attachments_type}}"

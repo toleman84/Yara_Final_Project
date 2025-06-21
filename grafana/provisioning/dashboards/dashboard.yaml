@@ -1,0 +1,11 @@
+apiVersion: 1
+
+providers:
+  - name: 'Email Threat Scanner'
+    orgId: 1
+    folder: 'Email Threat Scanner'
+    type: file
+    disableDeletion: false
+    editable: true
+    options:
+      path: /etc/grafana/provisioning/dashboards/email-threat-scanner
